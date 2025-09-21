@@ -6,7 +6,7 @@ const culturalPlaces = [
     city: "Agra",
     state: "Uttar Pradesh",
     description: "A UNESCO World Heritage Site, the Taj Mahal is an ivory-white marble mausoleum built by Mughal emperor Shah Jahan in memory of his wife Mumtaz Mahal.",
-    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_in_March_2004.jpg/200px-Taj_Mahal_in_March_2004.jpg",
+    thumbnail: "https://c.ndtvimg.com/2025-05/601640bo_taj-mahal_625x300_21_May_25.jpg?im=FeatureCrop,algorithm=dnn,width=1200,height=738",
     lat: 27.1751,
     lng: 78.0421,
     details: {
@@ -20,7 +20,7 @@ const culturalPlaces = [
     city: "Hampi",
     state: "Karnataka",
     description: "The ruins of Hampi, once the capital of the Vijayanagara Empire, are a UNESCO World Heritage Site known for their stunning temples and monuments.",
-    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Hampi_virupaksha_temple.jpg/200px-Hampi_virupaksha_temple.jpg",
+    thumbnail: "https://www.shivavilaspalacehotel.com/blog/admin/assets/img/post/image_2025-03-24-08-23-39_67e1168be72ae.jpg",
     lat: 15.335,
     lng: 76.462,
     details: {
@@ -34,7 +34,7 @@ const culturalPlaces = [
     city: "Konark",
     state: "Odisha",
     description: "A 13th-century CE Sun Temple, renowned for its chariot-shaped architecture and intricate stone carvings.",
-    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Konark_Sun_Temple_Front_View.jpg/200px-Konark_Sun_Temple_Front_View.jpg",
+    thumbnail: "https://www.dailyartmagazine.com/wp-content/uploads/2024/06/Cover-Photo-scaled.jpg",
     lat: 19.8876,
     lng: 86.0945,
     details: {
@@ -48,7 +48,7 @@ const culturalPlaces = [
     city: "Puri",
     state: "Odisha",
     description: "A sacred Hindu temple dedicated to Lord Jagannath, famous for its annual Rath Yatra.",
-  thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Jagannath_Temple_Puri.jpg/200px-Jagannath_Temple_Puri.jpg",
+  thumbnail: "https://www.daiwikhotels.com/wp-content/uploads/2024/07/The-Rathyatra-2.jpeg",
     lat: 19.8135,
     lng: 85.8312,
     details: {
@@ -62,7 +62,7 @@ const culturalPlaces = [
     city: "Bhubaneswar",
     state: "Odisha",
     description: "Ancient rock-cut caves with Jain and Buddhist heritage, dating back to the 1st century BCE.",
-    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Udayagiri_Caves_Odisha.jpg/200px-Udayagiri_Caves_Odisha.jpg",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST7BLE1T13Z5_EkKmYWPk5L0zDlSGATrfohg&shttps://upload.wikimedia.org/wikipedia/commons/7/72/Khandagari_and_Udaygiri_featured_image.jpg",
     lat: 20.2331,
     lng: 85.7881,
     details: {
@@ -77,7 +77,7 @@ const culturalPlaces = [
     city: "Thiksey",
     state: "Ladakh",
     description: "A 12-story monastery complex, one of the largest in central Ladakh, known for its resemblance to the Potala Palace in Lhasa.",
-    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Thiksey_Monastery_Ladakh.jpg/200px-Thiksey_Monastery_Ladakh.jpg",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0fF7W7G-afdEG8zDn3Y37kouYE04Pyr0xOw&shttps://vargiskhan.com/log/wp-content/uploads/2022/12/thiksey-monastery-21.https://charzanholidays.com/wp-content/uploads/2024/12/Thiksey_Monastery-ladakh_charzan_holidays.jpghttps://discoverlehladakh.in/wp-content/uploads/2020/06/Thiksey-monastery-leh-ladakh-1088x530.jpghttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTALX0g-uRsyn5za1QpDJdHMTxASwJ3tPMwMQ&shttps://media.istockphoto.com/id/827904398/photo/thiksey-monastery.jpg?s=612x612&w=0&k=20&c=0g4kofG7N_04PHmtq8Raa4HBNYKhttps://mapacademy.io/wp-content/uploads/2024/01/thiksey-monastery-margin-image-5s.jpeghttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFXfVD4c268n0vjSzDDqvsYJuKWW_yoaQAWA&s-hGaE9P4Wq16ebWE=",
     lat: 34.0566,
     lng: 77.6364,
     details: {
@@ -91,7 +91,7 @@ const culturalPlaces = [
     city: "Pangong Tso",
     state: "Ladakh",
     description: "A high-altitude lake stretching from India to China, famous for its changing colors and scenic beauty.",
-    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Pangong_Lake_Ladakh.jpg/200px-Pangong_Lake_Ladakh.jpg",
+    thumbnail: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/00/2f/67/img-20180620-wa0007-largejpg.jpg?w=900&h=500&s=1",
     lat: 33.7294,
     lng: 78.9039,
     details: {
@@ -105,7 +105,7 @@ const culturalPlaces = [
     city: "Leh",
     state: "Ladakh",
     description: "A 17th-century former royal palace overlooking the town of Leh, built by King Sengge Namgyal.",
-    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Leh_Palace_Ladakh.jpg/200px-Leh_Palace_Ladakh.jpg",
+    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Leh_Palace_Ladakh.jpg/200px-Leh_Palace_Lahttps://s7ap1.scene7.com/is/image/incredibleindia/leh-palace-leh-ladakh-2-musthead-hero?qlt=82&ts=1726668053114dakh.jpg",
     lat: 34.1667,
     lng: 77.5833,
     details: {
@@ -120,7 +120,7 @@ const culturalPlaces = [
     city: "Tirupati",
     state: "Andhra Pradesh",
     description: "One of the most visited pilgrimage sites in the world, dedicated to Lord Venkateswara.",
-    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Tirumala_Temple_2017.jpg/200px-Tirumala_Temple_2017.jpg",
+    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Tirumala_Temple_2017.jpg/200px-Tirumala_Tehttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1S185C6gUp1q2TAt_RqFGEfRtcR4hR96__w&smple_2017.jpg",
     lat: 13.6839,
     lng: 79.3473,
     details: {
@@ -135,7 +135,7 @@ const culturalPlaces = [
     city: "Kohima",
     state: "Nagaland",
     description: "A memorial for soldiers of the Allied Forces who died in World War II.",
-    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Kohima_War_Cemetery_Nagaland.jpg/200px-Kohima_War_Cemetery_Nagaland.jpg",
+    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Kohima_War_Cemetery_Nahttps://s7ap1.scene7.com/is/image/incredibleindia/kohima-war-cemetery-kohima-nagaland-1-attr-hero?qlt=82&ts=1727012356754galand.jpg/200px-Kohima_War_Cemetery_Nagaland.jpg",
     lat: 25.6747,
     lng: 94.1100,
     details: {
@@ -149,7 +149,7 @@ const culturalPlaces = [
     city: "Viswema",
     state: "Nagaland",
     description: "A scenic valley on the border of Nagaland and Manipur, famous for its seasonal flowers.",
-    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Dzukou_Valley_Nagaland.jpg/200px-Dzukou_Valley_Nagaland.jpg",
+    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Dzukou_Valley_Nagaland.jpg/200px-Dzhttps://s7ap1.scene7.com/is/image/incredibleindia/dzukou-valley-kohima-nagaland-attr-hero-1?qlt=82&ts=1727012411648ukou_Valley_Nagaland.jpg",
     lat: 25.5833,
     lng: 93.8333,
     details: {
@@ -163,7 +163,7 @@ const culturalPlaces = [
     city: "Kisama",
     state: "Nagaland",
     description: "Venue for the annual Hornbill Festival, showcasing Naga culture.",
-    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Hornbill_Festival_Nagaland.jpg/200px-Hornbill_Festival_Nagaland.jpg",
+    thumbnail: "https://upload.https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfflij9NWFCLESPilie5IcSjGS89_itOQitg&swikimedia.org/wikipedia/commons/thumb/2/2e/Hornbill_Festival_Nagaland.jpg/200px-Hornbill_Festival_Nagaland.jpg",
     lat: 25.6500,
     lng: 94.1167,
     details: {
@@ -177,7 +177,7 @@ const culturalPlaces = [
     city: "Lepakshi",
     state: "Andhra Pradesh",
     description: "Famous for its hanging pillar and exquisite Vijayanagara architecture.",
-    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Lepakshi_temple.jpg/200px-Lepakshi_temple.jpg",
+    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Lepakshi_temple.jpg/200px-Lepakshi_templehttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX0Zg9eEVm5wTyAuI8rbCu_0iZIt8Eh5Q3TA&s.jpg",
     lat: 13.8041,
     lng: 77.6088,
     details: {
@@ -191,7 +191,7 @@ const culturalPlaces = [
     city: "Vijayawada",
     state: "Andhra Pradesh",
     description: "Ancient rock-cut caves dating back to the 4th-5th centuries, featuring a huge monolithic statue of Vishnu.",
-    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Undavalli_Caves_1.jpg/200px-Undavalli_Caves_1.jpg",
+    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Undavalli_Caves_1.jpg/200px-Undavalli_Cavhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR41iIcaKr-baqQdmku9ZRxI4Dt4IZxRbneQ&ses_1.jpg",
     lat: 16.4822,
     lng: 80.6042,
     details: {
