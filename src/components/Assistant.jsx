@@ -5,6 +5,7 @@ import ChatForm from "../ui/ChatForm";
 import ChatMessage from "../ui/ChatMessage";
 import chatBg from "../image/bg_chat_bot.jpg";
 import Header from "../ui/header";
+import { generateLlamaResponse } from "../utils/llamaAPI";
 
 export const Assistant = () => {
   const [chatHistory, setChatHistory] = useState([]);
@@ -19,26 +20,31 @@ export const Assistant = () => {
       ]);
     };
 
-    history = history.map(({ role, text }) => ({
-      role,
-      parts: [{ text }],
-    }));
+    // Convert history to simple prompt for AI
+    const conversationContext = history
+      .map(msg => `${msg.role === "user" ? "User" : "Assistant"}: ${msg.parts[0].text}`)
+      .join("\n");
+
+    const prompt = `You are a knowledgeable assistant specializing in Indian culture, heritage, and traditions. 
+Please provide helpful and accurate information about Indian cultural topics.
+
+Conversation so far:
+${conversationContext}
+
+Please respond as a helpful cultural assistant:`;
 
     try {
-      const response = await fetch(import.meta.env.VITE_API_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ contents: history }),
+      const response = await generateLlamaResponse({ 
+        prompt,
+        preferredProvider: "gemini"
       });
-      const data = await response.json();
-      if (!response.ok) throw new Error(data.error || "Something went wrong");
-
-      const apiResponseText = data.candidates[0].content.parts[0].text
+      
+      const cleanResponse = response
         .replace(/\*\*(.*?)\*\*/g, "$1")
         .trim();
-      updateHistory(apiResponseText);
+      updateHistory(cleanResponse);
     } catch (error) {
-      updateHistory(error.message, true);
+      updateHistory("I'm having trouble connecting to my knowledge base. Please try again later.", true);
     }
   };
 

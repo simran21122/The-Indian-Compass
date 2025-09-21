@@ -1,13 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Camera, Upload, Send, RefreshCw } from "lucide-react";
-import { generateGeminiResponse } from "../utils/geminiAPI";
+import { Camera, Upload, Send, RefreshCw, Brain, Zap } from "lucide-react";
+import { generateLlamaResponse } from "../utils/llamaAPI";
 
 const Scanner = () => {
   const [image, setImage] = useState(null);
   const [cameraOn, setCameraOn] = useState(false);
   const [scanned, setScanned] = useState(false);
   const [chat, setChat] = useState([
-    { role: "system", content: "📜 Scanned result will appear here." },
+    { role: "assistant", content: "👋 Upload or scan an image to begin cultural analysis." },
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -74,13 +74,29 @@ const Scanner = () => {
     setScanned(true);
     setLoading(true);
 
-    const prompt =
-      "Analyze this Indian cultural artifact and describe its history, origin, and significance.";
+    try {
+      const prompt =
+        "Analyze this Indian cultural artifact and describe its history, origin, and significance in detail.";
 
-    const geminiResponse = await generateGeminiResponse(prompt);
+      const llamaResponse = await generateLlamaResponse({
+        prompt,
+        image,
+        preferredProvider: "gemini",
+      });
 
-    setChat([{ role: "system", content: geminiResponse }]);
-    setLoading(false);
+      setChat((prev) => [
+        ...prev,
+        { role: "assistant", content: llamaResponse },
+      ]);
+    } catch (err) {
+      console.error("Scan failed:", err);
+      setChat((prev) => [
+        ...prev,
+        { role: "assistant", content: "⚠️ Sorry, something went wrong while analyzing the image." },
+      ]);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleSendMessage = async () => {
@@ -90,10 +106,35 @@ const Scanner = () => {
     setChat((prev) => [...prev, newMessage]);
     setLoading(true);
 
-    const geminiReply = await generateGeminiResponse(input);
-    setChat((prev) => [...prev, { role: "assistant", content: geminiReply }]);
-    setInput("");
-    setLoading(false);
+    // Gather last 4 messages for context
+    const contextMessages = chat.slice(-4).map(msg => {
+      if (msg.role === "user") return `User: ${msg.content}`;
+      if (msg.role === "assistant") return `AI: ${msg.content}`;
+      return "";
+    }).join("\n");
+
+    const followupPrompt = `You are an expert Indian culture assistant. ONLY answer the user's latest follow-up question, do NOT repeat previous answers. Reply in 1-2 short, direct sentences.\n\n${contextMessages}\nUser: ${input}\n\nReply as a helpful cultural expert, keep it concise.`;
+
+    try {
+      const llamaReply = await generateLlamaResponse({
+        prompt: followupPrompt,
+        preferredProvider: "gemini",
+      });
+
+      setChat((prev) => [
+        ...prev,
+        { role: "assistant", content: llamaReply },
+      ]);
+    } catch (err) {
+      console.error("Follow-up failed:", err);
+      setChat((prev) => [
+        ...prev,
+        { role: "assistant", content: "⚠️ Could not fetch a response. Please try again." },
+      ]);
+    } finally {
+      setInput("");
+      setLoading(false);
+    }
   };
 
   const handleKeyDown = (e) => {
@@ -107,11 +148,13 @@ const Scanner = () => {
     <div className="w-full max-w-5xl bg-white p-4 sm:p-6 rounded-2xl shadow-xl mx-auto text-center">
       {!scanned ? (
         <>
-          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">
-            Capture Cultural Item
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3 flex items-center justify-center gap-3">
+            <Brain className="w-6 h-6 sm:w-8 sm:h-8 text-purple-600" />
+            AI Cultural Scanner
+            <Zap className="w-5 h-5 sm:w-6 sm:h-6 text-orange-500" />
           </h1>
           <p className="text-gray-600 text-sm sm:text-base mb-6">
-           Scan or upload a photo of any Indian cultural artifact to instantly explore its history, origin, and cultural significance
+            Scan or upload a photo of any Indian cultural artifact to instantly explore its history, origin, and cultural significance using advanced AI models.
           </p>
 
           <div className="flex justify-center gap-6 mb-4">
@@ -181,9 +224,11 @@ const Scanner = () => {
               />
               <button
                 onClick={handleScan}
-                className="mt-4 py-2 px-6 sm:px-8 bg-orange-500 text-white rounded-lg shadow hover:bg-orange-600 transition active:scale-95 text-sm sm:text-base"
+                className="mt-4 py-2 px-6 sm:px-8 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700 transition active:scale-95 text-sm sm:text-base flex items-center gap-2"
+                disabled={loading}
               >
-                Scan Now
+                <Brain className="w-4 h-4" />
+                {loading ? "Analyzing..." : "Scan with AI Cultural Scanner"}
               </button>
             </div>
           )}
@@ -202,21 +247,57 @@ const Scanner = () => {
           </div>
 
           <div className="flex flex-col h-[40vh] md:h-[60vh]">
-            <h3 className="text-base sm:text-lg font-semibold text-gray-700 mb-2">
-              AI Details
+            <h3 className="text-base sm:text-lg font-semibold text-gray-700 mb-2 flex items-center gap-2">
+              <Brain className="w-5 h-5 text-purple-600" />
+              AI Cultural Analysis
             </h3>
 
-            <div className="flex-1 overflow-y-auto border border-gray-200 rounded-lg p-3 sm:p-4 bg-gray-50 space-y-3">
+            <div className="flex-1 overflow-y-auto p-2 space-y-3">
               {chat.map((msg, idx) => (
                 <div
                   key={idx}
-                  className={`px-3 py-2 rounded-2xl max-w-[80%] break-words text-sm sm:text-base ${
-                    msg.role === "user"
-                      ? "bg-blue-100 text-blue-800 self-end ml-auto text-right"
-                      : "bg-green-100 text-green-800 self-start mr-auto"
-                  }`}
+                  className={`w-full flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
                 >
-                  {msg.content}
+                  <div
+                    className={`rounded-2xl shadow-md w-full max-w-[95%] px-4 py-3 ${
+                      msg.role === "user"
+                        ? "bg-gradient-to-r from-blue-500 to-blue-400 text-white text-right"
+                        : "bg-gradient-to-r from-green-50 to-green-100 text-green-900 border border-green-200"
+                    }`}
+                  >
+                    {msg.role === "assistant" && /\*\*/.test(msg.content)
+                      ? msg.content.split(/\n\n/).map((section, i) => {
+                          const match = section.match(/^\*\*(.+?):\*\*\s*(.*)$/s);
+                          if (match) {
+                            const title = match[1].trim();
+                            const lower = title.toLowerCase();
+                            let boxClass = "mb-4 p-3 rounded-lg shadow-sm border-l-4 ";
+                            let titleClass = "font-extrabold font-black text-base sm:text-lg mb-1 ";
+                            let titleColor = "text-orange-700";
+                            if (lower.includes("cultural context")) {
+                              boxClass += "bg-blue-50 border-blue-400";
+                              titleColor = "text-blue-700";
+                            } else if (lower.includes("extra insights")) {
+                              boxClass += "bg-green-50 border-green-400";
+                              titleColor = "text-green-700";
+                            } else {
+                              boxClass += "bg-orange-50 border-orange-400";
+                            }
+                            return (
+                              <div key={i} className={boxClass}>
+                                <strong className={`${titleClass} ${titleColor}`} style={{ fontWeight: 900, WebkitFontSmoothing: "antialiased" }}>{title}</strong>
+                                <div className="text-gray-900 text-sm sm:text-base md:text-lg leading-relaxed pl-1" style={{ textIndent: '1em' }}>{match[2]}</div>
+                              </div>
+                            );
+                          }
+                          return (
+                            <div key={i} className="mb-4 p-3 rounded-lg bg-orange-50 border-l-4 border-orange-400 shadow-sm">
+                              <div className="text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed pl-1" style={{ textIndent: '1em' }}>{section}</div>
+                            </div>
+                          );
+                        })
+                      : msg.content}
+                  </div>
                 </div>
               ))}
               <div ref={chatEndRef} />

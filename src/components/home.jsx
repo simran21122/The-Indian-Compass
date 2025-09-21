@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Header from "../ui/Header";
+import Header from "../ui/header";
 import bgHome from "../image/bg_home_1.jpg";
 import mobileViewBg from "../image/bg_home_mobile.jpg";
 
