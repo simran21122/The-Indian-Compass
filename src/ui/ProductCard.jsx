@@ -109,9 +109,9 @@ function ProductCard({
 
           {/* Artist Info */}
           {artist && (
-            <div className="flex items-center space-x-2 mb-4 p-2 bg-gray-50 rounded-lg">
-              <Users className="w-3 h-3 text-gray-500" />
-              <span className="text-xs font-medium">{artist.name}</span>
+            <div className="flex items-center space-x-2 mb-4 p-2 bg-gray-200 rounded-lg">
+              <Users className="w-3 h-3 text-black" />
+              <span className="text-xs font-medium text-black">{artist.name}</span>
               {artist.verified && (
                 <Verified className="w-3 h-3 text-blue-500" />
               )}

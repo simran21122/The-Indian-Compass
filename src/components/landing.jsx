@@ -41,7 +41,7 @@ const Landing = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-screen bg-gradient-to-r from-yellow-100 via-orange-100 to-yellow-100 overflow-hidden">
+    <div className="relative w-full h-screen  overflow-hidden">
       {/* Background image with overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center filter brightness-75 mix-blend-multiply"
@@ -71,11 +71,11 @@ const Landing = () => {
           <span className="border-r-2 sm:border-r-4 border-white animate-caret ml-1">&nbsp;</span>
         </h1>
 
-        <h2 className="heritage-font text-black text-lg sm:text-xl md:text-3xl lg:text-4xl italic font-light tracking-wide opacity-0 animate-fade-in px-2">
+        <h2 className=" text-black text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold tracking-wide opacity-0 animate-fade-in px-2">
           Your Cultural and Spiritual Guide to India
         </h2>
 
-        <p className="max-w sm:max-w-4xl mt-4 sm:mt-6 text-[#471b02] text-sm sm:text-base md:text-lg lg:text-2xl leading-relaxed opacity-0 animate-fade-in-delayed px-4 py-2 bg-white/20 backdrop-blur-sm rounded-lg font-bold">
+        <p className="max-w sm:max-w-4xl mt-4 sm:mt-6 text-white text-sm sm:text-base md:text-lg lg:text-2xl leading-relaxed opacity-0 animate-fade-in-delayed px-4 py-2 bg-white/20 backdrop-blur-xl rounded-lg font-bold">
           India’s culture and heritage are a vibrant tapestry woven with traditions,
           festivals, art, music, and philosophy that span thousands of years. From the
           grandeur of ancient temples and monuments to the simplicity of folk art and

@@ -1,62 +1,12 @@
 [
   {
     "id": 1,
-    "name": "Rajesh Sharma",
+    "name": "Ramesh Sharma",
     "verified": true
   },
   {
     "id": 2,
-    "name": "Meera Devi",
+    "name": "Anita Menon",
     "verified": false
-  },
-  {
-    "id": 3,
-    "name": "Anita Das",
-    "verified": true
-  },
-  {
-    "id": 4,
-    "name": "Thangjam Ningshen",
-    "verified": false
-  },
-  {
-    "id": 5,
-    "name": "Arvind Yadav",
-    "verified": true
-  },
-  {
-    "id": 6,
-    "name": "Suman Rathore",
-    "verified": true
-  },
-  {
-    "id": 7,
-    "name": "Ravi Verma",
-    "verified": false
-  },
-  {
-    "id": 8,
-    "name": "Pratibha Mishra",
-    "verified": true
-  },
-  {
-    "id": 9,
-    "name": "Santosh Naik",
-    "verified": true
-  },
-  {
-    "id": 10,
-    "name": "Karthik Iyer",
-    "verified": true
-  },
-  {
-    "id": 11,
-    "name": "Sunita Kumari",
-    "verified": false
-  },
-  {
-    "id": 12,
-    "name": "Venkatesh Gowda",
-    "verified": true
   }
 ]

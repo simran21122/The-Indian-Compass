@@ -5,7 +5,7 @@ import { Search, Filter, Crown, Palette, Music, ChefHat, Calendar } from "lucide
 
 // UI Imports
 import Topbar from "../ui/header";
-import Trending from "../ui/Trending"; // ✅ Now imported
+import Trending from "../ui/Trending"; // Now imported
 import CategoryCard from "../ui/CategoryCard";
 import ContentCard from "../ui/ContentCard";
 import DiscoverSearchFilter from "../ui/DiscoverSearchFilter";
@@ -19,7 +19,7 @@ const categoryData = {
   monument: { icon: Crown, color: "from-yellow-500 to-orange-500", label: "Monuments" },
   art: { icon: Palette, color: "from-purple-500 to-pink-500", label: "Art & Crafts" },
   music: { icon: Music, color: "from-blue-500 to-indigo-500", label: "Music & Dance" },
-  food: { icon: ChefHat, color: "from-green-500 to-emerald-500", label: "Cuisine" },
+  cuisine: { icon: ChefHat, color: "from-green-500 to-emerald-500", label: "Cuisine" },
   festival: { icon: Calendar, color: "from-red-500 to-orange-500", label: "Festivals" },
 };
 
@@ -85,17 +85,17 @@ function Discover({ activePage, setActivePage }) {
   };
 
   return (
-    <div className="w-full min-h-screen bg-gray-50 bg-cover bg-center pt-5 pb-20">
+    <div className="w-full min-h-screen bg-[#ffc586] bg-center pt-5 ">
       {/* Topbar */}
       <Topbar active={activePage} onNavigate={setActivePage} />
 
       {/* Page Content */}
-      <div className="pt-20 px-4 bg-white/70 backdrop-blur-sm min-h-screen">
+      <div className="pt-20 px-4 bg-white/70 backdrop-blur-sm min-h-screen bg-[#ffc586]">
         {/* Trending Section */}
         <Trending />
 
         {/* Discover Cultural Heritage Section */}
-        <div className="mt-12 bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-6">
+        <div className="mt-12 rounded-2xl p-6 bg-[#ffc586]">
           <div className="container mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -196,7 +196,7 @@ function Discover({ activePage, setActivePage }) {
         {/* Additional Section */}
         <section className="mt-10 text-center">
           <h2 className="text-2xl font-semibold text-gray-700">More to Explore</h2>
-          <p className="text-gray-600 mt-2 pb-10">
+          <p className="text-gray-600 mt-2">
             Explore traditional food, art, music, festivals, and hidden travel gems.
           </p>
         </section>

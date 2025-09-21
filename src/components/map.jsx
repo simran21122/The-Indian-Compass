@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Topbar from "../ui/header";
-import bgMap from "../image/bg_map.jpg";
+import bgMap from "../image/bg_map1.jpg";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";

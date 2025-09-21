@@ -1,46 +1,57 @@
 [
   {
     "id": 1,
-    "title": "Khadi Mahotsav Celebrates Swadeshi Spirit in Varanasi",
-    "author": "Arjun Desai",
-    "location": "Varanasi, Uttar Pradesh",
-    "image": "./src/image/trending/khadiMhotsav.jpeg",
+    "title": "Floral Splendor of Onam",
+    "author": "Neha Reddy",
+    "location": "Kerala",
+    "image": "./src/image/trending/t1.png",
     "category": "Festival",
-    "views": 2500,
-    "likes": 900,
-    "time": "Today"
+    "views": 3200,
+    "likes": 1200,
+    "time": "5-15 September 2025"
   },
   {
     "id": 2,
-    "title": "Durga Puja Pandals in Kolkata Set to Dazzle with Unique Themes",
-    "author": "Priya Menon",
-    "location": "Kolkata, West Bengal",
-    "image": "./src/image/trending/durgapuja.webp",
-    "category": "Heritage & Art",
-    "views": 2100,
-    "likes": 780,
-    "time": "Today"
+    "title": "Ganesh Utsav: Joy and Devotion",
+    "author": "Arjun Desai",
+    "location": "Maharashtra",
+    "image": "./src/image/trending/t2.png",
+    "category": "Festival",
+    "views": 4100,
+    "likes": 1500,
+    "time": "26 August - 5 September 2025"
   },
   {
     "id": 3,
-    "title": "Sammohan 2025: Empowering Artists with Disabilities",
-    "author": "Tarun Iyer",
-    "location": "Thiruvananthapuram, Kerala",
-    "image": "./src/image/trending/sammohan.jpeg",
-    "category": "Culture / Inclusion",
-    "views": 1800,
-    "likes": 610,
-    "time": "Today"
+    "title": "Durga Puja: Dance of the Divine",
+    "author": "Priya Sharma",
+    "location": "West Bengal",
+    "image": "./src/image/trending/t3.png",
+    "category": "Festival",
+    "views": 5000,
+    "likes": 2000,
+    "time": "28 September - 2 October 2025"
   },
   {
     "id": 4,
-    "title": "Royal Dasara Festival of Kolhapur Now Major State Event",
-    "author": "Neha Reddy",
-    "location": "Kolhapur, Maharashtra",
-    "image": "https://source.unsplash.com/400x300/?dasara,kolhapur",
-    "category": "Festival & Heritage",
-    "views": 2200,
-    "likes": 850,
-    "time": "Today"
+    "title": "Colors of Ladakh Festival",
+    "author": "Rahul Mehta",
+    "location": "Ladakh",
+    "image": "./src/image/trending/t4.png",
+    "category": "Festival",
+    "views": 1800,
+    "likes": 800,
+    "time": "21-24 September 2025"
+  },
+  {
+    "id": 5,
+    "title": "Bathukamma: Flowers in Harmony",
+    "author": "Sanya Kapoor",
+    "location": "Telangana",
+    "image": "./src/image/trending/t5.png",
+    "category": "Festival",
+    "views": 2000,
+    "likes": 950,
+    "time": "21-30 September 2025"
   }
 ]

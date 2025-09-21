@@ -1,31 +1,216 @@
 [
   {
     "id": 1,
-    "title": "Taj Mahal",
-    "description": "A symbol of eternal love built in white marble.",
-    "category": "monument",
-    "state": "Uttar Pradesh",
-    "image_url": "./src/image/discoverPage/Tajmahal.jpg",
-    "historical_period": "Mughal Era",
-    "significance": "UNESCO World Heritage Site",
-    "tags": ["architecture", "history", "marble"]
+    "title": "Chhau Dance",
+    "description": "Martial dance form with elaborate masks from Eastern India.",
+    "category": "music",
+    "state": "Jharkhand",
+    "image_url": "./src/image/Discoverimg/d1.jpg",
+    "significance": "Blend of martial art and folk dance",
+    "tags": ["dance", "folk", "masks"]
   },
   {
     "id": 2,
-    "title": "Kathak Dance",
-    "description": "A classical dance form from Northern India.",
-    "category": "music",
-    "state": "Uttar Pradesh",
-    "image_url": "./src/image/discoverPage/kathak_dance.jpg",
-    "tags": ["dance", "art", "tradition"]
+    "title": "Bidriware Craft",
+    "description": "Metal handicraft from Bidar, Karnataka, using silver inlay work.",
+    "category": "art",
+    "state": "Karnataka",
+    "image_url": "./src/image/Discoverimg/d2.jpg",
+    "significance": "GI-tagged traditional craft",
+    "tags": ["metal", "handicraft", "heritage"]
   },
   {
     "id": 3,
-    "title": "Onam Festival",
-    "description": "Harvest festival of Kerala with boat races and floral designs.",
+    "title": "Hornbill Festival",
+    "description": "Festival showcasing Naga heritage with dance, food, and craft.",
     "category": "festival",
+    "state": "Nagaland",
+    "image_url": "./src/image/Discoverimg/d3.jpg",
+    "significance": "Showcase of Naga culture",
+    "tags": ["naga", "culture", "festival"]
+  },
+  {
+    "id": 4,
+    "title": "Warli Tribal Art",
+    "description": "Folk paintings using geometric patterns to depict daily life.",
+    "category": "art",
+    "state": "Maharashtra",
+    "image_url": "./src/image/Discoverimg/d4.jpg",
+    "significance": "Indigenous tribal expression",
+    "tags": ["folkart", "tribal", "painting"]
+  },
+  {
+    "id": 5,
+    "title": "Rani ki Vav",
+    "description": "An intricately constructed stepwell in Patan, Gujarat.",
+    "category": "monument",
+    "state": "Gujarat",
+    "image_url": "./src/image/Discoverimg/d5.jpg",
+    "historical_period": "11th Century",
+    "significance": "UNESCO World Heritage Stepwell",
+    "tags": ["stepwell", "architecture", "heritage"]
+  },
+  {
+    "id": 6,
+    "title": "Pattachitra Painting",
+    "description": "Cloth-based scroll painting from Odisha with mythological themes.",
+    "category": "art",
+    "state": "Odisha",
+    "image_url": "./src/image/Discoverimg/d6.jpg",
+    "significance": "Ancient art tradition",
+    "tags": ["scroll", "painting", "mythology"]
+  },
+  {
+    "id": 7,
+    "title": "Appam with Stew",
+    "description": "Fermented rice pancake paired with coconut-based stew from Kerala.",
+    "category": "cuisine",
     "state": "Kerala",
-    "image_url": "./src/image/discoverPage/onam_festival.jpg",
-    "tags": ["festival", "kerala", "celebration"]
+    "image_url": "./src/image/Discoverimg/d7.jpg",
+    "significance": "Staple breakfast dish",
+    "tags": ["cuisine", "kerala", "traditional"]
+  },
+  {
+    "id": 8,
+    "title": "Sanchi Stupa",
+    "description": "A Buddhist complex famous for its stupas and carvings.",
+    "category": "monument",
+    "state": "Madhya Pradesh",
+    "image_url": "./src/image/Discoverimg/d8.jpg",
+    "historical_period": "Maurya Dynasty",
+    "significance": "Buddhist pilgrimage site",
+    "tags": ["buddhism", "stonework", "unesco"]
+  },
+  {
+    "id": 9,
+    "title": "Litti Chokha",
+    "description": "Bihar’s rustic dish made with wheat dough, gram flour stuffing, and roasted on coal.",
+    "category": "cuisine",
+    "state": "Bihar",
+    "image_url": "./src/image/Discoverimg/d9.jpg",
+    "significance": "Traditional Bihari delicacy",
+    "tags": ["food", "rustic", "heritage"]
+  },
+  {
+    "id": 10,
+    "title": "Kalbelia Dance",
+    "description": "Traditional dance of the Kalbelia community in Rajasthan, performed to snake-charming tunes.",
+    "category": "music",
+    "state": "Rajasthan",
+    "image_url": "./src/image/Discoverimg/d10.jpg",
+    "significance": "Recognized as UNESCO Intangible Cultural Heritage",
+    "tags": ["dance", "folk", "rajasthan"]
+  },
+  {
+    "id": 11,
+    "title": "Pakhala Bhata",
+    "description": "Fermented rice water dish popular in Odisha, served with fried sides.",
+    "category": "cuisine",
+    "state": "Odisha",
+    "image_url": "./src/image/Discoverimg/d11.jpg",
+    "significance": "Cooling summer food",
+    "tags": ["rice", "fermented", "odisha"]
+  },
+  {
+    "id": 12,
+    "title": "Chausath Yogini Temple",
+    "description": "Circular temple dedicated to the 64 Yoginis, located in Odisha.",
+    "category": "monument",
+    "state": "Odisha",
+    "image_url": "./src/image/Discoverimg/d12.jpg",
+    "historical_period": "9th Century",
+    "significance": "Rare circular shrine",
+    "tags": ["temple", "yogini", "spirituality"]
+  },
+  {
+    "id": 13,
+    "title": "Handloom Ikat Weaving",
+    "description": "Intricate tie-dye weaving style practiced in Telangana and Odisha.",
+    "category": "art",
+    "state": "Telangana",
+    "image_url": "./src/image/Discoverimg/d13.jpg",
+    "significance": "Traditional textile craft",
+    "tags": ["textile", "ikat", "weaving"]
+  },
+  {
+    "id": 14,
+    "title": "Yakshagana",
+    "description": "Dance-drama from Karnataka featuring music, costume, and storytelling.",
+    "category": "music",
+    "state": "Karnataka",
+    "image_url": "./src/image/Discoverimg/d14.jpg",
+    "significance": "Theatrical storytelling tradition",
+    "tags": ["dance-drama", "folk", "costume"]
+  },
+  {
+    "id": 15,
+    "title": "Phagwah Festival",
+    "description": "Spring festival of colors celebrated in Bihar and Eastern UP.",
+    "category": "festival",
+    "state": "Bihar",
+    "image_url": "./src/image/Discoverimg/d15.jpg",
+    "significance": "Regional celebration of Holi",
+    "tags": ["colors", "spring", "folk"]
+  },
+  {
+    "id": 16,
+    "title": "Dhokra Craft",
+    "description": "Non-ferrous metal casting using the lost-wax technique.",
+    "category": "art",
+    "state": "Chhattisgarh",
+    "image_url": "./src/image/Discoverimg/d16.jpg",
+    "significance": "Ancient metal casting craft",
+    "tags": ["metal", "craft", "tribal"]
+  },
+  {
+    "id": 17,
+    "title": "Karaga Festival",
+    "description": "Ritualistic festival dedicated to Draupadi in Bangalore.",
+    "category": "festival",
+    "state": "Karnataka",
+    "image_url": "./src/image/Discoverimg/d17.jpg",
+    "significance": "Ancient ritualistic tradition",
+    "tags": ["ritual", "karnataka", "devotion"]
+  },
+  {
+    "id": 18,
+    "title": "Terracotta Temples of Bishnupur",
+    "description": "Cluster of temples in West Bengal famous for their terracotta carvings.",
+    "category": "monument",
+    "state": "West Bengal",
+    "image_url": "./src/image/Discoverimg/d18.jpg",
+    "historical_period": "Malla Dynasty",
+    "significance": "Unique terracotta temple architecture",
+    "tags": ["terracotta", "temple", "heritage"]
+  },
+  {
+    "id": 19,
+    "title": "Manipuri Raslila",
+    "description": "Classical dance from Manipur depicting Krishna's life.",
+    "category": "music",
+    "state": "Manipur",
+    "image_url": "./src/image/Discoverimg/d19.jpg",
+    "significance": "Sacred dance tradition",
+    "tags": ["dance", "manipur", "classical"]
+  },
+  {
+    "id": 20,
+    "title": "Chapchar Kut",
+    "description": "Harvest festival of Mizoram with dance and music.",
+    "category": "festival",
+    "state": "Mizoram",
+    "image_url": "./src/image/Discoverimg/d20.jpg",
+    "significance": "Celebration of spring",
+    "tags": ["festival", "mizoram", "dance"]
+  },
+  {
+    "id": 21,
+    "title": "Mysore Silk Saree",
+    "description": "Luxurious silk saree from Mysore, Karnataka, known for its gold zari work.",
+    "category": "art",
+    "state": "Karnataka",
+    "image_url": "./src/image/Discoverimg/d21.jpg",
+    "significance": "Famous traditional textile craft",
+    "tags": ["textile", "silk", "heritage"]
   }
 ]

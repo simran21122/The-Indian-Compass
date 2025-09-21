@@ -9,8 +9,9 @@ import {
   ShoppingBag,
   User,
 } from "lucide-react";
-import logo from "../image/logo.png"; // update if needed
+import logo from "../image/logo.png"; // logo image path
 
+// Navigation items
 const navItems = [
   { name: "Home", icon: <Home className="w-6 h-6" />, path: "/home" },
   { name: "Map", icon: <Map className="w-6 h-6" />, path: "/map" },
@@ -28,7 +29,7 @@ const Header = ({ onProfileClick }) => {
     <>
       {/* Desktop Header */}
       <header className="hidden md:flex fixed top-0 left-0 w-full z-50">
-        <div className="w-full bg-white/10 backdrop-blur-sm py-4 shadow-lg">
+        <div className="w-full h-13 bg-white/10 backdrop-blur-lg py-4 shadow-lg">
           <motion.div
             className="w-full flex items-center justify-between pl-20 pr-20"
             initial={{ opacity: 0, y: -20 }}
@@ -83,7 +84,7 @@ const Header = ({ onProfileClick }) => {
         </div>
       </header>
 
-      {/* Mobile Header (from 1st header style) */}
+      {/* Mobile Header */}
       <header className="md:hidden fixed top-0 left-0 w-full z-50 h-15 px-[10px] bg-white/20 backdrop-blur-md shadow-lg flex items-end">
         <motion.div
           className="flex w-full items-end justify-between"
