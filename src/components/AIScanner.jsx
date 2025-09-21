@@ -62,7 +62,7 @@ const AIScanner = () => {
 
         {/* Scanner Section */}
         <motion.div
-          className="w-full max-w-md sm:max-w-2xl lg:max-w-3xl flex justify-center"
+          className="w-full max-w-md sm:max-w-2xl lg:max-w-3xl flex justify-center pb-20 md:pb-0"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.8, duration: 0.7 }}

@@ -80,7 +80,7 @@ const Map = () => {
 
   return (
     <motion.div
-      className="min-h-screen flex flex-col pt-5 pl-2 pr-2"
+      className=" min-h-screen flex flex-col pt-5 pl-2 pr-2"
       style={{
         backgroundImage: `url(${bgMap})`,
         backgroundSize: "cover",
@@ -97,7 +97,7 @@ const Map = () => {
 
       {/* Main Section */}
       <motion.div
-        className="flex-1 container mx-auto px-4 md:px-8 pt-20 py-8"
+        className=" flex-1 container mx-auto px-4 md:px-8 pt-20 py-8 pb-20 md:pb-0"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2 }}

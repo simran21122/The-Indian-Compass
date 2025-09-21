@@ -7,6 +7,9 @@ import mobileViewBg from "../image/bg_home_mobile.jpg";
 import Main from "../section/main";
 import SectionMap from "../section/sectionmap";
 import SectionAIScanner from "../section/AIScannerSection";
+import DiscoverSection from "../section/discoverSection";
+import MarketSection from "../section/marketSection";
+import ContactUs from "../section/contactUs";
 
 import Assitant from "../components/Assistant";
 
@@ -33,6 +36,9 @@ function Home() {
       <SectionMap bgImage={bgImage}/>
       <SectionAIScanner bgImage={bgImage}/>
       <Assitant bgImage={bgImage}/>
+      <DiscoverSection bgImage={bgImage}/>
+      <MarketSection bgImage={bgImage}/>
+      <ContactUs bgImage={bgImage}/>
     </div>
   );
 }

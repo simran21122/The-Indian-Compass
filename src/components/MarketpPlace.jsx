@@ -110,7 +110,7 @@ function Marketplace() {
         <Header />
 
         {/* Added pt-24 to push content below fixed header */}
-        <div className="container mx-auto px-4 pt-24 pb-12">
+        <div className="container mx-auto px-4 pt-24 pb-20">
           {/* Hero Section */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
