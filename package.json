@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "firebase": "^12.2.1",
     "framer-motion": "^12.23.12",
     "leaflet": "^1.9.4",

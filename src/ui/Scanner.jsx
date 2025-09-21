@@ -1,23 +1,22 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Camera, Upload, Send } from "lucide-react";
+import { Camera, Upload, Send, RefreshCw } from "lucide-react";
+import { generateGeminiResponse } from "../utils/geminiAPI";
 
 const Scanner = () => {
   const [image, setImage] = useState(null);
   const [cameraOn, setCameraOn] = useState(false);
   const [scanned, setScanned] = useState(false);
   const [chat, setChat] = useState([
-    {
-      role: "system",
-      content: "📜 Scanned result: This is the detected text or object from AI.",
-    },
+    { role: "system", content: "📜 Scanned result will appear here." },
   ]);
   const [input, setInput] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [facingMode, setFacingMode] = useState("environment"); // environment = back, user = front
 
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
   const chatEndRef = useRef(null);
 
-  // Auto-scroll to bottom when new message arrives
   useEffect(() => {
     if (chatEndRef.current) {
       chatEndRef.current.scrollIntoView({ behavior: "smooth" });
@@ -27,7 +26,9 @@ const Scanner = () => {
   const startCamera = async () => {
     setCameraOn(true);
     try {
-      const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+      const stream = await navigator.mediaDevices.getUserMedia({
+        video: { facingMode },
+      });
       videoRef.current.srcObject = stream;
       videoRef.current.play();
     } catch (err) {
@@ -35,18 +36,28 @@ const Scanner = () => {
     }
   };
 
+  const stopCamera = () => {
+    const stream = videoRef.current?.srcObject;
+    if (stream) stream.getTracks().forEach((track) => track.stop());
+    setCameraOn(false);
+  };
+
+  const switchCamera = async () => {
+    stopCamera();
+    setFacingMode((prev) => (prev === "environment" ? "user" : "environment"));
+  };
+
+  useEffect(() => {
+    if (cameraOn) startCamera();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [facingMode]);
+
   const capturePhoto = () => {
     const context = canvasRef.current.getContext("2d");
     context.drawImage(videoRef.current, 0, 0, 400, 300);
     const dataUrl = canvasRef.current.toDataURL("image/png");
     setImage(dataUrl);
     stopCamera();
-  };
-
-  const stopCamera = () => {
-    const stream = videoRef.current?.srcObject;
-    if (stream) stream.getTracks().forEach((track) => track.stop());
-    setCameraOn(false);
   };
 
   const handleFileUpload = (e) => {
@@ -58,25 +69,31 @@ const Scanner = () => {
     }
   };
 
-  const handleScan = () => {
+  const handleScan = async () => {
     if (!image) return alert("Please upload or capture an image first!");
     setScanned(true);
+    setLoading(true);
+
+    const prompt =
+      "Analyze this Indian cultural artifact and describe its history, origin, and significance.";
+
+    const geminiResponse = await generateGeminiResponse(prompt);
+
+    setChat([{ role: "system", content: geminiResponse }]);
+    setLoading(false);
   };
 
-  const handleSendMessage = () => {
-    if (!input.trim()) return;
+  const handleSendMessage = async () => {
+    if (!input.trim() || loading) return;
+
     const newMessage = { role: "user", content: input };
     setChat((prev) => [...prev, newMessage]);
+    setLoading(true);
 
-    // Fake AI reply
-    setTimeout(() => {
-      setChat((prev) => [
-        ...prev,
-        { role: "assistant", content: `🤖 AI reply to: "${input}"` },
-      ]);
-    }, 600);
-
+    const geminiReply = await generateGeminiResponse(input);
+    setChat((prev) => [...prev, { role: "assistant", content: geminiReply }]);
     setInput("");
+    setLoading(false);
   };
 
   const handleKeyDown = (e) => {
@@ -95,11 +112,9 @@ const Scanner = () => {
           </h1>
           <p className="text-gray-600 text-sm sm:text-base mb-6">
             Upload a picture or use your camera to scan any cultural artifact,
-            painting, monument, or document. Our AI will help you identify and
-            provide details about it.
+            painting, monument, or document.
           </p>
 
-          {/* Camera + Upload Options */}
           <div className="flex justify-center gap-6 mb-4">
             {!cameraOn && (
               <div className="flex flex-col items-center gap-2">
@@ -127,15 +142,23 @@ const Scanner = () => {
             </div>
           </div>
 
-          {/* Camera Preview */}
           {cameraOn && (
-            <div>
+            <div className="relative">
               <video
                 ref={videoRef}
                 width="280"
                 height="200"
                 className="rounded-lg border border-gray-300 mx-auto"
               ></video>
+
+              <button
+                onClick={switchCamera}
+                className="absolute top-2 right-2 w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 shadow hover:bg-gray-300 transition active:scale-95"
+                title="Switch Camera"
+              >
+                <RefreshCw className="w-5 h-5" />
+              </button>
+
               <button
                 onClick={capturePhoto}
                 className="mt-4 py-2 px-4 sm:px-6 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition active:scale-95 text-sm sm:text-base"
@@ -145,14 +168,8 @@ const Scanner = () => {
             </div>
           )}
 
-          <canvas
-            ref={canvasRef}
-            width="400"
-            height="300"
-            className="hidden"
-          ></canvas>
+          <canvas ref={canvasRef} width="400" height="300" className="hidden"></canvas>
 
-          {/* Image Preview */}
           {image && (
             <div className="mt-6">
               <h3 className="text-base sm:text-lg font-semibold text-gray-700 mb-2">
@@ -173,9 +190,7 @@ const Scanner = () => {
           )}
         </>
       ) : (
-        // Split layout after scan
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-          {/* Left Side - Image */}
           <div className="flex flex-col items-center justify-center h-[40vh] md:h-[60vh]">
             <h3 className="text-base sm:text-lg font-semibold text-gray-700 mb-2">
               Scanned Image
@@ -187,13 +202,11 @@ const Scanner = () => {
             />
           </div>
 
-          {/* Right Side - Details + Chat */}
           <div className="flex flex-col h-[40vh] md:h-[60vh]">
             <h3 className="text-base sm:text-lg font-semibold text-gray-700 mb-2">
               AI Details
             </h3>
 
-            {/* Chat Box */}
             <div className="flex-1 overflow-y-auto border border-gray-200 rounded-lg p-3 sm:p-4 bg-gray-50 space-y-3">
               {chat.map((msg, idx) => (
                 <div
@@ -210,7 +223,6 @@ const Scanner = () => {
               <div ref={chatEndRef} />
             </div>
 
-            {/* Input Box */}
             <div className="mt-2 sm:mt-3 flex items-center gap-2">
               <input
                 type="text"
@@ -219,10 +231,12 @@ const Scanner = () => {
                 onKeyDown={handleKeyDown}
                 placeholder="Ask something..."
                 className="flex-1 border rounded-full px-3 sm:px-4 py-2 text-gray-600 text-sm focus:outline-none"
+                disabled={loading}
               />
               <button
                 onClick={handleSendMessage}
-                className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-orange-500 text-white hover:bg-orange-600 active:scale-95"
+                className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-orange-500 text-white hover:bg-orange-600 active:scale-95 disabled:bg-gray-300"
+                disabled={loading}
               >
                 <Send className="w-4 h-4 sm:w-5 sm:h-5" />
               </button>

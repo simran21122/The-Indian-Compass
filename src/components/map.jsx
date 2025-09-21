@@ -18,7 +18,12 @@ L.Icon.Default.mergeOptions({
 });
 
 // Filters
-const states = ["All States", "Rajasthan", "Gujarat", "Kerala", "Karnataka"];
+const states = [
+  "All States", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat",
+  "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur",
+  "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu",
+  "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal"
+];
 const districts = ["All Districts", "Jaipur", "Ahmedabad", "Kochi", "Mysuru"];
 const cities = ["All Cities", "Udaipur", "Surat", "Trivandrum", "Bangalore"];
 const types = ["All Types", "Festivals", "Cultural Places", "Temples", "Markets"];
