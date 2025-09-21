@@ -115,91 +115,92 @@ const culturalPlaces = [
     }
   },
   // Andhra Pradesh
-  {
-    name: "Tirumala Venkateswara Temple",
-    city: "Tirupati",
-    state: "Andhra Pradesh",
-    description: "One of the most visited pilgrimage sites in the world, dedicated to Lord Venkateswara.",
-    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Tirumala_Temple_2017.jpg/200px-Tirumala_Tehttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1S185C6gUp1q2TAt_RqFGEfRtcR4hR96__w&smple_2017.jpg",
-    lat: 13.6839,
-    lng: 79.3473,
-    details: {
-      history: "The temple has origins dating back to ancient times and is mentioned in many Hindu scriptures.",
-      significance: "It attracts millions of devotees annually and is renowned for its spiritual atmosphere.",
-      festivals: "Brahmotsavam is the grandest festival celebrated here."
-    }
-  },
-  // Nagaland
-  {
-    name: "Kohima War Cemetery",
-    city: "Kohima",
-    state: "Nagaland",
-    description: "A memorial for soldiers of the Allied Forces who died in World War II.",
-    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Kohima_War_Cemetery_Nahttps://s7ap1.scene7.com/is/image/incredibleindia/kohima-war-cemetery-kohima-nagaland-1-attr-hero?qlt=82&ts=1727012356754galand.jpg/200px-Kohima_War_Cemetery_Nagaland.jpg",
-    lat: 25.6747,
-    lng: 94.1100,
-    details: {
-      history: "Built in memory of the Battle of Kohima (1944).",
-      significance: "A symbol of peace and reconciliation.",
-      festivals: "Annual memorial services."
-    }
-  },
-  {
-    name: "Dzukou Valley",
-    city: "Viswema",
-    state: "Nagaland",
-    description: "A scenic valley on the border of Nagaland and Manipur, famous for its seasonal flowers.",
-    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Dzukou_Valley_Nagaland.jpg/200px-Dzhttps://s7ap1.scene7.com/is/image/incredibleindia/dzukou-valley-kohima-nagaland-attr-hero-1?qlt=82&ts=1727012411648ukou_Valley_Nagaland.jpg",
-    lat: 25.5833,
-    lng: 93.8333,
-    details: {
-      history: "A popular trekking destination and site of natural beauty.",
-      significance: "Known for the rare Dzukou lily.",
-      festivals: "Hornbill Festival treks."
-    }
-  },
-  {
-    name: "Hornbill Festival Grounds",
-    city: "Kisama",
-    state: "Nagaland",
-    description: "Venue for the annual Hornbill Festival, showcasing Naga culture.",
-    thumbnail: "https://upload.https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfflij9NWFCLESPilie5IcSjGS89_itOQitg&swikimedia.org/wikipedia/commons/thumb/2/2e/Hornbill_Festival_Nagaland.jpg/200px-Hornbill_Festival_Nagaland.jpg",
-    lat: 25.6500,
-    lng: 94.1167,
-    details: {
-      history: "Festival started in 2000 to promote inter-tribal interaction.",
-      significance: "A major cultural event in Northeast India.",
-      festivals: "Hornbill Festival (December)."
-    }
-  },
-  {
-    name: "Lepakshi Temple",
-    city: "Lepakshi",
-    state: "Andhra Pradesh",
-    description: "Famous for its hanging pillar and exquisite Vijayanagara architecture.",
-    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Lepakshi_temple.jpg/200px-Lepakshi_templehttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX0Zg9eEVm5wTyAuI8rbCu_0iZIt8Eh5Q3TA&s.jpg",
-    lat: 13.8041,
-    lng: 77.6088,
-    details: {
-      history: "Built in the 16th century by the Vijayanagara kings.",
-      significance: "Known for its intricate carvings and the legendary hanging pillar.",
-      festivals: "Veerabhadra Swamy festival is celebrated with devotion."
-    }
-  },
-  {
-    name: "Undavalli Caves",
-    city: "Vijayawada",
-    state: "Andhra Pradesh",
-    description: "Ancient rock-cut caves dating back to the 4th-5th centuries, featuring a huge monolithic statue of Vishnu.",
-    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Undavalli_Caves_1.jpg/200px-Undavalli_Cavhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR41iIcaKr-baqQdmku9ZRxI4Dt4IZxRbneQ&ses_1.jpg",
-    lat: 16.4822,
-    lng: 80.6042,
-    details: {
-      history: "The caves were carved out of solid sandstone on a hillside.",
-      significance: "A fine example of Indian rock-cut architecture.",
-      festivals: "Local festivals and rituals are held here."
-    }
-  },
+ {
+  name: "Tirumala Venkateswara Temple",
+  city: "Tirupati",
+  state: "Andhra Pradesh",
+  description: "One of the most visited pilgrimage sites in the world, dedicated to Lord Venkateswara.",
+  thumbnail: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Tirumala_Gopurams.JPG",  // Gopurams of Tirumala Temple :contentReference[oaicite:0]{index=0}
+  lat: 13.6839,
+  lng: 79.3473,
+  details: {
+    history: "The temple has origins dating back to ancient times and is mentioned in many Hindu scriptures.",
+    significance: "It attracts millions of devotees annually and is renowned for its spiritual atmosphere.",
+    festivals: "Brahmotsavam is the grandest festival celebrated here."
+  }
+},
+{
+  name: "Kohima War Cemetery",
+  city: "Kohima",
+  state: "Nagaland",
+  description: "A memorial for soldiers of the Allied Forces who died in World War II.",
+  thumbnail: "https://upload.wikimedia.org/wikipedia/commons/9/98/Kohima_War_Cemetery_%282024%29.jpg", // Recent image from Commons :contentReference[oaicite:1]{index=1}
+  lat: 25.6747,
+  lng: 94.1100,
+  details: {
+    history: "Built in memory of the Battle of Kohima (1944).",
+    significance: "A symbol of peace and reconciliation.",
+    festivals: "Annual memorial services."
+  }
+},
+// For the other locations where I didn't find a good clear Commons image in quick search:
+{
+  name: "Dzukou Valley",
+  city: "Viswema",
+  state: "Nagaland",
+  description: "A scenic valley on the border of Nagaland and Manipur, famous for its seasonal flowers.",
+  thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Dzukou_Valley_Nagaland.jpg/200px-Dzukou_Valley_Nagaland.jpg",  // you had this; if better exists, replace
+  lat: 25.5833,
+  lng: 93.8333,
+  details: {
+    history: "A popular trekking destination and site of natural beauty.",
+    significance: "Known for the rare Dzukou lily.",
+    festivals: "Hornbill Festival treks."
+  }
+},
+{
+  name: "Hornbill Festival Grounds",
+  city: "Kisama",
+  state: "Nagaland",
+  description: "Venue for the annual Hornbill Festival, showcasing Naga culture.",
+  thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Hornbill_Festival_Nagaland.jpg/200px-Hornbill_Festival_Nagaland.jpg",  
+  lat: 25.6500,
+  lng: 94.1167,
+  details: {
+    history: "Festival started in 2000 to promote inter-tribal interaction.",
+    significance: "A major cultural event in Northeast India.",
+    festivals: "Hornbill Festival (December)."
+  }
+},
+{
+  name: "Lepakshi Temple",
+  city: "Lepakshi",
+  state: "Andhra Pradesh",
+  description: "Famous for its hanging pillar and exquisite Vijayanagara architecture.",
+  thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Lepakshi_temple.jpg/200px-Lepakshi_temple.jpg",  
+  lat: 13.8041,
+  lng: 77.6088,
+  details: {
+    history: "Built in the 16th century by the Vijayanagara kings.",
+    significance: "Known for its intricate carvings and the legendary hanging pillar.",
+    festivals: "Veerabhadra Swamy festival is celebrated with devotion."
+  }
+},
+{
+  name: "Undavalli Caves",
+  city: "Vijayawada",
+  state: "Andhra Pradesh",
+  description: "Ancient rock-cut caves dating back to the 4th-5th centuries, featuring a huge monolithic statue of Vishnu.",
+  thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Undavalli_Caves_1.jpg/200px-Undavalli_Caves_1.jpg",  
+  lat: 16.4822,
+  lng: 80.6042,
+  details: {
+    history: "The caves were carved out of solid sandstone on a hillside.",
+    significance: "A fine example of Indian rock-cut architecture.",
+    festivals: "Local festivals and rituals are held here."
+  }
+}
+,
   // Arunachal Pradesh
   {
     name: "Tawang Monastery",
