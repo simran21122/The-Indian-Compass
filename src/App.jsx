@@ -3,21 +3,21 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Landing from "./components/landing";
 import Login from "./components/login";
 import Signup from "./components/Signup";
-import Home from "./components/Home"; // Capitalized
-import Discover from "./components/Discover"; // Importing Discover
+import Home from "./components/Home";
+import Discover from "./components/Discover";
 import AIScanner from "./components/Aiscanner"; 
 import MarketPlace from "./components/MarketpPlace"; 
 import Map from "./components/map";
 import About from "./components/About";
 import Profile from "./components/Profile";
 import Assistant from "./components/Assistant";
+import ProductDetail from "./ui/ProductDetail";
 
 function App() {
   return (
     <Router>
       <main className="font-body text-white relative overflow-hidden">
         <Routes>
-          {/* Landing page will only render at "/" */}
           <Route path="/" element={<Landing />} />
           <Route path="/login" element={<Login />} />
           <Route path="/Signup" element={<Signup />} />
@@ -29,6 +29,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/assistant" element={<Assistant />} />
+
+          {/* ✅ Add this line */}
+          <Route path="/product/:id" element={<ProductDetail />} />
         </Routes>
       </main>
     </Router>
