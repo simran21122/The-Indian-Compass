@@ -1,31 +1,47 @@
 [
   {
     "id": 1,
-    "title": "Taj Mahal",
-    "description": "A symbol of eternal love built in white marble.",
+    "title": "Mehrangarh Fort",
+    "description": "A massive fort in Jodhpur, Rajasthan, showcasing intricate architecture and panoramic views of the Blue City.",
     "category": "monument",
-    "state": "Uttar Pradesh",
-    "image_url": "./src/image/discoverPage/Tajmahal.jpg",
-    "historical_period": "Mughal Era",
-    "significance": "UNESCO World Heritage Site",
-    "tags": ["architecture", "history", "marble"]
+    "state": "Rajasthan",
+    "image_url": "./src/image/discoverPage/dp1.jpg",
+    "tags": ["fort", "history", "architecture"]
   },
   {
-    "id": 2,
-    "title": "Kathak Dance",
-    "description": "A classical dance form from Northern India.",
-    "category": "music",
-    "state": "Uttar Pradesh",
-    "image_url": "./src/image/discoverPage/kathak_dance.jpg",
-    "tags": ["dance", "art", "tradition"]
+    "id": 5,
+    "title": "Rath Yatra",
+    "description": "Annual chariot festival of Lord Jagannath in Puri, Odisha, attracting millions of devotees.",
+    "category": "festival",
+    "state": "Odisha",
+    "image_url": "./src/image/discoverPage/pd5.jpg",
+    "tags": ["festival", "religion", "celebration", "tradition"]
   },
   {
     "id": 3,
-    "title": "Onam Festival",
-    "description": "Harvest festival of Kerala with boat races and floral designs.",
+    "title": "Pushkar Camel Fair",
+    "description": "An annual livestock fair in Pushkar, Rajasthan, featuring camel trading, folk performances, and vibrant cultural festivities.",
     "category": "festival",
-    "state": "Kerala",
-    "image_url": "./src/image/discoverPage/onam_festival.jpg",
-    "tags": ["festival", "kerala", "celebration"]
+    "state": "Rajasthan",
+    "image_url": "./src/image/discoverPage/pd3.jpg",
+    "tags": ["festival", "rajasthan", "culture", "tradition"]
+  },
+  {
+    "id": 4,
+    "title": "Konark Sun Temple",
+    "description": "A 13th-century temple in Odisha shaped like a colossal chariot, dedicated to the Sun God.",
+    "category": "monument",
+    "state": "Odisha",
+    "image_url": "./src/image/discoverPage/pd4.jpg",
+    "tags": ["temple", "architecture", "heritage"]
+  },
+ {
+    "id": 2,
+    "title": "Bihu Festival",
+    "description": "Traditional Assamese festival celebrating harvest with music, dance, and community gatherings.",
+    "category": "festival",
+    "state": "Assam",
+    "image_url": "./src/image/discoverPage/dp2.jpg",
+    "tags": ["festival", "assam", "dance", "music", "tradition"]
   }
 ]
