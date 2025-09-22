@@ -7,7 +7,7 @@ import {
   signInWithPopup,
 } from "../firebaseConfig";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import loginbg2 from "../image/loginbg2.png"; // Default for larger screens
+import loginbg2 from "../image/LOGINBG2.png"; // Default for larger screens
 import loginbgMobile from "../image/loginbgMobileLogin.png"; // Background for mobile
 
 const Login = () => {
