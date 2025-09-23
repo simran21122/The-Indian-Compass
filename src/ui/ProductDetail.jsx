@@ -1,144 +1,156 @@
-import React from "react";
-import { useParams, useNavigate, useLocation } from "react-router-dom";
-import { Heart, ShoppingCart, IndianRupee } from "lucide-react";
+import React, { useState } from "react";
+import { useParams } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+import { ShoppingCart, Heart, Truck, Shield } from "lucide-react";
+import productDetails from "../data/productDetails.json"; // adjust path
 
-// Import products and artists data
-import productsData from "../data/products.json";
-import artistsData from "../data/artists.json";
-
-// Import all product images manually
-import p1 from "../image/Productimg/p1.png";
-import p2 from "../image/productimg/p2.png";
-import p3 from "../image/productimg/p3.jpg";
-import p4 from "../image/productimg/p4.png";
-import p5 from "../image/productimg/p5.jpg";
-import p6 from "../image/productimg/p6.png";
-import p7 from "../image/productimg/p7.jpg";
-import p8 from "../image/productimg/p8.jpg";
-import p9 from "../image/productimg/p9.jpg";
-import p10 from "../image/productimg/p10.jpg";
-import p11 from "../image/productimg/p11.jpg";
-import p12 from "../image/productimg/p12.png";
-
-// Map product id → image
-const productImages = {
-  1: p1,
-  2: p2,
-  3: p3,
-  4: p4,
-  5: p5,
-  6: p6,
-  7: p7,
-  8: p8,
-  9: p9,
-  10: p10,
-  11: p11,
-  12: p12,
-};
-
-function ProductDetail({ toggleWishlist, toggleCart }) {
+const ProductDetail = () => {
   const { id } = useParams();
-  const navigate = useNavigate();
-  const location = useLocation();
+  const product = productDetails.find((p) => p.id === parseInt(id));
 
-  // Get product either from state (fast) or fallback to JSON (direct access)
-  const stateProduct = location.state?.product;
-  const product =
-    stateProduct || productsData.find((p) => p.id === parseInt(id));
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+  const images = product ? product.images : [];
 
-  const artist = artistsData.find((a) => a.id === product?.artist_id);
+  if (!product)
+    return (
+      <p className="text-center mt-20 text-xl text-red-500">Product not found!</p>
+    );
 
-  const wishlist = location.state?.wishlist || new Set();
-  const cart = location.state?.cart || new Set();
-
-  if (!product) {
-    return <div className="p-10 text-center">Product not found</div>;
-  }
-
-  const isInWishlist = wishlist.has(product.id);
-  const isInCart = cart.has(product.id);
+  const handlePrev = () => {
+    setSelectedImageIndex((prev) =>
+      prev === 0 ? images.length - 1 : prev - 1
+    );
+  };
+  const handleNext = () => {
+    setSelectedImageIndex((prev) =>
+      prev === images.length - 1 ? 0 : prev + 1
+    );
+  };
 
   return (
-    <div className="min-h-screen bg-[#f4e1c1] p-6 md:p-12">
-      <button
-        onClick={() => navigate(-1)}
-        className="mb-6 px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
-      >
-        Back
-      </button>
+    <div className="max-w-6xl mx-auto p-6 grid md:grid-cols-2 gap-12">
+      {/* Left: Image Carousel */}
+<div className="relative flex flex-col items-center">
+  <AnimatePresence mode="wait">
+    <motion.img
+      key={images[selectedImageIndex]}
+      src={images[selectedImageIndex]}
+      alt={product.name}
+      className="w-full h-[550px] md:h-[600px] object-cover rounded-3xl shadow-2xl"
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.95 }}
+      transition={{ duration: 0.5 }}
+    />
+  </AnimatePresence>
 
-      <div className="flex flex-col md:flex-row gap-8">
-        {/* Left: Image */}
-        <div className="md:w-1/2">
-          <img
-            src={productImages[product.id]}
-            alt={product.name}
-            className="w-full h-auto rounded-lg shadow-lg"
-          />
+  {/* Carousel controls */}
+  {images.length > 1 && (
+    <>
+      <button
+        onClick={handlePrev}
+        className="absolute left-3 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-100 transition"
+      >
+        ◀
+      </button>
+      <button
+        onClick={handleNext}
+        className="absolute right-3 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-100 transition"
+      >
+        ▶
+      </button>
+    </>
+  )}
+
+  {/* Thumbnails */}
+  <div className="flex gap-4 mt-6 overflow-x-auto">
+    {images.map((img, idx) => (
+      <motion.img
+        key={idx}
+        src={img}
+        alt={`Thumbnail ${idx}`}
+        className={`w-24 h-24 md:w-28 md:h-28 object-cover rounded-xl cursor-pointer border-2 ${
+          idx === selectedImageIndex
+            ? "border-blue-500 scale-110"
+            : "border-transparent"
+        }`}
+        onClick={() => setSelectedImageIndex(idx)}
+        whileHover={{ scale: 1.1 }}
+      />
+    ))}
+  </div>
+</div>
+
+
+      {/* Right: Product Info */}
+      <motion.div
+        className="space-y-4 relative"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <h1 className="text-4xl font-extrabold text-orange-600">{product.name}</h1>
+        <p className="text-lg text-gray-600">{product.description}</p>
+        <p className="text-3xl font-bold text-blue-600">
+          {product.currency} {product.price.toLocaleString()}
+        </p>
+
+        <div className="flex flex-wrap gap-4 text-sm text-gray-500 mt-2">
+          <p>Origin: <span className="font-medium text-gray-700">{product.origin}</span></p>
+          <p>Dimensions: <span className="font-medium text-gray-700">{product.dimensions}</span></p>
+          <p>Weight: <span className="font-medium text-gray-700">{product.weight}</span></p>
         </div>
 
-        {/* Right: Details */}
-        <div className="md:w-1/2 flex flex-col justify-between">
-          <div>
-            <h1 className="text-3xl font-bold text-orange-600 mb-2">
-              {product.name}
-            </h1>
-            <p className="text-gray-700 mb-4">{product.description}</p>
+        {/* Buttons */}
+        <div className="flex gap-4 mt-6 sticky top-6 z-20">
+          <motion.button
+            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.05 }}
+            className="flex items-center gap-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-8 py-4 rounded-2xl shadow-lg hover:from-blue-600 hover:to-blue-700 transition"
+          >
+            <ShoppingCart size={24} /> Add to Cart
+          </motion.button>
+          <motion.button
+            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.05 }}
+            className="flex items-center gap-3 bg-gray-100 text-gray-900 px-8 py-4 rounded-2xl shadow hover:bg-gray-200 transition"
+          >
+            <Heart size={24} /> Save
+          </motion.button>
+        </div>
 
-            <div className="flex items-center gap-4 mb-4">
-              <div className="flex items-center gap-1 text-green-600 font-bold text-xl">
-                <IndianRupee className="w-5 h-5" />{" "}
-                {product.price.toLocaleString()}
-              </div>
-              <button
-                className={`px-4 py-2 rounded text-white ${
-                  isInCart ? "bg-gray-400" : "bg-blue-600"
-                }`}
-                onClick={() => toggleCart?.(product)}
-              >
-                <ShoppingCart className="w-4 h-4 inline mr-1" />{" "}
-                {isInCart ? "Added" : "Add to Cart"}
-              </button>
-              <button className="px-4 py-2 rounded text-white bg-gradient-to-r from-orange-500 to-orange-600">
-                Buy Now
-              </button>
-            </div>
-
-            <button
-              className={`px-3 py-1 rounded-full mb-4 ${
-                isInWishlist ? "bg-red-500 text-white" : "bg-gray-200"
-              }`}
-              onClick={() => toggleWishlist?.(product)}
-            >
-              <Heart className="w-4 h-4 inline mr-1" />{" "}
-              {isInWishlist ? "Wishlisted" : "Add to Wishlist"}
-            </button>
-
-            {artist && (
-              <div className="p-4 bg-gray-200 rounded mb-4">
-                <p className="font-medium">Artist: {artist.name}</p>
-                <p className="text-sm text-gray-600">{artist.bio}</p>
-              </div>
-            )}
-
-            <div className="p-4 bg-gray-100 rounded">
-              <h2 className="font-semibold mb-2">Product History</h2>
-              <p className="text-gray-700 text-sm">
-                {product.history ||
-                  "No detailed history available for this craft."}
-              </p>
-              <p className="mt-2 text-sm text-gray-600">
-                Shipping Time: {product.shipping_time}
-              </p>
-              <p className="mt-1 text-sm text-yellow-600">
-                ⭐ {product.rating} ({product.total_reviews} reviews)
-              </p>
-            </div>
+        {/* Shipping & Authenticity */}
+        <div className="flex gap-6 mt-4 text-sm text-gray-500">
+          <div className="flex items-center gap-1">
+            <Truck className="w-4 h-4" /> {product.shipping_time || "5-7 days"}
+          </div>
+          <div className="flex items-center gap-1">
+            <Shield className="w-4 h-4" /> Authentic
           </div>
         </div>
-      </div>
+
+        {/* Reviews */}
+        <div className="mt-8">
+          <h2 className="text-2xl font-semibold mb-4">Customer Reviews</h2>
+          <div className="space-y-4">
+            {product.reviews.map((review, idx) => (
+              <motion.div
+                key={idx}
+                className="p-4 bg-gray-50 rounded-xl shadow-md"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: idx * 0.1 }}
+              >
+                <p className="font-medium">{review.user}</p>
+                <p className="text-yellow-500 text-lg">{"⭐".repeat(review.rating)}</p>
+                <p className="text-gray-700">{review.comment}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </motion.div>
     </div>
   );
-}
+};
 
 export default ProductDetail;

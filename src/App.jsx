@@ -30,7 +30,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/assistant" element={<Assistant />} />
 
-          {/* ✅ Add this line */}
+          {/* Add this line */}
           <Route path="/product/:id" element={<ProductDetail />} />
         </Routes>
       </main>

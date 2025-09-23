@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "name": "Handmade Terracotta Vase",
+    "category": "Pottery",
+    "price": 1200,
+    "currency": "INR",
+    "images": [
+      "/images/products/vase1.jpg",
+      "/images/products/vase1-side.jpg",
+      "/images/products/vase1-top.jpg"
+    ],
+    "description": "This handcrafted terracotta vase represents the traditional pottery art of West Bengal. Each piece is unique, made with natural clay and finished with eco-friendly paints.",
+    "materials": ["Terracotta clay", "Natural dyes"],
+    "origin": "Kumartuli, West Bengal",
+    "artistId": 12,
+    "dimensions": "Height: 25cm, Diameter: 12cm",
+    "weight": "1.2kg",
+    "tags": ["Handmade", "Eco-friendly", "Traditional Art"],
+    "inStock": true,
+    "shipping": {
+      "available": true,
+      "deliveryTime": "5-7 days",
+      "returnPolicy": "Return within 7 days if damaged"
+    },
+    "reviews": [
+      {
+        "user": "Ananya Gupta",
+        "rating": 5,
+        "comment": "Beautiful craftsmanship! Looks even better in real life."
+      },
+      {
+        "user": "Rahul Sharma",
+        "rating": 4,
+        "comment": "Nice finish, slightly heavier than expected."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Pattachitra Painting",
+    "category": "Painting",
+    "price": 2500,
+    "currency": "INR",
+    "images": [
+      "/images/products/pattachitra1.jpg",
+      "/images/products/pattachitra1-close.jpg"
+    ],
+    "description": "Pattachitra is a traditional scroll painting art form from Odisha, known for intricate details and mythological themes. This piece depicts the story of Krishna Leela.",
+    "materials": ["Cloth", "Natural colors"],
+    "origin": "Raghurajpur, Odisha",
+    "artistId": 8,
+    "dimensions": "Height: 40cm, Width: 30cm",
+    "weight": "0.8kg",
+    "tags": ["Hand-painted", "Traditional", "Mythology"],
+    "inStock": true,
+    "shipping": {
+      "available": true,
+      "deliveryTime": "7-10 days",
+      "returnPolicy": "Return within 10 days if damaged"
+    },
+    "reviews": [
+      {
+        "user": "Sonal Verma",
+        "rating": 5,
+        "comment": "Authentic and detailed artwork, worth the price!"
+      }
+    ]
+  }
+]

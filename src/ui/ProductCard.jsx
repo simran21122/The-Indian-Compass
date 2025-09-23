@@ -35,8 +35,9 @@ function ProductCard({
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/product-detail", { state: { product, artist, wishlist, cart } });
-  };
+  navigate(`/product/${product.id}`);
+};
+
 
   return (
     <motion.div
