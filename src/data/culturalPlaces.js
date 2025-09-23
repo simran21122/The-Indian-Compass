@@ -13,6 +13,13 @@ const culturalPlaces = [
       history: "Built between 1631 and 1648, the Taj Mahal is a symbol of eternal love and a masterpiece of Mughal architecture.",
       significance: "It attracts millions of tourists annually and is considered one of the New Seven Wonders of the World.",
       festivals: "Taj Mahotsav, held annually in February, celebrates the rich cultural heritage of the region."
+        ,architecture: "Mughal architecture with Persian, Islamic, and Indian influences. Features a large dome, minarets, and intricate marble inlay work.",
+        legends: "Legend says Shah Jahan planned a black marble mausoleum for himself across the Yamuna, but it was never built.",
+        accessibility: "Wheelchair accessible with ramps at the entrance. Battery-operated vehicles available.",
+        photographyTips: "Best photos at sunrise or sunset. Tripods not allowed inside.",
+        localMarkets: "Sadar Bazaar and Kinari Bazaar for marble souvenirs and handicrafts.",
+        events: "Taj Mahotsav, light and sound shows.",
+        conservationStatus: "UNESCO World Heritage Site, under regular conservation by ASI."
     }
   },
   {
@@ -27,6 +34,13 @@ const culturalPlaces = [
       history: "Hampi flourished in the 14th century as a major trading center and was renowned for its wealth and architecture.",
       significance: "The site is famous for its Dravidian temples and intricate stone carvings.",
       festivals: "Hampi Utsav, a cultural festival, is celebrated with music, dance, and processions."
+        ,architecture: "Ruins of Vijayanagara Empire, Dravidian style with stone temples, bazaars, and royal enclosures.",
+        legends: "Linked to the Ramayana as the monkey kingdom of Kishkindha.",
+        accessibility: "Some areas are wheelchair accessible, but many ruins require walking on uneven terrain.",
+        photographyTips: "Sunrise at Hemakuta Hill and sunset at Matanga Hill are musts.",
+        localMarkets: "Hampi Bazaar for local crafts and stone carvings.",
+        events: "Hampi Utsav, Virupaksha Car Festival.",
+        conservationStatus: "UNESCO World Heritage Site, ongoing restoration by ASI."
     }
   },
   {
@@ -41,6 +55,19 @@ const culturalPlaces = [
       history: "Built by King Narasimhadeva I in 1250 CE, the temple is dedicated to the Hindu Sun God, Surya.",
       significance: "It is a UNESCO World Heritage Site and a marvel of ancient Indian engineering.",
       festivals: "The Konark Dance Festival showcases classical Indian dance forms every December."
+        ,bestTimeToVisit: "October to March",
+        entryFee: "₹40 for Indians, ₹600 for foreigners",
+        localCuisine: "Try local Odia dishes like Dalma, Chhena Poda, and Rasgulla in nearby eateries.",
+        tips: "Carry water, wear comfortable shoes, and visit early morning to avoid crowds and heat.",
+        howToReach: "Nearest airport is Bhubaneswar (65 km). Regular buses and taxis available from Puri and Bhubaneswar.",
+        nearbyAttractions: ["Chandrabhaga Beach", "Ramachandi Temple", "Puri Jagannath Temple"]
+    ,architecture: "Kalinga architecture, chariot-shaped temple with 24 intricately carved wheels and seven horses.",
+      legends: "Believed to be built by Samba, son of Krishna, after being cured of leprosy by Surya.",
+      accessibility: "Wheelchair access to the main complex, but some areas have steps.",
+      photographyTips: "Golden hour brings out the carvings. Wide-angle lens recommended.",
+      localMarkets: "Konark market for stone sculptures and handicrafts.",
+      events: "Konark Dance Festival, International Sand Art Festival.",
+      conservationStatus: "UNESCO World Heritage Site, protected by ASI."
     }
   },
   {
@@ -55,6 +82,19 @@ const culturalPlaces = [
       history: "Built in the 12th century by King Anantavarman Chodaganga Deva.",
       significance: "One of the Char Dham pilgrimage sites for Hindus.",
       festivals: "Rath Yatra is the most famous festival here."
+        ,bestTimeToVisit: "November to February",
+        entryFee: "Free (only Hindus allowed inside sanctum)",
+        localCuisine: "Sample the famous Mahaprasad at the temple and local sweets like Khaja.",
+        tips: "Non-Hindus can view the temple from the nearby Raghunandan Library rooftop. Beware of touts.",
+        howToReach: "Puri is well connected by train and road. Nearest airport is Bhubaneswar (60 km).",
+        nearbyAttractions: ["Puri Beach", "Gundicha Temple", "Chilika Lake"]
+    ,architecture: "Kalinga style, towering spire (shikhara) and elaborate carvings. Complex includes smaller shrines.",
+      legends: "The idols are replaced every 12-19 years in a secret ritual called Nabakalebara.",
+      accessibility: "Wheelchair access to temple grounds, but not inside sanctum.",
+      photographyTips: "Photography not allowed inside. Capture the temple from Grand Road.",
+      localMarkets: "Puri Beach market for seashell crafts and religious souvenirs.",
+      events: "Rath Yatra, Snana Yatra, Chandan Yatra.",
+      conservationStatus: "Protected monument under ASI."
     }
   },
   {
@@ -69,6 +109,19 @@ const culturalPlaces = [
       history: "Commissioned by King Kharavela, these caves served as residential blocks for Jain monks.",
       significance: "A major archaeological and tourist site in Odisha.",
       festivals: "Mahavir Jayanti and local festivals."
+        ,bestTimeToVisit: "October to March",
+        entryFee: "₹25 for Indians, ₹300 for foreigners",
+        localCuisine: "Enjoy street food like Dahibara Aloodum and sweets like Rasabali in Bhubaneswar.",
+        tips: "Wear comfortable shoes for climbing. Guides are available at the entrance.",
+        howToReach: "Located in Bhubaneswar city, accessible by auto, taxi, and city buses.",
+        nearbyAttractions: ["Khandagiri Caves", "Lingaraj Temple", "Nandankanan Zoo"]
+    ,architecture: "Rock-cut architecture with relief sculptures, inscriptions, and meditation cells.",
+      legends: "Said to be the site where Jain monks attained enlightenment.",
+      accessibility: "Steep steps, not suitable for wheelchairs.",
+      photographyTips: "Morning light is best for cave interiors. Bring a flashlight.",
+      localMarkets: "Ekamra Haat in Bhubaneswar for handicrafts and textiles.",
+      events: "Mahavir Jayanti celebrations, local heritage walks.",
+      conservationStatus: "Protected monument under ASI."
     }
   },
   // Ladakh
@@ -84,6 +137,19 @@ const culturalPlaces = [
       history: "Founded in the mid-15th century by the Gelugpa sect of Tibetan Buddhism.",
       significance: "A major center for Buddhist learning and culture in Ladakh.",
       festivals: "Gustor Festival."
+        ,bestTimeToVisit: "May to September",
+        entryFee: "₹30 for Indians, ₹50 for foreigners",
+        localCuisine: "Try thukpa, momos, and butter tea at local eateries.",
+        tips: "Acclimatize to the altitude before visiting. Early morning is peaceful.",
+        howToReach: "Nearest airport is Leh (19 km). Taxis and buses available.",
+        nearbyAttractions: ["Shey Monastery", "Hemis Monastery", "Leh Palace"],
+        architecture: "Tibetan Buddhist monastery with whitewashed walls, red and yellow highlights, and a large Maitreya Buddha statue.",
+        legends: "Said to be inspired by the Potala Palace in Lhasa.",
+        accessibility: "Steep steps, not wheelchair accessible.",
+        photographyTips: "Best light at sunrise. Wide shots capture the full complex.",
+        localMarkets: "Leh Main Bazaar for handicrafts and prayer flags.",
+        events: "Gustor Festival, Cham dance performances.",
+        conservationStatus: "Maintained by the monastery and local community."
     }
   },
   {
@@ -98,6 +164,19 @@ const culturalPlaces = [
       history: "A natural wonder and popular tourist destination.",
       significance: "Known for its breathtaking views and migratory birds.",
       festivals: "Pangong Tso Festival."
+        ,bestTimeToVisit: "May to September",
+        entryFee: "Permit required for tourists (Inner Line Permit)",
+        localCuisine: "Sample Maggi, momos, and tea at lakeside stalls.",
+        tips: "Carry warm clothes, oxygen, and check weather before visiting.",
+        howToReach: "160 km from Leh by road. Shared taxis and bikes available.",
+        nearbyAttractions: ["Spangmik Village", "Hemis Monastery"],
+        architecture: "Natural lake, surrounded by barren mountains.",
+        legends: "Believed to be sacred by locals; featured in Bollywood films.",
+        accessibility: "Rough terrain, not suitable for wheelchairs.",
+        photographyTips: "Best photos midday for blue water, sunrise for calm reflections.",
+        localMarkets: "Small souvenir stalls at Spangmik.",
+        events: "Pangong Tso Festival.",
+        conservationStatus: "Protected area, fragile ecosystem."
     }
   },
   {
@@ -112,6 +191,19 @@ const culturalPlaces = [
       history: "Once the residence of the royal family of Ladakh, now a museum and tourist site.",
       significance: "A symbol of Ladakhi heritage and architecture.",
       festivals: "Ladakh Festival."
+        ,bestTimeToVisit: "June to September",
+        entryFee: "₹20 for Indians, ₹100 for foreigners",
+        localCuisine: "Try skyu, momos, and apricot jam in Leh.",
+        tips: "Climb to the top for panoramic views. Visit early to avoid crowds.",
+        howToReach: "Located in Leh town, accessible by foot, taxi, or auto.",
+        nearbyAttractions: ["Shanti Stupa", "Namgyal Tsemo Gompa"],
+        architecture: "Nine-story stone palace with wooden balconies and Buddhist murals.",
+        legends: "Inspired by Potala Palace in Lhasa.",
+        accessibility: "Steep climb, not wheelchair accessible.",
+        photographyTips: "Golden hour for city views. Bring a zoom lens.",
+        localMarkets: "Leh Main Bazaar for pashmina and jewelry.",
+        events: "Ladakh Festival, cultural shows.",
+        conservationStatus: "Maintained by ASI, some areas under restoration."
     }
   },
   // Andhra Pradesh
@@ -127,6 +219,19 @@ const culturalPlaces = [
       history: "The temple has origins dating back to ancient times and is mentioned in many Hindu scriptures.",
       significance: "It attracts millions of devotees annually and is renowned for its spiritual atmosphere.",
       festivals: "Brahmotsavam is the grandest festival celebrated here."
+        ,bestTimeToVisit: "September to February",
+        entryFee: "Free, but special darshan tickets available",
+        localCuisine: "Tirupati laddu, dosas, and Andhra meals in local eateries.",
+        tips: "Expect long queues. Book darshan tickets online in advance.",
+        howToReach: "Nearest airport is Tirupati (15 km). Buses and taxis from city.",
+        nearbyAttractions: ["Akasaganga Teertham", "Sri Venkateswara Zoological Park"],
+        architecture: "Dravidian style with gopurams (towers) and gold-plated sanctum.",
+        legends: "Believed to fulfill wishes of devotees who visit with faith.",
+        accessibility: "Wheelchair access available in temple complex.",
+        photographyTips: "Photography not allowed inside. Capture temple exteriors.",
+        localMarkets: "Tirumala market for religious souvenirs and handicrafts.",
+        events: "Brahmotsavam, Vaikunta Ekadasi.",
+        conservationStatus: "Managed by Tirumala Tirupati Devasthanams (TTD)."
     }
   },
   // Nagaland
@@ -142,6 +247,19 @@ const culturalPlaces = [
       history: "Built in memory of the Battle of Kohima (1944).",
       significance: "A symbol of peace and reconciliation.",
       festivals: "Annual memorial services."
+        ,bestTimeToVisit: "October to April",
+        entryFee: "Free",
+        localCuisine: "Naga cuisine like smoked pork, bamboo shoot curry, and axone chutney in Kohima.",
+        tips: "Visit during the annual memorial for ceremonies. Maintain silence and respect.",
+        howToReach: "Nearest airport is Dimapur (74 km). Taxis and buses to Kohima.",
+        nearbyAttractions: ["Kisama Heritage Village", "Dzukou Valley"],
+        architecture: "Terraced lawns with stone memorials and epitaphs.",
+        legends: "Stories of bravery from the Battle of Kohima.",
+        accessibility: "Wheelchair accessible paths available.",
+        photographyTips: "Best in the morning for soft light. No flash photography.",
+        localMarkets: "Kohima market for Naga shawls and crafts.",
+        events: "Annual memorial service, Hornbill Festival nearby.",
+        conservationStatus: "Maintained by Commonwealth War Graves Commission."
     }
   },
   {
@@ -155,7 +273,20 @@ const culturalPlaces = [
     details: {
       history: "A popular trekking destination and site of natural beauty.",
       significance: "Known for the rare Dzukou lily.",
-      festivals: "Hornbill Festival treks."
+      festivals: "Hornbill Festival treks.",
+      bestTimeToVisit: "June to September for flowers, October to March for trekking",
+      entryFee: "INR 50 (trekking permit)",
+      localCuisine: "Naga cuisine at base villages",
+      tips: "Carry warm clothes and rain gear; camping is popular.",
+      howToReach: "Trek from Viswema or Zakhama village, nearest airport Dimapur",
+      nearbyAttractions: "Kisama Heritage Village, Kohima",
+      architecture: "Natural valley, no man-made structures",
+      legends: "Local stories about spirits and the Dzukou lily.",
+      accessibility: "Challenging; requires trekking.",
+      photographyTips: "Best in early morning for misty landscapes.",
+      localMarkets: "Kohima market",
+      events: "Hornbill Festival treks",
+      conservationStatus: "Protected as an eco-sensitive zone."
     }
   },
   {
@@ -169,7 +300,20 @@ const culturalPlaces = [
     details: {
       history: "Festival started in 2000 to promote inter-tribal interaction.",
       significance: "A major cultural event in Northeast India.",
-      festivals: "Hornbill Festival (December)."
+      festivals: "Hornbill Festival (December).",
+      bestTimeToVisit: "December (Hornbill Festival)",
+      entryFee: "INR 100 (festival entry)",
+      localCuisine: "Naga food stalls during festival",
+      tips: "Book accommodation in advance; cultural shows are a must-see.",
+      howToReach: "12 km from Kohima; taxis and festival buses available.",
+      nearbyAttractions: "Dzukou Valley, Kohima",
+      architecture: "Traditional Naga huts and festival grounds",
+      legends: "Celebrates the hornbill bird, revered in Naga culture.",
+      accessibility: "Good during festival; temporary facilities provided.",
+      photographyTips: "Best during dance performances and parades.",
+      localMarkets: "Festival bazaar for crafts",
+      events: "Hornbill Festival",
+      conservationStatus: "Maintained by Nagaland Tourism."
     }
   },
   {
@@ -183,7 +327,20 @@ const culturalPlaces = [
     details: {
       history: "Built in the 16th century by the Vijayanagara kings.",
       significance: "Known for its intricate carvings and the legendary hanging pillar.",
-      festivals: "Veerabhadra Swamy festival is celebrated with devotion."
+      festivals: "Veerabhadra Swamy festival is celebrated with devotion.",
+      bestTimeToVisit: "October to March",
+      entryFee: "Free",
+      localCuisine: "Andhra meals, dosas, local sweets",
+      tips: "Look for the hanging pillar and mural paintings.",
+      howToReach: "120 km from Bengaluru; buses and taxis available.",
+      nearbyAttractions: "Nandi Hills, Penukonda Fort",
+      architecture: "Vijayanagara style with intricate carvings",
+      legends: "Linked to Jatayu from Ramayana; site of a legendary battle.",
+      accessibility: "Some steps, partial wheelchair access.",
+      photographyTips: "Best in the morning for soft light.",
+      localMarkets: "Lepakshi market",
+      events: "Veerabhadra Swamy festival",
+      conservationStatus: "Protected monument under ASI."
     }
   },
   {
@@ -197,7 +354,20 @@ const culturalPlaces = [
     details: {
       history: "The caves were carved out of solid sandstone on a hillside.",
       significance: "A fine example of Indian rock-cut architecture.",
-      festivals: "Local festivals and rituals are held here."
+      festivals: "Local festivals and rituals are held here.",
+      bestTimeToVisit: "October to March",
+      entryFee: "INR 25",
+      localCuisine: "Andhra snacks and sweets in Vijayawada",
+      tips: "Visit early to avoid crowds; bring a flashlight.",
+      howToReach: "8 km from Vijayawada; autos and taxis available.",
+      nearbyAttractions: "Prakasam Barrage, Kanaka Durga Temple",
+      architecture: "Rock-cut caves with monolithic Vishnu statue",
+      legends: "Linked to Vishnu and Buddhist monks.",
+      accessibility: "Some steps, not fully wheelchair accessible.",
+      photographyTips: "Best in the morning for cave interiors.",
+      localMarkets: "Vijayawada market",
+      events: "Local festivals",
+      conservationStatus: "Protected monument under ASI."
     }
   },
   // Arunachal Pradesh
@@ -206,13 +376,26 @@ const culturalPlaces = [
     city: "Tawang",
     state: "Arunachal Pradesh",
     description: "The largest monastery in India and an important center of Mahayana Buddhism.",
-    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Tawang_Monastery_Arunachal_Pradesh.jpg/200px-Tawang_Monastery_Arunachal_Pradesh.jpg",
+    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Tawang_Monastery_Arunachal_Pradesh.jpg/200px-Tawang_Monastery_Arunachal_Prhttps://imgs.search.brave.com/CzqkQu5BLmUZpBdYG1msr3g0f3tbxUM-x3TaniCCYb0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTgx/NDUzMzUyL3Bob3Rv/L3Rhd2FuZy1tb25h/c3RlcnkuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTNZSXY1/MEkzMGp3VDZUZVZS/RlBEZ0U0UEFEbWI0/cFB3bUxVX1drODl3/SzQ9adesh.jpg",
     lat: 27.5867,
     lng: 91.8667,
     details: {
       history: "Founded in the 17th century by Merak Lama Lodre Gyatso.",
       significance: "A spiritual and cultural center for Buddhists in the region.",
-      festivals: "Torgya Festival is celebrated with masked dances."
+      festivals: "Torgya Festival is celebrated with masked dances.",
+      bestTimeToVisit: "March to June, September to November",
+      entryFee: "INR 20",
+      localCuisine: "Tibetan and Arunachali food",
+      tips: "Attend the Torgya Festival for cultural experience.",
+      howToReach: "Nearest airport Tezpur (330 km); taxis and buses to Tawang.",
+      nearbyAttractions: "Sela Pass, Urgelling Monastery",
+      architecture: "Tibetan Buddhist monastery with prayer halls",
+      legends: "Founded by Merak Lama after a divine vision.",
+      accessibility: "Some steps, partial wheelchair access.",
+      photographyTips: "Best during festival for dance photos.",
+      localMarkets: "Tawang market",
+      events: "Torgya Festival, Losar",
+      conservationStatus: "Maintained by monastery community."
     }
   },
   {
@@ -226,7 +409,20 @@ const culturalPlaces = [
     details: {
       history: "Home to the Apatani tribe, known for their sustainable farming methods.",
       significance: "A UNESCO World Heritage tentative site.",
-      festivals: "Ziro Music Festival attracts artists and tourists from all over."
+      festivals: "Ziro Music Festival attracts artists and tourists from all over.",
+      bestTimeToVisit: "September (for festival), otherwise October to March",
+      entryFee: "INR 100 (festival entry)",
+      localCuisine: "Apatani cuisine, bamboo shoot dishes",
+      tips: "Book festival tickets in advance; respect local customs.",
+      howToReach: "Nearest airport Lilabari (100 km); taxis and buses to Ziro.",
+      nearbyAttractions: "Tarin Fish Farm, Dolo Mando Hill",
+      architecture: "Traditional Apatani bamboo houses",
+      legends: "Apatani myths and stories about the valley.",
+      accessibility: "Good; accessible by road.",
+      photographyTips: "Best during festival for cultural shots.",
+      localMarkets: "Ziro market",
+      events: "Ziro Music Festival, tribal fairs",
+      conservationStatus: "UNESCO tentative site."
     }
   },
   {
@@ -240,7 +436,20 @@ const culturalPlaces = [
     details: {
       history: "Mentioned in ancient Hindu texts as a place of penance for Parshuram.",
       significance: "Thousands of devotees visit during Makar Sankranti.",
-      festivals: "Makar Sankranti is the main festival celebrated here."
+      festivals: "Makar Sankranti is the main festival celebrated here.",
+      bestTimeToVisit: "January (for festival), otherwise October to March",
+      entryFee: "Free",
+      localCuisine: "Arunachali and Assamese food at local stalls",
+      tips: "Visit during festival for rituals; river bathing is common.",
+      howToReach: "Nearest airport Dibrugarh (200 km); taxis and buses to Lohit.",
+      nearbyAttractions: "Brahmaputra River, Tezu",
+      architecture: "Natural riverbank, no man-made structures",
+      legends: "Linked to Parshuram's penance in Hindu mythology.",
+      accessibility: "Good; accessible by road.",
+      photographyTips: "Best during festival for crowd scenes.",
+      localMarkets: "Tezu market",
+      events: "Makar Sankranti",
+      conservationStatus: "Maintained as a pilgrimage site."
     }
   },
   // Assam
@@ -284,6 +493,19 @@ const culturalPlaces = [
       history: "Capital of the Ahom Kingdom, with monuments like Rang Ghar and Talatal Ghar.",
       significance: "A center of Assamese culture and history.",
       festivals: "Bihu and other local festivals are celebrated here."
+        ,bestTimeToVisit: "October to March",
+        entryFee: "Varies by monument (₹25-₹50)",
+        localCuisine: "Assamese thali and pitha sweets in Sivasagar.",
+        tips: "Hire a guide for historical context.",
+        howToReach: "Nearest airport is Jorhat (75 km). Buses and taxis from Jorhat.",
+        nearbyAttractions: ["Rang Ghar", "Talatal Ghar", "Shivadol"],
+        architecture: "Ahom-era temples, tanks, and palaces.",
+        legends: "Stories of Ahom kings and their engineering feats.",
+        accessibility: "Most monuments accessible, some steps.",
+        photographyTips: "Best in the afternoon for monument lighting.",
+        localMarkets: "Sivasagar market for local crafts.",
+        events: "Bihu, Durga Puja.",
+        conservationStatus: "Protected by ASI and state government."
     }
   },
   {
@@ -298,6 +520,19 @@ const culturalPlaces = [
       history: "The caves were used as monasteries and worship halls by Buddhist monks.",
       significance: "Famous for their ancient paintings and sculptures, they are a UNESCO World Heritage Site.",
       festivals: "Ajanta-Ellora Festival celebrates classical music and dance at the site."
+        ,bestTimeToVisit: "November to March",
+        entryFee: "₹40 for Indians, ₹600 for foreigners",
+        localCuisine: "Maharashtrian snacks and meals in nearby villages.",
+        tips: "Carry a flashlight for cave interiors. Avoid weekends for less crowd.",
+        howToReach: "Nearest airport is Aurangabad (100 km). Buses and taxis available.",
+        nearbyAttractions: ["Ellora Caves", "Daulatabad Fort"],
+        architecture: "Rock-cut Buddhist caves with murals and sculptures.",
+        legends: "Said to be hidden for centuries before rediscovery in 1819.",
+        accessibility: "Many steps, not wheelchair accessible.",
+        photographyTips: "Best light in the morning for cave paintings.",
+        localMarkets: "Ajanta village market for souvenirs.",
+        events: "Ajanta-Ellora Festival.",
+        conservationStatus: "UNESCO World Heritage Site, protected by ASI."
     }
   },
   {
@@ -312,6 +547,19 @@ const culturalPlaces = [
       history: "Built in the 16th century by Guru Arjan, the temple is a symbol of equality and brotherhood.",
       significance: "It serves free meals to thousands daily and is a spiritual center for Sikhs worldwide.",
       festivals: "Baisakhi and Guru Nanak Jayanti are celebrated with great fervor."
+        ,bestTimeToVisit: "October to March",
+        entryFee: "Free",
+        localCuisine: "Langar (community meal), Amritsari kulcha, lassi.",
+        tips: "Cover your head, remove shoes, and wash feet before entering.",
+        howToReach: "Located in Amritsar, accessible by train, bus, and taxi.",
+        nearbyAttractions: ["Jallianwala Bagh", "Wagah Border"],
+        architecture: "Sikh architecture with a gold-plated sanctum and marble causeway.",
+        legends: "Said to be built at the site chosen by Guru Ram Das after a divine vision.",
+        accessibility: "Wheelchair accessible with ramps.",
+        photographyTips: "Best at sunrise or sunset for golden reflections.",
+        localMarkets: "Hall Bazaar for phulkari and souvenirs.",
+        events: "Baisakhi, Guru Nanak Jayanti.",
+        conservationStatus: "Maintained by Shiromani Gurdwara Parbandhak Committee."
     }
   },
   {
@@ -326,6 +574,19 @@ const culturalPlaces = [
       history: "The temple complex dates back to the 6th century, with most structures built in the 16th century.",
       significance: "It is a major pilgrimage site and architectural marvel of South India.",
       festivals: "Meenakshi Tirukalyanam is the grand annual festival celebrated here."
+        ,bestTimeToVisit: "October to March",
+        entryFee: "₹50 for Indians, ₹300 for foreigners",
+        localCuisine: "South Indian meals, Jigarthanda, Madurai idli.",
+        tips: "Dress modestly. Visit early to avoid crowds.",
+        howToReach: "Located in Madurai, accessible by train, bus, and taxi.",
+        nearbyAttractions: ["Thirumalai Nayakkar Palace", "Gandhi Museum"],
+        architecture: "Dravidian style with towering gopurams and colorful sculptures.",
+        legends: "Linked to the wedding of Meenakshi and Sundareswarar (Shiva).",
+        accessibility: "Wheelchair access to temple grounds, not inside sanctum.",
+        photographyTips: "Best in the morning for gopuram shots.",
+        localMarkets: "Madurai market for jasmine flowers and handicrafts.",
+        events: "Meenakshi Tirukalyanam, Chithirai Festival.",
+        conservationStatus: "Protected monument under ASI."
     }
   },
   {
@@ -340,6 +601,19 @@ const culturalPlaces = [
       history: "Built to commemorate the landing of King George V and Queen Mary in 1911.",
       significance: "A popular tourist destination and symbol of Mumbai.",
       festivals: "Various cultural events and festivals are held here throughout the year."
+        ,bestTimeToVisit: "November to February",
+        entryFee: "Free",
+        localCuisine: "Mumbai street food: vada pav, bhel puri, pav bhaji.",
+        tips: "Visit early morning for fewer crowds.",
+        howToReach: "Located in Colaba, Mumbai. Accessible by taxi, bus, and train.",
+        nearbyAttractions: ["Elephanta Caves", "Colaba Causeway"],
+        architecture: "Indo-Saracenic style with basalt arch and turrets.",
+        legends: "Built to commemorate the visit of King George V and Queen Mary.",
+        accessibility: "Wheelchair accessible promenade.",
+        photographyTips: "Best at sunset for silhouette shots.",
+        localMarkets: "Colaba Causeway for shopping.",
+        events: "Cultural events, New Year celebrations.",
+        conservationStatus: "Maintained by Archaeological Survey of India."
     }
   },
   {
@@ -354,6 +628,19 @@ const culturalPlaces = [
       history: "Built in 1591 by Muhammad Quli Qutb Shah to commemorate the end of a deadly plague.",
       significance: "It is a symbol of Hyderabad's rich history and culture.",
       festivals: "Ramzan and other local festivals are celebrated here."
+        ,bestTimeToVisit: "October to March",
+        entryFee: "Free",
+        localCuisine: "Hyderabadi biryani, haleem, Irani chai in nearby cafes.",
+        tips: "Climb to the upper floor for panoramic views.",
+        howToReach: "Located in Hyderabad, accessible by bus, auto, and taxi.",
+        nearbyAttractions: ["Laad Bazaar", "Mecca Masjid"],
+        architecture: "Indo-Islamic style with four grand arches and minarets.",
+        legends: "Built to mark the end of a plague in Hyderabad.",
+        accessibility: "Stairs to upper floors, not wheelchair accessible.",
+        photographyTips: "Best at dusk for illuminated views.",
+        localMarkets: "Laad Bazaar for bangles and pearls.",
+        events: "Ramzan, Bonalu.",
+        conservationStatus: "Protected monument under ASI."
     }
   },
   {
@@ -368,6 +655,19 @@ const culturalPlaces = [
       history: "Built between 950 and 1050 CE by the Chandela dynasty.",
       significance: "A UNESCO World Heritage Site, known for its intricate carvings and sculptures.",
       festivals: "Khajuraho Dance Festival is held annually, celebrating Indian classical dance."
+        ,bestTimeToVisit: "October to March",
+        entryFee: "₹40 for Indians, ₹600 for foreigners",
+        localCuisine: "Bundelkhandi cuisine and sweets in Khajuraho town.",
+        tips: "Hire a guide to understand the temple carvings.",
+        howToReach: "Nearest airport is Khajuraho (5 km). Taxis and autos available.",
+        nearbyAttractions: ["Raneh Falls", "Panna National Park"],
+        architecture: "Nagara style with intricately carved temples.",
+        legends: "Linked to the Chandela dynasty and tales of love.",
+        accessibility: "Some steps, partial wheelchair access.",
+        photographyTips: "Best in the morning for soft light.",
+        localMarkets: "Khajuraho market for stone carvings.",
+        events: "Khajuraho Dance Festival.",
+        conservationStatus: "UNESCO World Heritage Site, protected by ASI."
     }
   },
   {
@@ -382,6 +682,19 @@ const culturalPlaces = [
       history: "Commissioned by Emperor Ashoka in the 3rd century BCE, the stupa is a major Buddhist pilgrimage site.",
       significance: "It is a UNESCO World Heritage Site and a symbol of Buddhist art and architecture.",
       festivals: "Buddha Purnima is celebrated here with great devotion."
+        ,bestTimeToVisit: "November to March",
+        entryFee: "₹30 for Indians, ₹500 for foreigners",
+        localCuisine: "Madhya Pradesh thali and sweets in Sanchi town.",
+        tips: "Visit early morning for peaceful experience.",
+        howToReach: "Nearest airport is Bhopal (55 km). Buses and taxis from Bhopal.",
+        nearbyAttractions: ["Udayagiri Caves", "Bhopal"],
+        architecture: "Buddhist stupa with gateways (toranas) and railings.",
+        legends: "Said to house the relics of Buddha.",
+        accessibility: "Some steps, partial wheelchair access.",
+        photographyTips: "Best at sunrise for stupa photos.",
+        localMarkets: "Sanchi market for handicrafts.",
+        events: "Buddha Purnima, heritage walks.",
+        conservationStatus: "UNESCO World Heritage Site, protected by ASI."
     }
   },
   {
@@ -396,6 +709,19 @@ const culturalPlaces = [
       history: "Built between 1906 and 1921, it commemorates the British Raj in India.",
       significance: "It houses a museum with a large collection of artifacts from the colonial period.",
       festivals: "Kolkata Christmas Festival and other cultural events are held here."
+        ,bestTimeToVisit: "November to February",
+        entryFee: "₹30 for Indians, ₹500 for foreigners",
+        localCuisine: "Bengali sweets and street food in Kolkata.",
+        tips: "Visit in the evening for illuminated views.",
+        howToReach: "Located in Kolkata, accessible by metro, bus, and taxi.",
+        nearbyAttractions: ["St. Paul's Cathedral", "Eden Gardens"],
+        architecture: "Indo-Saracenic style with white marble and domes.",
+        legends: "Built to commemorate Queen Victoria.",
+        accessibility: "Wheelchair accessible museum and gardens.",
+        photographyTips: "Best at sunset for marble glow.",
+        localMarkets: "New Market for handicrafts and sweets.",
+        events: "Christmas Festival, art exhibitions.",
+        conservationStatus: "Maintained by Ministry of Culture, Govt. of India."
     }
   },
   {
@@ -410,6 +736,19 @@ const culturalPlaces = [
       history: "Rebuilt in 1912, the palace is an architectural blend of Hindu, Muslim, Rajput, and Gothic styles.",
       significance: "It is one of the most visited tourist attractions in India.",
       festivals: "Mysore Dasara is celebrated with grandeur and illumination."
+        ,bestTimeToVisit: "September to March",
+        entryFee: "₹70 for Indians, ₹200 for foreigners",
+        localCuisine: "Mysore masala dosa, Mysore pak, South Indian thali.",
+        tips: "Visit during Dasara for palace illumination.",
+        howToReach: "Located in Mysuru, accessible by train, bus, and taxi.",
+        nearbyAttractions: ["Chamundi Hill", "Brindavan Gardens"],
+        architecture: "Indo-Saracenic style with domes, arches, and stained glass.",
+        legends: "Linked to the Wadiyar dynasty and goddess Chamundeshwari.",
+        accessibility: "Wheelchair access to ground floor, not upper floors.",
+        photographyTips: "Best at night for illuminated palace.",
+        localMarkets: "Devaraja Market for silk and sandalwood.",
+        events: "Dasara, cultural shows.",
+        conservationStatus: "Maintained by Karnataka State Government."
     }
   },
   {
@@ -424,6 +763,19 @@ const culturalPlaces = [
       history: "Built in the late 16th century, it served as the capital of the Mughal Empire for a short period.",
       significance: "It is a UNESCO World Heritage Site and a fine example of Mughal planning and architecture.",
       festivals: "Urs of Salim Chishti is a major event here."
+        ,bestTimeToVisit: "October to March",
+        entryFee: "₹40 for Indians, ₹600 for foreigners",
+        localCuisine: "Mughlai cuisine and sweets in Fatehpur Sikri town.",
+        tips: "Hire a guide for historical insights.",
+        howToReach: "Nearest airport is Agra (40 km). Buses and taxis from Agra.",
+        nearbyAttractions: ["Buland Darwaza", "Jama Masjid"],
+        architecture: "Mughal architecture with red sandstone palaces and mosques.",
+        legends: "Built after Akbar's wish for a son was fulfilled by Salim Chishti.",
+        accessibility: "Some steps, partial wheelchair access.",
+        photographyTips: "Best in the afternoon for monument lighting.",
+        localMarkets: "Fatehpur Sikri market for handicrafts.",
+        events: "Urs, cultural events.",
+        conservationStatus: "UNESCO World Heritage Site, protected by ASI."
     }
   },
   {
@@ -438,6 +790,19 @@ const culturalPlaces = [
       history: "Built by Raja Raja Chola I in the 11th century, it is a UNESCO World Heritage Site.",
       significance: "The temple is an architectural marvel and a major pilgrimage site.",
       festivals: "Mahashivaratri and annual temple festivals are celebrated here."
+        ,bestTimeToVisit: "October to March",
+        entryFee: "₹50 for Indians, ₹500 for foreigners",
+        localCuisine: "South Indian thali and sweets in Thanjavur.",
+        tips: "Visit early morning for peaceful darshan.",
+        howToReach: "Located in Thanjavur, accessible by train, bus, and taxi.",
+        nearbyAttractions: ["Thanjavur Palace", "Saraswathi Mahal Library"],
+        architecture: "Dravidian style with massive vimana (tower) and frescoes.",
+        legends: "Built by Raja Raja Chola after a divine dream.",
+        accessibility: "Some steps, partial wheelchair access.",
+        photographyTips: "Best at sunrise for temple photos.",
+        localMarkets: "Thanjavur market for bronze idols.",
+        events: "Mahashivaratri, temple festivals.",
+        conservationStatus: "UNESCO World Heritage Site, protected by ASI."
     }
   },
   {
@@ -452,6 +817,19 @@ const culturalPlaces = [
       history: "Construction began in 1192 by Qutb-ud-din Aibak and was completed by Iltutmish.",
       significance: "It is a symbol of Delhi's rich history and architectural excellence.",
       festivals: "Qutub Festival, a cultural event, is held here annually."
+        ,bestTimeToVisit: "October to March",
+        entryFee: "₹40 for Indians, ₹600 for foreigners",
+        localCuisine: "Delhi street food: chaat, kebabs, parathas.",
+        tips: "Visit early morning for fewer crowds.",
+        howToReach: "Located in Mehrauli, Delhi. Accessible by metro, bus, and taxi.",
+        nearbyAttractions: ["Mehrauli Archaeological Park", "Lotus Temple"],
+        architecture: "Afghan-style minaret with red sandstone and marble.",
+        legends: "Said to be built with materials from 27 demolished Hindu temples.",
+        accessibility: "Some steps, partial wheelchair access.",
+        photographyTips: "Best at sunset for silhouette shots.",
+        localMarkets: "Mehrauli market for antiques.",
+        events: "Qutub Festival, heritage walks.",
+        conservationStatus: "UNESCO World Heritage Site, protected by ASI."
     }
   },
   {
@@ -465,7 +843,20 @@ const culturalPlaces = [
     details: {
       history: "Built by Shah Jahan in the 17th century, it is a symbol of India's independence.",
       significance: "The Prime Minister hoists the national flag here every Independence Day.",
-      festivals: "Independence Day celebrations and sound & light shows are major events."
+      festivals: "Independence Day celebrations and sound & light shows are major events.",
+      bestTimeToVisit: "October to March",
+      entryFee: "₹35 for Indians, ₹500 for foreigners",
+      localCuisine: "Delhi street food: chaat, kebabs, parathas",
+      tips: "Visit in the evening for light and sound show.",
+      howToReach: "Located in Old Delhi; accessible by metro, bus, and taxi.",
+      nearbyAttractions: "Jama Masjid, Chandni Chowk",
+      architecture: "Mughal fort with red sandstone walls",
+      legends: "Stories of Mughal emperors and independence movement.",
+      accessibility: "Wheelchair accessible with ramps.",
+      photographyTips: "Best at sunset for fort silhouette.",
+      localMarkets: "Chandni Chowk for shopping.",
+      events: "Independence Day, light and sound shows.",
+      conservationStatus: "UNESCO World Heritage Site, protected by ASI."
     }
   },
   {
@@ -479,7 +870,20 @@ const culturalPlaces = [
     details: {
       history: "Built in the 15th century, the temple is supported by over 1,400 intricately carved marble pillars.",
       significance: "It is a major pilgrimage site for Jains and an architectural wonder.",
-      festivals: "Mahavir Jayanti is celebrated with devotion here."
+      festivals: "Mahavir Jayanti is celebrated with devotion here.",
+      bestTimeToVisit: "October to March",
+      entryFee: "INR 50",
+      localCuisine: "Jain vegetarian food in Ranakpur",
+      tips: "Dress modestly; no leather items allowed inside.",
+      howToReach: "90 km from Udaipur; taxis and buses available.",
+      nearbyAttractions: "Kumbhalgarh Fort, Udaipur",
+      architecture: "Marble temple with 1,400+ pillars",
+      legends: "Built after a divine vision by Dharna Shah.",
+      accessibility: "Some steps, partial wheelchair access.",
+      photographyTips: "Best in the morning for pillar details.",
+      localMarkets: "Ranakpur market",
+      events: "Mahavir Jayanti",
+      conservationStatus: "Maintained by Jain trust."
     }
   },
   {
@@ -493,7 +897,20 @@ const culturalPlaces = [
     details: {
       history: "Commissioned by Queen Udayamati in memory of King Bhima I, it is a UNESCO World Heritage Site.",
       significance: "The stepwell is an outstanding example of subterranean architecture in India.",
-      festivals: "Rani ki Vav Festival celebrates the heritage of the site."
+      festivals: "Rani ki Vav Festival celebrates the heritage of the site.",
+      bestTimeToVisit: "October to March",
+      entryFee: "₹40 for Indians, ₹600 for foreigners",
+      localCuisine: "Gujarati snacks and sweets in Patan",
+      tips: "Visit in the morning for best light on sculptures.",
+      howToReach: "Located in Patan; accessible by bus, taxi, and auto.",
+      nearbyAttractions: "Modhera Sun Temple, Patan town",
+      architecture: "Stepwell with intricate sculptures",
+      legends: "Built by Queen Udayamati for her husband.",
+      accessibility: "Some steps, partial wheelchair access.",
+      photographyTips: "Best in the morning for stepwell photos.",
+      localMarkets: "Patan market for Patola sarees.",
+      events: "Rani ki Vav Festival",
+      conservationStatus: "UNESCO World Heritage Site, protected by ASI."
     }
   },
   {
@@ -507,7 +924,20 @@ const culturalPlaces = [
     details: {
       history: "The caves date back to the 5th to 8th centuries and are dedicated to Lord Shiva.",
       significance: "A UNESCO World Heritage Site, famous for its impressive sculptures and carvings.",
-      festivals: "Elephanta Festival of Music and Dance is held annually."
+      festivals: "Elephanta Festival of Music and Dance is held annually.",
+      bestTimeToVisit: "November to March",
+      entryFee: "₹40 for Indians, ₹600 for foreigners",
+      localCuisine: "Maharashtrian snacks and seafood at island stalls",
+      tips: "Ferry from Gateway of India; bring water and snacks.",
+      howToReach: "Ferry from Mumbai Gateway of India (1 hour)",
+      nearbyAttractions: "Gateway of India, Colaba",
+      architecture: "Rock-cut caves with Shiva sculptures",
+      legends: "Linked to Shiva and local myths.",
+      accessibility: "Many steps, not wheelchair accessible.",
+      photographyTips: "Best in the morning for cave interiors.",
+      localMarkets: "Island souvenir stalls",
+      events: "Elephanta Festival",
+      conservationStatus: "UNESCO World Heritage Site, protected by ASI."
     }}
     ,
   {
@@ -522,6 +952,19 @@ const culturalPlaces = [
       history: "Built in 1605, it is one of the oldest churches in India.",
       significance: "A major pilgrimage site for Christians.",
       festivals: "Feast of St. Francis Xavier."
+        ,bestTimeToVisit: "November to February",
+        entryFee: "Free",
+        localCuisine: "Goan fish curry, bebinca, and feni in Old Goa.",
+        tips: "Dress modestly and maintain silence inside.",
+        howToReach: "Located in Old Goa, accessible by bus, taxi, and bike.",
+        nearbyAttractions: ["Se Cathedral", "Church of St. Cajetan"],
+        architecture: "Baroque style with laterite stone and gilded altars.",
+        legends: "Houses the incorrupt body of St. Francis Xavier.",
+        accessibility: "Wheelchair access to main hall.",
+        photographyTips: "Best in the morning for altar photos.",
+        localMarkets: "Old Goa market for souvenirs.",
+        events: "Feast of St. Francis Xavier, Christmas.",
+        conservationStatus: "UNESCO World Heritage Site, protected by ASI."
     }
   },
   {
@@ -536,6 +979,19 @@ const culturalPlaces = [
       history: "Built in the 16th century to commemorate the victory of the Portuguese over a Muslim army.",
       significance: "A symbol of Goa's colonial past.",
       festivals: "Feast of St. Catherine."
+        ,bestTimeToVisit: "November to February",
+        entryFee: "Free",
+        localCuisine: "Goan cuisine and sweets in Old Goa.",
+        tips: "Visit during the feast for special masses.",
+        howToReach: "Located in Old Goa, accessible by bus, taxi, and bike.",
+        nearbyAttractions: ["Basilica of Bom Jesus", "Church of St. Cajetan"],
+        architecture: "Portuguese-Gothic style with Tuscan exterior and Corinthian interior.",
+        legends: "Built on the site of a former Hindu temple.",
+        accessibility: "Wheelchair access to main hall.",
+        photographyTips: "Best in the morning for facade photos.",
+        localMarkets: "Old Goa market for souvenirs.",
+        events: "Feast of St. Catherine, Christmas.",
+        conservationStatus: "UNESCO World Heritage Site, protected by ASI."
     }
   },
   {
@@ -550,6 +1006,19 @@ const culturalPlaces = [
       history: "Built in 1612 to guard against Dutch and Marathas.",
       significance: "A popular tourist destination and historical site.",
       festivals: "Local cultural events."
+        ,bestTimeToVisit: "November to February",
+        entryFee: "₹25 for Indians, ₹200 for foreigners",
+        localCuisine: "Goan seafood and snacks in Candolim.",
+        tips: "Climb the lighthouse for panoramic views.",
+        howToReach: "Located in Candolim, accessible by taxi, bus, and bike.",
+        nearbyAttractions: ["Sinquerim Beach", "Candolim Beach"],
+        architecture: "Portuguese fort with lighthouse and bastions.",
+        legends: "Named after the Portuguese word for water (agua).",
+        accessibility: "Some steps, partial wheelchair access.",
+        photographyTips: "Best at sunset for sea views.",
+        localMarkets: "Candolim market for souvenirs.",
+        events: "Cultural events, music festivals.",
+        conservationStatus: "Maintained by Goa Tourism."
     }
   },
   // Gujarat
@@ -565,6 +1034,19 @@ const culturalPlaces = [
       history: "The temple has been destroyed and rebuilt several times since ancient times.",
       significance: "A major pilgrimage site for Hindus.",
       festivals: "Maha Shivaratri."
+        ,bestTimeToVisit: "October to March",
+        entryFee: "Free",
+        localCuisine: "Gujarati thali and sweets in Prabhas Patan.",
+        tips: "Attend the evening aarti for a spiritual experience.",
+        howToReach: "Located in Prabhas Patan, accessible by train, bus, and taxi.",
+        nearbyAttractions: ["Bhalka Tirth", "Triveni Sangam"],
+        architecture: "Chaulukya style with intricate carvings and a grand shikhara.",
+        legends: "Said to have been destroyed and rebuilt 17 times.",
+        accessibility: "Wheelchair access to temple grounds.",
+        photographyTips: "Best at sunset for sea backdrop.",
+        localMarkets: "Somnath market for religious souvenirs.",
+        events: "Maha Shivaratri, Kartik Purnima.",
+        conservationStatus: "Maintained by Shree Somnath Trust."
     }
   },
   {
@@ -579,6 +1061,19 @@ const culturalPlaces = [
       history: "Built in 1026-27 CE by King Bhima I of the Chalukya dynasty.",
       significance: "A masterpiece of Solanki architecture.",
       festivals: "Modhera Dance Festival."
+        ,bestTimeToVisit: "January (for festival), otherwise October to March",
+        entryFee: "₹25 for Indians, ₹300 for foreigners",
+        localCuisine: "Gujarati snacks and sweets in Modhera.",
+        tips: "Visit during sunrise for best light on temple.",
+        howToReach: "Located in Modhera, accessible by bus, taxi from Mehsana.",
+        nearbyAttractions: ["Rani ki Vav", "Patan"],
+        architecture: "Solanki style with stepwell and sun motifs.",
+        legends: "Built to honor Surya, the Sun God.",
+        accessibility: "Some steps, partial wheelchair access.",
+        photographyTips: "Best during festival for dance photos.",
+        localMarkets: "Modhera market for handicrafts.",
+        events: "Modhera Dance Festival.",
+        conservationStatus: "Protected monument under ASI."
     }
   },
   {
@@ -593,6 +1088,19 @@ const culturalPlaces = [
       history: "Gandhi lived here from 1917 to 1930.",
       significance: "A place of pilgrimage for followers of Gandhi and peace.",
       festivals: "Gandhi Jayanti."
+        ,bestTimeToVisit: "October to March",
+        entryFee: "Free",
+        localCuisine: "Gujarati snacks and sweets in Ahmedabad.",
+        tips: "Attend the prayer meeting on Gandhi Jayanti.",
+        howToReach: "Located in Ahmedabad, accessible by bus, taxi, and auto.",
+        nearbyAttractions: ["Riverfront Park", "Adalaj Stepwell"],
+        architecture: "Simple ashram buildings with museum exhibits.",
+        legends: "Gandhi started the Dandi March from here.",
+        accessibility: "Wheelchair accessible museum and grounds.",
+        photographyTips: "Best in the morning for peaceful shots.",
+        localMarkets: "Ahmedabad market for khadi products.",
+        events: "Gandhi Jayanti, prayer meetings.",
+        conservationStatus: "Maintained by Sabarmati Ashram Preservation and Memorial Trust."
     }
   },
   // Haryana
@@ -608,6 +1116,19 @@ const culturalPlaces = [
       history: "Mentioned in ancient Hindu texts as the battlefield of the Mahabharata.",
       significance: "A major pilgrimage site for Hindus.",
       festivals: "Gita Jayanti."
+        ,bestTimeToVisit: "November to February",
+        entryFee: "Free",
+        localCuisine: "North Indian thali and sweets in Kurukshetra.",
+        tips: "Visit Brahma Sarovar for sunrise.",
+        howToReach: "Located in Kurukshetra, accessible by train, bus, and taxi.",
+        nearbyAttractions: ["Brahma Sarovar", "Jyotisar"],
+        architecture: "Ancient temples and ghats.",
+        legends: "Site of the Mahabharata war and Bhagavad Gita discourse.",
+        accessibility: "Most sites accessible, some steps.",
+        photographyTips: "Best at sunrise for reflections.",
+        localMarkets: "Kurukshetra market for religious items.",
+        events: "Gita Jayanti, solar eclipse fairs.",
+        conservationStatus: "Maintained by Haryana Tourism."
     }
   },
   {
@@ -622,6 +1143,19 @@ const culturalPlaces = [
       history: "Declared a bird sanctuary in 1972 and a national park in 1989.",
       significance: "Home to over 250 species of birds.",
       festivals: "Bird watching festivals and eco-events."
+        ,bestTimeToVisit: "November to February",
+        entryFee: "₹50 for Indians, ₹200 for foreigners",
+        localCuisine: "North Indian snacks and sweets in Gurugram.",
+        tips: "Carry binoculars and visit early morning.",
+        howToReach: "Located in Gurugram, accessible by taxi, bus, and auto.",
+        nearbyAttractions: ["Bhindawas Bird Sanctuary", "Leisure Valley Park"],
+        architecture: "Wetland with watchtowers and trails.",
+        legends: "Named after Sultan Singh Chauhan.",
+        accessibility: "Wheelchair accessible trails.",
+        photographyTips: "Best in winter for migratory birds.",
+        localMarkets: "Gurugram market for souvenirs.",
+        events: "Bird festivals, eco-events.",
+        conservationStatus: "Protected area under Haryana Forest Department."
     }
   },
   {
@@ -636,6 +1170,19 @@ const culturalPlaces = [
       history: "Built in the 17th century by Nawab Fidai Khan.",
       significance: "A fine example of Mughal garden design.",
       festivals: "Pinjore Heritage Festival."
+        ,bestTimeToVisit: "October to March",
+        entryFee: "₹20 for Indians, ₹250 for foreigners",
+        localCuisine: "Punjabi and North Indian food in Pinjore.",
+        tips: "Visit in the evening for illuminated gardens.",
+        howToReach: "Located in Pinjore, accessible by train, bus, and taxi.",
+        nearbyAttractions: ["Kalka", "Morni Hills"],
+        architecture: "Mughal garden with fountains and terraces.",
+        legends: "Built by Nawab Fidai Khan, Aurangzeb's foster brother.",
+        accessibility: "Wheelchair accessible paths.",
+        photographyTips: "Best at sunset for garden views.",
+        localMarkets: "Pinjore market for handicrafts.",
+        events: "Pinjore Heritage Festival, flower shows.",
+        conservationStatus: "Maintained by Haryana Tourism."
     }
   },
   // Himachal Pradesh
@@ -651,6 +1198,19 @@ const culturalPlaces = [
       history: "Built in 1553 by Maharaja Bahadur Singh.",
       significance: "A major religious and tourist site in Manali.",
       festivals: "Hadimba Devi Fair."
+        ,bestTimeToVisit: "May to July",
+        entryFee: "Free",
+        localCuisine: "Himachali cuisine and trout fish in Manali.",
+        tips: "Visit early morning for fewer crowds.",
+        howToReach: "Located in Manali, accessible by taxi, bus, and auto.",
+        nearbyAttractions: ["Manu Temple", "Solang Valley"],
+        architecture: "Pagoda-style wooden temple with carved doors.",
+        legends: "Dedicated to Hadimba, wife of Bhima from Mahabharata.",
+        accessibility: "Some steps, partial wheelchair access.",
+        photographyTips: "Best in the morning for forest light.",
+        localMarkets: "Manali market for woolens and handicrafts.",
+        events: "Hadimba Devi Fair, Dussehra.",
+        conservationStatus: "Protected monument under ASI."
     }
   },
   {
@@ -665,6 +1225,19 @@ const culturalPlaces = [
       history: "Believed to be the place where Hanuman rested during his search for the Sanjeevani herb.",
       significance: "Offers panoramic views of Shimla.",
       festivals: "Dussehra and Hanuman Jayanti."
+        ,bestTimeToVisit: "March to June",
+        entryFee: "Free",
+        localCuisine: "Himachali snacks and sweets in Shimla.",
+        tips: "Beware of monkeys near the temple.",
+        howToReach: "Located on Jakhoo Hill, accessible by ropeway, taxi, or foot.",
+        nearbyAttractions: ["The Ridge", "Christ Church"],
+        architecture: "Temple with tall Hanuman statue and panoramic views.",
+        legends: "Hanuman rested here during his search for Sanjeevani.",
+        accessibility: "Ropeway available, some steps at top.",
+        photographyTips: "Best at sunrise for city views.",
+        localMarkets: "Shimla market for souvenirs.",
+        events: "Dussehra, Hanuman Jayanti.",
+        conservationStatus: "Maintained by Shimla Municipal Corporation."
     }
   },
   {
@@ -679,6 +1252,19 @@ const culturalPlaces = [
       history: "Established in the 1960s by Tibetan refugees.",
       significance: "A center for Buddhist learning and culture.",
       festivals: "Cham Dance Festival."
+        ,bestTimeToVisit: "April to June",
+        entryFee: "Free",
+        localCuisine: "Tibetan and Himachali food in Tashijong.",
+        tips: "Attend the Cham dance for cultural experience.",
+        howToReach: "Located in Kangra Valley, accessible by taxi and bus.",
+        nearbyAttractions: ["Palampur", "Baijnath Temple"],
+        architecture: "Tibetan monastery with prayer halls and stupas.",
+        legends: "Founded by Tibetan refugees in the 1960s.",
+        accessibility: "Some steps, partial wheelchair access.",
+        photographyTips: "Best during festival for dance photos.",
+        localMarkets: "Tashijong market for handicrafts.",
+        events: "Cham Dance Festival, Losar.",
+        conservationStatus: "Maintained by monastery community."
     }
   },
   // Jharkhand
@@ -694,6 +1280,19 @@ const culturalPlaces = [
       history: "Mentioned in ancient Hindu scriptures, attracts millions of devotees annually.",
       significance: "A major center for the Shravan Mela pilgrimage.",
       festivals: "Shravan Mela."
+        ,bestTimeToVisit: "July to August (for festival), otherwise October to March",
+        entryFee: "Free",
+        localCuisine: "Bihari and North Indian food in Deoghar.",
+        tips: "Visit during Shravan Mela for vibrant atmosphere.",
+        howToReach: "Located in Deoghar, accessible by train, bus, and taxi.",
+        nearbyAttractions: ["Nandan Pahar", "Trikut Pahar"],
+        architecture: "Temple complex with shikhara and courtyards.",
+        legends: "Said to be where Ravana worshipped Shiva.",
+        accessibility: "Some steps, partial wheelchair access.",
+        photographyTips: "Best at sunrise for temple photos.",
+        localMarkets: "Deoghar market for religious items.",
+        events: "Shravan Mela, Shivratri.",
+        conservationStatus: "Maintained by temple trust."
     }
   },
   {
@@ -708,6 +1307,19 @@ const culturalPlaces = [
       history: "A popular summer retreat during the British era.",
       significance: "Known for its natural beauty and pleasant climate.",
       festivals: "Local tribal festivals."
+        ,bestTimeToVisit: "October to March",
+        entryFee: "Free",
+        localCuisine: "Jharkhandi cuisine and sweets in Netarhat.",
+        tips: "Visit for sunrise and sunset views.",
+        howToReach: "Located in Netarhat, accessible by bus, taxi, and jeep.",
+        nearbyAttractions: ["Upper Ghaghri Falls", "Lower Ghaghri Falls"],
+        architecture: "Hill station with colonial-era buildings.",
+        legends: "Known as the Queen of Chotanagpur.",
+        accessibility: "Most viewpoints accessible, some steps.",
+        photographyTips: "Best at sunrise and sunset.",
+        localMarkets: "Netarhat market for local crafts.",
+        events: "Tribal festivals, nature walks.",
+        conservationStatus: "Maintained by Jharkhand Tourism."
     }
   },
   {
@@ -722,6 +1334,19 @@ const culturalPlaces = [
       history: "Declared a national park in 1986, part of the Palamau Tiger Reserve.",
       significance: "Home to tigers, elephants, and many other species.",
       festivals: "Wildlife Week."
+        ,bestTimeToVisit: "November to March",
+        entryFee: "₹100 for Indians, ₹500 for foreigners",
+        localCuisine: "Jharkhandi food and snacks in Latehar.",
+        tips: "Take a guided safari for best wildlife sightings.",
+        howToReach: "Located in Latehar, accessible by train, bus, and taxi.",
+        nearbyAttractions: ["Palamau Fort", "Lodh Falls"],
+        architecture: "Forest reserve with watchtowers and safari tracks.",
+        legends: "Known for tiger conservation efforts.",
+        accessibility: "Safari vehicles available, some trails not accessible.",
+        photographyTips: "Best in early morning for wildlife.",
+        localMarkets: "Latehar market for tribal crafts.",
+        events: "Wildlife Week, eco-tours.",
+        conservationStatus: "Part of Palamau Tiger Reserve, protected by state government."
     }
   },
   // Kerala
@@ -851,7 +1476,21 @@ const culturalPlaces = [
       history: "Built in 1660, inspired by the Taj Mahal.",
       significance: "A fine example of Mughal architecture in the Deccan.",
       festivals: "Urs and local fairs."
-  }},
+        ,bestTimeToVisit: "October to March",
+        entryFee: "₹25 for Indians, ₹200 for foreigners",
+        localCuisine: "Hyderabadi and Mughlai cuisine in Aurangabad.",
+        tips: "Visit early morning for peaceful experience.",
+        howToReach: "Located in Aurangabad, accessible by train, bus, and taxi.",
+        nearbyAttractions: ["Aurangabad Caves", "Panchakki"],
+        architecture: "Mughal-style mausoleum with gardens and minarets.",
+        legends: "Built by Azam Shah for his mother, Dilras Banu Begum.",
+        accessibility: "Some steps, partial wheelchair access.",
+        photographyTips: "Best at sunrise for monument photos.",
+        localMarkets: "Aurangabad market for Himroo shawls.",
+        events: "Urs, fairs.",
+        conservationStatus: "Protected monument under ASI."
+      }
+    },
 
   // Manipur
   {
@@ -865,7 +1504,20 @@ const culturalPlaces = [
     details: {
       history: "The fort has been the center of Manipur's power for centuries.",
       significance: "A symbol of Manipuri identity and history.",
-      festivals: "Sangai Festival."
+      festivals: "Sangai Festival.",
+      bestTimeToVisit: "November (Sangai Festival), otherwise October to March",
+      entryFee: "INR 20",
+      localCuisine: "Manipuri cuisine in Imphal",
+      tips: "Hire a guide for historical context.",
+      howToReach: "Located in Imphal; taxis and autos available.",
+      nearbyAttractions: "Imphal War Cemetery, Loktak Lake",
+      architecture: "Ancient fort with temples and gates",
+      legends: "Linked to Meitei kings and Manipuri legends.",
+      accessibility: "Good; accessible by road.",
+      photographyTips: "Best in the morning for fort views.",
+      localMarkets: "Imphal market",
+      events: "Sangai Festival",
+      conservationStatus: "Maintained by Manipur Tourism."
     }
   },
   {
@@ -879,7 +1531,20 @@ const culturalPlaces = [
     details: {
       history: "A vital part of Manipur's ecology and economy.",
       significance: "Home to the endangered Sangai deer.",
-      festivals: "Loktak Day and Sangai Festival."
+      festivals: "Loktak Day and Sangai Festival.",
+      bestTimeToVisit: "November to March",
+      entryFee: "INR 30 (for Keibul Lamjao National Park)",
+      localCuisine: "Fish curry, Eromba, local snacks",
+      tips: "Take a boat ride to see phumdis and Sangai deer.",
+      howToReach: "53 km from Imphal; taxis and buses available.",
+      nearbyAttractions: "Keibul Lamjao National Park, INA Museum",
+      architecture: "Natural freshwater lake with floating islands",
+      legends: "Linked to local folklore and the Sangai deer.",
+      accessibility: "Good; accessible by road.",
+      photographyTips: "Best at sunrise for misty lake views.",
+      localMarkets: "Moirang market",
+      events: "Loktak Day, Sangai Festival",
+      conservationStatus: "Protected as a Ramsar site."
     }
   },
   {
@@ -893,7 +1558,20 @@ const culturalPlaces = [
     details: {
       history: "Built in the 19th century by Maharaja Nara Singh.",
       significance: "A center of Manipuri religious and cultural life.",
-      festivals: "Janmashtami and Rath Yatra."
+      festivals: "Janmashtami and Rath Yatra.",
+      bestTimeToVisit: "August (Janmashtami), otherwise October to March",
+      entryFee: "Free",
+      localCuisine: "Manipuri sweets and snacks",
+      tips: "Attend morning prayers for spiritual experience.",
+      howToReach: "Located in Imphal; easily accessible.",
+      nearbyAttractions: "Kangla Fort, Ima Keithel market",
+      architecture: "Vaishnavite temple with domes and courtyards",
+      legends: "Linked to Lord Krishna and Manipuri kings.",
+      accessibility: "Good; accessible by road.",
+      photographyTips: "Best in the morning for temple shots.",
+      localMarkets: "Imphal market",
+      events: "Janmashtami, Rath Yatra",
+      conservationStatus: "Maintained by temple trust."
     }
   },
   // Meghalaya
@@ -908,7 +1586,20 @@ const culturalPlaces = [
     details: {
       history: "Created by the Khasi and Jaintia tribes over centuries.",
       significance: "A symbol of sustainable living and indigenous knowledge.",
-      festivals: "Local eco-festivals."
+      festivals: "Local eco-festivals.",
+      bestTimeToVisit: "June to September (monsoon for lush views), October to March for trekking",
+      entryFee: "INR 20",
+      localCuisine: "Khasi cuisine in Cherrapunji",
+      tips: "Wear sturdy shoes; bridges can be slippery.",
+      howToReach: "Trek from Cherrapunji; taxis and guides available.",
+      nearbyAttractions: "Nohkalikai Falls, Mawsmai Caves",
+      architecture: "Living root bridges made from rubber trees",
+      legends: "Stories of Khasi ingenuity and nature worship.",
+      accessibility: "Challenging; requires trekking.",
+      photographyTips: "Best after rain for lush greenery.",
+      localMarkets: "Cherrapunji market",
+      events: "Eco-festivals",
+      conservationStatus: "Protected as a bioengineering marvel."
     }
   },
   {
@@ -922,7 +1613,20 @@ const culturalPlaces = [
     details: {
       history: "Created by damming the Umiam River in the 1960s.",
       significance: "A major tourist attraction and water source.",
-      festivals: "Water sports festivals."
+      festivals: "Water sports festivals.",
+      bestTimeToVisit: "October to March",
+      entryFee: "INR 20",
+      localCuisine: "Meghalayan cuisine at lakeside stalls",
+      tips: "Try kayaking and boating; picnic spots available.",
+      howToReach: "15 km from Shillong; taxis and buses available.",
+      nearbyAttractions: "Shillong, Don Bosco Museum",
+      architecture: "Man-made reservoir",
+      legends: "Local stories about the creation of the lake.",
+      accessibility: "Good; accessible by road.",
+      photographyTips: "Best at sunset for lake views.",
+      localMarkets: "Shillong market",
+      events: "Water sports festivals",
+      conservationStatus: "Maintained as a tourist site."
     }
   },
   {
@@ -936,7 +1640,20 @@ const culturalPlaces = [
     details: {
       history: "Erected by the Jaintia kings between 1500-1835 CE.",
       significance: "A site of historical and archaeological importance.",
-      festivals: "Behdeinkhlam Festival."
+      festivals: "Behdeinkhlam Festival.",
+      bestTimeToVisit: "October to March",
+      entryFee: "INR 10",
+      localCuisine: "Jadoh, Dohneiiong, Bamboo Shoot dishes",
+      tips: "Wear comfortable shoes for exploring the monoliths.",
+      howToReach: "Nearest airport is in Shillong; taxis and buses available.",
+      nearbyAttractions: "Thadlaskein Lake, Jowai town",
+      architecture: "Megalithic stone structures",
+      legends: "Associated with Jaintia kings and local folklore.",
+      accessibility: "Moderate; some uneven terrain.",
+      photographyTips: "Best light in the morning; wide-angle lens recommended.",
+      localMarkets: "Jowai market",
+      events: "Behdeinkhlam Festival",
+      conservationStatus: "Protected as a heritage site."
     }
   },
   // Mizoram
@@ -951,7 +1668,20 @@ const culturalPlaces = [
     details: {
       history: "Built by the Kohhran Thianghlim religious group, completed in 2017.",
       significance: "A major Christian pilgrimage and tourist site.",
-      festivals: "Christmas and local church festivals."
+      festivals: "Christmas and local church festivals.",
+      bestTimeToVisit: "October to March",
+      entryFee: "Free",
+      localCuisine: "Bai, Bamboo Shoot dishes, Smoked Pork",
+      tips: "Dress modestly; photography allowed outside only.",
+      howToReach: "Located in Aizawl; taxis and buses available.",
+      nearbyAttractions: "Durtlang Hills, Mizoram State Museum",
+      architecture: "Modern Christian architecture",
+      legends: "Inspired by biblical Solomon's Temple.",
+      accessibility: "Good; accessible by road.",
+      photographyTips: "Best during golden hour for exterior shots.",
+      localMarkets: "Bara Bazar, Aizawl",
+      events: "Annual church gatherings",
+      conservationStatus: "Well maintained by the church community."
     }
   },
   {
@@ -965,7 +1695,20 @@ const culturalPlaces = [
     details: {
       history: "A site of cultural festivals and traditional Mizo huts.",
       significance: "Offers panoramic views of the surrounding hills.",
-      festivals: "Anthurium Festival."
+      festivals: "Anthurium Festival.",
+      bestTimeToVisit: "September to April",
+      entryFee: "INR 20",
+      localCuisine: "Mizo Bai, Bamboo Shoot dishes",
+      tips: "Carry water and wear trekking shoes.",
+      howToReach: "30 km from Aizawl; taxis and buses available.",
+      nearbyAttractions: "Aizawl city, Durtlang Hills",
+      architecture: "Traditional Mizo huts at the festival site",
+      legends: "Local folklore about the hills.",
+      accessibility: "Moderate; involves trekking.",
+      photographyTips: "Clear days offer best panoramic shots.",
+      localMarkets: "Reiek village market",
+      events: "Anthurium Festival",
+      conservationStatus: "Protected as an eco-tourism site."
     }
   },
   {
@@ -979,7 +1722,20 @@ const culturalPlaces = [
     details: {
       history: "Declared a national park in 1992.",
       significance: "Home to rare flora and fauna, including the clouded leopard.",
-      festivals: "Eco-tourism events."
+      festivals: "Eco-tourism events.",
+      bestTimeToVisit: "November to April",
+      entryFee: "INR 50",
+      localCuisine: "Mizo cuisine at nearby villages",
+      tips: "Hire a local guide for trekking.",
+      howToReach: "Accessible from Aizawl by road.",
+      nearbyAttractions: "Vantawng Falls, Aizawl",
+      architecture: "Natural landscapes",
+      legends: "Sacred to local tribes; home of the 'Blue Mountain'.",
+      accessibility: "Challenging; trekking required.",
+      photographyTips: "Best for wildlife and landscape photography.",
+      localMarkets: "Lunglei market",
+      events: "Eco-tourism festivals",
+      conservationStatus: "Protected national park."
     }
   },
   // Tripura
@@ -994,7 +1750,20 @@ const culturalPlaces = [
     details: {
       history: "Constructed in 1930 by Maharaja Bir Bikram Kishore Manikya.",
       significance: "The only water palace in Eastern India, a major tourist attraction.",
-      festivals: "Neermahal Water Festival."
+      festivals: "Neermahal Water Festival.",
+      bestTimeToVisit: "October to March",
+      entryFee: "INR 50",
+      localCuisine: "Mui Borok, Fish Stew",
+      tips: "Boat rides are a must; evenings are scenic.",
+      howToReach: "27 km from Agartala; accessible by road and boat.",
+      nearbyAttractions: "Rudrasagar Lake, Sipahijala Wildlife Sanctuary",
+      architecture: "Blend of Hindu and Mughal styles",
+      legends: "Royal summer retreat stories.",
+      accessibility: "Good; boat access required.",
+      photographyTips: "Best at sunset from the lake.",
+      localMarkets: "Melaghar market",
+      events: "Neermahal Water Festival",
+      conservationStatus: "Maintained as a heritage site."
     }
   },
   {
@@ -1008,7 +1777,20 @@ const culturalPlaces = [
     details: {
       history: "Built in 1901 by Maharaja Radha Kishore Manikya.",
       significance: "A blend of Mughal, Roman, and British architecture.",
-      festivals: "Durga Puja and other cultural events."
+      festivals: "Durga Puja and other cultural events.",
+      bestTimeToVisit: "October to March",
+      entryFee: "INR 20",
+      localCuisine: "Mui Borok, Bamboo Shoot dishes",
+      tips: "Visit the museum for Tripura's history.",
+      howToReach: "Located in Agartala; easily accessible.",
+      nearbyAttractions: "Heritage Park, Jagannath Temple",
+      architecture: "Mughal, Roman, British styles",
+      legends: "Royal family stories.",
+      accessibility: "Excellent; wheelchair accessible.",
+      photographyTips: "Best in the morning for exterior shots.",
+      localMarkets: "Agartala market",
+      events: "Cultural exhibitions",
+      conservationStatus: "Maintained as a state museum."
     }
   },
   {
@@ -1022,7 +1804,20 @@ const culturalPlaces = [
     details: {
       history: "The carvings date back to the 7th–9th centuries CE.",
       significance: "Known as the 'Angkor Wat of the Northeast'.",
-      festivals: "Ashokastami Mela."
+      festivals: "Ashokastami Mela.",
+      bestTimeToVisit: "October to April",
+      entryFee: "INR 10",
+      localCuisine: "Mui Borok, Fish Curry",
+      tips: "Wear sturdy shoes for exploring the site.",
+      howToReach: "178 km from Agartala; accessible by road.",
+      nearbyAttractions: "Kailashahar, Dharmanagar",
+      architecture: "Rock-cut sculptures",
+      legends: "Myth of Lord Shiva and one less than a crore idols.",
+      accessibility: "Moderate; uneven terrain.",
+      photographyTips: "Best in the morning for clear shots.",
+      localMarkets: "Unakoti market",
+      events: "Ashokastami Mela",
+      conservationStatus: "Protected archaeological site."
     }
   },
   // Sikkim
@@ -1037,7 +1832,20 @@ const culturalPlaces = [
     details: {
       history: "Originally built in the 16th century, rebuilt in the 20th century.",
       significance: "A major center for Buddhist learning and culture.",
-      festivals: "Drupka Teshi, Losar."
+      festivals: "Drupka Teshi, Losar.",
+      bestTimeToVisit: "March to May, September to November",
+      entryFee: "INR 10",
+      localCuisine: "Phagshapa, Momos, Thukpa",
+      tips: "Respect monastery rules; photography may be restricted inside.",
+      howToReach: "24 km from Gangtok; taxis available.",
+      nearbyAttractions: "Gangtok, Hanuman Tok",
+      architecture: "Tibetan Buddhist monastery style",
+      legends: "Seat of the Karmapa; sacred relics.",
+      accessibility: "Good; accessible by road.",
+      photographyTips: "Best in the morning; ask before photographing monks.",
+      localMarkets: "Gangtok markets",
+      events: "Buddhist festivals, mask dances",
+      conservationStatus: "Maintained as a religious site."
     }
   },
   {
@@ -1051,7 +1859,20 @@ const culturalPlaces = [
     details: {
       history: "Founded in 1705 by Lama Lhatsun Chempo.",
       significance: "A key monastery of the Nyingma order of Tibetan Buddhism.",
-      festivals: "Cham Dance Festival."
+      festivals: "Cham Dance Festival.",
+      bestTimeToVisit: "March to May, September to November",
+      entryFee: "INR 20",
+      localCuisine: "Gundruk, Sel Roti",
+      tips: "Attend the Cham dance for a unique experience.",
+      howToReach: "2 km from Pelling; taxis available.",
+      nearbyAttractions: "Rabdentse Ruins, Pelling",
+      architecture: "Traditional Sikkimese monastery",
+      legends: "Founded by Lhatsun Chempo; ancient relics.",
+      accessibility: "Good; accessible by road.",
+      photographyTips: "Best during festival days.",
+      localMarkets: "Pelling market",
+      events: "Cham Dance Festival",
+      conservationStatus: "Maintained as a heritage site."
     }
   },
   {
@@ -1065,7 +1886,20 @@ const culturalPlaces = [
     details: {
       history: "A sacred lake for the local Sikkimese people.",
       significance: "A popular tourist destination, especially in winter.",
-      festivals: "Losar and other local festivals."
+      festivals: "Losar and other local festivals.",
+      bestTimeToVisit: "April to May, October to December",
+      entryFee: "INR 50 (permit required)",
+      localCuisine: "Momos, Thukpa at roadside stalls",
+      tips: "Carry warm clothes; oxygen levels are low.",
+      howToReach: "38 km from Gangtok; shared taxis available.",
+      nearbyAttractions: "Baba Mandir, Nathula Pass",
+      architecture: "Natural glacial lake",
+      legends: "Considered sacred by locals; oracles used to predict the future.",
+      accessibility: "Challenging; high altitude.",
+      photographyTips: "Best in early morning for reflections.",
+      localMarkets: "Gangtok markets",
+      events: "Local festivals",
+      conservationStatus: "Protected as an eco-sensitive zone."
     }
   },
   // Andaman and Nicobar Islands
@@ -1080,7 +1914,20 @@ const culturalPlaces = [
     details: {
       history: "Built between 1896 and 1906, infamous for its inhumane conditions.",
       significance: "A symbol of India's freedom struggle.",
-      festivals: "Light and Sound Show."
+      festivals: "Light and Sound Show.",
+      bestTimeToVisit: "October to May",
+      entryFee: "INR 30",
+      localCuisine: "Seafood, South Indian cuisine in Port Blair",
+      tips: "Attend the evening light and sound show.",
+      howToReach: "Located in Port Blair; taxis and autos available.",
+      nearbyAttractions: "Ross Island, Corbyn's Cove Beach",
+      architecture: "Colonial prison architecture",
+      legends: "Stories of freedom fighters' sacrifices.",
+      accessibility: "Excellent; wheelchair accessible.",
+      photographyTips: "Best in the evening during the show.",
+      localMarkets: "Aberdeen Bazaar, Port Blair",
+      events: "Light and Sound Show",
+      conservationStatus: "National memorial."
     }
   },
   {
@@ -1094,7 +1941,20 @@ const culturalPlaces = [
     details: {
       history: "A popular tourist destination, awarded as Asia's best beach by Time magazine.",
       significance: "Famous for sunsets and water sports.",
-      festivals: "Beach festivals and eco-events."
+      festivals: "Beach festivals and eco-events.",
+      bestTimeToVisit: "November to April",
+      entryFee: "Free",
+      localCuisine: "Seafood at local shacks",
+      tips: "Swim only in designated areas; beware of strong currents.",
+      howToReach: "Accessible by ferry from Port Blair.",
+      nearbyAttractions: "Elephant Beach, Kalapathar Beach",
+      architecture: "Natural beach",
+      legends: "Named after Lord Radha; local stories.",
+      accessibility: "Good; accessible by road and ferry.",
+      photographyTips: "Best at sunset.",
+      localMarkets: "Havelock Island market",
+      events: "Beach festivals",
+      conservationStatus: "Maintained as a tourist beach."
     }
   },
   {
@@ -1108,7 +1968,20 @@ const culturalPlaces = [
     details: {
       history: "Abandoned after an earthquake in 1941, now a tourist attraction.",
       significance: "Showcases colonial architecture and history.",
-      festivals: "Light and Sound Show."
+      festivals: "Light and Sound Show.",
+      bestTimeToVisit: "October to May",
+      entryFee: "INR 20",
+      localCuisine: "Seafood, local snacks",
+      tips: "Ferry rides are scenic; carry water.",
+      howToReach: "Short ferry from Port Blair.",
+      nearbyAttractions: "Cellular Jail, North Bay Island",
+      architecture: "Colonial ruins",
+      legends: "Haunted stories and colonial history.",
+      accessibility: "Good; ferry access required.",
+      photographyTips: "Best in the morning for soft light.",
+      localMarkets: "Port Blair markets",
+      events: "Light and Sound Show",
+      conservationStatus: "Maintained as a heritage site."
     }
   },
   // Chandigarh
@@ -1123,7 +1996,20 @@ const culturalPlaces = [
     details: {
       history: "Started in 1957, now a sprawling 40-acre garden.",
       significance: "A symbol of creativity and recycling.",
-      festivals: "Cultural events and art festivals."
+      festivals: "Cultural events and art festivals.",
+      bestTimeToVisit: "October to March",
+      entryFee: "INR 30",
+      localCuisine: "Punjabi cuisine in Chandigarh",
+      tips: "Explore all sections; great for families.",
+      howToReach: "Located in Chandigarh; autos and taxis available.",
+      nearbyAttractions: "Sukhna Lake, Rose Garden",
+      architecture: "Sculptures from recycled materials",
+      legends: "Created secretly by Nek Chand.",
+      accessibility: "Excellent; wheelchair accessible.",
+      photographyTips: "Best in the morning for fewer crowds.",
+      localMarkets: "Sector 17 market",
+      events: "Art festivals",
+      conservationStatus: "Maintained as a public park."
     }
   },
   {
@@ -1137,7 +2023,20 @@ const culturalPlaces = [
     details: {
       history: "Created in 1958 by damming the Sukhna Choe stream.",
       significance: "A major recreational spot in the city.",
-      festivals: "Sukhna Lake Festival."
+      festivals: "Sukhna Lake Festival.",
+      bestTimeToVisit: "October to March",
+      entryFee: "Free",
+      localCuisine: "Street food at the lake",
+      tips: "Boating is popular; visit at sunrise for tranquility.",
+      howToReach: "Located in Chandigarh; easily accessible.",
+      nearbyAttractions: "Rock Garden, Rose Garden",
+      architecture: "Man-made reservoir",
+      legends: "Local stories about the lake's creation.",
+      accessibility: "Excellent; wheelchair accessible.",
+      photographyTips: "Best at sunrise or sunset.",
+      localMarkets: "Sector 17 market",
+      events: "Lake festivals",
+      conservationStatus: "Maintained as a city landmark."
     }
   },
   {
@@ -1151,7 +2050,20 @@ const culturalPlaces = [
     details: {
       history: "Constructed in the 1950s as part of Chandigarh's master plan.",
       significance: "An architectural marvel and symbol of modern India.",
-      festivals: "Heritage walks and architecture tours."
+      festivals: "Heritage walks and architecture tours.",
+      bestTimeToVisit: "October to March",
+      entryFee: "INR 20 (for guided tours)",
+      localCuisine: "Punjabi cuisine in Chandigarh",
+      tips: "Join a guided tour for best experience.",
+      howToReach: "Located in Chandigarh; taxis and autos available.",
+      nearbyAttractions: "Rock Garden, Sukhna Lake",
+      architecture: "Modernist by Le Corbusier",
+      legends: "UNESCO World Heritage status.",
+      accessibility: "Excellent; wheelchair accessible.",
+      photographyTips: "Best in the afternoon for lighting.",
+      localMarkets: "Sector 17 market",
+      events: "Architecture tours",
+      conservationStatus: "UNESCO World Heritage Site."
     }
   },
   // Dadra and Nagar Haveli and Daman and Diu
@@ -1166,7 +2078,20 @@ const culturalPlaces = [
     details: {
       history: "Built in 1535, a symbol of Portuguese colonial power.",
       significance: "A major tourist attraction and historical site.",
-      festivals: "Diu Festival."
+      festivals: "Diu Festival.",
+      bestTimeToVisit: "October to March",
+      entryFee: "INR 20",
+      localCuisine: "Seafood, Portuguese-influenced dishes",
+      tips: "Explore the lighthouse for panoramic views.",
+      howToReach: "Located in Diu town; taxis and autos available.",
+      nearbyAttractions: "Naida Caves, St. Paul's Church",
+      architecture: "Portuguese fort architecture",
+      legends: "Stories of battles and colonial rule.",
+      accessibility: "Good; accessible by road.",
+      photographyTips: "Best in the evening for sunset shots.",
+      localMarkets: "Diu market",
+      events: "Diu Festival",
+      conservationStatus: "Maintained as a heritage site."
     }
   },
   {
@@ -1180,7 +2105,20 @@ const culturalPlaces = [
     details: {
       history: "Built in 1601 by the Portuguese.",
       significance: "Known for its intricate woodwork and architecture.",
-      festivals: "Feast of St. Paul."
+      festivals: "Feast of St. Paul.",
+      bestTimeToVisit: "October to March",
+      entryFee: "Free",
+      localCuisine: "Seafood, local sweets",
+      tips: "Visit during the feast for celebrations.",
+      howToReach: "Located in Diu town; easily accessible.",
+      nearbyAttractions: "Diu Fort, Naida Caves",
+      architecture: "Baroque Portuguese church",
+      legends: "Miraculous stories associated with St. Paul.",
+      accessibility: "Good; accessible by road.",
+      photographyTips: "Best in the morning for interior shots.",
+      localMarkets: "Diu market",
+      events: "Feast of St. Paul",
+      conservationStatus: "Maintained as a religious site."
     }
   },
   {
@@ -1194,7 +2132,20 @@ const culturalPlaces = [
     details: {
       history: "A popular spot for locals and tourists alike.",
       significance: "Famous for its sunsets and beach activities.",
-      festivals: "Beach festivals and kite flying events."
+      festivals: "Beach festivals and kite flying events.",
+      bestTimeToVisit: "October to March",
+      entryFee: "Free",
+      localCuisine: "Seafood at beach shacks",
+      tips: "Ideal for swimming and camel rides.",
+      howToReach: "Located in Daman; taxis and autos available.",
+      nearbyAttractions: "Devka Beach, Moti Daman Fort",
+      architecture: "Natural beach",
+      legends: "Local stories about the black sand.",
+      accessibility: "Excellent; accessible by road.",
+      photographyTips: "Best at sunset.",
+      localMarkets: "Daman market",
+      events: "Beach festivals",
+      conservationStatus: "Maintained as a tourist beach."
     }
   },
   // Lakshadweep
@@ -1209,7 +2160,20 @@ const culturalPlaces = [
     details: {
       history: "A major tourist destination in Lakshadweep.",
       significance: "Famous for snorkeling, scuba diving, and coral reefs.",
-      festivals: "Beach festivals and local events."
+      festivals: "Beach festivals and local events.",
+      bestTimeToVisit: "October to May",
+      entryFee: "Permit required",
+      localCuisine: "Seafood, coconut-based dishes",
+      tips: "Book water sports in advance.",
+      howToReach: "Flights from Kochi; boats to island.",
+      nearbyAttractions: "Bangaram Island, Kavaratti",
+      architecture: "Natural coral island",
+      legends: "Local stories about the lagoon.",
+      accessibility: "Good; accessible by air and sea.",
+      photographyTips: "Best underwater shots with waterproof camera.",
+      localMarkets: "Agatti market",
+      events: "Beach festivals",
+      conservationStatus: "Protected as an eco-sensitive zone."
     }
   },
   {
@@ -1223,7 +2187,20 @@ const culturalPlaces = [
     details: {
       history: "Built in the 17th century, a major religious site for locals.",
       significance: "Known for its ornate ceiling carvings.",
-      festivals: "Eid and other Islamic festivals."
+      festivals: "Eid and other Islamic festivals.",
+      bestTimeToVisit: "October to May",
+      entryFee: "Free",
+      localCuisine: "Seafood, local sweets",
+      tips: "Dress modestly; remove shoes before entering.",
+      howToReach: "Located in Kavaratti; accessible by boat.",
+      nearbyAttractions: "Agatti Island, Marine Aquarium",
+      architecture: "Traditional Islamic architecture",
+      legends: "Stories of miraculous events.",
+      accessibility: "Good; accessible by road and boat.",
+      photographyTips: "Best in the morning for soft light.",
+      localMarkets: "Kavaratti market",
+      events: "Religious festivals",
+      conservationStatus: "Maintained as a religious site."
     }
   },
   {
@@ -1237,7 +2214,20 @@ const culturalPlaces = [
     details: {
       history: "A top destination for eco-tourism and water sports.",
       significance: "Famous for its biodiversity and marine life.",
-      festivals: "Beach festivals and eco-events."
+      festivals: "Beach festivals and eco-events.",
+      bestTimeToVisit: "October to May",
+      entryFee: "Permit required",
+      localCuisine: "Seafood, coconut-based dishes",
+      tips: "Ideal for snorkeling and kayaking.",
+      howToReach: "Boat from Agatti or Kavaratti.",
+      nearbyAttractions: "Agatti Island, Kavaratti",
+      architecture: "Natural coral island",
+      legends: "Local stories about the island's beauty.",
+      accessibility: "Good; accessible by boat.",
+      photographyTips: "Best for underwater and sunset shots.",
+      localMarkets: "Bangaram market",
+      events: "Eco-tourism events",
+      conservationStatus: "Protected as an eco-sensitive zone."
     }
   },
   // Puducherry
@@ -1252,7 +2242,20 @@ const culturalPlaces = [
     details: {
       history: "Founded in 1968 by Mirra Alfassa (The Mother).",
       significance: "A unique experiment in community and spirituality.",
-      festivals: "Auroville birthday and cultural events."
+      festivals: "Auroville birthday and cultural events.",
+      bestTimeToVisit: "November to March",
+      entryFee: "Free (Matrimandir viewing requires pass)",
+      localCuisine: "Organic, international cuisine",
+      tips: "Book Matrimandir visit in advance.",
+      howToReach: "10 km from Puducherry; taxis and autos available.",
+      nearbyAttractions: "Matrimandir, Puducherry Beach",
+      architecture: "Experimental, modern architecture",
+      legends: "Inspired by Sri Aurobindo and The Mother.",
+      accessibility: "Good; accessible by road.",
+      photographyTips: "Best in the morning for Matrimandir shots.",
+      localMarkets: "Auroville boutiques",
+      events: "Cultural festivals",
+      conservationStatus: "Maintained as an international township."
     }
   },
   {
@@ -1266,7 +2269,20 @@ const culturalPlaces = [
     details: {
       history: "A favorite spot for locals and tourists.",
       significance: "Known for its sunrise views and French colonial ambiance.",
-      festivals: "Beach festivals and cultural events."
+      festivals: "Beach festivals and cultural events.",
+      bestTimeToVisit: "November to March",
+      entryFee: "Free",
+      localCuisine: "French, South Indian cuisine",
+      tips: "Early morning walks are peaceful.",
+      howToReach: "Located in Puducherry; easily accessible.",
+      nearbyAttractions: "Aurobindo Ashram, French Quarter",
+      architecture: "Colonial promenade",
+      legends: "Stories of French colonial times.",
+      accessibility: "Excellent; accessible by road.",
+      photographyTips: "Best at sunrise.",
+      localMarkets: "Puducherry markets",
+      events: "Beach festivals",
+      conservationStatus: "Maintained as a city landmark."
     }
   },
   {
@@ -1280,7 +2296,20 @@ const culturalPlaces = [
     details: {
       history: "Established in 1926, a center for yoga and spiritual practice.",
       significance: "A major spiritual destination in South India.",
-      festivals: "Darshan days and spiritual events."
+      festivals: "Darshan days and spiritual events.",
+      bestTimeToVisit: "November to March",
+      entryFee: "Free",
+      localCuisine: "Vegetarian meals at ashram canteen",
+      tips: "Maintain silence and respect ashram rules.",
+      howToReach: "Located in Puducherry; easily accessible.",
+      nearbyAttractions: "Auroville, Promenade Beach",
+      architecture: "Simple ashram buildings with meditation halls",
+      legends: "Linked to Sri Aurobindo and The Mother.",
+      accessibility: "Excellent; accessible by road.",
+      photographyTips: "Photography not allowed inside.",
+      localMarkets: "Puducherry markets",
+      events: "Darshan days, spiritual events",
+      conservationStatus: "Maintained by ashram trust."
     }
   }
 ];
