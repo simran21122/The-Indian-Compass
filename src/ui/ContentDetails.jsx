@@ -2,8 +2,7 @@
 
 import React from "react";
 import { useParams } from "react-router-dom";
-import culturalContent from "../data/culturalContent.json";
-import culturalContentDetails from "../data/culturalContentDetails.json";
+import culturalContentDetails from "../data/CulturalContentDetails.json";
 import { motion } from "framer-motion";
 import { Tag } from "lucide-react";
 
@@ -11,9 +10,8 @@ const ContentDetails = () => {
   const { id } = useParams();
   const contentId = parseInt(id, 10);
 
-  // Find content from both JSON files
-  const content = culturalContent.find((c) => c.id === contentId);
-  const details = culturalContentDetails.find((d) => d.id === contentId);
+  // Fetch content from culturalContentDetails.json only
+  const content = culturalContentDetails.find((c) => c.id === contentId);
 
   if (!content) {
     return (
@@ -49,9 +47,9 @@ const ContentDetails = () => {
             animate={{ opacity: 1, y: 0 }}
             className="bg-white p-6 rounded-2xl shadow-md w-full"
           >
-            <h2 className="text-2xl font-bold text-gray-800 mb-3">📖 Overview</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-3"> Overview</h2>
             <p className="text-gray-700 leading-relaxed text-lg">
-              {details?.detailed_description || content.description}
+              {content.detailed_description || content.description}
             </p>
           </motion.div>
 
@@ -94,11 +92,11 @@ const ContentDetails = () => {
         {/* Right Section */}
         <div className="space-y-6">
           {/* Gallery */}
-          {details?.additional_images?.length > 0 && (
+          {content.additional_images?.length > 0 && (
             <div className="bg-white p-6 rounded-2xl shadow-md space-y-3">
               <h2 className="text-2xl font-bold text-gray-800 mb-2">📸 Gallery</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {details.additional_images.map((img, index) => (
+                {content.additional_images.map((img, index) => (
                   <img
                     key={index}
                     src={img}
@@ -113,26 +111,26 @@ const ContentDetails = () => {
           {/* Explore More */}
           <div className="bg-white p-6 rounded-2xl shadow-md space-y-3">
             <h2 className="text-2xl font-bold text-gray-800">🔗 Explore More</h2>
-            {details?.youtube_link && (
+            {content.youtube_link && (
               <motion.a
-                href={details.youtube_link}
+                href={content.youtube_link}
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 className="block bg-red-500 text-white text-center py-2 px-4 rounded-xl shadow hover:bg-red-600 transition text-lg font-semibold"
               >
-                🎥 Watch on YouTube
+                Watch on YouTube
               </motion.a>
             )}
-            {details?.magazine_link && (
+            {content.magazine_link && (
               <motion.a
-                href={details.magazine_link}
+                href={content.magazine_link}
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 className="block bg-purple-600 text-white text-center py-2 px-4 rounded-xl shadow hover:bg-purple-700 transition text-lg font-semibold"
               >
-                📖 Read Magazine
+                Read Magazine
               </motion.a>
             )}
           </div>
