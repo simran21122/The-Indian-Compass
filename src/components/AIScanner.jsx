@@ -5,6 +5,7 @@ import Topbar from "../ui/header";
 import Scanner from "../ui/Scanner";
 import Scannerbg from "../image/Scannerbg.png";
 
+
 const AIScanner = () => {
   return (
     <motion.div

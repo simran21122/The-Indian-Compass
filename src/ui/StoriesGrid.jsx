@@ -22,12 +22,12 @@ function StoryGrid({ onAddStory, onEditStory, onDeleteStory }) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: index * 0.1 }}
         whileHover={{ y: -5 }}
-        className="group cursor-pointer"
+        className="group cursor-pointer w-full"
         onClick={() => setSelectedStory(story)}
       >
-        <div className="bg-white rounded-3xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+        <div className="bg-white rounded-3xl shadow-md overflow-hidden w-full">
           {/* Media Preview */}
-          <div className="relative h-64 flex items-center justify-center bg-gray-100 overflow-hidden">
+          <div className="relative w-full h-56 sm:h-64 flex items-center justify-center bg-gray-100 overflow-hidden">
             {story.media_url ? (
               <img
                 src={story.media_url}
@@ -35,7 +35,7 @@ function StoryGrid({ onAddStory, onEditStory, onDeleteStory }) {
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
             ) : (
-              <MediaIcon className="w-14 h-14 text-gray-400" />
+              <MediaIcon className="w-12 h-12 text-gray-400" />
             )}
 
             {/* Media Type Badge */}
@@ -69,20 +69,20 @@ function StoryGrid({ onAddStory, onEditStory, onDeleteStory }) {
           </div>
 
           {/* Content */}
-          <div className="p-5">
-            <h4 className="font-semibold text-gray-900 mb-2 text-lg truncate">{story.title}</h4>
-            <p className="text-sm text-gray-600 mb-3 line-clamp-3">{story.description}</p>
+          <div className="p-4 sm:p-5 w-full">
+            <h4 className="font-semibold text-gray-900 mb-2 text-base sm:text-lg truncate">{story.title}</h4>
+            <p className="text-sm text-gray-600 mb-2 line-clamp-3 break-words">{story.description}</p>
 
             {story.location && (
-              <div className="flex items-center text-xs text-gray-500 mb-2">
+              <div className="flex flex-wrap items-center text-xs text-gray-500 mb-2">
                 <MapPin className="w-3 h-3 mr-1" />
                 {story.location.city}, {story.location.state}
               </div>
             )}
 
             {/* Stats */}
-            <div className="flex items-center justify-between text-xs text-gray-500 mt-2">
-              <div className="flex space-x-3">
+            <div className="flex flex-wrap items-center justify-between text-xs text-gray-500 mt-2 gap-2">
+              <div className="flex space-x-3 flex-wrap">
                 <div className="flex items-center"><Heart className="w-3 h-3 mr-1" />{story.likes_count || 0}</div>
                 <div className="flex items-center"><MessageCircle className="w-3 h-3 mr-1" />{story.comments_count || 0}</div>
                 <div className="flex items-center"><Eye className="w-3 h-3 mr-1" />{story.views_count || 0}</div>
@@ -95,9 +95,9 @@ function StoryGrid({ onAddStory, onEditStory, onDeleteStory }) {
 
             {/* Tags */}
             {story.tags && story.tags.length > 0 && (
-              <div className="flex flex-wrap gap-2 mt-3">
+              <div className="flex flex-wrap gap-2 mt-2">
                 {story.tags.slice(0, 3).map((tag, i) => (
-                 <span className="text-xs px-2 py-0.5 bg-gray-100 rounded-full font-medium text-blue-600">#{tag}</span>
+                  <span key={i} className="text-xs px-2 py-0.5 bg-gray-100 rounded-full font-medium text-blue-600 break-words">#{tag}</span>
                 ))}
               </div>
             )}
@@ -108,31 +108,33 @@ function StoryGrid({ onAddStory, onEditStory, onDeleteStory }) {
   };
 
   return (
-    <div>
-      <div className="flex items-center justify-between mb-8">
-        <h3 className="text-3xl font-bold text-gray-900">My Stories</h3>
+    <div className="w-full px-4 sm:px-6">
+      {/* Header */}
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-6 sm:mb-8 space-y-4 sm:space-y-0">
+        <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">My Stories</h3>
         <button
           onClick={onAddStory}
-          className="flex items-center px-5 py-2 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-full shadow-lg"
+          className="flex items-center px-4 sm:px-5 py-2 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-full shadow-lg"
         >
           <Plus className="w-5 h-5 mr-2" />
           Add Story
         </button>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* Story Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {displayStories.length > 0 ? (
           displayStories.map((story, index) => (
             <StoryCard key={story.id} story={story} index={index} />
           ))
         ) : (
-          <div className="text-center py-16 col-span-full">
-            <Image className="w-20 h-20 text-gray-300 mx-auto mb-4" />
-            <h4 className="text-xl font-medium text-gray-500 mb-2">No Stories Yet</h4>
-            <p className="text-gray-400 mb-4">Share your local culture and experiences with the community</p>
+          <div className="text-center py-12 col-span-full">
+            <Image className="w-16 h-16 text-gray-300 mx-auto mb-3" />
+            <h4 className="text-lg sm:text-xl font-medium text-gray-500 mb-2">No Stories Yet</h4>
+            <p className="text-gray-400 mb-4 text-sm sm:text-base">Share your local culture and experiences with the community</p>
             <button
               onClick={onAddStory}
-              className="flex items-center px-5 py-2 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-full shadow-lg"
+              className="flex items-center px-4 sm:px-5 py-2 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-full shadow-lg"
             >
               <Plus className="w-5 h-5 mr-2" />
               Create Your First Story
@@ -155,14 +157,14 @@ function StoryGrid({ onAddStory, onEditStory, onDeleteStory }) {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="bg-white rounded-2xl max-w-4xl max-h-[80vh] overflow-auto shadow-lg"
+              className="bg-white rounded-2xl w-full max-w-md sm:max-w-3xl max-h-[80vh] overflow-auto shadow-lg"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-4">{selectedStory.title}</h3>
+              <div className="p-4 sm:p-6">
+                <h3 className="text-xl sm:text-2xl font-bold mb-4">{selectedStory.title}</h3>
                 <p className="text-gray-700 mb-4">{selectedStory.description}</p>
                 <button
-                  className="px-5 py-2 bg-gray-200 rounded-full hover:bg-gray-300"
+                  className="px-4 sm:px-5 py-2 bg-gray-200 rounded-full hover:bg-gray-300"
                   onClick={() => setSelectedStory(null)}
                 >
                   Close

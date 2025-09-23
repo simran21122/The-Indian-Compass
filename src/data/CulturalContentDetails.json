@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "title": "Chhau Dance",
+    "detailed_description": "Chhau Dance is a semi-classical Indian dance with martial, tribal, and folk elements, traditionally performed in Odisha, Jharkhand, and West Bengal. It is famous for its elaborate masks and energetic movements.",
+    "youtube_link": "https://www.youtube.com/watch?v=ChhauDanceExample",
+    "magazine_link": "https://www.indianexpress.com/article/lifestyle/art-and-culture/chhau-dance-jharkhand-odisha-6123456/",
+    "additional_images": ["/image/Discoverimg/d1_1.jpg", "/image/Discoverimg/d1_2.jpg"]
+  },
+  {
+    "id": 2,
+    "title": "Bidriware Craft",
+    "detailed_description": "Bidriware is a metal handicraft from Bidar, Karnataka. It involves intricate silver inlay on blackened alloy, creating stunning ornamental objects and decorative items.",
+    "youtube_link": "https://www.youtube.com/watch?v=BidriwareCraftExample",
+    "magazine_link": "https://www.deccanherald.com/specials/bidriware-craft-karnataka-748905.html",
+    "additional_images": ["/image/Discoverimg/d2_1.jpg"]
+  }
+  
+]

@@ -401,6 +401,162 @@ const Map = () => {
   )}
 </motion.div>
 
+            {/* Details / Expanded Card */}
+            <motion.div
+              className="bg-white/80 backdrop-blur-sm shadow-lg rounded-lg p-4 md:p-6 overflow-y-auto h-[500px] relative"
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              whileHover={{ scale: 1.01 }}
+            >
+              {selectedPlace ? (
+                <div
+                  style={{
+                    background: 'rgba(255,255,255,0.7)',
+                    borderRadius: 18,
+                    boxShadow: '0 8px 32px 0 rgba(31,38,135,0.12)',
+                    padding: 18,
+                    position: 'relative',
+                    minHeight: 340,
+                  }}
+                >
+                  <button
+                    onClick={() => setSelectedPlace(null)}
+                    style={{
+                      position: 'absolute',
+                      top: 10,
+                      right: 10,
+                      background: '#eee',
+                      border: 'none',
+                      borderRadius: 8,
+                      padding: '2px 10px',
+                      fontWeight: 700,
+                      cursor: 'pointer',
+                      color: '#ad4146',
+                      fontSize: 18
+                    }}
+                  >
+                    ×
+                  </button>
+                  <div style={{ display: 'flex', gap: 18, alignItems: 'center', marginBottom: 12 }}>
+                    <img
+                      src={selectedPlace.thumbnail}
+                      alt={selectedPlace.name}
+                      style={{ width: '100%', maxWidth: 100, height: 70, objectFit: 'cover', borderRadius: 10, background: '#eee' }}
+                      loading="lazy"
+                      onError={e => { e.target.onerror = null; e.target.src = 'https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg'; }}
+                    />
+                    <div>
+                      <div style={{ fontWeight: 800, fontSize: 22, color: '#ad4146' }}>{selectedPlace.name}</div>
+                      <div style={{ fontSize: 15, color: '#555', fontWeight: 600 }}>{selectedPlace.city}, {selectedPlace.state}</div>
+                    </div>
+                  </div>
+                  <div style={{ fontSize: 15, marginBottom: 10, color: '#222' }}>{selectedPlace.description}</div>
+                  {/* Expanded details for all fields */}
+                  {selectedPlace.details?.history && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>History:</strong> {selectedPlace.details.history}
+                    </div>
+                  )}
+                  {selectedPlace.details?.significance && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Significance:</strong> {selectedPlace.details.significance}
+                    </div>
+                  )}
+                  {selectedPlace.details?.festivals && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Festivals:</strong> {selectedPlace.details.festivals}
+                    </div>
+                  )}
+                  {selectedPlace.details?.bestTimeToVisit && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Best Time to Visit:</strong> {selectedPlace.details.bestTimeToVisit}
+                    </div>
+                  )}
+                  {selectedPlace.details?.entryFee && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Entry Fee:</strong> {selectedPlace.details.entryFee}
+                    </div>
+                  )}
+                  {selectedPlace.details?.localCuisine && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Local Cuisine:</strong> {selectedPlace.details.localCuisine}
+                    </div>
+                  )}
+                  {selectedPlace.details?.tips && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Tips:</strong> {selectedPlace.details.tips}
+                    </div>
+                  )}
+                  {selectedPlace.details?.howToReach && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>How to Reach:</strong> {selectedPlace.details.howToReach}
+                    </div>
+                  )}
+                  {selectedPlace.details?.nearbyAttractions && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Nearby Attractions:</strong> {Array.isArray(selectedPlace.details.nearbyAttractions) ? selectedPlace.details.nearbyAttractions.join(', ') : selectedPlace.details.nearbyAttractions}
+                    </div>
+                  )}
+                  {selectedPlace.details?.architecture && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Architecture:</strong> {selectedPlace.details.architecture}
+                    </div>
+                  )}
+                  {selectedPlace.details?.legends && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Legends:</strong> {selectedPlace.details.legends}
+                    </div>
+                  )}
+                  {selectedPlace.details?.accessibility && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Accessibility:</strong> {selectedPlace.details.accessibility}
+                    </div>
+                  )}
+                  {selectedPlace.details?.photographyTips && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Photography Tips:</strong> {selectedPlace.details.photographyTips}
+                    </div>
+                  )}
+                  {selectedPlace.details?.localMarkets && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Local Markets:</strong> {selectedPlace.details.localMarkets}
+                    </div>
+                  )}
+                  {selectedPlace.details?.events && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Events:</strong> {selectedPlace.details.events}
+                    </div>
+                  )}
+                  {selectedPlace.details?.conservationStatus && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Conservation Status:</strong> {selectedPlace.details.conservationStatus}
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <>
+                  <h2 className="text-lg md:text-xl text-gray-800 font-semibold mb-4">
+                    Details
+                  </h2>
+                  {filteredData.length > 0 ? (
+                    filteredData.map((item, index) => (
+                      <motion.p
+                        key={index}
+                        className="mb-2 text-gray-700"
+                        initial={{ opacity: 0, x: -10 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: index * 0.15 }}
+                      >
+                        {item.name} — {item.type || item.city}
+                      </motion.p>
+                    ))
+                  ) : (
+                    <p className="text-gray-500">No matching results</p>
+                  )}
+                </>
+              )}
+            </motion.div>
           </div>
         </motion.div>
       </motion.div>

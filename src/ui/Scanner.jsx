@@ -7,7 +7,7 @@ const Scanner = () => {
   const [cameraOn, setCameraOn] = useState(false);
   const [scanned, setScanned] = useState(false);
   const [chat, setChat] = useState([
-    { role: "assistant", content: "👋 Upload or scan an image to begin cultural analysis." },
+    { role: "assistant", content: " Upload or scan an image to begin cultural analysis." },
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -149,7 +149,7 @@ const Scanner = () => {
       {!scanned ? (
         <>
           <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3 flex items-center justify-center gap-3">
-            <Brain className="w-6 h-6 sm:w-8 sm:h-8 text-purple-600" />
+            <Brain className="w-6 h-6 sm:w-8 sm:h-8 text-orange-600" />
             AI Cultural Scanner
             <Zap className="w-5 h-5 sm:w-6 sm:h-6 text-orange-500" />
           </h1>
@@ -224,7 +224,7 @@ const Scanner = () => {
               />
               <button
                 onClick={handleScan}
-                className="mt-4 py-2 px-6 sm:px-8 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700 transition active:scale-95 text-sm sm:text-base flex items-center gap-2"
+                className="mt-4 py-2 px-6 sm:px-8 bg-orange-500 text-white rounded-lg shadow hover:bg-orange-700 transition active:scale-95 text-sm sm:text-base flex items-center gap-2"
                 disabled={loading}
               >
                 <Brain className="w-4 h-4" />
@@ -248,7 +248,7 @@ const Scanner = () => {
 
           <div className="flex flex-col h-[40vh] md:h-[60vh]">
             <h3 className="text-base sm:text-lg font-semibold text-gray-700 mb-2 flex items-center gap-2">
-              <Brain className="w-5 h-5 text-purple-600" />
+              <Brain className="w-5 h-5 text-orange-600" />
               AI Cultural Analysis
             </h3>
 

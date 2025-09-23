@@ -1,9 +1,15 @@
 import { motion } from "framer-motion";
 import { MapPin, Clock } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 function ContentCard({ item, index, categoryData }) {
+  const navigate = useNavigate();
   const categoryInfo = categoryData[item.category] || categoryData.all;
   const IconComponent = categoryInfo.icon;
+
+  const handleClick = () => {
+    navigate(`/content/${item.id}`); // Navigate to ContentDetails page with item ID
+  };
 
   return (
     <motion.div
@@ -11,7 +17,10 @@ function ContentCard({ item, index, categoryData }) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-      <div className="h-full bg-white rounded-xl shadow hover:shadow-xl transition-all duration-300 group cursor-pointer overflow-hidden">
+      <div
+        onClick={handleClick}
+        className="h-full bg-white rounded-xl shadow hover:shadow-xl transition-all duration-300 group cursor-pointer overflow-hidden"
+      >
         {/* Image Section */}
         {item.image_url && (
           <div className="relative overflow-hidden">

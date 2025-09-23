@@ -1,23 +1,25 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Landing from "./components/landing";
-import Login from "./components/login";
-import Signup from "./components/Signup";
-import Home from "./components/Home"; // Capitalized
-import Discover from "./components/Discover"; // Importing Discover
-import AIScanner from "./components/Aiscanner"; 
-import MarketPlace from "./components/MarketpPlace"; 
-import Map from "./components/map";
-import About from "./components/About";
-import Profile from "./components/Profile";
-import Assistant from "./components/Assistant";
+import Landing from "./components/landing.jsx";
+import Login from "./components/login.jsx";
+import Signup from "./components/Signup.jsx";
+import Home from "./components/home.jsx";
+import Discover from "./components/Discover.jsx";
+import AIScanner from "./components/AIScanner.jsx"; 
+import MarketPlace from "./components/MarketpPlace.jsx"; 
+import Map from "./components/map.jsx";
+import About from "./components/About.jsx";
+import Profile from "./components/Profile.jsx";
+import Assistant from "./components/Assistant.jsx";
+import ProductDetail from "./ui/ProductDetail.jsx";
+import BuyNow from "./ui/BuyNow.jsx";
+import ContentDetails from "./ui/ContentDetails.jsx";
 
 function App() {
   return (
     <Router>
       <main className="font-body text-white relative overflow-hidden">
         <Routes>
-          {/* Landing page will only render at "/" */}
           <Route path="/" element={<Landing />} />
           <Route path="/login" element={<Login />} />
           <Route path="/Signup" element={<Signup />} />
@@ -29,6 +31,13 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/assistant" element={<Assistant />} />
+          
+          {/* Product details */}
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/buynow" element={<BuyNow />} />
+          
+          {/* Content details */}
+          <Route path="/content/:id" element={<ContentDetails />} />
         </Routes>
       </main>
     </Router>

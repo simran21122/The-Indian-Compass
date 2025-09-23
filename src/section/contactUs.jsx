@@ -11,7 +11,10 @@ function ContactUs({ bgImage }) {
       }}
     >
       <motion.div
-        className="w-full max-w-4xl flex flex-col lg:flex-row bg-black/40 backdrop-blur-lg p-6 sm:p-8 rounded-2xl shadow-xl border border-white/20 gap-6 relative mb-20"
+        className="w-full max-w-4xl flex flex-col lg:flex-row 
+     bg-orange-300 backdrop-blur-xl 
+     p-6 sm:p-8 rounded-2xl shadow-xl 
+     border border-white/20 gap-6 relative mb-20"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}

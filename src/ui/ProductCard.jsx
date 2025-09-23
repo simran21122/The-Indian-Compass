@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import {
   Heart,
   ShoppingCart,
@@ -25,12 +26,18 @@ function ProductCard({
   artist,
   toggleWishlist,
   toggleCart,
-  wishlist,
-  cart,
+  wishlist = new Set(),
+  cart = new Set(),
   index,
 }) {
   const isInWishlist = wishlist.has(product.id);
   const isInCart = cart.has(product.id);
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+  navigate(`/product/${product.id}`);
+};
+
 
   return (
     <motion.div
@@ -38,9 +45,12 @@ function ProductCard({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-      <div className="h-full hover:shadow-xl transition-all duration-300 border-0 bg-white group cursor-pointer overflow-hidden rounded-lg">
+      <div
+        onClick={handleClick}
+        className="h-full hover:shadow-xl transition-all duration-300 border-0 bg-white group cursor-pointer overflow-hidden rounded-lg"
+      >
+        {/* Product Image */}
         <div className="relative">
-          {/* Product image */}
           {product.image_url && (
             <img
               src={product.image_url}
@@ -49,7 +59,7 @@ function ProductCard({
             />
           )}
 
-          {/* Wishlist button */}
+          {/* Wishlist Button */}
           <button
             className={`absolute top-3 right-3 w-8 h-8 rounded-full flex items-center justify-center ${
               isInWishlist ? "bg-red-500" : "bg-white/80"
@@ -83,9 +93,9 @@ function ProductCard({
           )}
         </div>
 
-        {/* Content */}
+        {/* Card Content */}
         <div className="p-4">
-          {/* Product name */}
+          {/* Product Name */}
           <h3
             className="text-lg font-medium break-words text-orange-600"
             title={product.name}
@@ -111,14 +121,16 @@ function ProductCard({
           {artist && (
             <div className="flex items-center space-x-2 mb-4 p-2 bg-gray-200 rounded-lg">
               <Users className="w-3 h-3 text-black" />
-              <span className="text-xs font-medium text-black">{artist.name}</span>
+              <span className="text-xs font-medium text-black">
+                {artist.name}
+              </span>
               {artist.verified && (
                 <Verified className="w-3 h-3 text-blue-500" />
               )}
             </div>
           )}
 
-          {/* Price & Cart button */}
+          {/* Price & Cart */}
           <div className="flex items-center justify-between mb-2">
             <div className="flex items-center space-x-1 text-green-600">
               <IndianRupee className="w-4 h-4" />

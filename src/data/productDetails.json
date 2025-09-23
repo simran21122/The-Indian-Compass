@@ -1,0 +1,258 @@
+[
+  {
+    "id": 1,
+    "name": "Rajasthani Traditional Lady",
+    "category": "Paintings",
+    "price": 1500,
+    "currency": "INR",
+    "images": [
+      "./src/image/Productimg/p1.png",
+      "./src/image/Productimg/p1-side.png",
+      "./src/image/Productimg/p1-top.png"
+    ],
+    "description": "Handpainted portrait of a Rajasthani woman with a parrot, showcasing intricate details and vibrant colors.",
+    "materials": ["Canvas", "Acrylic Paints"],
+    "origin": "Rajasthan",
+    "artistId": 1,
+    "dimensions": "Approx. 18x24 inches",
+    "weight": "0.8kg",
+    "tags": ["Authentic", "Handmade"],
+    "inStock": true,
+    "shipping": {
+      "available": true,
+      "deliveryTime": "5-7 days",
+      "returnPolicy": "Return within 7 days if damaged"
+    },
+    "reviews": [
+      {
+        "user": "User1",
+        "rating": 4.7,
+        "comment": "Stunning details and colors!"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Kerala Temple Mural",
+    "category": "Paintings",
+    "price": 1800,
+    "currency": "INR",
+    "images": [
+      "./src/image/Productimg/p2.png",
+      "./src/image/Productimg/p2-side.png",
+      "./src/image/Productimg/p2-top.png"
+    ],
+    "description": "Traditional mural painting depicting scenes from Kerala's temple rituals, rich in cultural symbolism.",
+    "materials": ["Canvas", "Natural Pigments"],
+    "origin": "Kerala",
+    "artistId": 2,
+    "dimensions": "Approx. 20x26 inches",
+    "weight": "1kg",
+    "tags": ["Featured"],
+    "inStock": true,
+    "shipping": {
+      "available": true,
+      "deliveryTime": "6-8 days",
+      "returnPolicy": "Return within 7 days if damaged"
+    },
+    "reviews": [
+      {
+        "user": "User2",
+        "rating": 4.8,
+        "comment": "Beautifully captures Kerala's culture."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Chandua Embroidery",
+    "category": "Textiles",
+    "price": 1500,
+    "currency": "INR",
+    "images": [
+      "./src/image/Productimg/p3.jpg",
+      "./src/image/Productimg/p3-side.jpg",
+      "./src/image/Productimg/p3-top.jpg"
+    ],
+    "description": "Traditional Chandua embroidery from Odisha, featuring vibrant appliqué work on textiles.",
+    "materials": ["Cotton", "Silk Threads"],
+    "origin": "Odisha",
+    "artistId": 3,
+    "dimensions": "Approx. 2m x 1.5m",
+    "weight": "0.6kg",
+    "tags": ["Authentic"],
+    "inStock": true,
+    "shipping": {
+      "available": true,
+      "deliveryTime": "5-7 days",
+      "returnPolicy": "Return within 7 days if damaged"
+    },
+    "reviews": [
+      {
+        "user": "User3",
+        "rating": 4.6,
+        "comment": "Exquisite craftsmanship."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Ukhrul Black Pottery",
+    "category": "Pottery",
+    "price": 900,
+    "currency": "INR",
+    "images": [
+      "./src/image/Productimg/p4.png",
+      "./src/image/Productimg/p4-side.png",
+      "./src/image/Productimg/p4-top.png"
+    ],
+    "description": "Eco-friendly black pottery from Ukhrul, Manipur, made using traditional methods without a potter's wheel.",
+    "materials": ["Clay", "Natural Pigments"],
+    "origin": "Manipur",
+    "artistId": 4,
+    "dimensions": "Height: 15cm, Diameter: 10cm",
+    "weight": "0.5kg",
+    "tags": ["Handmade"],
+    "inStock": true,
+    "shipping": {
+      "available": true,
+      "deliveryTime": "7-10 days",
+      "returnPolicy": "Return within 7 days if damaged"
+    },
+    "reviews": [
+      {
+        "user": "User4",
+        "rating": 4.5,
+        "comment": "Lovely handmade piece."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Ganga Valley Painted Ware",
+    "category": "Pottery",
+    "price": 1100,
+    "currency": "INR",
+    "images": [
+      "./src/image/Productimg/p5.jpg",
+      "./src/image/Productimg/p5-side.jpg",
+      "./src/image/Productimg/p5-top.jpg"
+    ],
+    "description": "Ancient pottery from the Ganga Valley, showcasing painted grey ware, black slipped ware, and red ware.",
+    "materials": ["Clay", "Natural Pigments"],
+    "origin": "Uttar Pradesh",
+    "artistId": 5,
+    "dimensions": "Height: 18cm, Diameter: 12cm",
+    "weight": "0.7kg",
+    "tags": ["Authentic"],
+    "inStock": true,
+    "shipping": {
+      "available": true,
+      "deliveryTime": "6-8 days",
+      "returnPolicy": "Return within 7 days if damaged"
+    },
+    "reviews": [
+      {
+        "user": "User5",
+        "rating": 4.4,
+        "comment": "Beautiful traditional designs."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Meenakari Necklace",
+    "category": "Jewelry",
+    "price": 5000,
+    "currency": "INR",
+    "images": [
+      "./src/image/Productimg/p6.png",
+      "./src/image/Productimg/p6-side.png",
+      "./src/image/Productimg/p6-top.png"
+    ],
+    "description": "Traditional Rajasthani necklace featuring intricate enamel work and gemstone embellishments.",
+    "materials": ["Gold-plated Metal", "Enamel", "Gemstones"],
+    "origin": "Rajasthan",
+    "artistId": 6,
+    "dimensions": "Length: 45cm, Pendant: 5cm",
+    "weight": "0.15kg",
+    "tags": ["Featured", "Handmade"],
+    "inStock": true,
+    "shipping": {
+      "available": true,
+      "deliveryTime": "7-10 days",
+      "returnPolicy": "Return within 7 days if damaged"
+    },
+    "reviews": [
+      {
+        "user": "User6",
+        "rating": 4.9,
+        "comment": "Absolutely stunning and detailed!"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Bastar Dhokra Pendant",
+    "category": "Jewelry",
+    "price": 1800,
+    "currency": "INR",
+    "images": [
+      "./src/image/Productimg/p7.jpg",
+      "./src/image/Productimg/p7-side.jpg",
+      "./src/image/Productimg/p7-top.jpg"
+    ],
+    "description": "Traditional brass pendant handcrafted using the ancient Dhokra technique from Chhattisgarh.",
+    "materials": ["Brass"],
+    "origin": "Chhattisgarh",
+    "artistId": 10,
+    "dimensions": "Pendant Size: 5cm x 4cm",
+    "weight": "0.08kg",
+    "tags": ["Handmade", "Authentic"],
+    "inStock": true,
+    "shipping": {
+      "available": true,
+      "deliveryTime": "6-10 days",
+      "returnPolicy": "Return within 7 days if damaged"
+    },
+    "reviews": [
+      {
+        "user": "User7",
+        "rating": 4.6,
+        "comment": "Unique Dhokra art piece."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Berhampur Paata Saree",
+    "category": "Textiles",
+    "price": 2500,
+    "currency": "INR",
+    "images": [
+      "./src/image/Productimg/p8.jpg",
+      "./src/image/Productimg/p8-side.jpg",
+      "./src/image/Productimg/p8-top.jpg"
+    ],
+    "description": "Elegant handwoven Paata saree from Berhampur, Odisha, featuring traditional motifs and fine silk craftsmanship.",
+    "materials": ["Silk", "Cotton Threads"],
+    "origin": "Odisha",
+    "artistId": 9,
+    "dimensions": "Length: 5.5m, Width: 1.2m",
+    "weight": "0.7kg",
+    "tags": ["Handmade", "Authentic"],
+    "inStock": true,
+    "shipping": {
+      "available": true,
+      "deliveryTime": "6-9 days",
+      "returnPolicy": "Return within 7 days if damaged"
+    },
+    "reviews": [
+      {
+        "user": "User8",
+        "rating": 4.7,
+        "comment": "Beautiful silk and intricate designs."
+      }
+    ]
+  }
+]
