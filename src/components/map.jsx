@@ -341,15 +341,87 @@ const Map = () => {
                     </div>
                   </div>
                   <div style={{ fontSize: 15, marginBottom: 10, color: '#222' }}>{selectedPlace.description}</div>
-                  <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
-                    <strong>History:</strong> {selectedPlace.details?.history}
-                  </div>
-                  <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
-                    <strong>Significance:</strong> {selectedPlace.details?.significance}
-                  </div>
-                  <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
-                    <strong>Festivals:</strong> {selectedPlace.details?.festivals}
-                  </div>
+                  {/* Expanded details for all fields */}
+                  {selectedPlace.details?.history && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>History:</strong> {selectedPlace.details.history}
+                    </div>
+                  )}
+                  {selectedPlace.details?.significance && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Significance:</strong> {selectedPlace.details.significance}
+                    </div>
+                  )}
+                  {selectedPlace.details?.festivals && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Festivals:</strong> {selectedPlace.details.festivals}
+                    </div>
+                  )}
+                  {selectedPlace.details?.bestTimeToVisit && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Best Time to Visit:</strong> {selectedPlace.details.bestTimeToVisit}
+                    </div>
+                  )}
+                  {selectedPlace.details?.entryFee && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Entry Fee:</strong> {selectedPlace.details.entryFee}
+                    </div>
+                  )}
+                  {selectedPlace.details?.localCuisine && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Local Cuisine:</strong> {selectedPlace.details.localCuisine}
+                    </div>
+                  )}
+                  {selectedPlace.details?.tips && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Tips:</strong> {selectedPlace.details.tips}
+                    </div>
+                  )}
+                  {selectedPlace.details?.howToReach && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>How to Reach:</strong> {selectedPlace.details.howToReach}
+                    </div>
+                  )}
+                  {selectedPlace.details?.nearbyAttractions && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Nearby Attractions:</strong> {Array.isArray(selectedPlace.details.nearbyAttractions) ? selectedPlace.details.nearbyAttractions.join(', ') : selectedPlace.details.nearbyAttractions}
+                    </div>
+                  )}
+                  {selectedPlace.details?.architecture && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Architecture:</strong> {selectedPlace.details.architecture}
+                    </div>
+                  )}
+                  {selectedPlace.details?.legends && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Legends:</strong> {selectedPlace.details.legends}
+                    </div>
+                  )}
+                  {selectedPlace.details?.accessibility && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Accessibility:</strong> {selectedPlace.details.accessibility}
+                    </div>
+                  )}
+                  {selectedPlace.details?.photographyTips && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Photography Tips:</strong> {selectedPlace.details.photographyTips}
+                    </div>
+                  )}
+                  {selectedPlace.details?.localMarkets && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Local Markets:</strong> {selectedPlace.details.localMarkets}
+                    </div>
+                  )}
+                  {selectedPlace.details?.events && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Events:</strong> {selectedPlace.details.events}
+                    </div>
+                  )}
+                  {selectedPlace.details?.conservationStatus && (
+                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong>Conservation Status:</strong> {selectedPlace.details.conservationStatus}
+                    </div>
+                  )}
                 </div>
               ) : (
                 <>
