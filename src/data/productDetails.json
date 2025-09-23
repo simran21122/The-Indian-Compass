@@ -6,9 +6,9 @@
     "price": 1500,
     "currency": "INR",
     "images": [
-      "/images/Productimg/p1.png",
-      "/images/Productimg/p1-side.png",
-      "/images/Productimg/p1-top.png"
+      "/Productimg/p1.png",
+      "/Productimg/p1-side.png",
+      "/Productimg/p1-top.png"
     ],
     "description": "Handpainted portrait of a Rajasthani woman with a parrot, showcasing intricate details and vibrant colors. The artwork highlights traditional attire, jewelry, and the cultural essence of Rajasthan. Perfect for decorating homes or galleries, it captures the elegance and heritage of Indian artistry.",
     "materials": ["Canvas", "Acrylic Paints"],
@@ -34,9 +34,9 @@
     "price": 1800,
     "currency": "INR",
     "images": [
-      "./src/image/Productimg/p2.png",
-      "/image/Productimg/p2-side.png",
-      "/image/Productimg/p2-top.png"
+      "/Productimg/p2.png",
+      "/Productimg/p2-side.png",
+      "/Productimg/p2-top.png"
     ],
     "description": "Traditional mural painting depicting scenes from Kerala's temple rituals, rich in cultural symbolism. Each brushstroke reflects centuries of artistic tradition, bringing the stories and rituals of Kerala temples to life. Ideal for art enthusiasts who appreciate South Indian heritage.",
     "materials": ["Canvas", "Natural Pigments"],
@@ -62,9 +62,9 @@
     "price": 1500,
     "currency": "INR",
     "images": [
-      "/images/Productimg/p3.jpg",
-      "/images/Productimg/p3-side.jpg",
-      "/images/Productimg/p3-top.jpg"
+      "/Productimg/p3.jpg",
+      "/Productimg/p3-side.jpg",
+      "/Productimg/p3-top.jpg"
     ],
     "description": "Traditional Chandua embroidery from Odisha, featuring vibrant appliqué work on textiles. The embroidery is rich in symbolic motifs, combining vibrant colors with delicate craftsmanship. Perfect for festive occasions, home decor, or gifting to loved ones.",
     "materials": ["Cotton", "Silk Threads"],
@@ -90,9 +90,9 @@
     "price": 900,
     "currency": "INR",
     "images": [
-      "/images/Productimg/p4.png",
-      "/images/Productimg/p4-side.png",
-      "/images/Productimg/p4-top.png"
+      "/Productimg/p4.png",
+      "/Productimg/p4-side.png",
+      "/Productimg/p4-top.png"
     ],
     "description": "Eco-friendly black pottery from Ukhrul, Manipur, made using traditional methods without a potter's wheel. Each piece is unique, with deep black finish and natural patterns created by local artisans. A perfect collectible for pottery lovers and cultural enthusiasts.",
     "materials": ["Clay", "Natural Pigments"],
@@ -118,9 +118,9 @@
     "price": 1100,
     "currency": "INR",
     "images": [
-      "/images/Productimg/p5.jpg",
-      "/images/Productimg/p5-side.jpg",
-      "/images/Productimg/p5-top.jpg"
+      "/Productimg/p5.jpg",
+      "/Productimg/p5-side.jpg",
+      "/Productimg/p5-top.jpg"
     ],
     "description": "Ancient pottery from the Ganga Valley, showcasing painted grey ware, black slipped ware, and red ware. Each piece reflects the historical craftsmanship and traditional designs that have been preserved for generations. A remarkable artifact for history lovers and collectors.",
     "materials": ["Clay", "Natural Pigments"],

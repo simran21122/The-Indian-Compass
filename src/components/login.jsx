@@ -7,7 +7,7 @@ import {
   signInWithPopup,
 } from "../firebaseConfig";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import loginbg2 from "../image/LOGINBG2.png"; // Default for larger screens
+import loginbg2 from "../image/LoginBg.png"; // Default for larger screens
 import loginbgMobile from "../image/loginbgMobileLogin.png"; // Background for mobile
 
 const Login = () => {
@@ -61,7 +61,7 @@ const Login = () => {
       }}
     >
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/40 backdrop-brightness-75"></div>
+      <div className="absolute inset-0 bg-black/20 backdrop-brightness-80"></div>
 
       {/* Skip button */}
       <button
