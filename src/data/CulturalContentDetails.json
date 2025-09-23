@@ -2,18 +2,91 @@
   {
     "id": 1,
     "title": "Chhau Dance",
-    "detailed_description": "Chhau Dance is a semi-classical Indian dance with martial, tribal, and folk elements, traditionally performed in Odisha, Jharkhand, and West Bengal. It is famous for its elaborate masks and energetic movements.",
-    "youtube_link": "https://www.youtube.com/watch?v=ChhauDanceExample",
-    "magazine_link": "https://www.indianexpress.com/article/lifestyle/art-and-culture/chhau-dance-jharkhand-odisha-6123456/",
-    "additional_images": ["/image/Discoverimg/d1_1.jpg", "/image/Discoverimg/d1_2.jpg"]
+    "image_url": "/Discoverimg/d1.jpg",
+    "description": "Martial dance form with elaborate masks from Eastern India.",
+    "detailed_description": "Chhau Dance is a vibrant semi-classical dance form from the states of Jharkhand, Odisha, and West Bengal. Known for its martial roots, the dance incorporates vigorous movements, combat techniques, and elaborate masks that depict mythological characters. It is performed during regional festivals such as Chaitra Parva, often narrating stories from the Ramayana, Mahabharata, and Puranas. There are three main styles of Chhau — Purulia (West Bengal), Seraikella (Jharkhand), and Mayurbhanj (Odisha) — each with its own unique style and use of masks. The music is accompanied by traditional instruments like dhol, dhamsa, shehnai, and nagara, creating a powerful rhythmic backdrop. UNESCO recognizes Chhau as part of the Intangible Cultural Heritage of Humanity, highlighting its cultural significance and artistic excellence.",
+    "significance": "Blend of martial art and folk dance",
+    "tags": ["dance", "folk", "masks"],
+    "additional_images": [
+      "/Discoverimg/d1-side.jpg",
+      "/Discoverimg/d1-stage.jpg"
+    ],
+    "youtube_link": "https://www.youtube.com/watch?v=F_4lAQZ34gs",
+    "magazine_link": "https://magazines.odisha.gov.in/orissaannualreference/ORA-2005/pdf/chau_dance.pdf"
   },
   {
     "id": 2,
     "title": "Bidriware Craft",
-    "detailed_description": "Bidriware is a metal handicraft from Bidar, Karnataka. It involves intricate silver inlay on blackened alloy, creating stunning ornamental objects and decorative items.",
-    "youtube_link": "https://www.youtube.com/watch?v=BidriwareCraftExample",
-    "magazine_link": "https://www.deccanherald.com/specials/bidriware-craft-karnataka-748905.html",
-    "additional_images": ["/image/Discoverimg/d2_1.jpg"]
+    "image_url": "/Discoverimg/d2.jpg",
+    "description": "Metal handicraft from Bidar, Karnataka, using silver inlay work.",
+    "detailed_description": "Bidriware is a unique metal handicraft that originated over 500 years ago in Bidar, Karnataka, and is known for its striking contrast of shiny silver inlay work on a deep black metal surface. Made using a special alloy of zinc and copper, Bidriware is crafted by engraving intricate floral, geometric, and calligraphic designs on the surface, into which pure silver is carefully inlaid. The piece is then blackened using a traditional technique involving soil from the Bidar fort, which gives it its characteristic black finish while leaving the silver bright. This art form flourished under the Bahmani Sultans and reflects a blend of Persian, Turkish, and Mughal influences. Today, Bidriware is used to create vases, jewelry boxes, hookahs, plates, and other decorative items, and it has been awarded the Geographical Indication (GI) tag to preserve its authenticity and promote this rich tradition of Indian craftsmanship.",
+    "significance": "GI-tagged traditional craft",
+    "tags": ["metal", "handicraft", "heritage"],
+    "additional_images": [
+      "/Discoverimg/d2-process.jpg",
+      "/Discoverimg/d2-design.jpg"
+    ],
+    "youtube_link": "https://www.youtube.com/watch?v=WztQifnSdNg",
+    "magazine_link": "https://en.wikipedia.org/wiki/Bidriware"
+  },
+  {
+    "id": 3,
+    "title": "Hornbill Festival",
+    "image_url": "/Discoverimg/d3.jpg",
+    "description": "Festival showcasing Naga heritage with dance, food, and craft.",
+    "detailed_description": "The Hornbill Festival, held every year in Kisama Heritage Village near Kohima, Nagaland, is a grand celebration of the vibrant culture and traditions of the Naga tribes. Known as the “Festival of Festivals,” it is organized by the Government of Nagaland every December, usually from 1st to 10th December, to showcase the rich heritage of the state and promote cultural tourism. The festival brings together all 16 major tribes of Nagaland, offering visitors a spectacular display of traditional dances, folk songs, indigenous games, wrestling matches, archery competitions, and fashion shows, along with a taste of authentic Naga cuisine such as smoked meats and bamboo shoot delicacies. Handicraft and handloom stalls are set up to promote local artisans, while rock concerts, motor rallies, and night carnivals add a modern touch to the festivities. Named after the hornbill bird, which holds deep significance in Naga folklore and symbolizes bravery and respect for nature, this festival attracts tourists from across India and abroad, making it a major cultural and tourism event in Northeast India.",
+    "significance": "Showcase of Naga culture",
+    "tags": ["naga", "culture", "festival"],
+    "additional_images": [
+      "/Discoverimg/d3-dance.jpg",
+      "/Discoverimg/d3-crafts.jpg"
+    ],
+    "youtube_link": "https://www.youtube.com/watch?v=Pl139FjyyxI",
+    "magazine_link": "https://www.pib.gov.in/FeaturesDeatils.aspx?NoteId=153475&ModuleId=2"
+  },
+  {
+    "id": 4,
+    "title": "Warli Tribal Art",
+    "image_url": "/Discoverimg/d4.jpg",
+    "description": "Folk paintings using geometric patterns to depict daily life.",
+    "detailed_description": "Warli Art is a centuries-old tribal art form from Maharashtra, primarily practiced by the Warli tribe residing in the Sahyadri hills. Known for its simple yet expressive style, this art form uses basic geometric shapes like circles (representing the sun and moon), triangles (mountains and trees), and squares (sacred enclosures) to narrate stories of daily life, farming activities, hunting, festivals, dances, and rituals. Traditionally, Warli paintings were created on mud walls of huts using white rice paste mixed with water and gum, applied with a bamboo stick used as a brush. These paintings often revolve around the tarpa dance, where men and women dance in a circle around a central motif symbolizing the mother goddess Palaghata, representing fertility and prosperity. Warli art reflects the tribe’s close relationship with nature and community life, celebrating harmony and the cycle of seasons. Today, this art form has moved beyond the walls of tribal homes to canvas, fabric, and other mediums, gaining national and international recognition as a symbol of India’s rich indigenous creativity and cultural heritage.",
+    "significance": "Indigenous tribal expression",
+    "tags": ["folkart", "tribal", "painting"],
+    "additional_images": [
+      "/Discoverimg/d4-pattern.jpg",
+      "/Discoverimg/d4-wall.jpg"
+    ],
+    "youtube_link": "https://www.youtube.com/watch?v=wkYLM2JTDp8",
+    "magazine_link": "https://www.granthaalayahpublication.org/Arts-Journal/ShodhKosh/article/view/156/247"
+  },
+  {
+    "id": 5,
+    "title": "Rani ki Vav",
+    "image_url": "/Discoverimg/d5.jpg",
+    "description": "An intricately constructed stepwell in Patan, Gujarat.",
+    "detailed_description": "Rani ki Vav, situated in Patan, Gujarat, is an exquisite 11th-century stepwell built by Queen Udayamati in memory of her husband King Bhima I of the Solanki dynasty. This stepwell is one of the finest examples of the Maru-Gurjara (Solanki) architectural style and is renowned for its seven levels of stepped corridors that lead down to the water level. The walls, pillars, and platforms are adorned with over 500 intricately carved sculptures and more than 1000 minor ones, depicting deities, mythological scenes, apsaras, and avatars of Lord Vishnu, including Varaha, Vamana, and Kalki. The carvings not only serve an artistic purpose but also reflect the spiritual significance of water as a purifier. Apart from being a water storage system, Rani ki Vav served as a place of social and cultural gatherings. In 2014, it was recognized as a UNESCO World Heritage Site, celebrating its exceptional craftsmanship, historical importance, and role as a masterpiece of subterranean architecture.",
+    "significance": "UNESCO World Heritage Stepwell",
+    "tags": ["stepwell", "architecture", "heritage"],
+    "additional_images": [
+      "/Discoverimg/d5-sculpture.jpg",
+      "/Discoverimg/d5-topview.jpg"
+    ],
+    "youtube_link": "https://www.youtube.com/watch?v=TqWONmur-Q0",
+    "magazine_link": "https://lidarmag.com/2012/01/30/digitally-preserving-the-icons-of-rani-ki-vav/"
+  },
+  {
+    "id": 6,
+    "title": "Pattachitra Painting",
+    "image_url": "/Discoverimg/d6.jpg",
+    "description": "Cloth-based scroll painting from Odisha with mythological themes.",
+    "detailed_description": "Pattachitra is a traditional scroll painting art form that originated over 1,000 years ago in Odisha and is also practiced in parts of West Bengal. The name comes from the Sanskrit words ‘patta’ (cloth) and ‘chitra’ (picture), meaning “picture on cloth.” Pattachitra is characterized by its intricate detailing, bold natural colors, and ornate floral borders, with themes largely inspired by mythological stories, especially those connected to Lord Jagannath, Lord Krishna, and episodes from the Ramayana and Mahabharata. The paintings are created on a specially prepared cloth coated with a mixture of chalk and gum to make the surface smooth. Traditional artisans, known as chitrakaras, use natural colors derived from minerals, stones, and organic sources, ensuring a lasting vibrancy. Apart from scrolls, Pattachitra art is also seen on palm leaves, wooden boxes, masks, and even temple walls. Passed down through generations, this art form not only preserves Odisha’s rich cultural and religious heritage but has also gained international recognition as a symbol of India’s timeless folk traditions.",
+    "significance": "Ancient art tradition",
+    "tags": ["scroll", "painting", "mythology"],
+    "additional_images": [
+      "/Discoverimg/d6-scroll.jpg",
+      "/Discoverimg/d6-temple.jpg"
+    ],
+    "youtube_link": "https://www.youtube.com/watch?v=cIVQmCHNE5A",
+    "magazine_link": "https://magazines.odisha.gov.in/orissareview/nov2005/engpdf/Pattachitra_An_Indigenous_Technique.pdf"
   }
-  
 ]
