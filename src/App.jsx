@@ -13,6 +13,7 @@ import Profile from "./components/Profile.jsx";
 import Assistant from "./components/Assistant.jsx";
 import ProductDetail from "./ui/ProductDetail.jsx";
 import BuyNow from "./ui/BuyNow.jsx";
+import ContentDetails from "./ui/ContentDetails.jsx";
 
 function App() {
   return (
@@ -30,9 +31,13 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/assistant" element={<Assistant />} />
-          {/* Add this line */}
+          
+          {/* Product details */}
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/buynow" element={<BuyNow />} />
+          
+          {/* Content details */}
+          <Route path="/content/:id" element={<ContentDetails />} />
         </Routes>
       </main>
     </Router>
