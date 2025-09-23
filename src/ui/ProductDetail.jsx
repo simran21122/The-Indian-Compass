@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { ShoppingCart, Heart, Truck, Shield } from "lucide-react";
 import productDetails from "../data/productDetails.json"; // adjust path
 
 const ProductDetail = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const product = productDetails.find((p) => p.id === parseInt(id));
 
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+  const [saved, setSaved] = useState(false); // For Save button
   const images = product ? product.images : [];
 
   if (!product)
@@ -27,60 +29,73 @@ const ProductDetail = () => {
     );
   };
 
+  const handleBuyNow = () => {
+    navigate("/buynow", { state: { product } }); // Navigate to BuyNow page
+  };
+
   return (
     <div className="max-w-6xl mx-auto p-6 grid md:grid-cols-2 gap-12">
       {/* Left: Image Carousel */}
-<div className="relative flex flex-col items-center">
-  <AnimatePresence mode="wait">
-    <motion.img
-      key={images[selectedImageIndex]}
-      src={images[selectedImageIndex]}
-      alt={product.name}
-      className="w-full h-[550px] md:h-[600px] object-cover rounded-3xl shadow-2xl"
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.95 }}
-      transition={{ duration: 0.5 }}
-    />
-  </AnimatePresence>
+      <div className="relative flex flex-col items-center">
+        <AnimatePresence mode="wait">
+          <motion.img
+            key={images[selectedImageIndex]}
+            src={images[selectedImageIndex]}
+            alt={product.name}
+            className="w-full h-[550px] md:h-[600px] object-cover rounded-3xl shadow-2xl"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            transition={{ duration: 0.5 }}
+          />
+        </AnimatePresence>
 
-  {/* Carousel controls */}
-  {images.length > 1 && (
-    <>
-      <button
-        onClick={handlePrev}
-        className="absolute left-3 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-100 transition"
-      >
-        ◀
-      </button>
-      <button
-        onClick={handleNext}
-        className="absolute right-3 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-100 transition"
-      >
-        ▶
-      </button>
-    </>
-  )}
+        {/* Save (Heart) Button on top-right */}
+        <button
+          onClick={() => setSaved(!saved)}
+          className={`absolute top-4 right-4 w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition ${
+            saved ? "bg-red-500" : "bg-white"
+          } hover:scale-105`}
+        >
+          <Heart className={`w-6 h-6 ${saved ? "text-white" : "text-gray-600"}`} />
+        </button>
 
-  {/* Thumbnails */}
-  <div className="flex gap-4 mt-6 overflow-x-auto">
-    {images.map((img, idx) => (
-      <motion.img
-        key={idx}
-        src={img}
-        alt={`Thumbnail ${idx}`}
-        className={`w-24 h-24 md:w-28 md:h-28 object-cover rounded-xl cursor-pointer border-2 ${
-          idx === selectedImageIndex
-            ? "border-blue-500 scale-110"
-            : "border-transparent"
-        }`}
-        onClick={() => setSelectedImageIndex(idx)}
-        whileHover={{ scale: 1.1 }}
-      />
-    ))}
-  </div>
-</div>
+        {/* Carousel controls */}
+        {images.length > 1 && (
+          <>
+            <button
+              onClick={handlePrev}
+              className="absolute left-3 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-100 transition"
+            >
+              ◀
+            </button>
+            <button
+              onClick={handleNext}
+              className="absolute right-3 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-100 transition"
+            >
+              ▶
+            </button>
+          </>
+        )}
 
+        {/* Thumbnails */}
+        <div className="flex gap-4 mt-6 overflow-x-auto">
+          {images.map((img, idx) => (
+            <motion.img
+              key={idx}
+              src={img}
+              alt={`Thumbnail ${idx}`}
+              className={`w-24 h-24 md:w-28 md:h-28 object-cover rounded-xl cursor-pointer border-2 ${
+                idx === selectedImageIndex
+                  ? "border-blue-500 scale-110"
+                  : "border-transparent"
+              }`}
+              onClick={() => setSelectedImageIndex(idx)}
+              whileHover={{ scale: 1.1 }}
+            />
+          ))}
+        </div>
+      </div>
 
       {/* Right: Product Info */}
       <motion.div
@@ -110,12 +125,15 @@ const ProductDetail = () => {
           >
             <ShoppingCart size={24} /> Add to Cart
           </motion.button>
+
+          {/* Buy Now Button */}
           <motion.button
             whileTap={{ scale: 0.95 }}
             whileHover={{ scale: 1.05 }}
-            className="flex items-center gap-3 bg-gray-100 text-gray-900 px-8 py-4 rounded-2xl shadow hover:bg-gray-200 transition"
+            className="flex items-center gap-3 bg-green-500 text-white px-8 py-4 rounded-2xl shadow hover:bg-green-600 transition"
+            onClick={handleBuyNow}
           >
-            <Heart size={24} /> Save
+            Buy Now
           </motion.button>
         </div>
 
