@@ -124,6 +124,177 @@ const culturalPlaces = [
       conservationStatus: "Protected monument under ASI."
     }
   },
+  {
+  "name": "Lingaraja Temple",
+  "city": "Bhubaneswar",
+  "state": "Odisha",
+  "description": "An 11th-century Hindu temple dedicated to Lord Shiva, showcasing the grandeur of Kalinga architecture.",
+  "thumbnail": "https://www.holidify.com/images/cmsuploads/compressed/lingarajatemple_20181213113616.jpg",
+  "lat": 20.2386,
+  "lng": 85.8334,
+  "details": {
+    "history": "Built in the 11th century by the Somavamsi dynasty and later expanded by the Ganga dynasty, the Lingaraja Temple represents the peak of Kalinga architectural style.",
+    "significance": "One of the oldest and largest temples in Bhubaneswar, it is a major Shaivite pilgrimage site, attracting devotees from across India.",
+    "festivals": "Maha Shivaratri is the grandest celebration here, drawing thousands of devotees; Ratha Yatra of Lingaraja is also observed.",
+    "bestTimeToVisit": "October to March, when the weather is pleasant.",
+    "entryFee": "Free entry for Indians; foreigners are not allowed inside the sanctum but can view from outside.",
+    "localCuisine": "Try Odisha’s temple food like Abadha (Mahaprasad) at nearby eateries and sweets like Chhena Poda.",
+    "tips": "Wear modest clothing, photography is restricted inside; visit early morning to avoid crowds.",
+    "howToReach": "Located in Old Town Bhubaneswar; accessible by taxi, auto-rickshaw, and local buses from the railway station or airport.",
+    "nearbyAttractions": ["Rajarani Temple", "Mukteswara Temple", "Bindu Sagar Lake"],
+    "architecture": "Exemplifies Kalinga style with a towering 180-foot vimana, intricately carved walls, and elaborate sculptures.",
+    "legends": "Believed that Lord Shiva manifested here as Lingaraja, embodying both Vishnu and Shiva (Harihara).",
+    "accessibility": "The temple has steps and uneven stone floors, not suitable for wheelchairs.",
+    "photographyTips": "Best shots from outside complex and Bindu Sagar Lake during sunrise.",
+    "localMarkets": "Ekamra Haat and Old Town markets for stone carvings, palm-leaf paintings, and souvenirs.",
+    "events": "Annual chariot festival (Rukuna Rath) during Ashokastami draws large crowds.",
+    "conservationStatus": "Protected monument under Archaeological Survey of India (ASI)."
+  }
+},
+{
+  "name": "Chilika Lake",
+  "city": "Satpada / Puri District",
+  "state": "Odisha",
+  "description": "Asia’s largest brackish water lagoon, famous for migratory birds, Irrawaddy dolphins, and scenic islands.",
+  "thumbnail": "https://www.holidify.com/images/cmsuploads/compressed/chilika_20170822185109.jpg",
+  "lat": 19.7549,
+  "lng": 85.3900,
+  "details": {
+    "history": "Chilika has been a natural lagoon for centuries, sustaining fishing communities and serving as a vital ecological zone. It was designated as India’s first Ramsar wetland site in 1981.",
+    "significance": "Home to over 160 species of birds, rare Irrawaddy dolphins, and a hotspot of biodiversity, Chilika is globally recognized for its ecological and economic value.",
+    "festivals": "Makar Sankranti is celebrated with fishing fairs; winter months see a 'Bird Festival' highlighting migratory species.",
+    "bestTimeToVisit": "November to February, during the bird migration season.",
+    "entryFee": "No entry fee; boat ride charges range from ₹100 to ₹3000 depending on the package.",
+    "localCuisine": "Fresh seafood like prawns, crabs, and fish curry are must-tries in Satpada and nearby villages.",
+    "tips": "Carry binoculars for bird watching; book government-approved boats for safety.",
+    "howToReach": "Satpada is about 48 km from Puri and 100 km from Bhubaneswar; accessible by road with taxis and buses.",
+    "nearbyAttractions": ["Kalijai Temple", "Nalabana Bird Sanctuary", "Mangalajodi Birding Site"],
+    "architecture": "Not a man-made monument, but dotted with small temples on islands like Kalijai and Barkul.",
+    "legends": "Kalijai Temple on an island is tied to the legend of Goddess Kalijai, worshipped as the protector of fishermen.",
+    "accessibility": "Boats have basic seating; not suitable for wheelchairs. Paths near viewing areas are uneven.",
+    "photographyTips": "Best during sunrise for golden reflections on water and in winter for capturing flocks of migratory birds.",
+    "localMarkets": "Puri and Satpada markets offer conch-shell items, seashell crafts, and dried fish products.",
+    "events": "Chilika Bird Festival organized annually by the state tourism department attracts birdwatchers worldwide.",
+    "conservationStatus": "Designated as a Ramsar Wetland of International Importance; monitored by Chilika Development Authority."
+  }
+},
+
+{
+  name: "Simlipal National Park",
+  city: "Baripada",
+  state: "Odisha",
+  description: "A major tiger reserve and wildlife sanctuary, known for dense forests, waterfalls, and rich biodiversity.",
+  thumbnail: "https://images.unsplash.com/photo-1626198780095-46a9a9b79b0a",
+  lat: 21.5858,
+  lng: 86.5395,
+  details: {
+    history: "Declared a tiger reserve in 1956 under Project Tiger. Simlipal has been a protected forest since the British era.",
+    significance: "Home to Bengal tigers, elephants, and over 300 species of birds, it is a biodiversity hotspot.",
+    festivals: "Local tribal festivals like Magha Mela, cultural events in nearby villages.",
+    bestTimeToVisit: "October to March, avoiding monsoon due to heavy rainfall.",
+    entryFee: "₹50 for Indians, ₹300 for foreigners; safari fees extra.",
+    localCuisine: "Traditional tribal cuisine, bamboo shoot preparations, local forest produce dishes.",
+    tips: "Book safaris in advance. Carry mosquito repellent and light clothes for trekking.",
+    howToReach: "Nearest railway station is Baripada (120 km), nearest airport is Bhubaneswar (300 km). Accessible by road via Jashipur or Baripada.",
+    nearbyAttractions: ["Joranda Waterfall", "Barehipani Waterfall", "Khairibari Hills"],
+    architecture: "Natural landscape with hills, waterfalls, and forested terrain.",
+    legends: "Local folklore mentions the forest as a sacred abode of forest spirits and tribal deities.",
+    accessibility: "Terrain is rugged; not fully wheelchair-accessible.",
+    photographyTips: "Sunrise and early morning safaris offer best wildlife photography opportunities.",
+    localMarkets: "Baripada town markets for handicrafts, tribal artifacts, and local produce.",
+    events: "Magha Mela tribal festival with cultural performances.",
+    conservationStatus: "Protected under Wildlife Protection Act and Project Tiger; core and buffer zones enforced."
+  }
+},
+
+{
+  name: "Dhauli Peace Pagoda",
+  city: "Dhauli",
+  state: "Odisha",
+  description: "A white peace pagoda on the banks of the Daya River, commemorating the site of the Kalinga War and Ashoka’s transformation.",
+  thumbnail: "https://images.unsplash.com/photo-1627556828239-29bca6cbecf4",
+  lat: 20.2306,
+  lng: 85.8194,
+  details: {
+    history: "Built in the 1970s by Japanese Buddhist monks, marking the site where Emperor Ashoka embraced peace after the Kalinga War.",
+    significance: "Symbolizes peace, non-violence, and Buddhism’s influence in Odisha.",
+    festivals: "Buddha Jayanti, meditation events, and cultural gatherings.",
+    bestTimeToVisit: "October to March for pleasant weather.",
+    entryFee: "Free entry.",
+    localCuisine: "Nearby Bhubaneswar eateries serve local Odia dishes like Dalma and Pakhala.",
+    tips: "Best visited early morning or sunset for serene views and photography.",
+    howToReach: "Around 8 km from Bhubaneswar city center; accessible via taxi or local buses.",
+    nearbyAttractions: ["Dhauli Hills", "Kalinga War Memorial", "Shanti Stupa Meditation Center"],
+    architecture: "Japanese-style white stupa with peaceful gardens and Buddha statues.",
+    legends: "The site is believed to be where Ashoka reflected on the horrors of war.",
+    accessibility: "Wheelchair-accessible paths and gentle slopes.",
+    photographyTips: "Golden hour light highlights the white stupa beautifully; reflections on the river make great shots.",
+    localMarkets: "Bhubaneswar markets for handicrafts, souvenirs, and Buddhist artifacts.",
+    events: "Meditation retreats and Buddha Jayanti celebrations are organized annually.",
+    conservationStatus: "Maintained by the Shanti Stupa Trust and Odisha Tourism Department."
+  }
+},
+{
+  name: "Hirakud Dam",
+  city: "Sambalpur",
+  state: "Odisha",
+  description: "One of the longest earthen dams in the world, built across the Mahanadi River, famous for engineering and scenic beauty.",
+  thumbnail: "https://images.unsplash.com/photo-1608198093515-5d9145c6a85f",
+  lat: 21.4749,
+  lng: 83.9700,
+  details: {
+    history: "Constructed in 1957, the dam was built for flood control, irrigation, and hydroelectric power generation.",
+    significance: "An important engineering marvel and major source of water and power in Odisha.",
+    festivals: "Local fairs and boating festivals during winter months.",
+    bestTimeToVisit: "October to March for pleasant weather and boating activities.",
+    entryFee: "Free entry; boat rides may have separate charges (₹200–₹500).",
+    localCuisine: "Sambalpuri cuisine including fish curries, Pakhala, and traditional sweets.",
+    tips: "Carry sunscreen and water. Best to explore early morning or late afternoon.",
+    howToReach: "Nearest railway station is Sambalpur Junction; nearest airport is Jharsuguda Airport (50 km). Accessible by road taxis and buses.",
+    nearbyAttractions: ["Samaleswari Temple", "Leaning Temple of Huma", "Debrigarh Wildlife Sanctuary"],
+    architecture: "Earthen and concrete dam with sluice gates, reservoir, and embankments.",
+    legends: "Locals believe the reservoir area was once home to sacred forests and ancient settlements.",
+    accessibility: "Main dam and viewing areas are accessible; some boating areas may be limited for elderly.",
+    photographyTips: "Sunrise and sunset views over the reservoir are spectacular; capture reflections and dam structure.",
+    localMarkets: "Sambalpur town markets for handloom textiles and local handicrafts.",
+    events: "Occasional boating festivals and water sports events.",
+    conservationStatus: "Managed by Odisha Water Resources Department; reservoir and surroundings maintained for ecological balance."
+  }
+},
+
+{
+  name: "Chandipur Beach",
+  city: "Balasore",
+  state: "Odisha",
+  description: "A unique beach famous for its retreating waters, where the sea recedes up to 5 km during low tide.",
+  thumbnail: "https://images.unsplash.com/photo-1614866879488-3a0f9b8ff792",
+  lat: 21.6550,
+  lng: 86.5851,
+  details: {
+    history: "Known for centuries by local communities, Chandipur Beach is part of Odisha’s coastal heritage.",
+    significance: "A rare natural phenomenon where the Bay of Bengal withdraws dramatically, allowing visitors to walk far into the sea.",
+    festivals: "Local fairs, kite festivals, and beach events during winter.",
+    bestTimeToVisit: "October to March for comfortable weather and to witness the sea retreat.",
+    entryFee: "Free entry.",
+    localCuisine: "Seafood is popular; local stalls serve fresh fish, prawns, and traditional Odia snacks.",
+    tips: "Check tide timings before visiting; bring sun protection and water.",
+    howToReach: "Accessible via Balasore city (30 km) by road; nearest railway station is Balasore, nearest airport is Bhubaneswar (220 km).",
+    nearbyAttractions: ["Nilgiri Hills", "Balasore Lighthouse", "Talsari Beach"],
+    architecture: "Natural coastal landscape with sandy shores and occasional beach huts.",
+    legends: "Local stories tell of fishermen using low tide to catch crabs and fish easily.",
+    accessibility: "Easy to walk on the beach during low tide; caution needed near water.",
+    photographyTips: "Best during sunrise or sunset; low tide offers unique wide sandy views.",
+    localMarkets: "Balasore markets for handicrafts, seashells, and local snacks.",
+    events: "Beach festivals and kite flying competitions in winter months.",
+    conservationStatus: "Coastal area maintained by Odisha Tourism; local conservation efforts for marine life."
+  }
+},
+
+
+
+
+
+
   // Ladakh
   {
     name: "Thiksey Monastery",
