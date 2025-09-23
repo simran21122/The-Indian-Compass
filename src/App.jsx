@@ -1,17 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Landing from "./components/landing";
-import Login from "./components/login";
-import Signup from "./components/Signup";
-import Home from "./components/Home";
-import Discover from "./components/Discover";
-import AIScanner from "./components/Aiscanner"; 
-import MarketPlace from "./components/MarketpPlace"; 
-import Map from "./components/map";
-import About from "./components/About";
-import Profile from "./components/Profile";
-import Assistant from "./components/Assistant";
-import ProductDetail from "./ui/ProductDetail";
+import Landing from "./components/landing.jsx";
+import Login from "./components/login.jsx";
+import Signup from "./components/Signup.jsx";
+import Home from "./components/home.jsx";
+import Discover from "./components/Discover.jsx";
+import AIScanner from "./components/AIScanner.jsx"; 
+import MarketPlace from "./components/MarketpPlace.jsx"; 
+import Map from "./components/map.jsx";
+import About from "./components/About.jsx";
+import Profile from "./components/Profile.jsx";
+import Assistant from "./components/Assistant.jsx";
+import ProductDetail from "./ui/ProductDetail.jsx";
 
 function App() {
   return (
