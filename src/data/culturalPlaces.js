@@ -101,84 +101,134 @@ const culturalPlaces = [
     name: "Udayagiri and Khandagiri Caves",
     city: "Bhubaneswar",
     state: "Odisha",
-    description: "Ancient rock-cut caves with Jain and Buddhist heritage, dating back to the 1st century BCE.",
-    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST7BLE1T13Z5_EkKmYWPk5L0zDlSGATrfohg&shttps://upload.wikimedia.org/wikipedia/commons/7/72/Khandagari_and_Udaygiri_featured_image.jpg",
+    description:
+      "Ancient rock-cut caves with Jain and Buddhist heritage, dating back to the 1st century BCE.",
+    thumbnail:
+      "https://upload.wikimedia.org/wikipedia/commons/7/72/Khandagari_and_Udaygiri_featured_image.jpg",
     lat: 20.2331,
     lng: 85.7881,
     details: {
-      history: "Commissioned by King Kharavela, these caves served as residential blocks for Jain monks.",
+      history:
+        "Commissioned by King Kharavela, these caves served as residential blocks for Jain monks.",
       significance: "A major archaeological and tourist site in Odisha.",
-      festivals: "Mahavir Jayanti and local festivals."
-        ,bestTimeToVisit: "October to March",
-        entryFee: "₹25 for Indians, ₹300 for foreigners",
-        localCuisine: "Enjoy street food like Dahibara Aloodum and sweets like Rasabali in Bhubaneswar.",
-        tips: "Wear comfortable shoes for climbing. Guides are available at the entrance.",
-        howToReach: "Located in Bhubaneswar city, accessible by auto, taxi, and city buses.",
-        nearbyAttractions: ["Khandagiri Caves", "Lingaraj Temple", "Nandankanan Zoo"]
-    ,architecture: "Rock-cut architecture with relief sculptures, inscriptions, and meditation cells.",
+      festivals: "Mahavir Jayanti and local festivals.",
+      bestTimeToVisit: "October to March",
+      entryFee: "₹25 for Indians, ₹300 for foreigners",
+      localCuisine:
+        "Enjoy street food like Dahibara Aloodum and sweets like Rasabali in Bhubaneswar.",
+      tips: "Wear comfortable shoes for climbing. Guides are available at the entrance.",
+      howToReach:
+        "Located in Bhubaneswar city, accessible by auto, taxi, and city buses.",
+      nearbyAttractions: [
+        "Khandagiri Caves",
+        "Lingaraj Temple",
+        "Nandankanan Zoo",
+      ],
+      architecture:
+        "Rock-cut architecture with relief sculptures, inscriptions, and meditation cells.",
       legends: "Said to be the site where Jain monks attained enlightenment.",
       accessibility: "Steep steps, not suitable for wheelchairs.",
       photographyTips: "Morning light is best for cave interiors. Bring a flashlight.",
-      localMarkets: "Ekamra Haat in Bhubaneswar for handicrafts and textiles.",
+      localMarkets:
+        "Ekamra Haat in Bhubaneswar for handicrafts and textiles.",
       events: "Mahavir Jayanti celebrations, local heritage walks.",
-      conservationStatus: "Protected monument under ASI."
+      conservationStatus: "Protected monument under ASI.",
     }
   },
   {
-  "name": "Lingaraja Temple",
-  "city": "Bhubaneswar",
-  "state": "Odisha",
-  "description": "An 11th-century Hindu temple dedicated to Lord Shiva, showcasing the grandeur of Kalinga architecture.",
-  "thumbnail": "https://www.holidify.com/images/cmsuploads/compressed/lingarajatemple_20181213113616.jpg",
-  "lat": 20.2386,
-  "lng": 85.8334,
-  "details": {
-    "history": "Built in the 11th century by the Somavamsi dynasty and later expanded by the Ganga dynasty, the Lingaraja Temple represents the peak of Kalinga architectural style.",
-    "significance": "One of the oldest and largest temples in Bhubaneswar, it is a major Shaivite pilgrimage site, attracting devotees from across India.",
-    "festivals": "Maha Shivaratri is the grandest celebration here, drawing thousands of devotees; Ratha Yatra of Lingaraja is also observed.",
-    "bestTimeToVisit": "October to March, when the weather is pleasant.",
-    "entryFee": "Free entry for Indians; foreigners are not allowed inside the sanctum but can view from outside.",
-    "localCuisine": "Try Odisha’s temple food like Abadha (Mahaprasad) at nearby eateries and sweets like Chhena Poda.",
-    "tips": "Wear modest clothing, photography is restricted inside; visit early morning to avoid crowds.",
-    "howToReach": "Located in Old Town Bhubaneswar; accessible by taxi, auto-rickshaw, and local buses from the railway station or airport.",
-    "nearbyAttractions": ["Rajarani Temple", "Mukteswara Temple", "Bindu Sagar Lake"],
-    "architecture": "Exemplifies Kalinga style with a towering 180-foot vimana, intricately carved walls, and elaborate sculptures.",
-    "legends": "Believed that Lord Shiva manifested here as Lingaraja, embodying both Vishnu and Shiva (Harihara).",
-    "accessibility": "The temple has steps and uneven stone floors, not suitable for wheelchairs.",
-    "photographyTips": "Best shots from outside complex and Bindu Sagar Lake during sunrise.",
-    "localMarkets": "Ekamra Haat and Old Town markets for stone carvings, palm-leaf paintings, and souvenirs.",
-    "events": "Annual chariot festival (Rukuna Rath) during Ashokastami draws large crowds.",
-    "conservationStatus": "Protected monument under Archaeological Survey of India (ASI)."
-  }
-},
-{
-  "name": "Chilika Lake",
-  "city": "Satpada / Puri District",
-  "state": "Odisha",
-  "description": "Asia’s largest brackish water lagoon, famous for migratory birds, Irrawaddy dolphins, and scenic islands.",
-  "thumbnail": "https://www.holidify.com/images/cmsuploads/compressed/chilika_20170822185109.jpg",
-  "lat": 19.7549,
-  "lng": 85.3900,
-  "details": {
-    "history": "Chilika has been a natural lagoon for centuries, sustaining fishing communities and serving as a vital ecological zone. It was designated as India’s first Ramsar wetland site in 1981.",
-    "significance": "Home to over 160 species of birds, rare Irrawaddy dolphins, and a hotspot of biodiversity, Chilika is globally recognized for its ecological and economic value.",
-    "festivals": "Makar Sankranti is celebrated with fishing fairs; winter months see a 'Bird Festival' highlighting migratory species.",
-    "bestTimeToVisit": "November to February, during the bird migration season.",
-    "entryFee": "No entry fee; boat ride charges range from ₹100 to ₹3000 depending on the package.",
-    "localCuisine": "Fresh seafood like prawns, crabs, and fish curry are must-tries in Satpada and nearby villages.",
-    "tips": "Carry binoculars for bird watching; book government-approved boats for safety.",
-    "howToReach": "Satpada is about 48 km from Puri and 100 km from Bhubaneswar; accessible by road with taxis and buses.",
-    "nearbyAttractions": ["Kalijai Temple", "Nalabana Bird Sanctuary", "Mangalajodi Birding Site"],
-    "architecture": "Not a man-made monument, but dotted with small temples on islands like Kalijai and Barkul.",
-    "legends": "Kalijai Temple on an island is tied to the legend of Goddess Kalijai, worshipped as the protector of fishermen.",
-    "accessibility": "Boats have basic seating; not suitable for wheelchairs. Paths near viewing areas are uneven.",
-    "photographyTips": "Best during sunrise for golden reflections on water and in winter for capturing flocks of migratory birds.",
-    "localMarkets": "Puri and Satpada markets offer conch-shell items, seashell crafts, and dried fish products.",
-    "events": "Chilika Bird Festival organized annually by the state tourism department attracts birdwatchers worldwide.",
-    "conservationStatus": "Designated as a Ramsar Wetland of International Importance; monitored by Chilika Development Authority."
-  }
-},
-
+    name: "Lingaraja Temple",
+    city: "Bhubaneswar",
+    state: "Odisha",
+    description:
+      "An 11th-century Hindu temple dedicated to Lord Shiva, showcasing the grandeur of Kalinga architecture.",
+    thumbnail:
+      "https://www.holidify.com/images/cmsuploads/compressed/lingarajatemple_20181213113616.jpg",
+    lat: 20.2386,
+    lng: 85.8334,
+    details: {
+      history:
+        "Built in the 11th century by the Somavamsi dynasty and later expanded by the Ganga dynasty, the Lingaraja Temple represents the peak of Kalinga architectural style.",
+      significance:
+        "One of the oldest and largest temples in Bhubaneswar, it is a major Shaivite pilgrimage site, attracting devotees from across India.",
+      festivals:
+        "Maha Shivaratri is the grandest celebration here, drawing thousands of devotees; Ratha Yatra of Lingaraja is also observed.",
+      bestTimeToVisit: "October to March, when the weather is pleasant.",
+      entryFee:
+        "Free entry for Indians; foreigners are not allowed inside the sanctum but can view from outside.",
+      localCuisine:
+        "Try Odisha’s temple food like Abadha (Mahaprasad) at nearby eateries and sweets like Chhena Poda.",
+      tips:
+        "Wear modest clothing, photography is restricted inside; visit early morning to avoid crowds.",
+      howToReach:
+        "Located in Old Town Bhubaneswar; accessible by taxi, auto-rickshaw, and local buses from the railway station or airport.",
+      nearbyAttractions: [
+        "Rajarani Temple",
+        "Mukteswara Temple",
+        "Bindu Sagar Lake",
+      ],
+      architecture:
+        "Exemplifies Kalinga style with a towering 180-foot vimana, intricately carved walls, and elaborate sculptures.",
+      legends:
+        "Believed that Lord Shiva manifested here as Lingaraja, embodying both Vishnu and Shiva (Harihara).",
+      accessibility:
+        "The temple has steps and uneven stone floors, not suitable for wheelchairs.",
+      photographyTips:
+        "Best shots from outside complex and Bindu Sagar Lake during sunrise.",
+      localMarkets:
+        "Ekamra Haat and Old Town markets for stone carvings, palm-leaf paintings, and souvenirs.",
+      events:
+        "Annual chariot festival (Rukuna Rath) during Ashokastami draws large crowds.",
+      conservationStatus:
+        "Protected monument under Archaeological Survey of India (ASI).",
+    }
+  },
+  {
+    name: "Chilika Lake",
+    city: "Satpada / Puri District",
+    state: "Odisha",
+    description:
+      "Asia’s largest brackish water lagoon, famous for migratory birds, Irrawaddy dolphins, and scenic islands.",
+    thumbnail:
+      "https://www.holidify.com/images/cmsuploads/compressed/chilika_20170822185109.jpg",
+    lat: 19.7549,
+    lng: 85.39,
+    details: {
+      history:
+        "Chilika has been a natural lagoon for centuries, sustaining fishing communities and serving as a vital ecological zone. It was designated as India’s first Ramsar wetland site in 1981.",
+      significance:
+        "Home to over 160 species of birds, rare Irrawaddy dolphins, and a hotspot of biodiversity, Chilika is globally recognized for its ecological and economic value.",
+      festivals:
+        "Makar Sankranti is celebrated with fishing fairs; winter months see a 'Bird Festival' highlighting migratory species.",
+      bestTimeToVisit: "November to February, during the bird migration season.",
+      entryFee:
+        "No entry fee; boat ride charges range from ₹100 to ₹3000 depending on the package.",
+      localCuisine:
+        "Fresh seafood like prawns, crabs, and fish curry are must-tries in Satpada and nearby villages.",
+      tips:
+        "Carry binoculars for bird watching; book government-approved boats for safety.",
+      howToReach:
+        "Satpada is about 48 km from Puri and 100 km from Bhubaneswar; accessible by road with taxis and buses.",
+      nearbyAttractions: [
+        "Kalijai Temple",
+        "Nalabana Bird Sanctuary",
+        "Mangalajodi Birding Site",
+      ],
+      architecture:
+        "Not a man-made monument, but dotted with small temples on islands like Kalijai and Barkul.",
+      legends:
+        "Kalijai Temple on an island is tied to the legend of Goddess Kalijai, worshipped as the protector of fishermen.",
+      accessibility:
+        "Boats have basic seating; not suitable for wheelchairs. Paths near viewing areas are uneven.",
+      photographyTips:
+        "Best during sunrise for golden reflections on water and in winter for capturing flocks of migratory birds.",
+      localMarkets:
+        "Puri and Satpada markets offer conch-shell items, seashell crafts, and dried fish products.",
+      events:
+        "Chilika Bird Festival organized annually by the state tourism department attracts birdwatchers worldwide.",
+      conservationStatus:
+        "Designated as a Ramsar Wetland of International Importance; monitored by Chilika Development Authority.",
+    }
+  },
 {
   name: "Simlipal National Park",
   city: "Baripada",

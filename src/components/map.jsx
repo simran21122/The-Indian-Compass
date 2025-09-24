@@ -30,7 +30,6 @@ const districts = ["All Districts", "Jaipur", "Ahmedabad", "Kochi", "Mysuru"];
 const cities = ["All Cities", "Udaipur", "Surat", "Trivandrum", "Bangalore"];
 const types = ["All Types", "Festivals", "Cultural Places", "Temples", "Markets"];
 
-// Use the new culturalPlaces data
 const places = culturalPlaces;
 
 const Map = () => {
@@ -44,12 +43,9 @@ const Map = () => {
 
   useEffect(() => {
     let filtered = places.filter((place) => {
-      const matchCity =
-        selectedCity === "All Cities" || place.city === selectedCity;
-      const matchType =
-        selectedType === "All Types" || (place.type ? place.type === selectedType : true);
-      const matchState =
-        selectedState === "All States" || place.state === selectedState;
+      const matchCity = selectedCity === "All Cities" || place.city === selectedCity;
+      const matchType = selectedType === "All Types" || (place.type ? place.type === selectedType : true);
+      const matchState = selectedState === "All States" || place.state === selectedState;
       const matchSearch =
         !searchQuery ||
         place.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -67,7 +63,6 @@ const Map = () => {
       filtered = places;
     }
 
-    console.log('Filtered Data:', filtered);
     setFilteredData(filtered);
   }, [selectedState, selectedDistrict, selectedCity, selectedType, searchQuery]);
 
@@ -81,7 +76,7 @@ const Map = () => {
 
   return (
     <motion.div
-      className=" min-h-screen flex flex-col pt-5 pl-2 pr-2"
+      className="min-h-screen flex flex-col pt-5 pl-2 pr-2"
       style={{
         backgroundImage: `url(${bgMap})`,
         backgroundSize: "cover",
@@ -91,14 +86,12 @@ const Map = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      {/* Header */}
       <div className="sticky top-0 z-50">
         <Topbar />
       </div>
 
-      {/* Main Section */}
       <motion.div
-        className=" flex-1 container mx-auto px-4 md:px-8 pt-20 py-8 pb-20 md:pb-0"
+        className="flex-1 container mx-auto px-4 md:px-8 pt-20 py-8 pb-20 md:pb-0"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2 }}
@@ -109,7 +102,6 @@ const Map = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         >
-          {/* Title */}
           <motion.div
             className="text-center mb-6 md:mb-8"
             initial={{ opacity: 0, y: 40 }}
@@ -139,14 +131,9 @@ const Map = () => {
             animate="visible"
             variants={{
               hidden: { opacity: 0, y: 20 },
-              visible: {
-                opacity: 1,
-                y: 0,
-                transition: { staggerChildren: 0.1 },
-              },
+              visible: { opacity: 1, y: 0, transition: { staggerChildren: 0.1 } },
             }}
           >
-            {/* Search */}
             <motion.input
               type="text"
               placeholder="Search places..."
@@ -156,133 +143,49 @@ const Map = () => {
               whileFocus={{ scale: 1.02 }}
             />
 
-            {/* State Filter */}
-            <motion.select
-              value={selectedState}
-              onChange={(e) => setSelectedState(e.target.value)}
-              className="col-span-1 border border-gray-300 text-gray-600 rounded-lg px-4 py-2 w-full focus:ring-2 focus:ring-purple-400 outline-none transition"
-              whileHover={{ scale: 1.03 }}
-            >
+            <motion.select value={selectedState} onChange={(e) => setSelectedState(e.target.value)} className="col-span-1 border border-gray-300 text-gray-600 rounded-lg px-4 py-2 w-full focus:ring-2 focus:ring-purple-400 outline-none transition" whileHover={{ scale: 1.03 }}>
               {states.map((state) => (
                 <option key={state}>{state}</option>
               ))}
             </motion.select>
 
-            {/* District Filter */}
-            <motion.select
-              value={selectedDistrict}
-              onChange={(e) => setSelectedDistrict(e.target.value)}
-              className="col-span-1 border border-gray-300 text-gray-600 rounded-lg px-4 py-2 w-full focus:ring-2 focus:ring-purple-400 outline-none transition"
-              whileHover={{ scale: 1.03 }}
-            >
+            <motion.select value={selectedDistrict} onChange={(e) => setSelectedDistrict(e.target.value)} className="col-span-1 border border-gray-300 text-gray-600 rounded-lg px-4 py-2 w-full focus:ring-2 focus:ring-purple-400 outline-none transition" whileHover={{ scale: 1.03 }}>
               {districts.map((district) => (
                 <option key={district}>{district}</option>
               ))}
             </motion.select>
 
-            {/* City Filter */}
-            <motion.select
-              value={selectedCity}
-              onChange={(e) => setSelectedCity(e.target.value)}
-              className="col-span-1 border border-gray-300 text-gray-600 rounded-lg px-4 py-2 w-full focus:ring-2 focus:ring-purple-400 outline-none transition"
-              whileHover={{ scale: 1.03 }}
-            >
+            <motion.select value={selectedCity} onChange={(e) => setSelectedCity(e.target.value)} className="col-span-1 border border-gray-300 text-gray-600 rounded-lg px-4 py-2 w-full focus:ring-2 focus:ring-purple-400 outline-none transition" whileHover={{ scale: 1.03 }}>
               {cities.map((city) => (
                 <option key={city}>{city}</option>
               ))}
             </motion.select>
 
-            {/* Type Filter */}
-            <motion.select
-              value={selectedType}
-              onChange={(e) => setSelectedType(e.target.value)}
-              className="col-span-1 border border-gray-300 text-gray-600 rounded-lg px-4 py-2 w-full focus:ring-2 focus:ring-purple-400 outline-none transition"
-              whileHover={{ scale: 1.03 }}
-            >
+            <motion.select value={selectedType} onChange={(e) => setSelectedType(e.target.value)} className="col-span-1 border border-gray-300 text-gray-600 rounded-lg px-4 py-2 w-full focus:ring-2 focus:ring-purple-400 outline-none transition" whileHover={{ scale: 1.03 }}>
               {types.map((type) => (
                 <option key={type}>{type}</option>
               ))}
             </motion.select>
 
-            {/* Reset Button */}
-            <motion.button
-              onClick={resetFilters}
-              className="col-span-1 bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition"
-              whileTap={{ scale: 0.95 }}
-            >
+            <motion.button onClick={resetFilters} className="col-span-1 bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition" whileTap={{ scale: 0.95 }}>
               Reset
             </motion.button>
           </motion.div>
 
-          {/* Map + Description */}
+          {/* Map + Details */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Map */}
-            <motion.div
-              className="bg-white/80 backdrop-blur-sm shadow-lg rounded-lg h-[500px] overflow-hidden"
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1 }}
-              whileHover={{ scale: 1.01 }}
-            >
-              <MapContainer
-                center={[20.5937, 78.9629]}
-                zoom={5}
-                style={{ height: "100%", width: "100%", borderRadius: "0.5rem" }}
-              >
-                <TileLayer
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                  attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>'
-                />
+            <motion.div className="bg-white/80 backdrop-blur-sm shadow-lg rounded-lg h-[500px] overflow-hidden" initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} whileHover={{ scale: 1.01 }}>
+              <MapContainer center={[20.5937, 78.9629]} zoom={5} style={{ height: "100%", width: "100%", borderRadius: "0.5rem" }}>
+                <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>' />
                 {filteredData.map((place, idx) => (
-                  <Marker key={idx} position={[place.lat, place.lng]} icon={saffronMarker}
-                    eventHandlers={{
-                      click: () => setSelectedPlace(place)
-                    }}
-                  >
+                  <Marker key={idx} position={[place.lat, place.lng]} icon={saffronMarker} eventHandlers={{ click: () => setSelectedPlace(place) }}>
                     <Popup>
-                      <div
-                        style={{
-                          minWidth: 200,
-                          background: 'rgba(255,255,255,0.35)',
-                          boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.15)',
-                          backdropFilter: 'blur(8px)',
-                          WebkitBackdropFilter: 'blur(8px)',
-                          borderRadius: 16,
-                          border: '1px solid rgba(255,255,255,0.25)',
-                          padding: 12,
-                          color: '#222',
-                        }}
-                      >
+                      <div style={{ minWidth: 200, background: 'rgba(255,255,255,0.35)', boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.15)', backdropFilter: 'blur(8px)', borderRadius: 16, border: '1px solid rgba(255,255,255,0.25)', padding: 12, color: '#222' }}>
                         <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 4 }}>{place.name}</div>
-                        <img
-                          src={place.thumbnail}
-                          alt={place.name}
-                          style={{ width: '100%', maxWidth: 90, height: 60, objectFit: 'cover', borderRadius: 8, margin: '6px 0' }}
-                          loading="lazy"
-                          srcSet={`${place.thumbnail} 1x, ${place.thumbnail.replace('200px-', '400px-')} 2x`}
-                        />
+                        <img src={place.thumbnail} alt={place.name} style={{ width: '100%', maxWidth: 90, height: 60, objectFit: 'cover', borderRadius: 8, margin: '6px 0' }} loading="lazy" />
                         <div style={{ fontSize: 13, marginBottom: 4 }}>{place.description}</div>
-                        {place.city && (
-                          <div style={{ fontSize: 12, color: '#ad4146', fontWeight: 600 }}>
-                            {place.city}, {place.state}
-                          </div>
-                        )}
-                        <button
-                          style={{
-                            marginTop: 8,
-                            background: 'rgba(255, 193, 7, 0.85)',
-                            color: '#222',
-                            border: 'none',
-                            borderRadius: 8,
-                            padding: '4px 12px',
-                            fontWeight: 600,
-                            cursor: 'pointer',
-                            boxShadow: '0 2px 8px 0 rgba(31,38,135,0.08)'
-                          }}
-                          onClick={() => setSelectedPlace(place)}
-                        >
-                          More Details
-                        </button>
+                        {place.city && <div style={{ fontSize: 12, color: '#ad4146', fontWeight: 600 }}>{place.city}, {place.state}</div>}
+                        <button style={{ marginTop: 8, background: 'rgba(255, 193, 7, 0.85)', color: '#222', border: 'none', borderRadius: 8, padding: '4px 12px', fontWeight: 600, cursor: 'pointer' }} onClick={() => setSelectedPlace(place)}>More Details</button>
                       </div>
                     </Popup>
                   </Marker>
@@ -290,264 +193,30 @@ const Map = () => {
               </MapContainer>
             </motion.div>
 
-          {/* Details / Expanded Card */}
-<motion.div
-  className="bg-white/80 backdrop-blur-sm shadow-lg rounded-lg p-4 md:p-6 overflow-y-auto h-[500px] relative"
-  initial={{ opacity: 0, x: 50 }}
-  animate={{ opacity: 1, x: 0 }}
-  transition={{ duration: 1, delay: 0.2 }}
-  whileHover={{ scale: 1.01 }}
->
-  {selectedPlace ? (
-    <div
-      style={{
-        background: 'rgba(255,255,255,0.7)',
-        borderRadius: 18,
-        boxShadow: '0 8px 32px 0 rgba(31,38,135,0.12)',
-        padding: 18,
-        position: 'relative',
-        minHeight: 340,
-      }}
-    >
-      <button
-        onClick={() => setSelectedPlace(null)}
-        style={{
-          position: 'absolute',
-          top: 10,
-          right: 10,
-          background: '#eee',
-          border: 'none',
-          borderRadius: 8,
-          padding: '2px 10px',
-          fontWeight: 700,
-          cursor: 'pointer',
-          color: '#ad4146',
-          fontSize: 18
-        }}
-      >
-        ×
-      </button>
-
-      {/* Header Section */}
-      <div style={{ display: 'flex', gap: 18, alignItems: 'center', marginBottom: 12 }}>
-        <img
-          src={selectedPlace.thumbnail}
-          alt={selectedPlace.name}
-          style={{
-            width: '100%',
-            maxWidth: 100,
-            height: 70,
-            objectFit: 'cover',
-            borderRadius: 10,
-            background: '#eee'
-          }}
-          loading="lazy"
-          onError={e => {
-            e.target.onerror = null;
-            e.target.src =
-              'https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg';
-          }}
-        />
-        <div>
-          <div style={{ fontWeight: 800, fontSize: 22, color: '#ad4146' }}>
-            {selectedPlace.name}
-          </div>
-          <div style={{ fontSize: 15, color: '#555', fontWeight: 600 }}>
-            {selectedPlace.city}, {selectedPlace.state}
-          </div>
-        </div>
-      </div>
-
-      {/* Description */}
-      <div style={{ fontSize: 15, marginBottom: 12, color: '#222' }}>
-        {selectedPlace.description}
-      </div>
-
-      {/* Dynamic Details Rendering */}
-      {selectedPlace.details && (
-        <div style={{ fontSize: 14, color: '#222', lineHeight: 1.6 }}>
-          {Object.entries(selectedPlace.details).map(([key, value]) => (
-            <div key={key} style={{ marginBottom: 8 }}>
-              <strong style={{ textTransform: "capitalize" }}>
-                {key.replace(/([A-Z])/g, " $1")}
-              </strong>
-              : {Array.isArray(value) ? value.join(", ") : value}
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
-  ) : (
-    <>
-      <h2 className="text-lg md:text-xl text-gray-800 font-semibold mb-4">
-        Details
-      </h2>
-      {filteredData.length > 0 ? (
-        filteredData.map((item, index) => (
-          <motion.p
-            key={index}
-            className="mb-2 text-gray-700"
-            initial={{ opacity: 0, x: -10 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: index * 0.15 }}
-          >
-            {item.name} — {item.type || item.city}
-          </motion.p>
-        ))
-      ) : (
-        <p className="text-gray-500">No matching results</p>
-      )}
-    </>
-  )}
-</motion.div>
-
-            {/* Details / Expanded Card */}
-            <motion.div
-              className="bg-white/80 backdrop-blur-sm shadow-lg rounded-lg p-4 md:p-6 overflow-y-auto h-[500px] relative"
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 0.2 }}
-              whileHover={{ scale: 1.01 }}
-            >
+            <motion.div className="bg-white/80 backdrop-blur-sm shadow-lg rounded-lg p-4 md:p-6 overflow-y-auto h-[500px] relative" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1, delay: 0.2 }} whileHover={{ scale: 1.01 }}>
               {selectedPlace ? (
-                <div
-                  style={{
-                    background: 'rgba(255,255,255,0.7)',
-                    borderRadius: 18,
-                    boxShadow: '0 8px 32px 0 rgba(31,38,135,0.12)',
-                    padding: 18,
-                    position: 'relative',
-                    minHeight: 340,
-                  }}
-                >
-                  <button
-                    onClick={() => setSelectedPlace(null)}
-                    style={{
-                      position: 'absolute',
-                      top: 10,
-                      right: 10,
-                      background: '#eee',
-                      border: 'none',
-                      borderRadius: 8,
-                      padding: '2px 10px',
-                      fontWeight: 700,
-                      cursor: 'pointer',
-                      color: '#ad4146',
-                      fontSize: 18
-                    }}
-                  >
-                    ×
-                  </button>
+                <div style={{ background: 'rgba(255,255,255,0.7)', borderRadius: 18, boxShadow: '0 8px 32px 0 rgba(31,38,135,0.12)', padding: 18, position: 'relative', minHeight: 340 }}>
+                  <button onClick={() => setSelectedPlace(null)} style={{ position: 'absolute', top: 10, right: 10, background: '#eee', border: 'none', borderRadius: 8, padding: '2px 10px', fontWeight: 700, cursor: 'pointer', color: '#ad4146', fontSize: 18 }}>×</button>
                   <div style={{ display: 'flex', gap: 18, alignItems: 'center', marginBottom: 12 }}>
-                    <img
-                      src={selectedPlace.thumbnail}
-                      alt={selectedPlace.name}
-                      style={{ width: '100%', maxWidth: 100, height: 70, objectFit: 'cover', borderRadius: 10, background: '#eee' }}
-                      loading="lazy"
-                      onError={e => { e.target.onerror = null; e.target.src = 'https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg'; }}
-                    />
+                    <img src={selectedPlace.thumbnail} alt={selectedPlace.name} style={{ width: '100%', maxWidth: 100, height: 70, objectFit: 'cover', borderRadius: 10, background: '#eee' }} loading="lazy" />
                     <div>
                       <div style={{ fontWeight: 800, fontSize: 22, color: '#ad4146' }}>{selectedPlace.name}</div>
                       <div style={{ fontSize: 15, color: '#555', fontWeight: 600 }}>{selectedPlace.city}, {selectedPlace.state}</div>
                     </div>
                   </div>
-                  <div style={{ fontSize: 15, marginBottom: 10, color: '#222' }}>{selectedPlace.description}</div>
-                  {/* Expanded details for all fields */}
-                  {selectedPlace.details?.history && (
-                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
-                      <strong>History:</strong> {selectedPlace.details.history}
+                  <div style={{ fontSize: 15, marginBottom: 12, color: '#222' }}>{selectedPlace.description}</div>
+                  {selectedPlace.details && Object.entries(selectedPlace.details).map(([key, value]) => (
+                    <div key={key} style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
+                      <strong style={{ textTransform: "capitalize" }}>{key.replace(/([A-Z])/g, " $1")}</strong>: {Array.isArray(value) ? value.join(", ") : value}
                     </div>
-                  )}
-                  {selectedPlace.details?.significance && (
-                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
-                      <strong>Significance:</strong> {selectedPlace.details.significance}
-                    </div>
-                  )}
-                  {selectedPlace.details?.festivals && (
-                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
-                      <strong>Festivals:</strong> {selectedPlace.details.festivals}
-                    </div>
-                  )}
-                  {selectedPlace.details?.bestTimeToVisit && (
-                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
-                      <strong>Best Time to Visit:</strong> {selectedPlace.details.bestTimeToVisit}
-                    </div>
-                  )}
-                  {selectedPlace.details?.entryFee && (
-                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
-                      <strong>Entry Fee:</strong> {selectedPlace.details.entryFee}
-                    </div>
-                  )}
-                  {selectedPlace.details?.localCuisine && (
-                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
-                      <strong>Local Cuisine:</strong> {selectedPlace.details.localCuisine}
-                    </div>
-                  )}
-                  {selectedPlace.details?.tips && (
-                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
-                      <strong>Tips:</strong> {selectedPlace.details.tips}
-                    </div>
-                  )}
-                  {selectedPlace.details?.howToReach && (
-                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
-                      <strong>How to Reach:</strong> {selectedPlace.details.howToReach}
-                    </div>
-                  )}
-                  {selectedPlace.details?.nearbyAttractions && (
-                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
-                      <strong>Nearby Attractions:</strong> {Array.isArray(selectedPlace.details.nearbyAttractions) ? selectedPlace.details.nearbyAttractions.join(', ') : selectedPlace.details.nearbyAttractions}
-                    </div>
-                  )}
-                  {selectedPlace.details?.architecture && (
-                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
-                      <strong>Architecture:</strong> {selectedPlace.details.architecture}
-                    </div>
-                  )}
-                  {selectedPlace.details?.legends && (
-                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
-                      <strong>Legends:</strong> {selectedPlace.details.legends}
-                    </div>
-                  )}
-                  {selectedPlace.details?.accessibility && (
-                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
-                      <strong>Accessibility:</strong> {selectedPlace.details.accessibility}
-                    </div>
-                  )}
-                  {selectedPlace.details?.photographyTips && (
-                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
-                      <strong>Photography Tips:</strong> {selectedPlace.details.photographyTips}
-                    </div>
-                  )}
-                  {selectedPlace.details?.localMarkets && (
-                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
-                      <strong>Local Markets:</strong> {selectedPlace.details.localMarkets}
-                    </div>
-                  )}
-                  {selectedPlace.details?.events && (
-                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
-                      <strong>Events:</strong> {selectedPlace.details.events}
-                    </div>
-                  )}
-                  {selectedPlace.details?.conservationStatus && (
-                    <div style={{ fontSize: 14, marginBottom: 8, color: '#222' }}>
-                      <strong>Conservation Status:</strong> {selectedPlace.details.conservationStatus}
-                    </div>
-                  )}
+                  ))}
                 </div>
               ) : (
                 <>
-                  <h2 className="text-lg md:text-xl text-gray-800 font-semibold mb-4">
-                    Details
-                  </h2>
+                  <h2 className="text-lg md:text-xl text-gray-800 font-semibold mb-4">Details</h2>
                   {filteredData.length > 0 ? (
                     filteredData.map((item, index) => (
-                      <motion.p
-                        key={index}
-                        className="mb-2 text-gray-700"
-                        initial={{ opacity: 0, x: -10 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: index * 0.15 }}
-                      >
+                      <motion.p key={index} className="mb-2 text-gray-700" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: index * 0.15 }}>
                         {item.name} — {item.type || item.city}
                       </motion.p>
                     ))
