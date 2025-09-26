@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { auth, googleProvider, facebookProvider, signInWithPopup } from "../firebaseConfig";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import loginbg2 from "../image/loginbg2.png";
+import loginbg from "../image/loginbg2.png";
 
 const Signup = () => {
   const [animate, setAnimate] = useState(false);
@@ -28,7 +28,7 @@ const Signup = () => {
   return (
     <div
       className="min-h-screen flex flex-col items-center justify-center bg-center bg-cover relative"
-      style={{ backgroundImage: `url(${loginbg2})` }}
+      style={{ backgroundImage: `url(${loginbg})` }}
     >
       <div className="absolute inset-0 bg-black/40 backdrop-brightness-75"></div>
 
