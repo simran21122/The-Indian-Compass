@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { motion, useAnimation, AnimatePresence, useViewportScroll, useTransform } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useNavigate } from "react-router-dom";
+import indiamap from "../image/indiamap.png";
 
 function SectionMaps({ bgImage }) {
   const navigate = useNavigate();
@@ -84,7 +85,10 @@ function SectionMaps({ bgImage }) {
           exit="hidden"
         >
           {/* Title + Subtitle with scroll float */}
-          <motion.div className="text-center mb-10" style={{ y: yRange }}>
+          <motion.div
+            className="text-center mb-10"
+            style={{ y: yRange }}
+          >
             <motion.h2
               className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#ad4146] mb-4"
             >
@@ -117,7 +121,10 @@ function SectionMaps({ bgImage }) {
               >
                 Why Use Interactive Maps?
               </motion.h3>
-              <motion.p className="text-gray-800 mb-6" variants={textRevealVariants}>
+              <motion.p
+                className="text-gray-800 mb-6"
+                variants={textRevealVariants}
+              >
                 Our interactive maps let you explore India like never before.
                 Zoom into specific states, uncover cultural heritage sites,
                 navigate natural wonders, and learn detailed information about
@@ -140,7 +147,7 @@ function SectionMaps({ bgImage }) {
               animate={controls}
             >
               <img
-                src="/indiamap.png" // updated path
+                src={indiamap}
                 alt="Interactive Map Preview"
                 className="hidden lg:block rounded-xl"
               />
