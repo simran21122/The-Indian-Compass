@@ -126,9 +126,9 @@ function MarketSection({ bgImage }) {
                     {item.category} • {item.state}
                   </p>
                   <div className="flex items-center justify-between">
-                    <span className="text-sm font-bold text-gray-800">
+                    {/* <span className="text-sm font-bold text-gray-800">
                       ₹{item.price}
-                    </span>
+                    </span> */}
                     <span className="text-xs text-yellow-600">⭐ {item.rating}</span>
                   </div>
                 </div>
