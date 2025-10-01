@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
-import bgAbout from "../image/bg_about.jpg";
-import bgAboutMobile from "../image/bg_about_mobile.jpg";
+import bgAbout from "../assets/image/bg_about.jpg";
+import bgAboutMobile from "../assets/image/bg_about_mobile.jpg";
 
 function About() {
   const [isMobile, setIsMobile] = useState(false);

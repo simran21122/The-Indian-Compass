@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { CreditCard, User, Mail, MapPin, Phone } from "lucide-react";
-import phonepeLogo from "../image/phonepe.png";
-import gpayLogo from "../image/gpay.svg";
-import paytmLogo from "../image/paytm.png";
-import amazonPayLogo from "../image/amazonpay.png";
-import codLogo from "../image/cod.png";
+import phonepeLogo from "../assets/image/phonepe.png";
+import gpayLogo from "../assets/image/gpay.svg";
+import paytmLogo from "../assets/image/paytm.png";
+import amazonPayLogo from "../assets/image/amazonpay.png";
+import codLogo from "../assets/image/cod.png";
 
 const countries = ["India", "United States", "Canada", "United Kingdom", "Australia"];
 const digitalPayments = [

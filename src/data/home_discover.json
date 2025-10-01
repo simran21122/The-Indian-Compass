@@ -5,7 +5,7 @@
     "description": "A massive fort in Jodhpur, Rajasthan, showcasing intricate architecture and panoramic views of the Blue City.",
     "category": "monument",
     "state": "Rajasthan",
-    "image_url": "./src/image/discoverPage/dp1.jpg",
+    "image_url": "./src/assets/image/discoverPage/dp1.jpg",
     "tags": ["fort", "history", "architecture"]
   },
   {
@@ -14,7 +14,7 @@
     "description": "Annual chariot festival of Lord Jagannath in Puri, Odisha, attracting millions of devotees.",
     "category": "festival",
     "state": "Odisha",
-    "image_url": "./src/image/discoverPage/pd5.jpg",
+    "image_url": "./src/assets/image/discoverPage/pd5.jpg",
     "tags": ["festival", "religion", "celebration", "tradition"]
   },
   {
@@ -23,7 +23,7 @@
     "description": "An annual livestock fair in Pushkar, Rajasthan, featuring camel trading, folk performances, and vibrant cultural festivities.",
     "category": "festival",
     "state": "Rajasthan",
-    "image_url": "./src/image/discoverPage/pd3.jpg",
+    "image_url": "./src/assets/image/discoverPage/pd3.jpg",
     "tags": ["festival", "rajasthan", "culture", "tradition"]
   },
   {
@@ -32,7 +32,7 @@
     "description": "A 13th-century temple in Odisha shaped like a colossal chariot, dedicated to the Sun God.",
     "category": "monument",
     "state": "Odisha",
-    "image_url": "./src/image/discoverPage/pd4.jpg",
+    "image_url": "./src/assets/image/discoverPage/pd4.jpg",
     "tags": ["temple", "architecture", "heritage"]
   },
  {
@@ -41,7 +41,7 @@
     "description": "Traditional Assamese festival celebrating harvest with music, dance, and community gatherings.",
     "category": "festival",
     "state": "Assam",
-    "image_url": "./src/image/discoverPage/dp2.jpg",
+    "image_url": "./src/assets/image/discoverPage/dp2.jpg",
     "tags": ["festival", "assam", "dance", "music", "tradition"]
   }
 ]

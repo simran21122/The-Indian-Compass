@@ -1,19 +1,19 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Landing from "./components/landing.jsx";
-import Login from "./components/login.jsx";
-import Signup from "./components/Signup.jsx";
-import Home from "./components/home.jsx";
-import Discover from "./components/Discover.jsx";
-import AIScanner from "./components/AIScanner.jsx"; 
-import MarketPlace from "./components/MarketpPlace.jsx"; 
-import Map from "./components/map.jsx";
-import About from "./components/About.jsx";
-import Profile from "./components/Profile.jsx";
-import Assistant from "./components/Assistant.jsx";
-import ProductDetail from "./ui/ProductDetail.jsx";
-import BuyNow from "./ui/BuyNow.jsx";
-import ContentDetails from "./ui/ContentDetails.jsx";
+import Landing from "./pages/landing.jsx";
+import Login from "./pages/login.jsx";
+import Signup from "./pages/Signup.jsx";
+import Home from "./pages/home.jsx";
+import Discover from "./pages/Discover.jsx";
+import AIScanner from "./pages/AIScanner.jsx"; 
+import MarketPlace from "./pages/MarketpPlace.jsx"; 
+import Map from "./pages/map.jsx";
+import About from "./pages/About.jsx";
+import Profile from "./pages/Profile.jsx";
+import Assistant from "./pages/Assistant.jsx";
+import ProductDetail from "./components/ProductDetail.jsx";
+import BuyNow from "./components/BuyNow.jsx";
+import ContentDetails from "./components/ContentDetails.jsx";
 
 function App() {
   return (

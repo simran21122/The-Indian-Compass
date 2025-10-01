@@ -1,10 +1,10 @@
 import React, { useRef, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import ChatbotIcon from "../ui/ChatbotIcon";
-import ChatForm from "../ui/ChatForm";
-import ChatMessage from "../ui/ChatMessage";
-import chatBg from "../image/bg_chat_bot.jpg";
-import Header from "../ui/header";
+import ChatbotIcon from "../components/ChatbotIcon";
+import ChatForm from "../components/ChatForm";
+import ChatMessage from "../components/ChatMessage";
+import chatBg from "../assets/image/bg_chat_bot.jpg";
+import Header from "../components/header";
 import { generateLlamaResponse } from "../utils/llamaAPI";
 
 export const Assistant = () => {

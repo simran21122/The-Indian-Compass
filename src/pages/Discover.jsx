@@ -4,11 +4,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Search, Filter, Crown, Palette, Music, ChefHat, Calendar } from "lucide-react";
 
 // UI Imports
-import Topbar from "../ui/header";
-import Trending from "../ui/Trending"; // Now imported
-import CategoryCard from "../ui/CategoryCard";
-import ContentCard from "../ui/ContentCard";
-import DiscoverSearchFilter from "../ui/DiscoverSearchFilter";
+import Topbar from "../components/header";
+import Trending from "../components/Trending"; // Now imported
+import CategoryCard from "../components/CategoryCard";
+import ContentCard from "../components/ContentCard";
+import DiscoverSearchFilter from "../components/DiscoverSearchFilter";
 
 // Data
 import culturalData from "../data/culturalContent.json";

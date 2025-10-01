@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-//import MarketPlacebg from "../image/MarketPlacebg.png";
+//import MarketPlacebg from "../MarketPlacebg.png";
 
 // Components
-import Header from "../ui/header";
-import CategoryFilter from "../ui/CategoryFilter";
-import Filters from "../ui/MarketPlaceFilters";
-import ProductCard from "../ui/ProductCard";
+import Header from "../components/header";
+import CategoryFilter from "../components/CategoryFilter";
+import Filters from "../components/MarketPlaceFilters";
+import ProductCard from "../components/ProductCard";
 
 // JSON Data
 import productsData from "../data/products.json";

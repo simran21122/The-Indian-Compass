@@ -9,7 +9,7 @@ import {
   ShoppingBag,
   User,
 } from "lucide-react";
-import logo from "../image/logo.png"; // logo image path
+import logo from "../assets/image/logo.png"; // logo image path
 
 // Navigation items
 const navItems = [

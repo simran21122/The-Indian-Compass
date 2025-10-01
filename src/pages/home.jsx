@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Header from "../ui/header";
-import bgHome from "../image/bg_home_1.jpg";
-import mobileViewBg from "../image/bg_home_mobile.jpg";
+import Header from "../components/header";
+import bgHome from "../assets/image/bg_home_1.jpg";
+import mobileViewBg from "../assets/image/bg_home_mobile.jpg";
 
 // Importing sections
 import Main from "../section/main";
@@ -11,7 +11,7 @@ import DiscoverSection from "../section/discoverSection";
 import MarketSection from "../section/marketSection";
 import ContactUs from "../section/contactUs";
 
-import Assitant from "../components/Assistant";
+import Assitant from "./Assistant";
 
 function Home() {
   const [bgImage, setBgImage] = useState(bgHome);

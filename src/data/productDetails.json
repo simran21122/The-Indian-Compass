@@ -146,9 +146,9 @@
     "price": 5000,
     "currency": "INR",
     "images": [
-      "/images/Productimg/p6.png",
-      "/images/Productimg/p6-side.png",
-      "/images/Productimg/p6-top.png"
+      "/assets/images/Productimg/p6.png",
+      "/assets/images/Productimg/p6-side.png",
+      "/assets/images/Productimg/p6-top.png"
     ],
     "description": "Traditional Rajasthani necklace featuring intricate enamel work and gemstone embellishments. The craftsmanship reflects centuries-old techniques, combining elegance with cultural richness. Ideal for weddings, festivals, or special occasions.",
     "materials": ["Gold-plated Metal", "Enamel", "Gemstones"],
@@ -174,9 +174,9 @@
     "price": 1800,
     "currency": "INR",
     "images": [
-      "/images/Productimg/p7.jpg",
-      "/images/Productimg/p7-side.jpg",
-      "/images/Productimg/p7-top.jpg"
+      "/assets/images/Productimg/p7.jpg",
+      "/assets/images/Productimg/p7-side.jpg",
+      "/assets/images/Productimg/p7-top.jpg"
     ],
     "description": "Traditional brass pendant handcrafted using the ancient Dhokra technique from Chhattisgarh. Each pendant is unique, showcasing tribal motifs and the skilled handiwork of local artisans. Perfect as a statement piece or gift for art lovers.",
     "materials": ["Brass"],
@@ -202,9 +202,9 @@
     "price": 2500,
     "currency": "INR",
     "images": [
-      "/images/Productimg/p8.jpg",
-      "/images/Productimg/p8-side.jpg",
-      "/images/Productimg/p8-top.jpg"
+      "/assets/images/Productimg/p8.jpg",
+      "/assets/images/Productimg/p8-side.jpg",
+      "/assets/images/Productimg/p8-top.jpg"
     ],
     "description": "Elegant handwoven Paata saree from Berhampur, Odisha, featuring traditional motifs and fine silk craftsmanship. The saree is soft, luxurious, and perfect for festive events or weddings. Each motif tells a story, celebrating Odisha's rich textile heritage.",
     "materials": ["Silk", "Cotton Threads"],

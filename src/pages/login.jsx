@@ -7,8 +7,8 @@ import {
   signInWithPopup,
 } from "../firebaseConfig";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import loginbg2 from "../image/LoginBg.png"; // Default for larger screens
-import loginbgMobile from "../image/loginbgMobileLogin.png"; // Background for mobile
+import loginbg2 from "../assets/image/LoginBg.png"; // Default for larger screens
+import loginbgMobile from "../assets/image/loginbgMobileLogin.png"; // Background for mobile
 
 const Login = () => {
   const [animate, setAnimate] = useState(false);

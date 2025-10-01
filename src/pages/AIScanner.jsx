@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
-import Topbar from "../ui/header";
-import Scanner from "../ui/Scanner";
-import Scannerbg from "../image/Scannerbg.png";
+import Topbar from "../components/header";
+import Scanner from "../components/Scanner";
+import Scannerbg from "../assets/image/Scannerbg.png";
 
 
 const AIScanner = () => {

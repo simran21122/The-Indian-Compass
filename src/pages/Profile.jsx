@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Topbar from "../ui/header";
-import ProfileHeader from "../ui/ProfileHeader";
-import BadgeCarousel from "../ui/BadgeCarousel";
-import StoriesGrid from "../ui/StoriesGrid";
-import SavedDiscoveries from "../ui/SavedDiscoveries";
+import Topbar from "../components/header";
+import ProfileHeader from "../components/ProfileHeader";
+import BadgeCarousel from "../components/BadgeCarousel";
+import StoriesGrid from "../components/StoriesGrid";
+import SavedDiscoveries from "../components/SavedDiscoveries";
 import {
   User as UserIcon,
   Award,
