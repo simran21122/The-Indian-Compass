@@ -2,16 +2,16 @@
   {
     "name": "Taj Mahal",
     "location": "Agra, Uttar Pradesh",
-    "image": "./src/assets/image/landingPage/taj-mahal-at-sunrise-with-golden-light.jpg"
+    "image": "./src/assets/image/taj-mahal-at-sunrise-with-golden-light.jpg"
   },
   {
     "name": "Hawa Mahal",
     "location": "Jaipur, Rajasthan",
-    "image": "./src/assets/image/landingPage/hawa-mahal-pink-palace-facade-in-jaipur.jpg"
+    "image": "./src/assets/image/hawa-mahal-pink-palace-facade-in-jaipur.jpg"
   },
   {
     "name": "Kerala Backwaters",
     "location": "Alleppey, Kerala",
-    "image": "./src/assets/image/landingPage/kerala-backwaters-with-traditional-houseboat-and-p.jpg"
+    "image": "./src/assets/image/kerala-backwaters-with-traditional-houseboat-and-p.jpg"
   }
 ]
