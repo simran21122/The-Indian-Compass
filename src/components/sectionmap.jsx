@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { motion, useAnimation, AnimatePresence, useViewportScroll, useTransform } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useNavigate } from "react-router-dom";
-import indiamap from "../assets/image/indiamap.png";
+import indiamap from "../assets/image/indiaMap.png";
 
 function SectionMaps({ bgImage }) {
   const navigate = useNavigate();
