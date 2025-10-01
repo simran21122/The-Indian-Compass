@@ -4,12 +4,12 @@ import bgHome from "../assets/image/bg_home_1.jpg";
 import mobileViewBg from "../assets/image/bg_home_mobile.jpg";
 
 // Importing sections
-import Main from "../section/main";
-import SectionMap from "../section/sectionmap";
-import SectionAIScanner from "../section/AIScannerSection";
-import DiscoverSection from "../section/discoverSection";
-import MarketSection from "../section/marketSection";
-import ContactUs from "../section/contactUs";
+import Main from "../components/main";
+import SectionMap from "../components/sectionmap";
+import SectionAIScanner from "../components/AIScannerSection";
+import DiscoverSection from "../components/discoverSection";
+import MarketSection from "../components/marketSection";
+import ContactUs from "../components/contactUs";
 
 import Assitant from "./Assistant";
 
