@@ -4,11 +4,14 @@ import {
   auth,
   googleProvider,
   facebookProvider,
-  signInWithPopup,
 } from "../firebaseConfig";
-import { signInWithEmailAndPassword } from "firebase/auth";
-import loginbg2 from "../assets/image/LoginBg.png"; // Default for larger screens
-import loginbgMobile from "../assets/image/loginbgMobileLogin.png"; // Background for mobile
+import {
+  signInWithPopup,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+} from "firebase/auth";
+import loginbg2 from "../assets/image/LoginBg.png";
+import loginbgMobile from "../assets/image/loginbgMobileLogin.png";
 
 const Login = () => {
   const [animate, setAnimate] = useState(false);
@@ -16,15 +19,27 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
+  // Handle animation mount
   useEffect(() => {
     setAnimate(true);
   }, []);
 
-  // Handle Email/Password Login
+  // 🔑 Check auth state (works for Google, Facebook, Email login)
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        // Already logged in
+        navigate("/home");
+      }
+    });
+    return () => unsubscribe();
+  }, [navigate]);
+
+  // Email/Password Login
   const handleLogin = async () => {
     try {
       const result = await signInWithEmailAndPassword(auth, email, password);
-      alert(`Welcome back, ${result.user.email}`);
+      console.log("Email login success:", result.user);
     } catch (error) {
       console.error(error);
       alert(error.message);
@@ -35,7 +50,7 @@ const Login = () => {
   const handleGoogleLogin = async () => {
     try {
       const result = await signInWithPopup(auth, googleProvider);
-      alert(`Welcome ${result.user.displayName}`);
+      console.log("Google login success:", result.user);
     } catch (error) {
       console.error(error);
       alert("Google login failed");
@@ -46,7 +61,7 @@ const Login = () => {
   const handleFacebookLogin = async () => {
     try {
       const result = await signInWithPopup(auth, facebookProvider);
-      alert(`Welcome ${result.user.displayName}`);
+      console.log("Facebook login success:", result.user);
     } catch (error) {
       console.error(error);
       alert("Facebook login failed");
@@ -62,14 +77,6 @@ const Login = () => {
     >
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/20 backdrop-brightness-80"></div>
-
-      {/* Skip button */}
-      <button
-        onClick={() => navigate("/home")}
-        className="absolute top-4 right-4 sm:right-6 text-white text-xs sm:text-sm font-medium px-3 sm:px-4 py-1.5 sm:py-2 bg-gray-800/70 rounded-full hover:bg-gray-700 transition z-30"
-      >
-        Skip
-      </button>
 
       {/* Card */}
       <div
