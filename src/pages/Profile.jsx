@@ -5,12 +5,9 @@ import ProfileHeader from "../components/ProfileHeader";
 import BadgeCarousel from "../components/BadgeCarousel";
 import StoriesGrid from "../components/StoriesGrid";
 import SavedDiscoveries from "../components/SavedDiscoveries";
-import {
-  User as UserIcon,
-  Award,
-  Image,
-  Bookmark,
-} from "lucide-react";
+import { auth } from "../firebaseConfig"; // 🔑 import auth
+import { onAuthStateChanged } from "firebase/auth";
+import { User as UserIcon, Award, Image, Bookmark } from "lucide-react";
 
 // ---- Tabs Implementation ----
 const Tabs = ({ value, onValueChange, children }) => {
@@ -87,28 +84,33 @@ function Profile() {
   const [activePage, setActivePage] = useState("profile");
 
   useEffect(() => {
-    loadData();
-  }, []);
+    // 🔑 Listen for Firebase user
+    const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
+      if (firebaseUser) {
+        setUser({
+          name: firebaseUser.displayName || "New User",
+          email: firebaseUser.email,
+          avatar: firebaseUser.photoURL || null,
+        });
 
-  const loadData = async () => {
-    setIsLoading(true);
-    try {
-      const userData = await import("../data/user.json");
-      const progressData = await import("../data/progress.json");
-      const storiesData = await import("../data/stories.json");
-      const discoveriesData = await import("../data/discoveries.json");
+        // keep your local JSON for now
+        const progressData = await import("../data/progress.json");
+        const storiesData = await import("../data/stories.json");
+        const badgesData = await import("../data/badges.json");
+        const discoveriesData = await import("../data/discoveries.json");
 
-      setUser(userData.default);
-      setUserProgress(progressData.default);
-      setUserStories(storiesData.default);
-      setUserBadges(badgesData.default);
-      setSavedDiscoveries(discoveriesData.default);
-    } catch (err) {
-      console.error("Error loading data:", err);
-    } finally {
+        setUserProgress(progressData.default);
+        setUserStories(storiesData.default);
+        setUserBadges(badgesData.default);
+        setSavedDiscoveries(discoveriesData.default);
+      } else {
+        setUser(null);
+      }
       setIsLoading(false);
-    }
-  };
+    });
+
+    return () => unsubscribe();
+  }, []);
 
   const handleAddStory = () => alert("Add story clicked");
   const handleEditStory = (story) => alert("Edit story: " + story.title);
@@ -130,7 +132,7 @@ function Profile() {
         <Topbar active={activePage} onNavigate={setActivePage} />
       </div>
 
-      {/* Main content with padding to avoid overlap */}
+      {/* Main content */}
       <div className="pt-20 px-4 sm:px-6 pb-8">
         {/* Profile Header */}
         <motion.div

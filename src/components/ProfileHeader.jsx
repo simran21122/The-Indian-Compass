@@ -1,9 +1,22 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Pencil, Zap } from "lucide-react";
+import { Pencil, Zap, LogOut } from "lucide-react";
+import { signOut } from "firebase/auth";
+import { auth } from "../firebaseConfig";
+import { useNavigate } from "react-router-dom";
 
 const ProfileHeader = ({ user, userProgress, onEdit }) => {
+  const navigate = useNavigate();
   const levelProgress = ((userProgress?.experience_points || 0) / 1000) * 100;
+
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      navigate("/"); // redirect to landing page
+    } catch (error) {
+      console.error("Logout failed:", error);
+    }
+  };
 
   return (
     <motion.div
@@ -62,14 +75,24 @@ const ProfileHeader = ({ user, userProgress, onEdit }) => {
         </div>
       </div>
 
-      {/* Right Section: Edit Button */}
-      <div className="flex-shrink-0">
+      {/* Right Section: Edit + Log Out Buttons */}
+      <div className="flex-shrink-0 flex gap-3">
+        {/* Edit Profile */}
         <button
           onClick={onEdit}
-          className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl shadow-md hover:shadow-lg transition-transform hover:scale-105"
+          className="flex items-center gap-2 px-5 py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl shadow-md hover:shadow-lg transition-transform hover:scale-105"
         >
           <Pencil className="w-5 h-5" />
           Edit Profile
+        </button>
+
+        {/* Log Out */}
+        <button
+          onClick={handleLogout}
+          className="flex items-center gap-2 px-5 py-3 bg-red-500 text-white rounded-xl shadow-md hover:bg-red-600 hover:shadow-lg transition-transform hover:scale-105"
+        >
+          <LogOut className="w-5 h-5" />
+          Log Out
         </button>
       </div>
     </motion.div>
