@@ -2,7 +2,7 @@
   {
     "id": 1,
     "identified_item": "Tawang Monastery",
-    "image_url": "./src/assets/image/saveddiscoveriesimg/sd1.png",
+    "image_url": "/saveddiscoveriesimg/sd1.png",
     "state_of_origin": "Arunachal Pradesh",
     "category": "monument",
     "historical_period": "17th century",
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "identified_item": "Chopda Artisans Village",
-    "image_url": "./src/assets/image/saveddiscoveriesimg/sd2.jpg",
+    "image_url": "/saveddiscoveriesimg/sd2.jpg",
     "state_of_origin": "Gujarat",
     "category": "art",
     "historical_period": "Modern",
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "identified_item": "Mawlynnong Village",
-    "image_url": "./src/assets/image/saveddiscoveriesimg/sd3.jpg",
+    "image_url": "/saveddiscoveriesimg/sd3.jpg",
     "state_of_origin": "Meghalaya",
     "category": "festival",
     "historical_period": "Modern",
@@ -35,7 +35,7 @@
   {
     "id": 4,
     "identified_item": "Ziro Valley Music Festival",
-    "image_url": "./src/assets/image/saveddiscoveriesimg/sd4.jpg",
+    "image_url": "/saveddiscoveriesimg/sd4.jpg",
     "state_of_origin": "Arunachal Pradesh",
     "category": "music",
     "historical_period": "Modern",

@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-//import MarketPlacebg from "../MarketPlacebg.png";
 
 // Components
 import Header from "../components/header";
