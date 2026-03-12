@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Camera, Upload, Send, RefreshCw, Brain, Zap } from "lucide-react";
-import { generateLlamaResponse } from "../utils/llamaAPI";
+import { generateOpenRouterResponse } from "../../utils/openRouterAPI";
 
 const Scanner = () => {
   const [image, setImage] = useState(null);
@@ -78,10 +78,9 @@ const Scanner = () => {
       const prompt =
         "Analyze this Indian cultural artifact and describe its history, origin, and significance in detail.";
 
-      const llamaResponse = await generateLlamaResponse({
+      const llamaResponse = await generateOpenRouterResponse({
         prompt,
         image,
-        preferredProvider: "gemini",
       });
 
       setChat((prev) => [
@@ -116,9 +115,8 @@ const Scanner = () => {
     const followupPrompt = `You are an expert Indian culture assistant. ONLY answer the user's latest follow-up question, do NOT repeat previous answers. Reply in 1-2 short, direct sentences.\n\n${contextMessages}\nUser: ${input}\n\nReply as a helpful cultural expert, keep it concise.`;
 
     try {
-      const llamaReply = await generateLlamaResponse({
+      const llamaReply = await generateOpenRouterResponse({
         prompt: followupPrompt,
-        preferredProvider: "gemini",
       });
 
       setChat((prev) => [

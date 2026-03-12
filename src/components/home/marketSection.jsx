@@ -3,7 +3,7 @@ import { motion, useViewportScroll, useTransform } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useNavigate } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import marketData from "../data/home_market.json";
+import marketData from "../../data/home_market.json";
 
 function MarketSection({ bgImage }) {
   const ref = useRef(null);

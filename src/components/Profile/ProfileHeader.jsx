@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Pencil, Zap, LogOut } from "lucide-react";
 import { signOut } from "firebase/auth";
-import { auth } from "../firebaseConfig";
+import { auth } from "../../firebaseConfig";
 import { useNavigate } from "react-router-dom";
 
 const ProfileHeader = ({ user, userProgress, onEdit }) => {
