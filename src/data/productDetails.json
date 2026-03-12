@@ -6,17 +6,23 @@
     "price": 1500,
     "currency": "INR",
     "images": [
-      "/Productimg/p1.png",
-      "/Productimg/p1-side.png",
-      "/Productimg/p1-top.png"
+      "/productimg/p1.png",
+      "/productimg/p1-side.png",
+      "/productimg/p1-top.png"
     ],
     "description": "Handpainted portrait of a Rajasthani woman with a parrot, showcasing intricate details and vibrant colors. The artwork highlights traditional attire, jewelry, and the cultural essence of Rajasthan. Perfect for decorating homes or galleries, it captures the elegance and heritage of Indian artistry.",
-    "materials": ["Canvas", "Acrylic Paints"],
+    "materials": [
+      "Canvas",
+      "Acrylic Paints"
+    ],
     "origin": "Rajasthan",
     "artistId": 1,
     "dimensions": "Approx. 18x24 inches",
     "weight": "0.8kg",
-    "tags": ["Authentic", "Handmade"],
+    "tags": [
+      "Authentic",
+      "Handmade"
+    ],
     "inStock": true,
     "shipping_time": "5-7 days",
     "reviews": [
@@ -34,17 +40,22 @@
     "price": 1800,
     "currency": "INR",
     "images": [
-      "/Productimg/p2.png",
-      "/Productimg/p2-side.png",
-      "/Productimg/p2-top.png"
+      "/productimg/p2.png",
+      "/productimg/p2-side.png",
+      "/productimg/p2-top.png"
     ],
     "description": "Traditional mural painting depicting scenes from Kerala's temple rituals, rich in cultural symbolism. Each brushstroke reflects centuries of artistic tradition, bringing the stories and rituals of Kerala temples to life. Ideal for art enthusiasts who appreciate South Indian heritage.",
-    "materials": ["Canvas", "Natural Pigments"],
+    "materials": [
+      "Canvas",
+      "Natural Pigments"
+    ],
     "origin": "Kerala",
     "artistId": 2,
     "dimensions": "Approx. 20x26 inches",
     "weight": "1kg",
-    "tags": ["Featured"],
+    "tags": [
+      "Featured"
+    ],
     "inStock": true,
     "shipping_time": "6-8 days",
     "reviews": [
@@ -62,17 +73,22 @@
     "price": 1500,
     "currency": "INR",
     "images": [
-      "/Productimg/p3.jpg",
-      "/Productimg/p3-side.jpg",
-      "/Productimg/p3-top.jpg"
+      "/productimg/p3.jpg",
+      "/productimg/p3-side.jpg",
+      "/productimg/p3-top.jpg"
     ],
     "description": "Traditional Chandua embroidery from Odisha, featuring vibrant appliqué work on textiles. The embroidery is rich in symbolic motifs, combining vibrant colors with delicate craftsmanship. Perfect for festive occasions, home decor, or gifting to loved ones.",
-    "materials": ["Cotton", "Silk Threads"],
+    "materials": [
+      "Cotton",
+      "Silk Threads"
+    ],
     "origin": "Odisha",
     "artistId": 3,
     "dimensions": "Approx. 2m x 1.5m",
     "weight": "0.6kg",
-    "tags": ["Authentic"],
+    "tags": [
+      "Authentic"
+    ],
     "inStock": true,
     "shipping_time": "5-7 days",
     "reviews": [
@@ -90,17 +106,22 @@
     "price": 900,
     "currency": "INR",
     "images": [
-      "/Productimg/p4.png",
-      "/Productimg/p4-side.png",
-      "/Productimg/p4-top.png"
+      "/productimg/p4.png",
+      "/productimg/p4-side.png",
+      "/productimg/p4-top.png"
     ],
     "description": "Eco-friendly black pottery from Ukhrul, Manipur, made using traditional methods without a potter's wheel. Each piece is unique, with deep black finish and natural patterns created by local artisans. A perfect collectible for pottery lovers and cultural enthusiasts.",
-    "materials": ["Clay", "Natural Pigments"],
+    "materials": [
+      "Clay",
+      "Natural Pigments"
+    ],
     "origin": "Manipur",
     "artistId": 4,
     "dimensions": "Height: 15cm, Diameter: 10cm",
     "weight": "0.5kg",
-    "tags": ["Handmade"],
+    "tags": [
+      "Handmade"
+    ],
     "inStock": true,
     "shipping_time": "7-10 days",
     "reviews": [
@@ -118,17 +139,22 @@
     "price": 1100,
     "currency": "INR",
     "images": [
-      "/Productimg/p5.jpg",
-      "/Productimg/p5-side.jpg",
-      "/Productimg/p5-top.jpg"
+      "/productimg/p5.jpg",
+      "/productimg/p5-side.jpg",
+      "/productimg/p5-top.jpg"
     ],
     "description": "Ancient pottery from the Ganga Valley, showcasing painted grey ware, black slipped ware, and red ware. Each piece reflects the historical craftsmanship and traditional designs that have been preserved for generations. A remarkable artifact for history lovers and collectors.",
-    "materials": ["Clay", "Natural Pigments"],
+    "materials": [
+      "Clay",
+      "Natural Pigments"
+    ],
     "origin": "Uttar Pradesh",
     "artistId": 5,
     "dimensions": "Height: 18cm, Diameter: 12cm",
     "weight": "0.7kg",
-    "tags": ["Authentic"],
+    "tags": [
+      "Authentic"
+    ],
     "inStock": true,
     "shipping_time": "6-8 days",
     "reviews": [
@@ -146,17 +172,24 @@
     "price": 5000,
     "currency": "INR",
     "images": [
-      "/assets/images/Productimg/p6.png",
-      "/assets/images/Productimg/p6-side.png",
-      "/assets/images/Productimg/p6-top.png"
+      "/productimg/p6.png",
+      "/productimg/p6-side.png",
+      "/productimg/p6-top.png"
     ],
     "description": "Traditional Rajasthani necklace featuring intricate enamel work and gemstone embellishments. The craftsmanship reflects centuries-old techniques, combining elegance with cultural richness. Ideal for weddings, festivals, or special occasions.",
-    "materials": ["Gold-plated Metal", "Enamel", "Gemstones"],
+    "materials": [
+      "Gold-plated Metal",
+      "Enamel",
+      "Gemstones"
+    ],
     "origin": "Rajasthan",
     "artistId": 6,
     "dimensions": "Length: 45cm, Pendant: 5cm",
     "weight": "0.15kg",
-    "tags": ["Featured", "Handmade"],
+    "tags": [
+      "Featured",
+      "Handmade"
+    ],
     "inStock": true,
     "shipping_time": "7-10 days",
     "reviews": [
@@ -174,17 +207,22 @@
     "price": 1800,
     "currency": "INR",
     "images": [
-      "/assets/images/Productimg/p7.jpg",
-      "/assets/images/Productimg/p7-side.jpg",
-      "/assets/images/Productimg/p7-top.jpg"
+      "/productimg/p7.jpg",
+      "/productimg/p7-side.jpg",
+      "/productimg/p7-top.jpg"
     ],
     "description": "Traditional brass pendant handcrafted using the ancient Dhokra technique from Chhattisgarh. Each pendant is unique, showcasing tribal motifs and the skilled handiwork of local artisans. Perfect as a statement piece or gift for art lovers.",
-    "materials": ["Brass"],
+    "materials": [
+      "Brass"
+    ],
     "origin": "Chhattisgarh",
     "artistId": 10,
     "dimensions": "Pendant Size: 5cm x 4cm",
     "weight": "0.08kg",
-    "tags": ["Handmade", "Authentic"],
+    "tags": [
+      "Handmade",
+      "Authentic"
+    ],
     "inStock": true,
     "shipping_time": "6-10 days",
     "reviews": [
@@ -202,17 +240,23 @@
     "price": 2500,
     "currency": "INR",
     "images": [
-      "/assets/images/Productimg/p8.jpg",
-      "/assets/images/Productimg/p8-side.jpg",
-      "/assets/images/Productimg/p8-top.jpg"
+      "/productimg/p8.jpg",
+      "/productimg/p8-side.jpg",
+      "/productimg/p8-top.jpg"
     ],
     "description": "Elegant handwoven Paata saree from Berhampur, Odisha, featuring traditional motifs and fine silk craftsmanship. The saree is soft, luxurious, and perfect for festive events or weddings. Each motif tells a story, celebrating Odisha's rich textile heritage.",
-    "materials": ["Silk", "Cotton Threads"],
+    "materials": [
+      "Silk",
+      "Cotton Threads"
+    ],
     "origin": "Odisha",
     "artistId": 9,
     "dimensions": "Length: 5.5m, Width: 1.2m",
     "weight": "0.7kg",
-    "tags": ["Handmade", "Authentic"],
+    "tags": [
+      "Handmade",
+      "Authentic"
+    ],
     "inStock": true,
     "shipping_time": "6-9 days",
     "reviews": [
