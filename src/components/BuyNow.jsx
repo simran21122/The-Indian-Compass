@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import phonepeLogo from "../assets/image/phonepe.png";
 import gpayLogo from "../assets/image/gpay.svg";
@@ -20,307 +20,423 @@ const payments = [
 
 function BuyNow() {
 
-const location = useLocation();
-const product = location.state?.product;
+  const location = useLocation();
+  const navigate = useNavigate();
+  const product = location.state?.product;
+
+  const [step, setStep] = useState(1);
+  const [orderSuccess, setOrderSuccess] = useState(false);
+  const [showOrderDetails, setShowOrderDetails] = useState(false);
 
-const [step, setStep] = useState(1);
+  const [qty, setQty] = useState(1);
+  const [paymentMethod, setPaymentMethod] = useState("");
 
-const [customer, setCustomer] = useState({
-name: "",
-phone: "",
-address: "",
-city: "",
-state: "",
-pin: "",
-});
-
-const [paymentMethod, setPaymentMethod] = useState("");
+  const [customer, setCustomer] = useState({
+    name: "",
+    phone: "",
+    address: "",
+    city: "",
+    state: "",
+    pin: "",
+  });
 
-const [qty, setQty] = useState(1);
-
-if (!product) {
-return (
-<div className="flex items-center justify-center h-screen text-black text-xl">
-No product selected
-</div>
-);
-}
-
-const handleChange = (e) => {
-setCustomer({
-...customer,
-[e.target.name]: e.target.value,
-});
-};
-
-const placeOrder = () => {
-alert("Order Placed Successfully!");
-};
+  if (!product) {
+    return (
+      <div className="flex items-center justify-center h-screen text-black text-xl">
+        No product selected
+      </div>
+    );
+  }
 
-const total = product.price * qty;
+  const total = product.price * qty;
 
-return (
+  const handleChange = (e) => {
+    setCustomer({
+      ...customer,
+      [e.target.name]: e.target.value,
+    });
+  };
 
-<div
-className="min-h-screen bg-cover bg-center flex items-center justify-center p-10"
-style={{ backgroundImage: `url(${heritageBg})` }}
->
+  /* DELIVERY DATES */
 
-<div className="absolute inset-0 bg-white/30"></div>
+  const orderDate = new Date();
 
-<motion.div
-className="relative grid lg:grid-cols-3 gap-8 max-w-6xl w-full bg-white p-10 rounded-2xl shadow-xl text-black"
-initial={{ opacity: 0, y: 20 }}
-animate={{ opacity: 1, y: 0 }}
->
+  const shippedDate = new Date(orderDate);
+  shippedDate.setDate(orderDate.getDate() + 2);
+
+  const outForDeliveryDate = new Date(orderDate);
+  outForDeliveryDate.setDate(orderDate.getDate() + 4);
+
+  const deliveryDate = new Date(orderDate);
+  deliveryDate.setDate(orderDate.getDate() + 5);
 
-{/* LEFT SECTION */}
+  const formatDate = (date) =>
+    new Date(date).toLocaleDateString("en-IN", {
+      day: "numeric",
+      month: "short",
+      year: "numeric",
+    });
 
-<div className="lg:col-span-2">
+  /* PLACE ORDER */
 
-<div className="flex justify-between mb-8 font-semibold">
+  const placeOrder = () => {
 
-<span className={step === 1 ? "text-orange-700" : ""}>1 Address</span>
-<span className={step === 2 ? "text-orange-700" : ""}>2 Payment</span>
-<span className={step === 3 ? "text-orange-700" : ""}>3 Review</span>
+    if (!paymentMethod) {
+      alert("Please select payment method");
+      return;
+    }
 
-</div>
+    const order = {
+      id: Date.now(),
+      product,
+      qty,
+      total,
+      date: orderDate.toISOString(),
+      shippedDate: shippedDate.toISOString(),
+      outForDeliveryDate: outForDeliveryDate.toISOString(),
+      deliveryDate: deliveryDate.toISOString(),
+      paymentMethod,
+      customer
+    };
 
-{/* ADDRESS */}
+    const existingOrders =
+      JSON.parse(localStorage.getItem("orders")) || [];
 
-{step === 1 && (
+    existingOrders.push(order);
 
-<div className="space-y-4">
+    localStorage.setItem("orders", JSON.stringify(existingOrders));
 
-<h2 className="text-2xl font-bold">
-Delivery Address
-</h2>
+    setOrderSuccess(true);
+  };
 
-<input
-name="name"
-placeholder="Full Name"
-onChange={handleChange}
-className="w-full border p-3 rounded"
-/>
+  /* SUCCESS PAGE */
 
-<input
-name="phone"
-placeholder="Phone Number"
-onChange={handleChange}
-className="w-full border p-3 rounded"
-/>
+  if (orderSuccess) {
 
-<input
-name="address"
-placeholder="Address"
-onChange={handleChange}
-className="w-full border p-3 rounded"
-/>
+    return (
 
-<div className="grid grid-cols-2 gap-4">
+      <div className="min-h-screen flex items-center justify-center bg-green-100">
 
-<input
-name="city"
-placeholder="City"
-onChange={handleChange}
-className="border p-3 rounded"
-/>
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="bg-white p-10 rounded-2xl shadow-xl text-center max-w-md text-black"
+        >
 
-<input
-name="state"
-placeholder="State"
-onChange={handleChange}
-className="border p-3 rounded"
-/>
+          <div className="text-7xl mb-4">🎉</div>
 
-</div>
+          <h2 className="text-3xl font-bold text-green-600 mb-2">
+            Order Placed Successfully!
+          </h2>
 
-<input
-name="pin"
-placeholder="Pincode"
-onChange={handleChange}
-className="w-full border p-3 rounded"
-/>
+          <p className="mb-6">
+            Your order will arrive by <b>{formatDate(deliveryDate)}</b>
+          </p>
 
-<button
-onClick={() => setStep(2)}
-className="w-full bg-orange-700 text-white py-3 rounded"
->
-Continue to Payment
-</button>
+          <div className="border rounded-lg p-4 mb-6 text-left">
 
-</div>
+            <p className="font-semibold">Product: {product.name}</p>
+            <p>Quantity: {qty}</p>
+            <p className="font-bold">Total Paid: ₹ {total}</p>
 
-)}
+          </div>
 
-{/* PAYMENT */}
+          <div className="flex gap-3 justify-center">
 
-{step === 2 && (
+            <button
+              onClick={() => setShowOrderDetails(!showOrderDetails)}
+              className="bg-blue-600 text-white px-5 py-3 rounded-lg"
+            >
+              Order Details
+            </button>
 
-<div>
+            <button
+              onClick={() => navigate("/marketplace")}
+              className="bg-orange-600 text-white px-5 py-3 rounded-lg"
+            >
+              Continue Shopping
+            </button>
 
-<h2 className="text-2xl font-bold mb-6">
-Select Payment Method
-</h2>
+            <button
+              onClick={() => navigate("/myorders")}
+              className="bg-gray-700 text-white px-5 py-3 rounded-lg"
+            >
+              View My Orders
+            </button>
 
-<div className="grid grid-cols-2 gap-4">
+          </div>
 
-{payments.map((p) => (
+          {showOrderDetails && (
 
-<button
-key={p.name}
-onClick={() => setPaymentMethod(p.name)}
-className={`flex items-center gap-3 border p-4 rounded-lg ${
-paymentMethod === p.name
-? "bg-green-500 text-white"
-: "bg-white hover:bg-gray-100"
-}`}
->
+            <div className="border rounded-lg p-6 mt-6 bg-white">
 
-<img src={p.logo} className="w-6 h-6" />
+              <h3 className="font-bold mb-6 text-lg text-center">
+                Delivery Timeline
+              </h3>
 
-{p.name}
+              <div className="flex justify-between text-sm mb-2">
 
-</button>
+                <span>Order Placed</span>
+                <span>Shipped</span>
+                <span>Out for Delivery</span>
+                <span>Delivered</span>
 
-))}
+              </div>
 
-</div>
+              <div className="flex items-center">
 
-<div className="flex gap-4 mt-6">
+                <div className="w-4 h-4 bg-green-600 rounded-full"></div>
+                <div className="flex-1 h-1 bg-green-600"></div>
 
-<button
-onClick={() => setStep(1)}
-className="w-1/2 border py-3 rounded"
->
-Back
-</button>
+                <div className="w-4 h-4 bg-green-600 rounded-full"></div>
+                <div className="flex-1 h-1 bg-yellow-500"></div>
 
-<button
-onClick={() => setStep(3)}
-className="w-1/2 bg-orange-700 text-white py-3 rounded"
->
-Review Order
-</button>
+                <div className="w-4 h-4 bg-yellow-500 rounded-full"></div>
+                <div className="flex-1 h-1 bg-gray-300"></div>
 
-</div>
+                <div className="w-4 h-4 bg-gray-400 rounded-full"></div>
 
-</div>
+              </div>
 
-)}
+              <div className="flex justify-between text-xs mt-2 text-gray-600">
 
-{/* REVIEW */}
+                <span>{formatDate(orderDate)}</span>
+                <span>{formatDate(shippedDate)}</span>
+                <span>{formatDate(outForDeliveryDate)}</span>
+                <span>{formatDate(deliveryDate)}</span>
 
-{step === 3 && (
+              </div>
 
-<div>
+            </div>
 
-<h2 className="text-2xl font-bold mb-6">
-Review Order
-</h2>
+          )}
 
-<div className="border p-5 rounded mb-4">
+        </motion.div>
 
-<p><b>Name:</b> {customer.name}</p>
-<p><b>Phone:</b> {customer.phone}</p>
-<p><b>Address:</b> {customer.address}</p>
+      </div>
 
-</div>
+    );
+  }
 
-<div className="border p-5 rounded">
+  /* CHECKOUT PAGE */
 
-<p><b>Payment:</b> {paymentMethod}</p>
+  return (
 
-</div>
+    <div
+      className="min-h-screen bg-cover bg-center flex items-center justify-center p-10"
+      style={{ backgroundImage: `url(${heritageBg})` }}
+    >
 
-<button
-onClick={placeOrder}
-className="w-full mt-6 bg-green-600 text-white py-3 rounded"
->
-Place Order
-</button>
+      <div className="absolute inset-0 bg-white/40"></div>
 
-</div>
+      <motion.div
+        className="relative grid lg:grid-cols-3 gap-8 max-w-6xl w-full bg-white p-10 rounded-2xl shadow-xl text-black"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
 
-)}
+        {/* LEFT SIDE */}
 
-</div>
+        <div className="lg:col-span-2">
 
-{/* RIGHT SIDE ORDER SUMMARY */}
+          <div className="flex justify-between mb-8 font-semibold">
 
-<div className="bg-gray-50 p-6 rounded-xl">
+            <span className={step === 1 ? "text-orange-700" : ""}>1 Address</span>
+            <span className={step === 2 ? "text-orange-700" : ""}>2 Payment</span>
+            <span className={step === 3 ? "text-orange-700" : ""}>3 Review</span>
 
-<h3 className="font-bold mb-4">
-Order Summary
-</h3>
+          </div>
 
-<img
-src={product.image_url}
-className="w-full h-40 object-cover rounded"
-/>
+          {/* ADDRESS */}
 
-<p className="mt-3 font-semibold">
-{product.name}
-</p>
+          {step === 1 && (
 
-<p className="text-gray-700">
-₹ {product.price}
-</p>
+            <div className="space-y-4">
 
-{/* Quantity */}
+              <h2 className="text-2xl font-bold">Delivery Address</h2>
 
-<div className="flex justify-between mt-4">
+              <input name="name" placeholder="Full Name" onChange={handleChange} className="w-full border p-3 rounded"/>
+              <input name="phone" placeholder="Phone Number" onChange={handleChange} className="w-full border p-3 rounded"/>
+              <input name="address" placeholder="Address" onChange={handleChange} className="w-full border p-3 rounded"/>
 
-<span>Qty</span>
+              <div className="grid grid-cols-2 gap-4">
+                <input name="city" placeholder="City" onChange={handleChange} className="border p-3 rounded"/>
+                <input name="state" placeholder="State" onChange={handleChange} className="border p-3 rounded"/>
+              </div>
 
-<div className="flex gap-2">
+              <input name="pin" placeholder="Pincode" onChange={handleChange} className="w-full border p-3 rounded"/>
 
-<button
-className="border px-3"
-onClick={() => qty > 1 && setQty(qty - 1)}
->
--
-</button>
+              <div className="flex gap-4">
 
-<span>{qty}</span>
+                <button
+                  onClick={() => navigate(-1)}
+                  className="w-1/2 border py-3 rounded"
+                >
+                  Back
+                </button>
 
-<button
-className="border px-3"
-onClick={() => setQty(qty + 1)}
->
-+
-</button>
+                <button
+                  onClick={() => setStep(2)}
+                  className="w-1/2 bg-orange-700 text-white py-3 rounded"
+                >
+                  Continue
+                </button>
 
-</div>
+              </div>
 
-</div>
+            </div>
 
-<hr className="my-4" />
+          )}
 
-<div className="flex justify-between">
-<span>Price</span>
-<span>₹ {product.price * qty}</span>
-</div>
+          {/* PAYMENT */}
 
-<div className="flex justify-between">
-<span>Delivery</span>
-<span className="text-green-600">Free</span>
-</div>
+          {step === 2 && (
 
-<hr className="my-4" />
+            <div>
 
-<div className="flex justify-between font-bold">
-<span>Total</span>
-<span>₹ {total}</span>
-</div>
+              <h2 className="text-2xl font-bold mb-6">
+                Select Payment Method
+              </h2>
 
-</div>
+              <div className="grid grid-cols-2 gap-4">
 
-</motion.div>
+                {payments.map((p) => (
 
-</div>
+                  <button
+                    key={p.name}
+                    onClick={() => setPaymentMethod(p.name)}
+                    className={`flex items-center gap-3 border p-4 rounded-lg ${
+                      paymentMethod === p.name
+                        ? "bg-green-500 text-white"
+                        : "bg-white hover:bg-gray-100"
+                    }`}
+                  >
 
-);
+                    <img src={p.logo} className="w-6 h-6" />
+
+                    {p.name}
+
+                  </button>
+
+                ))}
+
+              </div>
+
+              <div className="flex gap-4 mt-6">
+
+                <button
+                  onClick={() => setStep(1)}
+                  className="w-1/2 border py-3 rounded"
+                >
+                  Back
+                </button>
+
+                <button
+                  onClick={() => setStep(3)}
+                  className="w-1/2 bg-orange-700 text-white py-3 rounded"
+                >
+                  Review
+                </button>
+
+              </div>
+
+            </div>
+
+          )}
+
+          {/* REVIEW */}
+
+          {step === 3 && (
+
+            <div>
+
+              <h2 className="text-2xl font-bold mb-6">
+                Review Order
+              </h2>
+
+              <div className="border p-5 rounded mb-4">
+                <p><b>Name:</b> {customer.name}</p>
+                <p><b>Phone:</b> {customer.phone}</p>
+                <p><b>Address:</b> {customer.address}</p>
+              </div>
+
+              <div className="border p-5 rounded">
+                <p><b>Payment:</b> {paymentMethod}</p>
+              </div>
+
+              <div className="flex gap-4 mt-6">
+
+                <button
+                  onClick={() => setStep(2)}
+                  className="w-1/2 border py-3 rounded"
+                >
+                  Back
+                </button>
+
+                <button
+                  onClick={placeOrder}
+                  className="w-1/2 bg-green-600 text-white py-3 rounded"
+                >
+                  Place Order
+                </button>
+
+              </div>
+
+            </div>
+
+          )}
+
+        </div>
+
+        {/* ORDER SUMMARY */}
+
+        <div className="bg-gray-50 p-6 rounded-xl">
+
+          <h3 className="font-bold mb-4">Order Summary</h3>
+
+          <img
+            src={product.image_url || "/placeholder.png"}
+            className="w-full h-40 object-cover rounded"
+          />
+
+          <p className="mt-3 font-semibold">{product.name}</p>
+
+          <div className="flex justify-between mt-4">
+            <span>Qty</span>
+
+            <div className="flex gap-2">
+              <button className="border px-3" onClick={() => qty > 1 && setQty(qty - 1)}>-</button>
+              <span>{qty}</span>
+              <button className="border px-3" onClick={() => setQty(qty + 1)}>+</button>
+            </div>
+          </div>
+
+          <hr className="my-4"/>
+
+          <div className="flex justify-between">
+            <span>Price</span>
+            <span>₹ {product.price * qty}</span>
+          </div>
+
+          <div className="flex justify-between mt-2">
+            <span>Delivery</span>
+            <span className="text-green-600 font-semibold">Free</span>
+          </div>
+
+          <hr className="my-4"/>
+
+          <div className="flex justify-between font-bold text-lg">
+            <span>Total</span>
+            <span>₹ {total}</span>
+          </div>
+
+        </div>
+
+      </motion.div>
+
+    </div>
+  );
 }
 
 export default BuyNow;

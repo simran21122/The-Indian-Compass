@@ -15,6 +15,9 @@ import ProductDetail from "./components/ProductDetail.jsx";
 import BuyNow from "./components/BuyNow.jsx";
 import ContentDetails from "./components/ContentDetails.jsx";
 
+/* NEW PAGE */
+import MyOrders from "./pages/MyOrders.jsx";
+
 function App() {
   return (
     <Router>
@@ -35,6 +38,9 @@ function App() {
           {/* Product details */}
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/buynow" element={<BuyNow />} />
+
+           {/* NEW ROUTE */}
+          <Route path="/myorders" element={<MyOrders />} />
           
           {/* Content details */}
           <Route path="/content/:id" element={<ContentDetails />} />
