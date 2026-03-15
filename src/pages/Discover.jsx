@@ -5,10 +5,10 @@ import { Search, Filter, Crown, Palette, Music, ChefHat, Calendar } from "lucide
 
 // UI Imports
 import Topbar from "../components/header";
-import Trending from "../components/Trending"; // Now imported
-import CategoryCard from "../components/CategoryCard";
-import ContentCard from "../components/ContentCard";
-import DiscoverSearchFilter from "../components/DiscoverSearchFilter";
+import Trending from "../components/Discover/Trending"; 
+import CategoryCard from "../components/Discover/CategoryCard";
+import ContentCard from "../components/Discover/ContentCard";
+import DiscoverSearchFilter from "../components/Discover/DiscoverSearchFilter";
 
 // Data
 import culturalData from "../data/culturalContent.json";

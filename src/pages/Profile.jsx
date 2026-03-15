@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Topbar from "../components/header";
-import ProfileHeader from "../components/ProfileHeader";
-import BadgeCarousel from "../components/BadgeCarousel";
-import StoriesGrid from "../components/StoriesGrid";
-import SavedDiscoveries from "../components/SavedDiscoveries";
+import ProfileHeader from "../components/Profile/ProfileHeader";
+import BadgeCarousel from "../components/Profile/BadgeCarousel";
+import StoriesGrid from "../components/Profile/StoriesGrid";
+import SavedDiscoveries from "../components/Profile/SavedDiscoveries";
 import { auth } from "../firebaseConfig"; // 🔑 import auth
 import { onAuthStateChanged } from "firebase/auth";
 import { User as UserIcon, Award, Image, Bookmark } from "lucide-react";

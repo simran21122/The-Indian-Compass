@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Edit, Trash2, MapPin, Image, Video, FileText, Heart, MessageCircle, Eye, Calendar } from "lucide-react";
-import storiesData from "../data/stories.json";
+import storiesData from "../../data/stories.json";
 
 const mediaIcons = {
   image: Image,

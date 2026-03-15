@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 
 // Import your saved discoveries JSON
-import savedDiscoveriesData from "../data/saveddiscoveries.json";
+import savedDiscoveriesData from "../../data/saveddiscoveries.json";
 
 const categoryIcons = {
   monument: Crown,

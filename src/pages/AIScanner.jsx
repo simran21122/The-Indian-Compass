@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
 import Topbar from "../components/header";
-import Scanner from "../components/Scanner";
+import Scanner from "../components/AIScanner/Scanner";
 import Scannerbg from "../assets/image/Scannerbg.png";
 
 

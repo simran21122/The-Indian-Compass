@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 
 // Components
 import Header from "../components/header";
-import CategoryFilter from "../components/CategoryFilter";
-import Filters from "../components/MarketPlaceFilters";
-import ProductCard from "../components/ProductCard";
+import CategoryFilter from "../components/MarketPlace/CategoryFilter";
+import Filters from "../components/MarketPlace/MarketPlaceFilters";
+import ProductCard from "../components/MarketPlace/ProductCard";
 
 // JSON Data
 import productsData from "../data/products.json";

@@ -1,7 +1,7 @@
 // Trending.jsx
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import trendingData from "../data/trending.json";
+import trendingData from "../../data/trending.json";
 
 const Trending = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
