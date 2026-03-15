@@ -50,178 +50,175 @@ function ProductCard({
 
   return (
 
-<motion.div
-initial={{ opacity: 0, y: 30 }}
-animate={{ opacity: 1, y: 0 }}
-transition={{ duration: 0.5, delay: index * 0.1 }}
->
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+    >
 
-<div
-onClick={handleClick}
-className="bg-white rounded-xl shadow-md hover:shadow-xl overflow-hidden cursor-pointer"
->
+      <div
+        onClick={handleClick}
+        className="bg-white rounded-xl shadow-md hover:shadow-xl overflow-hidden cursor-pointer"
+      >
 
-{/* Product Image */}
+        {/* Product Image */}
 
-<div className="relative">
+        <div className="relative">
 
-<img
-src={product.image_url}
-alt={product.name}
-className="w-full h-64 object-cover"
-/>
+          <img
+            src={product.image_url}
+            alt={product.name}
+            className="w-full h-64 object-cover"
+          />
 
-{/* Wishlist Button */}
+          {/* Wishlist Button */}
 
-<button
-className={`absolute top-3 right-3 w-8 h-8 rounded-full flex items-center justify-center ${
-isInWishlist ? "bg-red-500" : "bg-white"
-}`}
-onClick={(e) => {
-e.stopPropagation();
-toggleWishlist(product.id);
-}}
->
+          <button
+            className={`absolute top-3 right-3 w-8 h-8 rounded-full flex items-center justify-center ${isInWishlist ? "bg-red-500" : "bg-white"
+              }`}
+            onClick={(e) => {
+              e.stopPropagation();
+              toggleWishlist(product.id);
+            }}
+          >
 
-<Heart
-className={`w-4 h-4 ${
-isInWishlist ? "text-white fill-white" : "text-gray-600"
-}`}
-/>
+            <Heart
+              className={`w-4 h-4 ${isInWishlist ? "text-white fill-white" : "text-gray-600"
+                }`}
+            />
 
-</button>
+          </button>
 
-{/* Badges */}
+          {/* Badges */}
 
-{product.badges?.length > 0 && (
+          {product.badges?.length > 0 && (
 
-<div className="absolute top-3 left-3 flex gap-1">
+            <div className="absolute top-3 left-3 flex gap-1">
 
-{product.badges.slice(0, 2).map((b, i) => (
+              {product.badges.slice(0, 2).map((b, i) => (
 
-<span
-key={i}
-className={`text-xs px-2 py-1 rounded ${
-badgeColors[b] || "bg-gray-100"
-}`}
->
-{b.replace("_", " ")}
-</span>
+                <span
+                  key={i}
+                  className={`text-xs px-2 py-1 rounded ${badgeColors[b] || "bg-gray-100"
+                    }`}
+                >
+                  {b.replace("_", " ")}
+                </span>
 
-))}
+              ))}
 
-</div>
+            </div>
 
-)}
+          )}
 
-</div>
+        </div>
 
-{/* Content */}
+        {/* Content */}
 
-<div className="p-4">
+        <div className="p-4">
 
-<h3 className="font-semibold text-orange-600">
-{product.name}
-</h3>
+          <h3 className="font-semibold text-orange-600">
+            {product.name}
+          </h3>
 
-{/* State + Rating */}
+          {/* State + Rating */}
 
-<div className="flex justify-between text-sm text-gray-500 mt-1">
+          <div className="flex justify-between text-sm text-black mt-1">
 
-<div className="flex items-center">
-<MapPin className="w-3 h-3 mr-1" />
-{product.state}
-</div>
+            <div className="flex items-center">
+              <MapPin className="w-3 h-3 mr-1 text-black" />
+              {product.state}
+            </div>
 
-<div className="flex items-center">
-<Star className="w-3 h-3 text-yellow-500 mr-1" />
-{product.rating}
-</div>
+            <div className="flex items-center">
+              <Star className="w-3 h-3 text-yellow-500 mr-1" />
+              {product.rating}
+            </div>
 
-</div>
+          </div>
 
-{/* Artist */}
+          {/* Artist */}
 
-{artist && (
+          {artist && (
 
-<div className="flex items-center gap-2 bg-gray-100 p-2 rounded mt-3">
+            <div className="flex items-center gap-2 bg-gray-100 p-2 rounded mt-3 ">
 
-<Users className="w-3 h-3" />
+              <Users className="w-3 h-3 text-gray-500" />
 
-<span className="text-xs font-medium">
-{artist.name}
-</span>
+              <span className="text-xs font-medium text-gray-500">
+                {artist.name}
+              </span>
 
-{artist.verified && (
-<Verified className="w-3 h-3 text-blue-500" />
-)}
+              {artist.verified && (
+                <Verified className="w-3 h-3 text-blue-500" />
+              )}
 
-</div>
+            </div>
 
-)}
+          )}
 
-{/* Price */}
+          {/* Price */}
 
-<div className="flex items-center mt-4 text-green-600">
+          <div className="flex items-center mt-4 text-green-600">
 
-<IndianRupee className="w-4 h-4" />
+            <IndianRupee className="w-4 h-4" />
 
-<span className="font-bold">
-{product.price}
-</span>
+            <span className="font-bold">
+              {product.price}
+            </span>
 
-</div>
+          </div>
 
-{/* Buttons */}
+          {/* Buttons */}
 
-<div className="flex gap-2 mt-4">
+          <div className="flex gap-2 mt-4">
 
-<button
-className="flex-1 bg-blue-600 text-white py-2 rounded"
-onClick={(e) => {
-e.stopPropagation();
-toggleCart(product.id);
-}}
->
+            <button
+              className="flex-1 bg-blue-600 text-white py-2 rounded"
+              onClick={(e) => {
+                e.stopPropagation();
+                toggleCart(product.id);
+              }}
+            >
 
-<ShoppingCart className="w-4 h-4 inline mr-1" />
+              <ShoppingCart className="w-4 h-4 inline mr-1" />
 
-{isInCart ? "Added" : "Cart"}
+              {isInCart ? "Added" : "Cart"}
 
-</button>
+            </button>
 
-<button
-className="flex-1 bg-orange-600 text-white py-2 rounded"
-onClick={handleBuyNow}
->
-Buy Now
-</button>
+            <button
+              className="flex-1 bg-orange-600 text-white py-2 rounded"
+              onClick={handleBuyNow}
+            >
+              Buy Now
+            </button>
 
-</div>
+          </div>
 
-{/* Shipping */}
+          {/* Shipping */}
 
-<div className="flex justify-between text-xs text-gray-500 mt-3">
+          <div className="flex justify-between text-xs text-gray-500 mt-3">
 
-<div className="flex items-center">
-<Truck className="w-3 h-3 mr-1" />
-{product.shipping_time}
-</div>
+            <div className="flex items-center">
+              <Truck className="w-3 h-3 mr-1" />
+              {product.shipping_time}
+            </div>
 
-<div className="flex items-center">
-<Shield className="w-3 h-3 mr-1" />
-Authentic
-</div>
+            <div className="flex items-center">
+              <Shield className="w-3 h-3 mr-1" />
+              Authentic
+            </div>
 
-</div>
+          </div>
 
-</div>
+        </div>
 
-</div>
+      </div>
 
-</motion.div>
+    </motion.div>
 
-);
+  );
 
 }
 

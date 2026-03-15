@@ -10,7 +10,7 @@
       "/productimg/p1-side.png",
       "/productimg/p1-top.png"
     ],
-    "description": "Handpainted portrait of a Rajasthani woman with a parrot, showcasing intricate details and vibrant colors. The artwork highlights traditional attire, jewelry, and the cultural essence of Rajasthan. Perfect for decorating homes or galleries, it captures the elegance and heritage of Indian artistry.",
+    "description": "Handpainted portrait of a Rajasthani woman holding a parrot, reflecting the elegance of traditional Rajasthani culture. The artwork features intricate jewelry, colorful attire, and vibrant tones commonly seen in folk paintings of Rajasthan. Such paintings highlight regional traditions and decorative styles often used in Indian folk art.",
     "materials": [
       "Canvas",
       "Acrylic Paints"
@@ -30,6 +30,11 @@
         "user": "Ananya",
         "rating": 5,
         "comment": "Absolutely loved the cultural feel and vibrant palette!"
+      },
+      {
+        "user": "Rahul",
+        "rating": 4,
+        "comment": "Beautiful traditional artwork, looks great in my living room."
       }
     ]
   },
@@ -44,7 +49,7 @@
       "/productimg/p2-side.png",
       "/productimg/p2-top.png"
     ],
-    "description": "Traditional mural painting depicting scenes from Kerala's temple rituals, rich in cultural symbolism. Each brushstroke reflects centuries of artistic tradition, bringing the stories and rituals of Kerala temples to life. Ideal for art enthusiasts who appreciate South Indian heritage.",
+    "description": "Traditional mural-style painting inspired by Kerala temple art. These artworks are known for their earthy colors, mythological themes, and detailed symbolism representing Hindu epics and temple rituals. The style reflects centuries of South Indian artistic heritage.",
     "materials": [
       "Canvas",
       "Natural Pigments"
@@ -63,6 +68,11 @@
         "user": "Rohit",
         "rating": 4,
         "comment": "Amazing details, makes me feel connected to my roots!"
+      },
+      {
+        "user": "Kavya",
+        "rating": 5,
+        "comment": "Very elegant mural art, perfect for traditional decor."
       }
     ]
   },
@@ -77,7 +87,7 @@
       "/productimg/p3-side.jpg",
       "/productimg/p3-top.jpg"
     ],
-    "description": "Traditional Chandua embroidery from Odisha, featuring vibrant appliqué work on textiles. The embroidery is rich in symbolic motifs, combining vibrant colors with delicate craftsmanship. Perfect for festive occasions, home decor, or gifting to loved ones.",
+    "description": "Traditional Chandua appliqué embroidery from Pipili, Odisha. This textile craft involves stitching colorful fabric patches onto a base cloth to create decorative motifs such as flowers, animals, and mythological symbols. Historically it has been associated with temple rituals and festivals related to Lord Jagannath.",
     "materials": [
       "Cotton",
       "Silk Threads"
@@ -96,6 +106,11 @@
         "user": "Sneha",
         "rating": 5,
         "comment": "The colors and patterns are just mesmerizing!"
+      },
+      {
+        "user": "Arjun",
+        "rating": 4,
+        "comment": "Great traditional work from Odisha, very vibrant design."
       }
     ]
   },
@@ -110,7 +125,7 @@
       "/productimg/p4-side.png",
       "/productimg/p4-top.png"
     ],
-    "description": "Eco-friendly black pottery from Ukhrul, Manipur, made using traditional methods without a potter's wheel. Each piece is unique, with deep black finish and natural patterns created by local artisans. A perfect collectible for pottery lovers and cultural enthusiasts.",
+    "description": "Handcrafted black pottery from Ukhrul, Manipur, made using traditional hand-shaping techniques without a potter’s wheel. The pottery is known for its deep black finish and unique patterns created during the firing process.",
     "materials": [
       "Clay",
       "Natural Pigments"
@@ -129,6 +144,11 @@
         "user": "Karthik",
         "rating": 4,
         "comment": "Authentic and elegant, great addition to my collection."
+      },
+      {
+        "user": "Pooja",
+        "rating": 5,
+        "comment": "Loved the finish and traditional style of the pottery."
       }
     ]
   },
@@ -143,7 +163,7 @@
       "/productimg/p5-side.jpg",
       "/productimg/p5-top.jpg"
     ],
-    "description": "Ancient pottery from the Ganga Valley, showcasing painted grey ware, black slipped ware, and red ware. Each piece reflects the historical craftsmanship and traditional designs that have been preserved for generations. A remarkable artifact for history lovers and collectors.",
+    "description": "Decorative pottery inspired by ancient painted ware found in the Ganga Valley. The design features traditional motifs and earthy tones reflecting early Indian ceramic traditions that were used in everyday life and rituals.",
     "materials": [
       "Clay",
       "Natural Pigments"
@@ -162,6 +182,11 @@
         "user": "Priya",
         "rating": 5,
         "comment": "The historical patterns are stunning and well-preserved."
+      },
+      {
+        "user": "Siddharth",
+        "rating": 4,
+        "comment": "Looks like a real antique piece, very good quality."
       }
     ]
   },
@@ -176,7 +201,7 @@
       "/productimg/p6-side.png",
       "/productimg/p6-top.png"
     ],
-    "description": "Traditional Rajasthani necklace featuring intricate enamel work and gemstone embellishments. The craftsmanship reflects centuries-old techniques, combining elegance with cultural richness. Ideal for weddings, festivals, or special occasions.",
+    "description": "Traditional Rajasthani Meenakari necklace featuring detailed enamel work and gemstone embellishments. Meenakari jewelry is famous for its colorful enamel patterns and intricate craftsmanship used in royal ornaments.",
     "materials": [
       "Gold-plated Metal",
       "Enamel",
@@ -197,6 +222,11 @@
         "user": "Neelam",
         "rating": 5,
         "comment": "Truly a masterpiece, the enamel work is gorgeous."
+      },
+      {
+        "user": "Aditi",
+        "rating": 5,
+        "comment": "Perfect for festive occasions, looks premium."
       }
     ]
   },
@@ -211,7 +241,7 @@
       "/productimg/p7-side.jpg",
       "/productimg/p7-top.jpg"
     ],
-    "description": "Traditional brass pendant handcrafted using the ancient Dhokra technique from Chhattisgarh. Each pendant is unique, showcasing tribal motifs and the skilled handiwork of local artisans. Perfect as a statement piece or gift for art lovers.",
+    "description": "Handcrafted brass pendant made using the ancient Dhokra metal casting technique from Bastar, Chhattisgarh. The craft uses the lost-wax method and is known for its tribal motifs and rustic finish.",
     "materials": [
       "Brass"
     ],
@@ -230,6 +260,11 @@
         "user": "Aditya",
         "rating": 4,
         "comment": "Beautiful craftsmanship, very intricate details."
+      },
+      {
+        "user": "Nisha",
+        "rating": 5,
+        "comment": "Unique tribal design, got many compliments!"
       }
     ]
   },
@@ -244,7 +279,7 @@
       "/productimg/p8-side.jpg",
       "/productimg/p8-top.jpg"
     ],
-    "description": "Elegant handwoven Paata saree from Berhampur, Odisha, featuring traditional motifs and fine silk craftsmanship. The saree is soft, luxurious, and perfect for festive events or weddings. Each motif tells a story, celebrating Odisha's rich textile heritage.",
+    "description": "Traditional Berhampur Paata silk saree from Odisha, known for its fine weaving and distinctive temple border designs. These sarees are celebrated for their elegance and are commonly worn during festivals and weddings.",
     "materials": [
       "Silk",
       "Cotton Threads"
@@ -264,6 +299,11 @@
         "user": "Mira",
         "rating": 5,
         "comment": "Absolutely love the craftsmanship and vibrant patterns."
+      },
+      {
+        "user": "Shalini",
+        "rating": 4,
+        "comment": "Beautiful saree, very soft silk and elegant design."
       }
     ]
   }
