@@ -10,6 +10,7 @@ import MarketPlace from "./pages/MarketpPlace.jsx";
 import Map from "./pages/map.jsx";
 import About from "./pages/About.jsx";
 import Profile from "./pages/Profile.jsx";
+import Stories from "./pages/Stories.jsx";
 import Assistant from "./pages/Assistant.jsx";
 import ProductDetail from "./components/ProductDetail.jsx";
 import BuyNow from "./components/BuyNow.jsx";
@@ -29,6 +30,7 @@ function App() {
           <Route path="/Home" element={<Home />} />
           <Route path="/Discover" element={<Discover />} /> 
           <Route path="/AIScanner" element={<AIScanner />} />
+          <Route path="/stories" element={<Stories />} />
           <Route path="/MarketPlace" element={<MarketPlace />} />
           <Route path="/map" element={<Map />} />
           <Route path="/about" element={<About />} />

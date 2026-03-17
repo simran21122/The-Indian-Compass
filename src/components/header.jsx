@@ -8,6 +8,7 @@ import {
   ScanLine,
   ShoppingBag,
   User,
+  Film,
 } from "lucide-react";
 import logo from "../assets/image/logo.png"; // logo image path
 
@@ -16,6 +17,7 @@ const navItems = [
   { name: "Home", icon: <Home className="w-6 h-6" />, path: "/home" },
   { name: "Map", icon: <Map className="w-6 h-6" />, path: "/map" },
   { name: "AI Scanner", icon: <ScanLine className="w-6 h-6" />, path: "/AIScanner" },
+  { name: "Stories", icon: <Film className="w-6 h-6" />, path: "/stories" },
   { name: "Discover", icon: <Compass className="w-6 h-6" />, path: "/discover" },
   { name: "Marketplace", icon: <ShoppingBag className="w-6 h-6" />, path: "/marketplace" },
 ];
@@ -75,10 +77,9 @@ const Header = ({ onProfileClick }) => {
             {/* Profile (Right End) */}
             <button
               onClick={() => navigate("/profile")}
-              className="flex items-center gap-2 px-5 py-3 rounded-full bg-[#e67530] text-white text-lg transition shadow-md hover:brightness-110"
+              className="flex items-center justify-center p-3 rounded-full bg-[#e67530] text-white transition shadow-md hover:brightness-110 translate-x-4"
             >
               <User className="w-6 h-6" />
-              <span className="hidden lg:inline font-medium">Profile</span>
             </button>
           </motion.div>
         </div>
@@ -108,10 +109,10 @@ const Header = ({ onProfileClick }) => {
           </div>
 
           {/* Profile (mobile only) */}
-          <div className="flex items-center">
+          <div className="flex items-center translate-x-2 mr-2">
             <button
               onClick={() => navigate("/profile")}
-              className="relative translate-y-1/2 bg-orange-400/80 text-[#2c0d01] hover:bg-orange-600 hover:text-white rounded-2xl p-3 transition shadow-md"
+              className="relative translate-y-1/2 bg-orange-400/80 text-[#2c0d01] hover:bg-orange-600 hover:text-white rounded-full p-3 transition shadow-md"
             >
               <User className="w-6 h-6" />
             </button>
