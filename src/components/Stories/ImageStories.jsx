@@ -1,16 +1,29 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Heart, MessageCircle, X } from "lucide-react";
-import storiesData from "../../data/stories.json";
+import storiesData from "../../data/imageStories.json";
 
 const ImageStories = () => {
   const [images, setImages] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
 
+  // Fisher-Yates shuffle algorithm to randomize array order
+  const shuffleArray = (array) => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  };
+
   useEffect(() => {
     // Filter out only image stories
     const filteredImages = storiesData.filter(item => item.media_type === "image");
-    setImages(filteredImages);
+    
+    // Shuffle the filtered images
+    const randomizedImages = shuffleArray(filteredImages);
+    setImages(randomizedImages);
   }, []);
 
   const openModal = (image) => {

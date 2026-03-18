@@ -1,0 +1,530 @@
+[
+  {
+    "id": 1,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp1.png",
+    "title": "Spiti Valley's Moonscape",
+    "description": "Often overshadowed by Ladakh, Spiti Valley is a cold desert mountain valley in Himachal Pradesh. Highlights include ancient monasteries perched on craggy cliffs and pristine, star-filled night skies.",
+    "location": {
+      "city": "Spiti Valley, Himachal Pradesh"
+    },
+    "likes_count": 1050,
+    "comments_count": 145,
+    "tags": [
+      "Spiti",
+      "ColdDesert",
+      "Monasteries"
+    ]
+  },
+  {
+    "id": 2,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp2.png",
+    "title": "Gopalpur Beach",
+    "description": "Come with me to Gopalpur Beach and enjoy the serene sunset while watching the local fishermen at work. It's a peaceful escape you won't forget!",
+    "location": {
+      "city": "Berhampur, Odisha"
+    },
+    "likes_count": 75,
+    "comments_count": 12,
+    "tags": [
+      "beach",
+      "sunset",
+      "local life"
+    ]
+  },
+  {
+    "id": 3,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp3.png",
+    "title": "Gurez Valley's Uncharted Beauty",
+    "description": "Located deep in the Himalayas near the Line of Control, Gurez Valley in Jammu and Kashmir is a breathtaking realm of snow-capped peaks, traditional log-wood houses, and the roaring Kishanganga river.",
+    "location": {
+      "city": "Gurez Valley, J&K"
+    },
+    "likes_count": 620,
+    "comments_count": 85,
+    "tags": [
+      "Kashmir",
+      "Gurez",
+      "Himalayas"
+    ]
+  },
+  {
+    "id": 4,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp4.png",
+    "title": "Taratarini Temple",
+    "description": "Join me as I explore the Taratarini Temple in Berhampur! Discover its fascinating history and the local legends behind this sacred place.",
+    "location": {
+      "city": "Berhampur, Odisha"
+    },
+    "likes_count": 90,
+    "comments_count": 15,
+    "tags": [
+      "temple",
+      "heritage",
+      "culture"
+    ]
+  },
+  {
+    "id": 5,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp5.png",
+    "title": "The Silent Splendor of Majuli",
+    "description": "Located in Assam, Majuli is the world's largest river island, nestled in the mighty Brahmaputra river. Known for its lush green landscapes, vibrant neo-Vaishnavite culture, and serene boat rides, it remains beautifully untouched by commercial tourism.",
+    "location": {
+      "city": "Majuli, Assam"
+    },
+    "likes_count": 342,
+    "comments_count": 45,
+    "tags": [
+      "Assam",
+      "RiverIsland",
+      "OffbeatIndia"
+    ]
+  },
+  {
+    "id": 6,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp6.png",
+    "title": "Berhampuri Paata Handicrafts",
+    "description": "Explore Berhampur's traditional Paata crafts! Watch skilled artisans create intricate handwoven fabrics that reflect our cultural heritage.",
+    "location": {
+      "city": "Berhampur, Odisha"
+    },
+    "likes_count": 70,
+    "comments_count": 10,
+    "tags": [
+      "berhampur paata",
+      "handicrafts",
+      "culture"
+    ]
+  },
+  {
+    "id": 7,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp7.png",
+    "title": "Mystical Ziro Valley",
+    "description": "A picturesque valley in Arunachal Pradesh, Ziro is home to the Apatani tribe. With its sprawling rice fields, pine-clad hills, and unique tribal culture, it offers a peaceful withdrawal from city life.",
+    "location": {
+      "city": "Ziro, Arunachal Pradesh"
+    },
+    "likes_count": 512,
+    "comments_count": 67,
+    "tags": [
+      "Arunachal",
+      "TribalCulture",
+      "ZiroValley"
+    ]
+  },
+  {
+    "id": 8,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp8.png",
+    "title": "Thakurani Yatra",
+    "description": "Experience the grandeur of Thakurani Yatra in Berhampur! Join the vibrant processions, traditional music, and age-old rituals that celebrate our rich heritage.",
+    "location": {
+      "city": "Berhampur, Odisha"
+    },
+    "likes_count": 85,
+    "comments_count": 20,
+    "tags": [
+      "thakurani yatra",
+      "festival",
+      "tradition"
+    ]
+  },
+  {
+    "id": 9,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp9.png",
+    "title": "Gandikota: The Grand Canyon of India",
+    "description": "Hidden in Andhra Pradesh, Gandikota features a spectacular gorge formed by the Penna river cutting through the Erramala hills. The historical fort adjacent to the canyon adds to its rugged, unexplored charm.",
+    "location": {
+      "city": "Gandikota, Andhra Pradesh"
+    },
+    "likes_count": 890,
+    "comments_count": 120,
+    "tags": [
+      "GrandCanyon",
+      "AndhraPradesh",
+      "Gorge"
+    ]
+  },
+  {
+    "id": 10,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp10.png",
+    "title": "Mahendragiri Hills",
+    "description": "Explore the serene Mahendragiri Hills near Berhampur! A land of myth and nature, it is believed to be linked with the Pandavas and offers breathtaking views for trekkers and pilgrims alike.",
+    "location": {
+      "city": "Gajapati, Odisha"
+    },
+    "likes_count": 130,
+    "comments_count": 25,
+    "tags": [
+      "mahendragiri",
+      "mythology",
+      "trekking",
+      "heritage"
+    ]
+  },
+  {
+    "id": 11,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp11.png",
+    "title": "Berhampur Ghee Muan",
+    "description": "Come taste the delicious traditional Ghee Muan of Berhampur with me! Each bite tells a story of our rich culinary heritage and local flavors.",
+    "location": {
+      "city": "Berhampur, Odisha"
+    },
+    "likes_count": 60,
+    "comments_count": 8,
+    "tags": [
+      "ghee muan",
+      "local food",
+      "tradition"
+    ]
+  },
+  {
+    "id": 12,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp12.png",
+    "title": "Mawlynnong: Asia's Cleanest Village",
+    "description": "Situated in Meghalaya, Mawlynnong is famously known as Asia's Cleanest Village. It features living root bridges, spotless streets bordered by colorful flowers, and a profound community-led eco-tourism model.",
+    "location": {
+      "city": "Mawlynnong, Meghalaya"
+    },
+    "likes_count": 780,
+    "comments_count": 92,
+    "tags": [
+      "Meghalaya",
+      "CleanVillage",
+      "EcoTourism"
+    ]
+  },
+  {
+    "id": 13,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp13.png",
+    "title": "The Ancient Ruins of Dhanushkodi",
+    "description": "Once a bustling town, Dhanushkodi in Tamil Nadu was destroyed by a cyclone in 1964. Today, it stands as a hauntingly beautiful ghost town where the Bay of Bengal meets the Indian Ocean.",
+    "location": {
+      "city": "Dhanushkodi, Tamil Nadu"
+    },
+    "likes_count": 435,
+    "comments_count": 38,
+    "tags": [
+      "GhostTown",
+      "TamilNadu",
+      "Dhanushkodi"
+    ]
+  },
+  {
+    "id": 14,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp14.png",
+    "title": "Chembra Peak & Heart Lake",
+    "description": "The highest peak in Wayanad, Kerala, Chembra offers a challenging trek that rewards hikers with a view of a naturally heart-shaped lake, said to have never dried up, sitting amidst lush greenery.",
+    "location": {
+      "city": "Wayanad, Kerala"
+    },
+    "likes_count": 560,
+    "comments_count": 44,
+    "tags": [
+      "Kerala",
+      "Trekking",
+      "Nature"
+    ]
+  },
+  {
+    "id": 15,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp15.png",
+    "title": "",
+    "description": "Listed as a UNESCO World Heritage Site, Rani ki Vav in Patan, Gujarat is a stunning 11th-century stepwell built as a memorial to a king. Its seven storeys descend into the earth and are adorned with over 500 principal sculptures — a temple built downward into the ground.",
+    "location": {
+      "city": "Patan, Gujarat"
+    },
+    "likes_count": 830,
+    "comments_count": 102,
+    "tags": [
+      "Gujarat",
+      "Stepwell",
+      "UNESCO",
+      "HiddenGem"
+    ]
+  },
+  {
+    "id": 16,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp16.png",
+    "title": "Chapchar Kut: Mizoram's Festival of Spring",
+    "description": "Celebrated exclusively in Mizoram, Chapchar Kut is one of India's most vibrant and least-known tribal festivals. Held after the jhum (slash-and-burn) clearing season, locals don traditional Mizo costumes and perform the mesmerizing Cheraw bamboo dance under open skies.",
+    "location": {
+      "city": "Aizawl, Mizoram"
+    },
+    "likes_count": 290,
+    "comments_count": 33,
+    "tags": [
+      "Mizoram",
+      "TribalFestival",
+      "ChapcharKut",
+      "BambooDance"
+    ]
+  },
+  {
+    "id": 17,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp17.png",
+    "title": "Bhimbetka: Paintings from the Stone Age",
+    "description": "Deep in the forests of Madhya Pradesh, the rock shelters of Bhimbetka contain paintings made by prehistoric humans over 30,000 years ago. Animals, hunts, and dances rendered in ochre and white make this UNESCO site one of the earliest known records of human creative expression in South Asia.",
+    "location": {
+      "city": "Raisen, Madhya Pradesh"
+    },
+    "likes_count": 555,
+    "comments_count": 70,
+    "tags": [
+      "MadhyaPradesh",
+      "Bhimbetka",
+      "UNESCO",
+      "Prehistoric",
+      "RockArt"
+    ]
+  },
+  {
+    "id": 18,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp18.png",
+    "title": "Unakoti: The Lost Hill of Faces",
+    "description": "Carved into the rocky hillside of Tripura, Unakoti is one of India's most mysterious ancient sites. Enormous rock-cut sculptures of Shiva and other deities dating back to the 7th-9th centuries emerge from the jungle, largely unknown to the outside world.",
+    "location": {
+      "city": "Unakoti, Tripura"
+    },
+    "likes_count": 410,
+    "comments_count": 52,
+    "tags": [
+      "Tripura",
+      "RockArt",
+      "HiddenMonument",
+      "Shiva"
+    ]
+  },
+  {
+    "id": 19,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp19.png",
+    "title": "Chhena Poda: Odisha's Burnt Cheese Dessert",
+    "description": "Chhena Poda — meaning 'burnt cheese' in Odia — is a rustic baked dessert made from fresh cottage cheese, sugar, and cardamom, slow-baked until the outer crust caramelizes to a deep brown. Invented in Nayagarh, it is said to be Lord Jagannath's favourite sweet.",
+    "location": {
+      "city": "Bhubaneswar, Odisha"
+    },
+    "likes_count": 275,
+    "comments_count": 34,
+    "tags": [
+      "Odisha",
+      "ChhenaPoda",
+      "TraditionalSweet",
+      "OdiaFood"
+    ]
+  },
+  {
+    "id": 20,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp20.png",
+    "title": "Narsinghgarh Fort: Madhya Pradesh's Secret",
+    "description": "Perched above a wildlife sanctuary in Madhya Pradesh, the crumbling Narsinghgarh Fort is a hidden marvel where peacocks roam ruined battlements and leopards prowl the jungles below. A forgotten royal seat with a haunting, romantic decay.",
+    "location": {
+      "city": "Narsinghgarh, Madhya Pradesh"
+    },
+    "likes_count": 198,
+    "comments_count": 27,
+    "tags": [
+      "MadhyaPradesh",
+      "HiddenFort",
+      "WildlifeSanctuary",
+      "Heritage"
+    ]
+  },
+  {
+    "id": 21,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp21.png",
+    "title": "Litti Chokha: Bihar's Soul Food",
+    "description": "Litti Chokha is more than a meal in Bihar and Jharkhand — it's a cultural institution. Wheat balls stuffed with roasted sattu and spices are baked over cowdung cakes or charcoal, then smashed into smoky mashed eggplant and tomato chokha. Simple, rustic, and unforgettable.",
+    "location": {
+      "city": "Patna, Bihar"
+    },
+    "likes_count": 510,
+    "comments_count": 68,
+    "tags": [
+      "Bihar",
+      "LittiChokha",
+      "StreetFood",
+      "TraditionalFood"
+    ]
+  },
+  {
+    "id": 22,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp22.png",
+    "title": "Warli Art: Stories on Mud Walls",
+    "description": "Originating from the tribal communities of Maharashtra's Palghar district, Warli art uses simple geometric forms — circles, triangles, and lines — to depict nature, harvests, weddings, and community life. Traditionally painted on mud walls with rice paste, it is one of India's oldest surviving folk art forms.",
+    "location": {
+      "city": "Palghar, Maharashtra"
+    },
+    "likes_count": 490,
+    "comments_count": 61,
+    "tags": [
+      "Maharashtra",
+      "WarliArt",
+      "FolkArt",
+      "TribalArt"
+    ]
+  },
+  {
+    "id": 23,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp23.png",
+    "title": "Theyyam: Kerala's Living Gods",
+    "description": "Performed in the sacred groves of North Kerala, Theyyam is not merely a ritual dance — the performers are believed to literally become the deity. With towering headdresses, fierce body paint, and trance-like movement, it is one of India's most powerful living art traditions.",
+    "location": {
+      "city": "Kannur, Kerala"
+    },
+    "likes_count": 670,
+    "comments_count": 89,
+    "tags": [
+      "Kerala",
+      "Theyyam",
+      "RitualArt",
+      "LivingTradition"
+    ]
+  },
+  {
+    "id": 24,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp24.png",
+    "title": "Pushkar Camel Fair: A Desert Spectacle",
+    "description": "Held annually in Rajasthan, the Pushkar Camel Fair is simultaneously a livestock trading fair, a Hindu pilgrimage, and an extraordinary cultural event. Thousands of camels are groomed, decorated, and paraded while folk musicians, fire-eaters, and acrobats fill the desert air with colour and sound.",
+    "location": {
+      "city": "Pushkar, Rajasthan"
+    },
+    "likes_count": 980,
+    "comments_count": 134,
+    "tags": [
+      "Rajasthan",
+      "PushkarFair",
+      "CamelFair",
+      "DesertFestival"
+    ]
+  },
+  {
+    "id": 25,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp25.png",
+    "title": "Kalamkari: The Art That Tells Stories",
+    "description": "From the workshops of Srikalahasti in Andhra Pradesh comes Kalamkari — a centuries-old hand-painting tradition using natural dyes and a bamboo pen.",
+    "location": {
+      "city": "Srikalahasti, Andhra Pradesh"
+    },
+    "likes_count": 445,
+    "comments_count": 57,
+    "tags": [
+      "Kalamkari",
+      "FolkArt",
+      "AndhraPradesh",
+      "HandmadeArt"
+    ]
+  },
+  {
+    "id": 26,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp26.png",
+    "title": "Zutho: Nagaland's Ancient Rice Beer",
+    "description": "Zutho is a mildly fermented rice beer brewed by the Angami Naga tribe for centuries.",
+    "location": {
+      "city": "Kohima, Nagaland"
+    },
+    "likes_count": 155,
+    "comments_count": 18,
+    "tags": [
+      "Nagaland",
+      "TribalFood",
+      "Zutho",
+      "IndigenousCulture"
+    ]
+  },
+  {
+    "id": 27,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp27.png",
+    "title": "Pattadakal: The Forgotten Crown",
+    "description": "A UNESCO World Heritage Site tucked in Karnataka, Pattadakal is an extraordinary ensemble of 8th-century Chalukyan temples.",
+    "location": {
+      "city": "Pattadakal, Karnataka"
+    },
+    "likes_count": 375,
+    "comments_count": 41,
+    "tags": [
+      "Karnataka",
+      "UNESCO",
+      "Chalukya",
+      "HiddenHeritage"
+    ]
+  },
+  {
+    "id": 28,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp28.png",
+    "title": "Hornbill Festival: Nagaland's Tribal Showcase",
+    "description": "Held every December in Kisama village, the Hornbill Festival brings together all 17 major tribes of Nagaland.",
+    "location": {
+      "city": "Kisama, Nagaland"
+    },
+    "likes_count": 915,
+    "comments_count": 113,
+    "tags": [
+      "Nagaland",
+      "HornbillFestival",
+      "TribalCulture",
+      "Northeast"
+    ]
+  },
+  {
+    "id": 29,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp29.png",
+    "title": "Madhubani: A Canvas of Myth",
+    "description": "Practised by women in the Mithila region of Bihar for over 2,500 years.",
+    "location": {
+      "city": "Madhubani, Bihar"
+    },
+    "likes_count": 620,
+    "comments_count": 77,
+    "tags": [
+      "Bihar",
+      "MadhubaniArt",
+      "MithilaPainting",
+      "FolkArt"
+    ]
+  },
+  {
+    "id": 30,
+    "media_type": "image",
+    "media_url": "/storypageimg/sp30.png",
+    "title": "Losar: New Year in the Clouds",
+    "description": "Celebrated in Spiti, Ladakh, and other Himalayan communities, Losar is the Tibetan Buddhist New Year.",
+    "location": {
+      "city": "Kaza, Himachal Pradesh"
+    },
+    "likes_count": 340,
+    "comments_count": 39,
+    "tags": [
+      "Spiti",
+      "Losar",
+      "BuddhistFestival",
+      "HimalayanCulture"
+    ]
+  }
+]
