@@ -26,42 +26,44 @@ const Stories = () => {
   };
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${activeTab === 'videos' ? 'bg-black' : 'bg-[#f8f5f2]'}`}>
+    <div className={`min-h-screen transition-colors duration-300 ${activeTab === 'videos' ? 'bg-black' : 'bg-[#f4e1c1]'}`}>
       <Header />
       
-      {/* Tab Switcher - sits below Header */}
-      <div className="fixed top-20 left-0 w-full z-40 px-4 py-2 flex justify-center pointer-events-none">
-        <div className="bg-white/70 backdrop-blur-md p-1 pl-1 pr-1 rounded-full shadow-md flex gap-2 pointer-events-auto border border-white/40">
+      {/* Tab Switcher - sits on the left side vertically centered */}
+      <div className="fixed top-1/2 -translate-y-1/2 left-4 md:left-6 z-40 flex flex-col pointer-events-none">
+        <div className="bg-white/70 backdrop-blur-md p-1.5 rounded-3xl shadow-md flex flex-col gap-2 pointer-events-auto border border-white/40">
           <button
             onClick={() => setActiveTab("images")}
-            className={`relative px-6 py-2 rounded-full font-medium transition-colors z-10 ${
+            className={`relative px-4 py-3 rounded-2xl font-medium transition-colors z-10 flex flex-col items-center gap-1 ${
               activeTab === "images" ? "text-white" : "text-gray-700 hover:text-black"
             }`}
           >
             {activeTab === "images" && (
               <motion.div
                 layoutId="activeTabOverlay"
-                className="absolute inset-0 bg-[#e67530] rounded-full -z-10 shadow-sm"
+                className="absolute inset-0 bg-[#e67530] rounded-2xl -z-10 shadow-sm"
                 transition={{ type: "spring", stiffness: 400, damping: 30 }}
               />
             )}
-            Images
+            <ImageIcon className="w-5 h-5 mx-auto" />
+            <span className="text-xs">Images</span>
           </button>
           
           <button
             onClick={() => setActiveTab("videos")}
-            className={`relative px-6 py-2 rounded-full font-medium transition-colors z-10 ${
+            className={`relative px-4 py-3 rounded-2xl font-medium transition-colors z-10 flex flex-col items-center gap-1 ${
               activeTab === "videos" ? "text-white" : "text-gray-700 hover:text-black"
             }`}
           >
             {activeTab === "videos" && (
               <motion.div
                 layoutId="activeTabOverlay"
-                className="absolute inset-0 bg-[#e67530] rounded-full -z-10 shadow-sm"
+                className="absolute inset-0 bg-[#e67530] rounded-2xl -z-10 shadow-sm"
                 transition={{ type: "spring", stiffness: 400, damping: 30 }}
               />
             )}
-            Videos
+            <Video className="w-5 h-5 mx-auto" />
+            <span className="text-xs">Videos</span>
           </button>
         </div>
       </div>

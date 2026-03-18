@@ -306,5 +306,1252 @@
         "comment": "Beautiful saree, very soft silk and elegant design."
       }
     ]
+  },
+  {
+    "id": 9,
+    "name": "Bastar Tribal Metal Sculpture",
+    "category": "Sculptures",
+    "price": 3200,
+    "currency": "INR",
+    "images": [
+      "/productimg/p9.jpg",
+      "/productimg/p9-side.jpg",
+      "/productimg/p9-top.jpg"
+    ],
+    "description": "Handcrafted tribal metal sculpture from Bastar, Chhattisgarh, created using the ancient Dhokra lost-wax casting technique. Each piece depicts traditional folk motifs — dancers, deities, and animals — with a distinctly rustic, textured surface that reflects the raw beauty of tribal artisanship.",
+    "materials": [
+      "Brass",
+      "Copper Alloy"
+    ],
+    "origin": "Chhattisgarh",
+    "artistId": 10,
+    "dimensions": "Height: 22cm, Base: 10cm x 8cm",
+    "weight": "0.9kg",
+    "tags": [
+      "Handmade",
+      "Authentic"
+    ],
+    "inStock": true,
+    "shipping_time": "7-10 days",
+    "reviews": [
+      {
+        "user": "Vikram",
+        "rating": 5,
+        "comment": "Stunning sculpture, the detailing is incredible for a handcrafted piece."
+      },
+      {
+        "user": "Meena",
+        "rating": 4,
+        "comment": "Very unique piece, adds a wonderful tribal touch to my home decor."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Bronze Nataraja Statue",
+    "category": "Sculptures",
+    "price": 8000,
+    "currency": "INR",
+    "images": [
+      "/productimg/p10.jpg",
+      "/productimg/p10-side.jpg",
+      "/productimg/p10-top.jpg"
+    ],
+    "description": "Intricately cast bronze statue of Lord Shiva in the iconic Nataraja pose, symbolizing the cosmic cycle of creation and destruction. Crafted in the Chola bronze tradition of Tamil Nadu, this sculpture features the deity encircled by a ring of flames, with each hand gesture carrying deep spiritual meaning.",
+    "materials": [
+      "Bronze"
+    ],
+    "origin": "Tamil Nadu",
+    "artistId": 10,
+    "dimensions": "Height: 30cm, Base: 15cm x 12cm",
+    "weight": "2.1kg",
+    "tags": [
+      "Featured",
+      "Authentic"
+    ],
+    "inStock": true,
+    "shipping_time": "7-10 days",
+    "reviews": [
+      {
+        "user": "Suresh",
+        "rating": 5,
+        "comment": "A masterpiece. The craftsmanship and weight of the bronze feels truly authentic."
+      },
+      {
+        "user": "Lakshmi",
+        "rating": 5,
+        "comment": "Perfect for my puja room. Every detail is immaculate."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Madhubani Folk Painting",
+    "category": "Paintings",
+    "price": 1300,
+    "currency": "INR",
+    "images": [
+      "/productimg/p11.jpg",
+      "/productimg/p11-side.jpg",
+      "/productimg/p11-top.jpg"
+    ],
+    "description": "Traditional Madhubani painting from the Mithila region of Bihar, hand-painted on handmade paper using natural dyes and fine brushwork. The composition depicts scenes from Hindu mythology, nature, and village life, with characteristic bold outlines, no empty space, and vivid geometric fill patterns.",
+    "materials": [
+      "Handmade Paper",
+      "Natural Dyes",
+      "Nib Pen"
+    ],
+    "origin": "Bihar",
+    "artistId": 11,
+    "dimensions": "Approx. 16x22 inches",
+    "weight": "0.3kg",
+    "tags": [
+      "Authentic",
+      "Handmade"
+    ],
+    "inStock": true,
+    "shipping_time": "5-7 days",
+    "reviews": [
+      {
+        "user": "Priyanka",
+        "rating": 5,
+        "comment": "The detailing is extraordinary. A true work of art from Bihar."
+      },
+      {
+        "user": "Gaurav",
+        "rating": 4,
+        "comment": "Lovely colors and motifs, very authentic feel."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Channapatna Wooden Toys",
+    "category": "Woodcraft",
+    "price": 900,
+    "currency": "INR",
+    "images": [
+      "/productimg/p12.png",
+      "/productimg/p12-side.png",
+      "/productimg/p12-top.png"
+    ],
+    "description": "Colorful hand-turned wooden toys from Channapatna, Karnataka — a craft town known as the 'Toy Town of India'. Made from ivory wood and lacquered with non-toxic vegetable dyes, these toys are safe for children and cherished as collectibles. The craft received a GI tag for its distinctive style and legacy.",
+    "materials": [
+      "Ivory Wood",
+      "Vegetable-based Lacquer"
+    ],
+    "origin": "Karnataka",
+    "artistId": 12,
+    "dimensions": "Approx. 8-15cm per piece (set of 5)",
+    "weight": "0.4kg",
+    "tags": [
+      "Handmade",
+      "Featured"
+    ],
+    "inStock": true,
+    "shipping_time": "6-8 days",
+    "reviews": [
+      {
+        "user": "Deepa",
+        "rating": 5,
+        "comment": "My kids absolutely love these! Safe, colorful, and beautifully made."
+      },
+      {
+        "user": "Rajesh",
+        "rating": 4,
+        "comment": "Lovely keepsakes from Karnataka. The lacquer finish is flawless."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Gond Tribal Painting",
+    "category": "Paintings",
+    "price": 2000,
+    "currency": "INR",
+    "images": [
+      "/productimg/p13.jpg",
+      "/productimg/p13-side.jpg",
+      "/productimg/p13-top.jpg"
+    ],
+    "description": "Vibrant Gond painting from Madhya Pradesh, created by artists of the Gond tribal community. Each painting transforms nature — trees, animals, birds — into rhythmic patterns of dots and dashes, breathing life into a uniquely textured visual language rooted in folklore and the spiritual relationship between man and nature.",
+    "materials": [
+      "Canvas",
+      "Acrylic Paints"
+    ],
+    "origin": "Madhya Pradesh",
+    "artistId": 13,
+    "dimensions": "Approx. 18x24 inches",
+    "weight": "0.7kg",
+    "tags": [
+      "Authentic",
+      "Handmade"
+    ],
+    "inStock": true,
+    "shipping_time": "6-9 days",
+    "reviews": [
+      {
+        "user": "Sunita",
+        "rating": 5,
+        "comment": "The dot-work patterns are mesmerizing. Feels like nature is alive on the canvas."
+      },
+      {
+        "user": "Tarun",
+        "rating": 4,
+        "comment": "Beautiful expression of tribal art, very well executed."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Khasi Bamboo Basket",
+    "category": "Crafts",
+    "price": 1000,
+    "currency": "INR",
+    "images": [
+      "/productimg/p14.jpg",
+      "/productimg/p14-side.jpg",
+      "/productimg/p14-top.jpg"
+    ],
+    "description": "Handwoven bamboo basket crafted by the Khasi community of Meghalaya. Known for its tight, intricate weave pattern and remarkable durability, this basket is both functional and decorative. Made from locally sourced bamboo strips, it reflects the Northeast's deep tradition of sustainable craftsmanship.",
+    "materials": [
+      "Bamboo Strips"
+    ],
+    "origin": "Meghalaya",
+    "artistId": 14,
+    "dimensions": "Height: 20cm, Diameter: 25cm",
+    "weight": "0.35kg",
+    "tags": [
+      "Handmade",
+      "Eco-friendly"
+    ],
+    "inStock": true,
+    "shipping_time": "6-8 days",
+    "reviews": [
+      {
+        "user": "Anita",
+        "rating": 5,
+        "comment": "Beautifully woven, very sturdy. Great for storage and display."
+      },
+      {
+        "user": "Ravi",
+        "rating": 4,
+        "comment": "Love the eco-friendly material and craftsmanship. Very authentic."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Risa Handloom Cloth",
+    "category": "Textiles",
+    "price": 1500,
+    "currency": "INR",
+    "images": [
+      "/productimg/p15.jpg",
+      "/productimg/p15-side.jpg",
+      "/productimg/p15-top.jpg"
+    ],
+    "description": "Traditional Risa cloth handwoven by women artisans of Tripura, featuring rich red and white geometric patterns on cotton. An integral part of Tripuri cultural identity, the Risa is worn during festivals, rituals, and ceremonies, and is considered a sacred gift of respect and welcome.",
+    "materials": [
+      "Cotton",
+      "Natural Dyes"
+    ],
+    "origin": "Tripura",
+    "artistId": 15,
+    "dimensions": "Length: 2m, Width: 0.5m",
+    "weight": "0.25kg",
+    "tags": [
+      "Authentic",
+      "Handmade"
+    ],
+    "inStock": true,
+    "shipping_time": "6-9 days",
+    "reviews": [
+      {
+        "user": "Pallavi",
+        "rating": 5,
+        "comment": "The red patterns are so vivid and the weave quality is excellent."
+      },
+      {
+        "user": "Dipak",
+        "rating": 4,
+        "comment": "A beautiful piece of Northeast heritage, very well crafted."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Mizo Puon Shawl",
+    "category": "Textiles",
+    "price": 2000,
+    "currency": "INR",
+    "images": [
+      "/productimg/p16.jpg",
+      "/productimg/p16-side.jpg",
+      "/productimg/p16-top.jpg"
+    ],
+    "description": "Handwoven Puon shawl from Mizoram, traditionally woven by Mizo women on backstrap looms. The shawl features bold horizontal stripes in deep red, black, and white, each color and pattern carrying cultural significance tied to community, identity, and occasion. It is worn by women during festivals and ceremonial gatherings.",
+    "materials": [
+      "Cotton",
+      "Wool Blend"
+    ],
+    "origin": "Mizoram",
+    "artistId": 16,
+    "dimensions": "Length: 1.8m, Width: 0.9m",
+    "weight": "0.45kg",
+    "tags": [
+      "Handmade"
+    ],
+    "inStock": true,
+    "shipping_time": "6-8 days",
+    "reviews": [
+      {
+        "user": "Liana",
+        "rating": 5,
+        "comment": "Warm and beautifully woven. The stripe patterns are bold and striking."
+      },
+      {
+        "user": "Rohit",
+        "rating": 4,
+        "comment": "Great quality shawl, love the traditional Mizo motifs."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Thangka Painting",
+    "category": "Paintings",
+    "price": 3500,
+    "currency": "INR",
+    "images": [
+      "/productimg/p17.jpg",
+      "/productimg/p17-side.jpg",
+      "/productimg/p17-top.jpg"
+    ],
+    "description": "Sacred Buddhist Thangka painting from Sikkim, hand-painted on cotton canvas using mineral pigments and gold detailing. Thangkas serve as meditation tools and devotional objects, depicting deities, mandalas, and spiritual narratives. Each painting requires weeks of meticulous work and follows strict iconographic guidelines passed down through generations of Buddhist monks and artists.",
+    "materials": [
+      "Cotton Canvas",
+      "Mineral Pigments",
+      "Gold Ink"
+    ],
+    "origin": "Sikkim",
+    "artistId": 17,
+    "dimensions": "Approx. 16x22 inches (with brocade border)",
+    "weight": "0.5kg",
+    "tags": [
+      "Featured",
+      "Authentic"
+    ],
+    "inStock": true,
+    "shipping_time": "7-10 days",
+    "reviews": [
+      {
+        "user": "Tenzin",
+        "rating": 5,
+        "comment": "Exquisitely detailed. The gold work is stunning and spiritually uplifting."
+      },
+      {
+        "user": "Smita",
+        "rating": 5,
+        "comment": "A rare and precious piece of Buddhist art. Arrived perfectly packed."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Monpa Wooden Mask",
+    "category": "Woodcraft",
+    "price": 1800,
+    "currency": "INR",
+    "images": [
+      "/productimg/p18.jpg",
+      "/productimg/p18-side.jpg",
+      "/productimg/p18-top.jpg"
+    ],
+    "description": "Traditional hand-carved wooden mask from the Monpa tribe of Arunachal Pradesh. These masks are used in Cham dance rituals performed in Buddhist monasteries and festivals. Carved from soft pine wood and painted with mineral colors, each mask represents a deity or protective spirit from Tibetan Buddhist iconography.",
+    "materials": [
+      "Pine Wood",
+      "Mineral Paints"
+    ],
+    "origin": "Arunachal Pradesh",
+    "artistId": 18,
+    "dimensions": "Height: 28cm, Width: 22cm",
+    "weight": "0.6kg",
+    "tags": [
+      "Authentic",
+      "Handmade"
+    ],
+    "inStock": true,
+    "shipping_time": "6-8 days",
+    "reviews": [
+      {
+        "user": "Karma",
+        "rating": 5,
+        "comment": "Absolutely stunning mask, very detailed and has a powerful presence."
+      },
+      {
+        "user": "Neha",
+        "rating": 4,
+        "comment": "Great wall decor, very unique and culturally rich piece."
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Azulejos Ceramic Tile",
+    "category": "Crafts",
+    "price": 1200,
+    "currency": "INR",
+    "images": [
+      "/productimg/p19.jpg",
+      "/productimg/p19-side.jpg",
+      "/productimg/p19-top.jpg"
+    ],
+    "description": "Hand-painted decorative ceramic tile from Goa, inspired by the Portuguese Azulejos tradition that flourished during colonial rule. Featuring cobalt blue and white floral and geometric patterns, these tiles are used as wall art, trivets, or decorative accents, blending Indo-Portuguese heritage in every stroke.",
+    "materials": [
+      "Ceramic",
+      "Food-safe Glazed Paint"
+    ],
+    "origin": "Goa",
+    "artistId": 19,
+    "dimensions": "15cm x 15cm x 0.8cm",
+    "weight": "0.3kg",
+    "tags": [
+      "Authentic"
+    ],
+    "inStock": true,
+    "shipping_time": "6-9 days",
+    "reviews": [
+      {
+        "user": "Maria",
+        "rating": 5,
+        "comment": "These tiles are gorgeous. The blue and white pattern is so elegant."
+      },
+      {
+        "user": "Fernandez",
+        "rating": 4,
+        "comment": "Perfect souvenir from Goa. Lovely craftsmanship and heritage feel."
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Pochampally Ikat Saree",
+    "category": "Textiles",
+    "price": 4000,
+    "currency": "INR",
+    "images": [
+      "/productimg/p20.jpg",
+      "/productimg/p20-side.jpg",
+      "/productimg/p20-top.jpg"
+    ],
+    "description": "Authentic Pochampally Ikat saree from Telangana, woven using the resist-dyeing technique where threads are tied and dyed before weaving to create precise geometric patterns. Known for its diamond and chevron motifs in vibrant hues, this GI-tagged saree represents one of India's finest handloom traditions.",
+    "materials": [
+      "Silk",
+      "Cotton Weft"
+    ],
+    "origin": "Telangana",
+    "artistId": 20,
+    "dimensions": "Length: 5.5m, Width: 1.15m",
+    "weight": "0.65kg",
+    "tags": [
+      "Featured",
+      "Authentic"
+    ],
+    "inStock": true,
+    "shipping_time": "7-10 days",
+    "reviews": [
+      {
+        "user": "Swapna",
+        "rating": 5,
+        "comment": "The geometric patterns are so sharp and the silk is luxuriously soft."
+      },
+      {
+        "user": "Harsha",
+        "rating": 4,
+        "comment": "Bought as a gift. Recipient was absolutely delighted with the quality."
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Mughal Miniature Painting",
+    "category": "Paintings",
+    "price": 2800,
+    "currency": "INR",
+    "images": [
+      "/productimg/p21.jpg",
+      "/productimg/p21-side.jpg",
+      "/productimg/p21-top.jpg"
+    ],
+    "description": "Finely detailed miniature painting in the Mughal court style, painted on handmade Wasli paper using squirrel-hair brushes and stone-ground pigments. Depicting a royal court scene with intricate architectural borders and gold leaf embellishments, this piece reflects the grandeur of Mughal artistic tradition that flourished from the 16th century onward.",
+    "materials": [
+      "Wasli Paper",
+      "Stone Pigments",
+      "Gold Leaf",
+      "Squirrel-hair Brush"
+    ],
+    "origin": "Delhi",
+    "artistId": 21,
+    "dimensions": "Approx. 10x14 inches",
+    "weight": "0.2kg",
+    "tags": [
+      "Authentic"
+    ],
+    "inStock": true,
+    "shipping_time": "6-9 days",
+    "reviews": [
+      {
+        "user": "Faisal",
+        "rating": 5,
+        "comment": "The gold leaf detailing is extraordinary. A truly regal piece."
+      },
+      {
+        "user": "Rekha",
+        "rating": 4,
+        "comment": "Incredible detail work in such a small canvas. Museum quality art."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Panipat Handloom Durrie",
+    "category": "Textiles",
+    "price": 1800,
+    "currency": "INR",
+    "images": [
+      "/productimg/p22.jpg",
+      "/productimg/p22-side.jpg",
+      "/productimg/p22-top.jpg"
+    ],
+    "description": "Flat-woven cotton durrie from Panipat, Haryana — a city historically known as the 'City of Weavers'. Crafted on traditional pit looms, this durable floor textile features bold striped and geometric patterns in earthy tones. Ideal as a rug, yoga mat base, or decorative floor covering, it is both functional and heritage-rich.",
+    "materials": [
+      "Recycled Cotton",
+      "Natural Dyes"
+    ],
+    "origin": "Haryana",
+    "artistId": 22,
+    "dimensions": "120cm x 180cm",
+    "weight": "1.2kg",
+    "tags": [
+      "Handmade"
+    ],
+    "inStock": true,
+    "shipping_time": "6-8 days",
+    "reviews": [
+      {
+        "user": "Manish",
+        "rating": 4,
+        "comment": "Great quality durrie, very durable and the colors haven't faded."
+      },
+      {
+        "user": "Pooja",
+        "rating": 5,
+        "comment": "Looks fantastic in my living room. Excellent traditional weaving."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Sohrai Tribal Painting",
+    "category": "Paintings",
+    "price": 1500,
+    "currency": "INR",
+    "images": [
+      "/productimg/p23.jpg",
+      "/productimg/p23-side.jpg",
+      "/productimg/p23-top.jpg"
+    ],
+    "description": "Sohrai painting from the Hazaribagh district of Jharkhand, traditionally created by women on mud walls during the Sohrai harvest festival. Painted on paper using natural earth pigments — white kaolin, red ochre, and black manganese — it depicts cattle, peacocks, fish, and the sacred tree of life in flowing, intuitive lines.",
+    "materials": [
+      "Handmade Paper",
+      "Natural Earth Pigments"
+    ],
+    "origin": "Jharkhand",
+    "artistId": 23,
+    "dimensions": "Approx. 14x20 inches",
+    "weight": "0.25kg",
+    "tags": [
+      "Authentic"
+    ],
+    "inStock": true,
+    "shipping_time": "6-8 days",
+    "reviews": [
+      {
+        "user": "Anjali",
+        "rating": 5,
+        "comment": "The earthy tones are so soothing. A beautiful piece of tribal heritage."
+      },
+      {
+        "user": "Shyam",
+        "rating": 4,
+        "comment": "Unique folk art you rarely find. Well packaged and delivered carefully."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Ladakhi Pashmina Shawl",
+    "category": "Textiles",
+    "price": 6000,
+    "currency": "INR",
+    "images": [
+      "/productimg/p24.jpg",
+      "/productimg/p24-side.jpg",
+      "/productimg/p24-top.jpg"
+    ],
+    "description": "Luxuriously soft handwoven Pashmina shawl sourced from the Changthangi goats of Ladakh's high-altitude Changthang plateau. Each shawl is hand-spun and woven by skilled artisans, requiring weeks of labor to produce. Incredibly warm yet feather-light, it features a classic herringbone weave with delicate hand-embroidered border detailing.",
+    "materials": [
+      "100% Pure Pashmina Wool"
+    ],
+    "origin": "Ladakh",
+    "artistId": 24,
+    "dimensions": "Length: 2m, Width: 0.7m",
+    "weight": "0.18kg",
+    "tags": [
+      "Featured",
+      "Authentic"
+    ],
+    "inStock": true,
+    "shipping_time": "7-10 days",
+    "reviews": [
+      {
+        "user": "Naina",
+        "rating": 5,
+        "comment": "Incredibly soft and warm. The most luxurious shawl I have ever owned."
+      },
+      {
+        "user": "Anuj",
+        "rating": 5,
+        "comment": "Gifted this to my mother. She was moved by the quality and warmth."
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Puducherry Ceramic Plate",
+    "category": "Crafts",
+    "price": 1400,
+    "currency": "INR",
+    "images": [
+      "/productimg/p25.jpg",
+      "/productimg/p25-side.jpg",
+      "/productimg/p25-top.jpg"
+    ],
+    "description": "Hand-painted decorative ceramic plate from Puducherry, reflecting the town's unique Franco-Tamil cultural identity. Featuring pastel floral motifs with French colonial-inspired borders, each plate is kiln-fired and glazed for durability. Suitable as wall decor, a serving plate, or a display centerpiece.",
+    "materials": [
+      "Ceramic",
+      "Food-safe Glaze",
+      "Mineral Paints"
+    ],
+    "origin": "Puducherry",
+    "artistId": 25,
+    "dimensions": "Diameter: 28cm, Depth: 3cm",
+    "weight": "0.55kg",
+    "tags": [
+      "Handmade"
+    ],
+    "inStock": true,
+    "shipping_time": "6-9 days",
+    "reviews": [
+      {
+        "user": "Camille",
+        "rating": 5,
+        "comment": "The French-Indian fusion design is charming. Great table centerpiece."
+      },
+      {
+        "user": "Ramya",
+        "rating": 4,
+        "comment": "Lovely plate, very elegant motifs. Came well-packed."
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Andaman Shell Necklace",
+    "category": "Jewelry",
+    "price": 1000,
+    "currency": "INR",
+    "images": [
+      "/productimg/p26.jpg",
+      "/productimg/p26-side.jpg",
+      "/productimg/p26-top.jpg"
+    ],
+    "description": "Handcrafted necklace made from naturally collected seashells and coral beads from the shores of the Andaman Islands. Each shell is hand-drilled, polished, and strung on a waxed linen cord, creating a piece that embodies the island's coastal spirit. No two necklaces are identical due to the natural variations in shells.",
+    "materials": [
+      "Natural Seashells",
+      "Coral Beads",
+      "Waxed Linen Cord"
+    ],
+    "origin": "Andaman & Nicobar Islands",
+    "artistId": 26,
+    "dimensions": "Length: 42cm (adjustable)",
+    "weight": "0.06kg",
+    "tags": [
+      "Eco-friendly",
+      "Handmade"
+    ],
+    "inStock": true,
+    "shipping_time": "7-10 days",
+    "reviews": [
+      {
+        "user": "Ishaan",
+        "rating": 5,
+        "comment": "So unique and beachy! Brings back memories of the Andamans."
+      },
+      {
+        "user": "Priya",
+        "rating": 4,
+        "comment": "Pretty necklace, loved the natural feel. Great holiday souvenir."
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Lakshadweep Coconut Shell Bowl",
+    "category": "Crafts",
+    "price": 800,
+    "currency": "INR",
+    "images": [
+      "/productimg/p27.jpg",
+      "/productimg/p27-side.jpg",
+      "/productimg/p27-top.jpg"
+    ],
+    "description": "Eco-friendly serving bowl hand-carved from a whole coconut shell by craftsmen in Lakshadweep. The interior is sanded smooth and coated with natural food-safe oil, while the exterior retains its natural dark texture. Perfect for dry snacks, salads, or decorative use, it is a zero-waste craft rooted in island sustainability.",
+    "materials": [
+      "Coconut Shell",
+      "Food-safe Coconut Oil Finish"
+    ],
+    "origin": "Lakshadweep",
+    "artistId": 27,
+    "dimensions": "Diameter: 14cm, Height: 7cm",
+    "weight": "0.18kg",
+    "tags": [
+      "Handmade",
+      "Eco-friendly"
+    ],
+    "inStock": true,
+    "shipping_time": "6-8 days",
+    "reviews": [
+      {
+        "user": "Leena",
+        "rating": 4,
+        "comment": "Sturdy and beautiful bowl. Wonderful sustainable alternative to plastic."
+      },
+      {
+        "user": "Vikrant",
+        "rating": 5,
+        "comment": "Love the natural look. My guests always ask about this bowl!"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Chandigarh Terracotta Planter",
+    "category": "Pottery",
+    "price": 1200,
+    "currency": "INR",
+    "images": [
+      "/productimg/p28.jpg",
+      "/productimg/p28-side.jpg",
+      "/productimg/p28-top.jpg"
+    ],
+    "description": "Handcrafted terracotta planter from Chandigarh, blending clean modernist silhouettes with traditional earthen pottery techniques. Wheel-thrown and kiln-fired, the planter has a natural terracotta exterior with a subtle incised geometric pattern around the rim. Drainage hole included, suitable for both indoor and outdoor plants.",
+    "materials": [
+      "Terracotta Clay"
+    ],
+    "origin": "Chandigarh",
+    "artistId": 28,
+    "dimensions": "Height: 18cm, Diameter: 16cm",
+    "weight": "0.7kg",
+    "tags": [
+      "Handmade"
+    ],
+    "inStock": true,
+    "shipping_time": "6-9 days",
+    "reviews": [
+      {
+        "user": "Gurpreet",
+        "rating": 4,
+        "comment": "Elegant and well-made planter. Looks great with succulents."
+      },
+      {
+        "user": "Simran",
+        "rating": 5,
+        "comment": "Perfect size and the earthy color fits my boho decor beautifully."
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Kutch Rogan Art Painting",
+    "category": "Paintings",
+    "price": 3000,
+    "currency": "INR",
+    "images": [
+      "/productimg/p29.jpg",
+      "/productimg/p29-side.jpg",
+      "/productimg/p29-top.jpg"
+    ],
+    "description": "Rare Rogan art painting from Nirona village in Kutch, Gujarat — a 400-year-old craft practiced by only one family in the world today. Created by heating castor oil and mixing it with natural stone pigments, the thick paint is applied on cloth using a metal stylus, never touching the surface. The result is a raised, jewel-like painting of extraordinary intricacy.",
+    "materials": [
+      "Cotton Cloth",
+      "Castor Oil Paint",
+      "Natural Stone Pigments"
+    ],
+    "origin": "Gujarat",
+    "artistId": 29,
+    "dimensions": "Approx. 14x18 inches",
+    "weight": "0.3kg",
+    "tags": [
+      "Authentic",
+      "Handmade"
+    ],
+    "inStock": true,
+    "shipping_time": "7-10 days",
+    "reviews": [
+      {
+        "user": "Hiral",
+        "rating": 5,
+        "comment": "Knowing this craft exists in one family makes this piece priceless. Stunning work."
+      },
+      {
+        "user": "Barack",
+        "rating": 5,
+        "comment": "Received this as a gift and was blown away. Genuinely museum-worthy art."
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Warli Tribal Art",
+    "category": "Paintings",
+    "price": 1800,
+    "currency": "INR",
+    "images": [
+      "/productimg/p30.jpg",
+      "/productimg/p30-side.jpg",
+      "/productimg/p30-top.jpg"
+    ],
+    "description": "Folk art painting from the Warli tribe of Maharashtra's Palghar district, rendered in white rice-paste pigment on a brown handmade paper. Using only circles, triangles, and squares, the composition depicts a village harvest festival — dancers in a circle, musicians, animals, and a sacred deity — with a timeless simplicity that has endured for millennia.",
+    "materials": [
+      "Handmade Paper",
+      "Rice Paste Pigment",
+      "Acrylic"
+    ],
+    "origin": "Maharashtra",
+    "artistId": 30,
+    "dimensions": "Approx. 16x22 inches",
+    "weight": "0.3kg",
+    "tags": [
+      "Handmade",
+      "Authentic"
+    ],
+    "inStock": true,
+    "shipping_time": "6-8 days",
+    "reviews": [
+      {
+        "user": "Kavita",
+        "rating": 5,
+        "comment": "The simplicity of Warli art is so profound. This piece is beautifully done."
+      },
+      {
+        "user": "Nilesh",
+        "rating": 4,
+        "comment": "Great painting, the geometric storytelling is fascinating."
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Kullu Woolen Shawl",
+    "category": "Textiles",
+    "price": 2500,
+    "currency": "INR",
+    "images": [
+      "/productimg/p31.jpg",
+      "/productimg/p31-side.jpg",
+      "/productimg/p31-top.jpg"
+    ],
+    "description": "Handwoven woolen shawl from the Kullu Valley of Himachal Pradesh, crafted on traditional frame looms by local weavers. Featuring the distinctive Kullu pattern — bold geometric bands in deep jewel tones of red, green, and gold — this shawl is warm enough for Himalayan winters and elegant enough for festive wear.",
+    "materials": [
+      "Pure Wool",
+      "Natural Dyes"
+    ],
+    "origin": "Himachal Pradesh",
+    "artistId": 31,
+    "dimensions": "Length: 2m, Width: 1m",
+    "weight": "0.55kg",
+    "tags": [
+      "Authentic"
+    ],
+    "inStock": true,
+    "shipping_time": "7-10 days",
+    "reviews": [
+      {
+        "user": "Ritu",
+        "rating": 5,
+        "comment": "Incredibly warm and the colors are so rich. Exactly what I wanted."
+      },
+      {
+        "user": "Deepak",
+        "rating": 4,
+        "comment": "Beautiful shawl, the pattern is very striking. Good thickness for cold weather."
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Assam Jaapi Hat",
+    "category": "Crafts",
+    "price": 1000,
+    "currency": "INR",
+    "images": [
+      "/productimg/p32.jpg",
+      "/productimg/p32-side.jpg",
+      "/productimg/p32-top.jpg"
+    ],
+    "description": "Traditional Assamese Jaapi hat, handwoven from tokou paat (palm leaves) and bamboo strips by artisans of rural Assam. A powerful symbol of Assamese identity and hospitality, the Jaapi is traditionally presented to honored guests and adorns the walls of Assamese homes as a decorative emblem of cultural pride.",
+    "materials": [
+      "Tokou Palm Leaves",
+      "Bamboo Strips",
+      "Natural Dyes"
+    ],
+    "origin": "Assam",
+    "artistId": 32,
+    "dimensions": "Diameter: 55cm, Height: 20cm",
+    "weight": "0.4kg",
+    "tags": [
+      "Handmade",
+      "Eco-friendly"
+    ],
+    "inStock": true,
+    "shipping_time": "6-8 days",
+    "reviews": [
+      {
+        "user": "Bhaskar",
+        "rating": 5,
+        "comment": "A wonderful piece of Assam's heritage. Looks stunning on my living room wall."
+      },
+      {
+        "user": "Rupa",
+        "rating": 4,
+        "comment": "Beautiful craftsmanship, the palm leaf weaving is very fine and detailed."
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Phulkari Embroidered Dupatta",
+    "category": "Textiles",
+    "price": 2200,
+    "currency": "INR",
+    "images": [
+      "/productimg/p33.jpg",
+      "/productimg/p33-side.jpg",
+      "/productimg/p33-top.jpg"
+    ],
+    "description": "Hand-embroidered Phulkari dupatta from Punjab, featuring dense floral embroidery worked in vibrant silk floss on a coarse khaddar cotton base. Phulkari — meaning 'flower work' — was traditionally stitched by women over years as a labor of love for their daughters' wedding trousseaus. This piece uses the classic bagh pattern where embroidery covers nearly the entire surface.",
+    "materials": [
+      "Khaddar Cotton Base",
+      "Silk Floss Threads"
+    ],
+    "origin": "Punjab",
+    "artistId": 33,
+    "dimensions": "Length: 2.4m, Width: 1m",
+    "weight": "0.35kg",
+    "tags": [
+      "Handmade"
+    ],
+    "inStock": true,
+    "shipping_time": "6-8 days",
+    "reviews": [
+      {
+        "user": "Harleen",
+        "rating": 5,
+        "comment": "The embroidery coverage is incredible. Reminds me of my grandmother's Phulkari."
+      },
+      {
+        "user": "Jaspreet",
+        "rating": 4,
+        "comment": "Very vibrant and beautifully stitched. Perfect for festive occasions."
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Papier-Mâché Vase",
+    "category": "Crafts",
+    "price": 1600,
+    "currency": "INR",
+    "images": [
+      "/productimg/p34.jpg",
+      "/productimg/p34-side.jpg",
+      "/productimg/p34-top.jpg"
+    ],
+    "description": "Decorative papier-mâché vase from Kashmir, hand-crafted using layered paper pulp and then meticulously hand-painted with intricate chinar leaf, lotus, and floral motifs in vibrant reds, greens, and golds on a black lacquered base. This centuries-old Kashmiri craft — known locally as kar-i-qalamdan — was once patronized by Mughal emperors.",
+    "materials": [
+      "Papier-Mâché",
+      "Lacquer",
+      "Natural Pigments",
+      "Gold Leaf Accents"
+    ],
+    "origin": "Jammu & Kashmir",
+    "artistId": 34,
+    "dimensions": "Height: 25cm, Diameter: 12cm",
+    "weight": "0.3kg",
+    "tags": [
+      "Authentic",
+      "Handmade"
+    ],
+    "inStock": true,
+    "shipping_time": "7-10 days",
+    "reviews": [
+      {
+        "user": "Zara",
+        "rating": 5,
+        "comment": "The painting detail is breathtaking. A true heirloom piece from Kashmir."
+      },
+      {
+        "user": "Sanjay",
+        "rating": 4,
+        "comment": "Beautiful vase, the lacquer finish is very rich. Exactly as pictured."
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Terracotta Horse of Bankura",
+    "category": "Sculptures",
+    "price": 2800,
+    "currency": "INR",
+    "images": [
+      "/productimg/p35.jpg",
+      "/productimg/p35-side.jpg",
+      "/productimg/p35-top.jpg"
+    ],
+    "description": "Iconic Bankura horse sculpture handcrafted by potters of the Panchmura village in West Bengal. Made from local alluvial clay, hand-shaped, sun-dried, and kiln-fired to a warm terracotta finish, the elongated neck and stylized form of this horse have made it a universal symbol of Bengali folk art and Indian craft heritage.",
+    "materials": [
+      "Alluvial Clay",
+      "Terracotta"
+    ],
+    "origin": "West Bengal",
+    "artistId": 35,
+    "dimensions": "Height: 24cm, Length: 20cm",
+    "weight": "0.8kg",
+    "tags": [
+      "Handmade",
+      "Authentic"
+    ],
+    "inStock": true,
+    "shipping_time": "7-10 days",
+    "reviews": [
+      {
+        "user": "Subrata",
+        "rating": 5,
+        "comment": "A classic. The Bankura horse is timeless and this one is perfectly crafted."
+      },
+      {
+        "user": "Moumita",
+        "rating": 4,
+        "comment": "Great shelf decor and a proud reminder of Bengali heritage."
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Bidriware Jewelry Box",
+    "category": "Crafts",
+    "price": 3200,
+    "currency": "INR",
+    "images": [
+      "/productimg/p36.jpg",
+      "/productimg/p36-side.jpg",
+      "/productimg/p36-top.jpg"
+    ],
+    "description": "Exquisite Bidriware jewelry box from Bidar, Karnataka, crafted from a zinc-copper alloy and inlaid with pure silver wire and sheets in intricate floral and arabesque patterns. The alloy is then treated with a soil paste unique to Bidar that permanently blackens the metal, making the silver inlay gleam brilliantly against the matte black surface.",
+    "materials": [
+      "Zinc-Copper Alloy",
+      "Pure Silver Inlay"
+    ],
+    "origin": "Karnataka",
+    "artistId": 36,
+    "dimensions": "15cm x 10cm x 6cm",
+    "weight": "0.45kg",
+    "tags": [
+      "Featured",
+      "Handmade"
+    ],
+    "inStock": true,
+    "shipping_time": "7-10 days",
+    "reviews": [
+      {
+        "user": "Rohan",
+        "rating": 5,
+        "comment": "The silver inlay against the black alloy is simply stunning. A premium gift."
+      },
+      {
+        "user": "Divya",
+        "rating": 5,
+        "comment": "I use this to store my rings and earrings. It's too beautiful to keep hidden!"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Kalamkari Wall Hanging",
+    "category": "Textiles",
+    "price": 3200,
+    "currency": "INR",
+    "images": [
+      "/productimg/p37.jpg",
+      "/productimg/p37-side.jpg",
+      "/productimg/p37-top.jpg"
+    ],
+    "description": "Hand-painted Kalamkari wall hanging from Srikalahasti, Andhra Pradesh, created using a bamboo pen (kalam) dipped in fermented jaggery and iron solution. The composition depicts the Dashavatara — the ten avatars of Lord Vishnu — rendered in natural dyes of indigo, pomegranate rind, and myrobalan on handspun cotton. Each piece takes over a week to complete.",
+    "materials": [
+      "Handspun Cotton",
+      "Natural Dyes",
+      "Bamboo Kalam Pen"
+    ],
+    "origin": "Andhra Pradesh",
+    "artistId": 37,
+    "dimensions": "Approx. 18x36 inches",
+    "weight": "0.4kg",
+    "tags": [
+      "Authentic",
+      "Handmade"
+    ],
+    "inStock": true,
+    "shipping_time": "6-9 days",
+    "reviews": [
+      {
+        "user": "Sudha",
+        "rating": 5,
+        "comment": "The natural dye colors are so rich and the detailing of each avatar is extraordinary."
+      },
+      {
+        "user": "Prasad",
+        "rating": 4,
+        "comment": "A magnificent wall hanging. The cotton fabric drapes beautifully."
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Kolhapuri Bag",
+    "category": "Crafts",
+    "price": 2200,
+    "currency": "INR",
+    "images": [
+      "/productimg/p38.jpg",
+      "/productimg/p38-side.jpg",
+      "/productimg/p38-top.jpg"
+    ],
+    "description": "Handcrafted leather bag from Kolhapur, Maharashtra, made using the same traditional leatherworking techniques as the famous Kolhapuri chappal. Vegetable-tanned cow leather is hand-cut, hand-stitched, and embossed with traditional floral and geometric patterns. Sturdy brass hardware and a spacious interior make it as practical as it is beautiful.",
+    "materials": [
+      "Vegetable-tanned Cow Leather",
+      "Brass Hardware"
+    ],
+    "origin": "Maharashtra",
+    "artistId": 39,
+    "dimensions": "30cm x 25cm x 10cm",
+    "weight": "0.55kg",
+    "tags": [
+      "Handmade",
+      "Authentic"
+    ],
+    "inStock": true,
+    "shipping_time": "5-8 days",
+    "reviews": [
+      {
+        "user": "Shruti",
+        "rating": 5,
+        "comment": "Excellent quality leather and the embossed pattern is gorgeous. Very spacious."
+      },
+      {
+        "user": "Amol",
+        "rating": 4,
+        "comment": "Great bag, the leather smells amazing and feels very durable."
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Nagaland Naga Wooden Bowl",
+    "category": "Woodcraft",
+    "price": 1200,
+    "currency": "INR",
+    "images": [
+      "/productimg/p39.jpg",
+      "/productimg/p39-side.jpg",
+      "/productimg/p39-top.jpg"
+    ],
+    "description": "Hand-carved wooden bowl from Nagaland, crafted from sustainably harvested local hardwood by Naga tribal artisans. The exterior features traditional Naga tribal motifs — mithan heads, hornbill feathers, and warrior symbols — carved in low relief, while the interior is sanded smooth and finished with natural beeswax for a food-safe surface.",
+    "materials": [
+      "Hardwood",
+      "Natural Beeswax Finish"
+    ],
+    "origin": "Nagaland",
+    "artistId": 48,
+    "dimensions": "Diameter: 22cm, Height: 9cm",
+    "weight": "0.5kg",
+    "tags": [
+      "Handmade",
+      "Authentic"
+    ],
+    "inStock": true,
+    "shipping_time": "5-8 days",
+    "reviews": [
+      {
+        "user": "Temjen",
+        "rating": 5,
+        "comment": "The tribal carvings on the outside are so detailed. A proud piece of Naga heritage."
+      },
+      {
+        "user": "Sonia",
+        "rating": 4,
+        "comment": "Beautiful bowl, the beeswax finish makes it look and smell wonderful."
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Meghalaya Jaintia Clay Lamp",
+    "category": "Pottery",
+    "price": 1100,
+    "currency": "INR",
+    "images": [
+      "/productimg/p40.jpg",
+      "/productimg/p40-side.jpg",
+      "/productimg/p40-top.jpg"
+    ],
+    "description": "Traditional hand-molded clay oil lamp from the Jaintia Hills of Meghalaya, crafted without a potter's wheel using the coiling technique. The lamp features incised tribal motifs representing the sun, rain, and harvest — symbols central to Jaintia cosmology. Used during the Behdienkhlam festival and family rituals, it carries the sacred energy of the highlands.",
+    "materials": [
+      "Local Clay",
+      "Natural Slip Glaze"
+    ],
+    "origin": "Meghalaya",
+    "artistId": 49,
+    "dimensions": "Height: 12cm, Diameter: 10cm",
+    "weight": "0.3kg",
+    "tags": [
+      "Handmade",
+      "Authentic"
+    ],
+    "inStock": true,
+    "shipping_time": "6-8 days",
+    "reviews": [
+      {
+        "user": "Ribha",
+        "rating": 5,
+        "comment": "Such a unique piece. The tribal symbols make it feel very sacred and special."
+      },
+      {
+        "user": "Abhijit",
+        "rating": 4,
+        "comment": "Beautiful lamp, creates a warm glow. Perfect for Diwali decor."
+      }
+    ]
   }
 ]

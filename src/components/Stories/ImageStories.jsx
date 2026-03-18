@@ -6,6 +6,23 @@ import storiesData from "../../data/imageStories.json";
 const ImageStories = () => {
   const [images, setImages] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [likedImages, setLikedImages] = useState({});
+  const [commentInput, setCommentInput] = useState("");
+  const [userComments, setUserComments] = useState({});
+
+  const handleLike = (e, imgId) => {
+    e.stopPropagation();
+    setLikedImages(prev => ({ ...prev, [imgId]: !prev[imgId] }));
+  };
+
+  const handleAddComment = (imgId) => {
+    if (!commentInput.trim()) return;
+    setUserComments(prev => ({
+      ...prev,
+      [imgId]: [...(prev[imgId] || []), commentInput]
+    }));
+    setCommentInput("");
+  };
 
   // Fisher-Yates shuffle algorithm to randomize array order
   const shuffleArray = (array) => {
@@ -20,7 +37,7 @@ const ImageStories = () => {
   useEffect(() => {
     // Filter out only image stories
     const filteredImages = storiesData.filter(item => item.media_type === "image");
-    
+
     // Shuffle the filtered images
     const randomizedImages = shuffleArray(filteredImages);
     setImages(randomizedImages);
@@ -60,11 +77,16 @@ const ImageStories = () => {
                   <p className="text-sm opacity-90 mt-1">Creator: User {img.id}</p>
                 </div>
                 <div className="flex gap-3 text-white">
-                  <span className="flex items-center gap-1 font-medium bg-black/30 px-2 py-1 rounded-lg backdrop-blur-sm">
-                    <Heart className="w-4 h-4" /> {img.likes_count}
+                  <span 
+                    className="flex items-center gap-1 font-medium bg-black/30 px-2 py-1 rounded-lg backdrop-blur-sm cursor-pointer z-10 hover:bg-black/50 transition-colors"
+                    onClick={(e) => handleLike(e, img.id)}
+                  >
+                    <Heart className={`w-4 h-4 ${likedImages[img.id] ? "fill-[#e67530] text-[#e67530]" : ""}`} /> 
+                    {img.likes_count + (likedImages[img.id] ? 1 : 0)}
                   </span>
                   <span className="flex items-center gap-1 font-medium bg-black/30 px-2 py-1 rounded-lg backdrop-blur-sm">
-                    <MessageCircle className="w-4 h-4" /> {img.comments_count}
+                    <MessageCircle className="w-4 h-4" /> 
+                    {img.comments_count + (userComments[img.id]?.length || 0)}
                   </span>
                 </div>
               </div>
@@ -89,7 +111,7 @@ const ImageStories = () => {
             >
               <X className="w-6 h-6" />
             </button>
-            
+
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -116,10 +138,10 @@ const ImageStories = () => {
                     <p className="text-xs text-gray-500">{selectedImage.location?.city || "India"}</p>
                   </div>
                 </div>
-                
+
                 <h2 className="text-xl font-bold text-[#ad4146] mb-2">{selectedImage.title}</h2>
                 <p className="text-gray-700 text-sm leading-relaxed mb-6">{selectedImage.description}</p>
-                
+
                 {selectedImage.tags && (
                   <div className="flex flex-wrap gap-2 mb-6">
                     {selectedImage.tags.map((tag) => (
@@ -129,16 +151,53 @@ const ImageStories = () => {
                     ))}
                   </div>
                 )}
-                
-                <div className="mt-auto pt-4 border-t flex justify-around">
-                  <button className="flex items-center gap-2 text-gray-600 hover:text-[#e67530] transition">
-                    <Heart className="w-6 h-6" />
-                    <span className="font-medium">{selectedImage.likes_count}</span>
-                  </button>
-                  <button className="flex items-center gap-2 text-gray-600 hover:text-[#e67530] transition">
-                    <MessageCircle className="w-6 h-6" />
-                    <span className="font-medium">{selectedImage.comments_count}</span>
-                  </button>
+
+                <div className="mt-auto pt-4 border-t flex flex-col gap-4">
+                  <div className="flex justify-around">
+                    <button 
+                      className={`flex items-center gap-2 transition ${likedImages[selectedImage.id] ? "text-[#e67530]" : "text-gray-600 hover:text-[#e67530]"}`}
+                      onClick={(e) => handleLike(e, selectedImage.id)}
+                    >
+                      <Heart className={`w-6 h-6 ${likedImages[selectedImage.id] ? "fill-[#e67530]" : ""}`} />
+                      <span className="font-medium">{selectedImage.likes_count + (likedImages[selectedImage.id] ? 1 : 0)}</span>
+                    </button>
+                    <button className="flex items-center gap-2 text-gray-600 hover:text-[#e67530] transition">
+                      <MessageCircle className="w-6 h-6" />
+                      <span className="font-medium">{selectedImage.comments_count + (userComments[selectedImage.id]?.length || 0)}</span>
+                    </button>
+                  </div>
+                  
+                  {/* Comments list if any */}
+                  {userComments[selectedImage.id]?.length > 0 && (
+                    <div className="flex flex-col gap-2 max-h-32 overflow-y-auto mt-2 pr-2">
+                      {userComments[selectedImage.id].map((c, i) => (
+                        <div key={i} className="bg-gray-50 p-2.5 rounded-lg text-sm text-gray-700 whitespace-pre-wrap flex items-start">
+                          <span className="font-semibold text-[#ad4146] mr-2">You:</span> {c}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Comment Input */}
+                  <div className="flex gap-2">
+                    <input 
+                      type="text" 
+                      placeholder="Add a comment..."
+                      className="flex-1 bg-gray-100 rounded-full px-4 py-2 text-sm text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#e67530]/50"
+                      value={commentInput}
+                      onChange={(e) => setCommentInput(e.target.value)}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter') handleAddComment(selectedImage.id);
+                      }}
+                    />
+                    <button 
+                      className="bg-[#e67530] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-[#c75a1f] transition disabled:opacity-50"
+                      onClick={() => handleAddComment(selectedImage.id)}
+                      disabled={!commentInput.trim()}
+                    >
+                      Post
+                    </button>
+                  </div>
                 </div>
               </div>
             </motion.div>
