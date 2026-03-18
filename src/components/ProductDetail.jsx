@@ -35,8 +35,17 @@ const ProductDetail = () => {
     );
 
   const handleBuyNow = () => {
-    navigate("/buynow", { state: { product } });
+
+  const productForCheckout = {
+    ...product,
+    image_url: product.images?.[0] || product.image_url || ""
   };
+
+  navigate("/buynow", {
+    state: { product: productForCheckout }
+  });
+
+};
 
   const avgRating =
     product.reviews.length > 0
@@ -71,7 +80,7 @@ const ProductDetail = () => {
                 <AnimatePresence mode="wait">
                   <motion.img
                     key={images[selectedImageIndex]}
-                    src={images[selectedImageIndex]}
+                    src={images[selectedImageIndex] || "/placeholder.png"}
                     alt={product.name}
                     className="w-full h-[350px] lg:h-[450px] object-cover rounded-xl"
                     initial={{ opacity: 0 }}

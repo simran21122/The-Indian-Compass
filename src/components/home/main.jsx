@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import { motion, useViewportScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useNavigate } from "react-router-dom";
 
@@ -19,7 +19,7 @@ function Main({ bgImage }) {
   };
 
   // Scroll position for floating title/subtitle
-  const { scrollY } = useViewportScroll();
+  const { scrollY } = useScroll();
   const [elementTop, setElementTop] = useState(0);
   const [elementHeight, setElementHeight] = useState(0);
 

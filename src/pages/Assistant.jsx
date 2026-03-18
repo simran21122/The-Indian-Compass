@@ -4,7 +4,7 @@ import ChatbotIcon from "../components/Assistant/ChatbotIcon";
 import ChatForm from "../components/Assistant/ChatForm";
 import ChatMessage from "../components/Assistant/ChatMessage";
 import chatBg from "../assets/image/bg_chat_bot.jpg";
-import { generateOpenRouterResponse } from "../utils/openRouterAPI";
+import { generateBotReply } from "../utils/openRouterAPIBot";
 
 export const Assistant = () => {
 
@@ -26,7 +26,7 @@ export const Assistant = () => {
 
         try {
 
-            const aiResponse = await generateOpenRouterResponse(userMessage);
+            const aiResponse = await generateBotReply(userMessage);
 
             updateHistory(aiResponse);
 

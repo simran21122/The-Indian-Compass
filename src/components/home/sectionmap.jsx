@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import { motion, useAnimation, AnimatePresence, useViewportScroll, useTransform } from "framer-motion";
+import { motion, useAnimation, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useNavigate } from "react-router-dom";
 import indiamap from "../../assets/image/indiaMap.png";
@@ -21,7 +21,7 @@ function SectionMaps({ bgImage }) {
   };
 
   // Scroll position for floating title/subtitle
-  const { scrollY } = useViewportScroll();
+  const { scrollY } = useScroll();
   const [elementTop, setElementTop] = useState(0);
   const [elementHeight, setElementHeight] = useState(0);
 

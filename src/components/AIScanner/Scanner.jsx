@@ -11,6 +11,7 @@ const Scanner = () => {
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
+  const [detectedItem, setDetectedItem] = useState("");
   const [facingMode, setFacingMode] = useState("environment"); // environment = back, user = front
 
   const videoRef = useRef(null);
@@ -83,6 +84,14 @@ const Scanner = () => {
         image,
       });
 
+      const nameMatch = llamaResponse.match(/\*\*Name:\*\*\s*(.*)/);
+
+      if (nameMatch) {
+        setDetectedItem(nameMatch[1]); // clean name like "Taj Mahal"
+      } else {
+        setDetectedItem(llamaResponse);
+      }
+
       setChat((prev) => [
         ...prev,
         { role: "assistant", content: llamaResponse },
@@ -112,12 +121,33 @@ const Scanner = () => {
       return "";
     }).join("\n");
 
-    const followupPrompt = `You are an expert Indian culture assistant. ONLY answer the user's latest follow-up question, do NOT repeat previous answers. Reply in 1-2 short, direct sentences.\n\n${contextMessages}\nUser: ${input}\n\nReply as a helpful cultural expert, keep it concise.`;
+    const followupPrompt = `
+    You are an expert in Indian culture and heritage.
+
+    The user previously scanned an image of a cultural artifact.
+
+    Context of scanned item:
+    ${detectedItem}
+
+    Conversation:
+    ${contextMessages}
+
+    Instructions:
+    - Answer the latest question in a clear and engaging way
+    - Provide detailed explanation in 2–3 well-structured paragraphs
+    - Include historical background, cultural meaning, and interesting facts if relevant
+    - Do NOT repeat previous responses
+    - Keep it informative but natural (not robotic)
+
+    User question:
+    ${input}
+    `;
 
     try {
       const llamaReply = await generateOpenRouterResponse({
-        prompt: followupPrompt,
-      });
+      prompt: followupPrompt,
+      hasImageContext: true
+    });
 
       setChat((prev) => [
         ...prev,

@@ -1,6 +1,6 @@
 // ./src/components/Discovery.jsx
 import React, { useRef, useEffect, useState } from "react";
-import { motion, useViewportScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useNavigate } from "react-router-dom";
 import discoverData from "../../data/home_discover.json";
@@ -21,7 +21,7 @@ function DiscoverSection({ bgImage }) {
   };
 
   // Scroll animation
-  const { scrollY } = useViewportScroll();
+  const { scrollY } = useScroll();
   const [elementTop, setElementTop] = useState(0);
   const [elementHeight, setElementHeight] = useState(0);
 
