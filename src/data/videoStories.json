@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "Varanasi Ghats at Sunrise",
+    "description": "Experience the spiritual awakening at the Ghats of Varanasi as the sun rises over the river Ganges.",
+    "media_type": "video",
+    "media_url": "/storypagevid/v1.mp4",
+    "location": {
+      "state": "Uttar Pradesh",
+      "city": "Varanasi"
+    },
+    "category": "spiritual",
+    "tags": [
+      "varanasi",
+      "ganges",
+      "sunrise"
+    ],
+    "likes_count": 450,
+    "comments_count": 120,
+    "views_count": 3200,
+    "created_date": "2025-10-10T06:00:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Taj Mahal Walking Tour",
+    "description": "A close-up look at the intricate marble inlays and massive dome of the Taj Mahal in Agra.",
+    "media_type": "video",
+    "media_url": "/storypagevid/v2.mp4",
+    "location": {
+      "state": "Uttar Pradesh",
+      "city": "Agra"
+    },
+    "category": "heritage",
+    "tags": [
+      "tajmahal",
+      "agra",
+      "history"
+    ],
+    "likes_count": 890,
+    "comments_count": 210,
+    "views_count": 5500,
+    "created_date": "2025-10-12T09:30:00Z"
+  },
+  {
+    "id": 3,
+    "title": "Kerala Backwaters Boat Ride",
+    "description": "Relax along the serene palm-fringed backwaters of Kerala on a traditional houseboat.",
+    "media_type": "video",
+    "media_url": "/storypagevid/v3.mp4",
+    "location": {
+      "state": "Kerala",
+      "city": "Alleppey"
+    },
+    "category": "nature",
+    "tags": [
+      "kerala",
+      "backwaters",
+      "nature"
+    ],
+    "likes_count": 670,
+    "comments_count": 90,
+    "views_count": 4100,
+    "created_date": "2025-10-15T16:00:00Z"
+  },
+  {
+    "id": 4,
+    "title": "Kathakali Dance Performance",
+    "description": "Watch the expressive and vibrant Kathakali dance from Kerala.",
+    "media_type": "video",
+    "media_url": "/storypagevid/v4.mp4",
+    "location": {
+      "state": "Kerala",
+      "city": "Kochi"
+    },
+    "category": "art & culture",
+    "tags": [
+      "kathakali",
+      "dance",
+      "culture"
+    ],
+    "likes_count": 520,
+    "comments_count": 105,
+    "views_count": 3800,
+    "created_date": "2025-10-18T19:30:00Z"
+  }
+]
