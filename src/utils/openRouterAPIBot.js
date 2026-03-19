@@ -30,7 +30,7 @@ function getSimilarityScore(query, text) {
   qWords.forEach(q => {
     tWords.forEach(t => {
       if (q === t) score += 3;
-      else if (t.includes(q) || q.includes(t)) score += 2;
+      else if (q.length > 3 && t.includes(q)) score += 1.5;
       else if (q.length > 4 && t.includes(q.slice(0, 4))) score += 1;
     });
   });
@@ -54,7 +54,9 @@ function retrieveKnowledge(query) {
     .sort((a, b) => b.score - a.score)
     .slice(0, 3);
 
-  if (bestMatches[0].score === 0) return null;
+  const THRESHOLD = 8; 
+
+  if (bestMatches[0].score < THRESHOLD) return null;
 
   return bestMatches.map(i => i.content).join("\n\n");
 }
@@ -69,28 +71,41 @@ export async function generateBotReply(userMessage) {
 
   const context = retrieveKnowledge(userMessage);
 
-  const finalPrompt = `
-You are an expert in Indian culture.
+  let finalPrompt = "";
 
-${
-  context
-    ? "Use the provided knowledge strictly."
-    : "No direct knowledge found. Still answer using general Indian cultural knowledge."
-}
+  if (context) {
+    // ✅ RAG MODE
+    finalPrompt = `
+  You are an expert in Indian culture.
 
-Knowledge:
-${context || "No direct match found in database"}
+  Use ONLY the knowledge provided below.
 
-Instructions:
-- Be natural and clear
-- Keep response structured
-- Do not reject the question
-- If unsure, still give a helpful answer
-- Use headings if possible
+  Knowledge:
+  ${context}
 
-User Question:
-${userMessage}
-`;
+  Instructions:
+  - Answer ONLY from the knowledge
+  - Do not add outside information
+  - Be clear and structured
+
+  User Question:
+  ${userMessage}
+  `;
+  } else {
+    // ✅ AI MODE (no RAG)
+    finalPrompt = `
+  You are an expert in Indian culture.
+
+  Answer the question using your general knowledge.
+
+  Instructions:
+  - Be clear and structured
+  - Give helpful and accurate info
+
+  User Question:
+  ${userMessage}
+  `;
+  }
 
   try {
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
