@@ -44,6 +44,7 @@ function App() {
            {/* NEW ROUTE */}
           <Route path="/myorders" element={<MyOrders />} />
           
+          
           {/* Content details */}
           <Route path="/content/:id" element={<ContentDetails />} />
         </Routes>

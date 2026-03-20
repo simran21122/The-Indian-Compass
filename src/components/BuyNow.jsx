@@ -27,6 +27,7 @@ function BuyNow() {
   const [step, setStep] = useState(1);
   const [orderSuccess, setOrderSuccess] = useState(false);
   const [showOrderDetails, setShowOrderDetails] = useState(false);
+  const [showScanner, setShowScanner] = useState(false);
 
   const [qty, setQty] = useState(1);
   const [paymentMethod, setPaymentMethod] = useState("");
@@ -114,114 +115,188 @@ function BuyNow() {
   if (orderSuccess) {
 
     return (
+<div className="min-h-screen flex items-center justify-center bg-[#e8d5b5] relative">
 
-      <div className="min-h-screen flex items-center justify-center bg-green-100">
+  {/* soft overlay */}
+  <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-transparent"></div>
 
-        <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="bg-white p-10 rounded-2xl shadow-xl text-center max-w-md text-black"
-        >
+  <motion.div
+    initial={{ scale: 0.85, opacity: 0 }}
+    animate={{ scale: 1, opacity: 1 }}
+    transition={{ duration: 0.4 }}
+    className="relative bg-white/95 backdrop-blur-md p-10 rounded-3xl shadow-2xl text-center max-w-md w-full text-black"
+  >
 
-          <div className="text-7xl mb-4">🎉</div>
+    {/* 🎉 ICON */}
+    <div className="text-6xl mb-3 animate-bounce">🎉</div>
 
-          <h2 className="text-3xl font-bold text-green-600 mb-2">
-            Order Placed Successfully!
-          </h2>
+    {/* TITLE */}
+    <h2 className="text-3xl font-bold text-green-600 mb-2">
+      Order Confirmed!
+    </h2>
 
-          <p className="mb-6">
-            Your order will arrive by <b>{formatDate(deliveryDate)}</b>
+    <p className="text-gray-600 mb-6">
+      Arriving by <b>{formatDate(deliveryDate)}</b>
+    </p>
+
+    {/* 🔥 PRODUCT CARD (IMPROVED) */}
+    <div className="bg-gradient-to-r from-orange-50 to-orange-100 p-5 rounded-2xl shadow-inner text-left mb-6 border border-orange-200">
+
+      <div className="flex items-center gap-4">
+
+        <img
+          src={product.image_url || "/placeholder.png"}
+          className="w-16 h-16 rounded-lg object-cover shadow"
+        />
+
+        <div>
+          <p className="font-semibold text-gray-800">
+            {product.name}
           </p>
 
-          <div className="border rounded-lg p-4 mb-6 text-left">
-
-            <p className="font-semibold">Product: {product.name}</p>
-            <p>Quantity: {qty}</p>
-            <p className="font-bold">Total Paid: ₹ {total}</p>
-
-          </div>
-
-          <div className="flex gap-3 justify-center">
-
-            <button
-              onClick={() => setShowOrderDetails(!showOrderDetails)}
-              className="bg-blue-600 text-white px-5 py-3 rounded-lg"
-            >
-              Order Details
-            </button>
-
-            <button
-              onClick={() => navigate("/marketplace")}
-              className="bg-orange-600 text-white px-5 py-3 rounded-lg"
-            >
-              Continue Shopping
-            </button>
-
-            <button
-              onClick={() => navigate("/myorders")}
-              className="bg-gray-700 text-white px-5 py-3 rounded-lg"
-            >
-              View My Orders
-            </button>
-
-          </div>
-
-          {showOrderDetails && (
-
-            <div className="border rounded-lg p-6 mt-6 bg-white">
-
-              <h3 className="font-bold mb-6 text-lg text-center">
-                Delivery Timeline
-              </h3>
-
-              <div className="flex justify-between text-sm mb-2">
-
-                <span>Order Placed</span>
-                <span>Shipped</span>
-                <span>Out for Delivery</span>
-                <span>Delivered</span>
-
-              </div>
-
-              <div className="flex items-center">
-
-                <div className="w-4 h-4 bg-green-600 rounded-full"></div>
-                <div className="flex-1 h-1 bg-green-600"></div>
-
-                <div className="w-4 h-4 bg-green-600 rounded-full"></div>
-                <div className="flex-1 h-1 bg-yellow-500"></div>
-
-                <div className="w-4 h-4 bg-yellow-500 rounded-full"></div>
-                <div className="flex-1 h-1 bg-gray-300"></div>
-
-                <div className="w-4 h-4 bg-gray-400 rounded-full"></div>
-
-              </div>
-
-              <div className="flex justify-between text-xs mt-2 text-gray-600">
-
-                <span>{formatDate(orderDate)}</span>
-                <span>{formatDate(shippedDate)}</span>
-                <span>{formatDate(outForDeliveryDate)}</span>
-                <span>{formatDate(deliveryDate)}</span>
-
-              </div>
-
-            </div>
-
-          )}
-
-        </motion.div>
+          <p className="text-sm text-gray-500">
+            Qty: {qty}
+          </p>
+        </div>
 
       </div>
+
+      {/* PRICE HIGHLIGHT */}
+      <div className="mt-4 flex justify-between items-center">
+
+        <span className="text-gray-600">Total Paid</span>
+
+        <span className="text-xl font-bold text-green-600">
+          ₹ {total}
+        </span>
+
+      </div>
+
+    </div>
+
+    {/* 🔘 BUTTONS */}
+    <div className="flex flex-col gap-3">
+
+      <button
+        onClick={() => setShowOrderDetails(!showOrderDetails)}
+        className="bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-xl shadow"
+      >
+        View Order Details
+      </button>
+
+      <button
+        onClick={() => navigate("/marketplace")}
+        className="bg-orange-600 hover:bg-orange-700 text-white py-3 rounded-xl shadow"
+      >
+        Continue Shopping
+      </button>
+
+      <button
+        onClick={() => navigate("/myorders")}
+        className="bg-gray-800 hover:bg-gray-900 text-white py-3 rounded-xl shadow"
+      >
+        My Orders
+      </button>
+
+    </div>
+
+    {/* 🔽 DETAILS EXPAND */}
+    {showOrderDetails && (
+
+      <div className="mt-6 p-5 border rounded-xl bg-gray-50">
+
+  <h3 className="font-bold mb-6 text-center">
+    Delivery Timeline
+  </h3>
+
+  {/* LABELS */}
+  <div className="flex justify-between text-xs text-gray-600 mb-2">
+    <span>Placed</span>
+    <span>Shipped</span>
+    <span>Out</span>
+    <span>Delivered</span>
+  </div>
+
+  {/* PROGRESS BAR */}
+  <div className="flex items-center">
+
+    {/* STEP 1 */}
+    <div className="w-4 h-4 bg-green-600 rounded-full"></div>
+    <div className="flex-1 h-1 bg-green-600"></div>
+
+    {/* STEP 2 */}
+    <div className="w-4 h-4 bg-green-600 rounded-full"></div>
+    <div className="flex-1 h-1 bg-yellow-500"></div>
+
+    {/* STEP 3 */}
+    <div className="w-4 h-4 bg-yellow-500 rounded-full"></div>
+    <div className="flex-1 h-1 bg-gray-300"></div>
+
+    {/* STEP 4 */}
+    <div className="w-4 h-4 bg-gray-400 rounded-full"></div>
+
+  </div>
+
+  {/* DATES */}
+  <div className="flex justify-between text-xs mt-3 text-gray-500">
+    <span>{formatDate(orderDate)}</span>
+    <span>{formatDate(shippedDate)}</span>
+    <span>{formatDate(outForDeliveryDate)}</span>
+    <span>{formatDate(deliveryDate)}</span>
+  </div>
+
+</div>
+
+    )}
+
+  </motion.div>
+
+</div>
+    
 
     );
   }
 
   /* CHECKOUT PAGE */
+  if (showScanner) {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-[#e8d5b5]">
+
+      <div className="bg-white p-8 rounded-2xl shadow-xl text-center">
+
+        <h2 className="text-2xl font-bold mb-4">
+          Scan & Pay ({paymentMethod})
+        </h2>
+
+        <img
+          src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=mahesh@upi&pn=Mahesh&am=${total}`}
+          alt="QR Code"
+          className="mx-auto mb-4"
+        />
+
+        <p className="text-gray-600 mb-4">
+          Scan this QR using {paymentMethod}
+        </p>
+
+        <button
+          onClick={() => {
+            setShowScanner(false);
+            setStep(3);
+          }}
+          className="bg-green-600 text-white px-6 py-3 rounded-lg"
+        >
+          I Have Paid
+        </button>
+
+      </div>
+
+    </div>
+  );
+}
 
   return (
+
+    
 
     <div
       className="min-h-screen bg-cover bg-center flex items-center justify-center p-10"
@@ -277,11 +352,24 @@ function BuyNow() {
                 </button>
 
                 <button
-                  onClick={() => setStep(2)}
-                  className="w-1/2 bg-orange-700 text-white py-3 rounded"
-                >
-                  Continue
-                </button>
+  onClick={() => {
+    if (
+      !customer.name ||
+      !customer.phone ||
+      !customer.address ||
+      !customer.city ||
+      !customer.state ||
+      !customer.pin
+    ) {
+      alert("Please fill all address details");
+      return;
+    }
+    setStep(2);
+  }}
+  className="w-1/2 bg-orange-700 text-white py-3 rounded"
+>
+  Continue
+</button>
 
               </div>
 
@@ -333,7 +421,13 @@ function BuyNow() {
                 </button>
 
                 <button
-                  onClick={() => setStep(3)}
+                  onClick={() => {
+  if (paymentMethod === "Cash on Delivery") {
+    setStep(3);
+  } else {
+    setShowScanner(true);
+  }
+}}
                   className="w-1/2 bg-orange-700 text-white py-3 rounded"
                 >
                   Review
