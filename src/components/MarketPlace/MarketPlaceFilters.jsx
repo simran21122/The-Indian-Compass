@@ -1,5 +1,7 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Search, ShoppingCart, Heart } from "lucide-react";
+import { useStore } from "../../context/Context"; // ✅ added
 
 function MarketPlaceFilters({
   states,
@@ -10,13 +12,20 @@ function MarketPlaceFilters({
   setSelectedPriceRange,
   searchQuery,
   setSearchQuery,
-  cart,
-  wishlist,
+  cart: _cart,           // ✅ ignored
+  wishlist: _wishlist,   // ✅ ignored
 }) {
+
+  const navigate = useNavigate();
+
+  // ✅ use global state
+  const { cart, wishlist } = useStore();
+
   return (
-    <div className="bg-white rounded-2xl p-6 shadow-lg mb-8">
+    <div className="bg-white text-black rounded-2xl p-6 shadow-lg mb-8">
       <div className="grid gap-4 md:grid-cols-4">
-        {/* Search Bar */}
+
+        {/* SEARCH */}
         <div className="relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
           <input
@@ -24,30 +33,26 @@ function MarketPlaceFilters({
             placeholder="Search artworks..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="pl-10 pr-4 py-2.5 w-full border border-gray-300 rounded-lg 
-                       text-gray-700 placeholder-gray-400
-                       focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+            className="pl-10 pr-4 py-2.5 w-full border rounded-lg text-black"
           />
         </div>
 
-        {/* State Filter */}
+        {/* STATE */}
         <select
           value={selectedState}
           onChange={(e) => setSelectedState(e.target.value)}
-          className="px-4 py-2.5 border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+          className="px-4 py-2.5 border rounded-lg text-black"
         >
           {states.map((state) => (
-            <option key={state} value={state}>
-              {state}
-            </option>
+            <option key={state}>{state}</option>
           ))}
         </select>
 
-        {/* Price Filter */}
+        {/* PRICE */}
         <select
           value={priceRanges.indexOf(selectedPriceRange)}
           onChange={(e) => setSelectedPriceRange(priceRanges[e.target.value])}
-          className="px-4 py-2.5 border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+          className="px-4 py-2.5 border rounded-lg text-black"
         >
           {priceRanges.map((r, i) => (
             <option key={i} value={i}>
@@ -56,21 +61,27 @@ function MarketPlaceFilters({
           ))}
         </select>
 
-        {/* Cart & Wishlist Info */}
-        <div className="flex items-center justify-between md:justify-end space-x-6">
-          <div className="flex items-center space-x-2">
-            <ShoppingCart className="w-5 h-5 text-gray-600" />
-            <span className="text-sm font-medium text-gray-700">
-              {cart.size} items
-            </span>
-          </div>
-          <div className="flex items-center space-x-2">
-            <Heart className="w-5 h-5 text-red-500" />
-            <span className="text-sm font-medium text-gray-700">
-              {wishlist.size} saved
-            </span>
-          </div>
+        {/* BUTTONS */}
+        <div className="flex items-center justify-end gap-4">
+
+          <button
+            onClick={() => navigate("/cart")}
+            className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg"
+          >
+            <ShoppingCart className="w-5 h-5" />
+            <span>{cart.length} items</span> {/* ✅ fixed */}
+          </button>
+
+          <button
+            onClick={() => navigate("/wishlist")}
+            className="flex items-center gap-2 px-4 py-2 bg-red-500 text-white rounded-lg"
+          >
+            <Heart className="w-5 h-5" />
+            <span>{wishlist.length} saved</span> {/* ✅ fixed */}
+          </button>
+
         </div>
+
       </div>
     </div>
   );
