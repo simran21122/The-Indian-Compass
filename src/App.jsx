@@ -30,7 +30,7 @@ import Wishlist from "./pages/Wishlist.jsx";
 
 function App() {
   return (
-    <StoreProvider> {/* ✅ IMPORTANT FIX */}
+    <StoreProvider>
       <Router>
         <main className="font-body text-white relative overflow-hidden">
 
@@ -54,14 +54,19 @@ function App() {
             <Route path="/product/:id" element={<ProductDetail />} />
             <Route path="/buynow" element={<BuyNow />} />
 
-           {/* NEW ROUTE */}
-          <Route path="/myorders" element={<MyOrders />} />
-          
-          {/* Content details */}
-          <Route path="/content/:id" element={<ContentDetails />} />
-        </Routes>
-      </main>
-    </Router>
+            {/* NEW ROUTES */}
+            <Route path="/myorders" element={<MyOrders />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/wishlist" element={<Wishlist />} />
+
+            {/* CONTENT */}
+            <Route path="/content/:id" element={<ContentDetails />} />
+
+          </Routes>
+
+        </main>
+      </Router>
+    </StoreProvider>
   );
 }
 
