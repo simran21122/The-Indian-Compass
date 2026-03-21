@@ -34,7 +34,7 @@
     "title": "Hornbill Festival",
     "image_url": "/Discoverimg/d3.jpg",
     "description": "Festival showcasing Naga heritage with dance, food, and craft.",
-    "detailed_description": "The Hornbill Festival, held every year in Kisama Heritage Village near Kohima, Nagaland, is a grand celebration of the vibrant culture and traditions of the Naga tribes. Known as the “Festival of Festivals,” it is organized by the Government of Nagaland every December, usually from 1st to 10th December, to showcase the rich heritage of the state and promote cultural tourism. The festival brings together all 16 major tribes of Nagaland, offering visitors a spectacular display of traditional dances, folk songs, indigenous games, wrestling matches, archery competitions, and fashion shows, along with a taste of authentic Naga cuisine such as smoked meats and bamboo shoot delicacies. Handicraft and handloom stalls are set up to promote local artisans, while rock concerts, motor rallies, and night carnivals add a modern touch to the festivities. Named after the hornbill bird, which holds deep significance in Naga folklore and symbolizes bravery and respect for nature, this festival attracts tourists from across India and abroad, making it a major cultural and tourism event in Northeast India.",
+    "detailed_description": "The Hornbill Festival, held every year in Kisama Heritage Village near Kohima, Nagaland, is a grand celebration of the vibrant culture and traditions of the Naga tribes. Known as the Festival of Festivals, it is organized by the Government of Nagaland every December, usually from 1st to 10th December, to showcase the rich heritage of the state and promote cultural tourism. The festival brings together all 16 major tribes of Nagaland, offering visitors a spectacular display of traditional dances, folk songs, indigenous games, wrestling matches, archery competitions, and fashion shows, along with a taste of authentic Naga cuisine such as smoked meats and bamboo shoot delicacies. Handicraft and handloom stalls are set up to promote local artisans, while rock concerts, motor rallies, and night carnivals add a modern touch to the festivities. Named after the hornbill bird, which holds deep significance in Naga folklore and symbolizes bravery and respect for nature, this festival attracts tourists from across India and abroad, making it a major cultural and tourism event in Northeast India.",
     "significance": "Showcase of Naga culture",
     "tags": ["naga", "culture", "festival"],
     "additional_images": [
@@ -49,7 +49,7 @@
     "title": "Warli Tribal Art",
     "image_url": "/Discoverimg/d4.jpg",
     "description": "Folk paintings using geometric patterns to depict daily life.",
-    "detailed_description": "Warli Art is a centuries-old tribal art form from Maharashtra, primarily practiced by the Warli tribe residing in the Sahyadri hills. Known for its simple yet expressive style, this art form uses basic geometric shapes like circles (representing the sun and moon), triangles (mountains and trees), and squares (sacred enclosures) to narrate stories of daily life, farming activities, hunting, festivals, dances, and rituals. Traditionally, Warli paintings were created on mud walls of huts using white rice paste mixed with water and gum, applied with a bamboo stick used as a brush. These paintings often revolve around the tarpa dance, where men and women dance in a circle around a central motif symbolizing the mother goddess Palaghata, representing fertility and prosperity. Warli art reflects the tribe’s close relationship with nature and community life, celebrating harmony and the cycle of seasons. Today, this art form has moved beyond the walls of tribal homes to canvas, fabric, and other mediums, gaining national and international recognition as a symbol of India’s rich indigenous creativity and cultural heritage.",
+    "detailed_description": "Warli Art is a centuries-old tribal art form from Maharashtra, primarily practiced by the Warli tribe residing in the Sahyadri hills. Known for its simple yet expressive style, this art form uses basic geometric shapes like circles (representing the sun and moon), triangles (mountains and trees), and squares (sacred enclosures) to narrate stories of daily life, farming activities, hunting, festivals, dances, and rituals. Traditionally, Warli paintings were created on mud walls of huts using white rice paste mixed with water and gum, applied with a bamboo stick used as a brush. These paintings often revolve around the tarpa dance, where men and women dance in a circle around a central motif symbolizing the mother goddess Palaghata, representing fertility and prosperity. Warli art reflects the tribe's close relationship with nature and community life, celebrating harmony and the cycle of seasons. Today, this art form has moved beyond the walls of tribal homes to canvas, fabric, and other mediums, gaining national and international recognition as a symbol of India's rich indigenous creativity and cultural heritage.",
     "significance": "Indigenous tribal expression",
     "tags": ["folkart", "tribal", "painting"],
     "additional_images": [
@@ -79,7 +79,7 @@
     "title": "Pattachitra Painting",
     "image_url": "/Discoverimg/d6.jpg",
     "description": "Cloth-based scroll painting from Odisha with mythological themes.",
-    "detailed_description": "Pattachitra is a traditional scroll painting art form that originated over 1,000 years ago in Odisha and is also practiced in parts of West Bengal. The name comes from the Sanskrit words ‘patta’ (cloth) and ‘chitra’ (picture), meaning “picture on cloth.” Pattachitra is characterized by its intricate detailing, bold natural colors, and ornate floral borders, with themes largely inspired by mythological stories, especially those connected to Lord Jagannath, Lord Krishna, and episodes from the Ramayana and Mahabharata. The paintings are created on a specially prepared cloth coated with a mixture of chalk and gum to make the surface smooth. Traditional artisans, known as chitrakaras, use natural colors derived from minerals, stones, and organic sources, ensuring a lasting vibrancy. Apart from scrolls, Pattachitra art is also seen on palm leaves, wooden boxes, masks, and even temple walls. Passed down through generations, this art form not only preserves Odisha’s rich cultural and religious heritage but has also gained international recognition as a symbol of India’s timeless folk traditions.",
+    "detailed_description": "Pattachitra is a traditional scroll painting art form that originated over 1,000 years ago in Odisha and is also practiced in parts of West Bengal. The name comes from the Sanskrit words 'patta' (cloth) and 'chitra' (picture), meaning picture on cloth. Pattachitra is characterized by its intricate detailing, bold natural colors, and ornate floral borders, with themes largely inspired by mythological stories, especially those connected to Lord Jagannath, Lord Krishna, and episodes from the Ramayana and Mahabharata. The paintings are created on a specially prepared cloth coated with a mixture of chalk and gum to make the surface smooth. Traditional artisans, known as chitrakaras, use natural colors derived from minerals, stones, and organic sources, ensuring a lasting vibrancy. Apart from scrolls, Pattachitra art is also seen on palm leaves, wooden boxes, masks, and even temple walls. Passed down through generations, this art form not only preserves Odisha's rich cultural and religious heritage but has also gained international recognition as a symbol of India's timeless folk traditions.",
     "significance": "Ancient art tradition",
     "tags": ["scroll", "painting", "mythology"],
     "additional_images": [
@@ -88,5 +88,233 @@
     ],
     "youtube_link": "https://www.youtube.com/watch?v=cIVQmCHNE5A",
     "magazine_link": "https://magazines.odisha.gov.in/orissareview/nov2005/engpdf/Pattachitra_An_Indigenous_Technique.pdf"
+  },
+  {
+    "id": 7,
+    "title": "Appam with Stew",
+    "image_url": "/Discoverimg/d7.jpg",
+    "description": "Fermented rice pancake paired with coconut-based stew from Kerala.",
+    "detailed_description": "Appam with Stew is one of Kerala's most beloved traditional breakfast dishes, beloved for its soft, lacy texture and deeply comforting flavors. Appam is a bowl-shaped rice pancake made from a batter of fermented raw rice and coconut milk, giving it a distinctive slightly sour taste and an airy, crisp edge with a soft, spongy center. It is traditionally cooked in a special round iron pan called an 'appachatti' or 'appa karal,' which helps achieve its signature shape. The accompaniment, known as Ishtew or Kerala Stew, is a mildly spiced, creamy curry made with fresh coconut milk and vegetables like potatoes, carrots, and beans — sometimes enriched with chicken or mutton. The stew is subtly flavored with green chilies, ginger, cinnamon, cloves, and cardamom, with a final tempering of curry leaves and shallots in coconut oil. This combination is not only a staple in Christian households of Kerala during festivals and special occasions but is also enjoyed daily across the state. It beautifully reflects Kerala's coastal culinary identity — light, wholesome, and rooted in the abundant use of coconut.",
+    "significance": "Staple breakfast dish",
+    "tags": ["cuisine", "kerala", "traditional"],
+    "additional_images": [
+      "/Discoverimg/d7-close.jpg",
+      "/Discoverimg/d7-stew.jpg"
+    ],
+    "youtube_link": "https://www.youtube.com/results?search_query=Appam+with+Stew+Kerala+traditional",
+    "magazine_link": "https://en.wikipedia.org/wiki/Appam"
+  },
+  {
+    "id": 8,
+    "title": "Sanchi Stupa",
+    "image_url": "/Discoverimg/d8.jpg",
+    "description": "A Buddhist complex famous for its stupas and carvings.",
+    "detailed_description": "The Sanchi Stupa, located on a hilltop in Sanchi, Madhya Pradesh, is one of the oldest stone structures in India and the most important Buddhist monument in the country. Originally commissioned by Emperor Ashoka in the 3rd century BCE, the Great Stupa (Stupa No. 1) is a massive hemispherical dome built over relics of the Buddha, symbolizing the universe and the attainment of nirvana. Surrounding the main stupa are four elaborately carved gateways called toranas, each representing the four cardinal directions. These gateways are adorned with exquisitely detailed carvings depicting scenes from the Jataka tales, the life of the Buddha, and the Emperor Ashoka's patronage of Buddhism. The stupa complex also includes smaller stupas, pillars, temples, and monasteries that evolved over centuries under the Maurya, Shunga, and Satavahana dynasties. The toranas are considered masterpieces of early Indian art, notable for their narrative storytelling through stone. Sanchi was declared a UNESCO World Heritage Site in 1989, recognizing its outstanding universal value as a testimony to the flourishing of Buddhist culture and architecture in ancient India.",
+    "significance": "Buddhist pilgrimage site",
+    "tags": ["buddhism", "stonework", "unesco"],
+    "historical_period": "Maurya Dynasty",
+    "additional_images": [
+      "/Discoverimg/d8-torana.jpg",
+      "/Discoverimg/d8-relief.jpg"
+    ],
+    "youtube_link": "https://www.youtube.com/results?search_query=Sanchi+Stupa+Buddhist+heritage+India",
+    "magazine_link": "https://whc.unesco.org/en/list/524/"
+  },
+  {
+    "id": 9,
+    "title": "Litti Chokha",
+    "image_url": "/Discoverimg/d9.jpg",
+    "description": "Bihar's rustic dish made with wheat dough, gram flour stuffing, and roasted on coal.",
+    "detailed_description": "Litti Chokha is the quintessential soul food of Bihar and Jharkhand, deeply rooted in the region's agrarian culture and rustic heritage. Litti refers to round wheat flour balls stuffed with a spiced mixture of sattu (roasted gram flour), mustard oil, ajwain, kalonji, ginger, garlic, and fresh herbs. These stuffed dough balls are traditionally roasted over coal fire or dried cow dung cakes until they develop a charred, smoky exterior while remaining soft inside — a cooking technique that imparts a uniquely earthy flavor. Chokha, the essential accompaniment, is a rustic mash made from fire-roasted brinjal (baingan), tomatoes, and potatoes, seasoned with raw mustard oil, garlic, green chilies, and fresh coriander. The combination of smoky Litti with the tangy, aromatic Chokha creates a deeply satisfying and nutritious meal. Historically a dish of laborers and farmers, Litti Chokha has transcended its humble origins and is now celebrated across India as a symbol of Bihari cultural identity, often served at festivals, street food stalls, and upscale restaurants alike.",
+    "significance": "Traditional Bihari delicacy",
+    "tags": ["food", "rustic", "heritage"],
+    "additional_images": [
+      "/Discoverimg/d9-coal.jpg",
+      "/Discoverimg/d9-plate.jpg"
+    ],
+    "youtube_link": "https://www.youtube.com/results?search_query=Litti+Chokha+Bihar+traditional+food",
+    "magazine_link": "https://en.wikipedia.org/wiki/Litti_chokha"
+  },
+  {
+    "id": 10,
+    "title": "Kalbelia Dance",
+    "image_url": "/Discoverimg/d10.jpg",
+    "description": "Traditional dance of the Kalbelia community in Rajasthan, performed to snake-charming tunes.",
+    "detailed_description": "Kalbelia is a captivating folk dance performed by the Kalbelia community of Rajasthan, a nomadic tribe traditionally known as snake charmers. The dance is deeply intertwined with the community's identity and way of life — their movements mimic the sinuous, swaying motion of serpents, symbolizing the intimate relationship the Kalbelias have long shared with snakes. Dancers wear flowing black skirts (ghagra) embroidered with silver and red thread, jingling with small mirrors and beads, which swirl dramatically during spins. Accompanied by the haunting music of the been (a traditional wind instrument resembling a pungi), dholak, and khanjri, the performances are spontaneous and improvisational, often held during weddings, festivals, and fairs. The male musicians sing while the women dance, weaving together storytelling, acrobatics, and sensuality in one seamless performance. UNESCO inscribed Kalbelia songs and dances on the Representative List of Intangible Cultural Heritage of Humanity in 2010, recognizing their exceptional artistic and cultural significance as a living expression of Rajasthani heritage.",
+    "significance": "Recognized as UNESCO Intangible Cultural Heritage",
+    "tags": ["dance", "folk", "rajasthan"],
+    "additional_images": [
+      "/Discoverimg/d10-spin.jpg",
+      "/Discoverimg/d10-costume.jpg"
+    ],
+    "youtube_link": "https://www.youtube.com/results?search_query=Kalbelia+Dance+Rajasthan+folk",
+    "magazine_link": "https://ich.unesco.org/en/RL/kalbelia-folk-songs-and-dances-of-rajasthan-00340"
+  },
+  {
+    "id": 11,
+    "title": "Pakhala Bhata",
+    "image_url": "/Discoverimg/d11.jpg",
+    "description": "Fermented rice water dish popular in Odisha, served with fried sides.",
+    "detailed_description": "Pakhala Bhata is a humble yet beloved traditional dish from Odisha, cherished for centuries as a cooling and nourishing meal, especially during the scorching summer months. It is made by soaking cooked rice in water and allowing it to ferment overnight, resulting in a mildly sour, probiotic-rich preparation. The fermented rice is then served with its starchy water, accompanied by an array of simple but flavorful sides such as fried fish (macha bhaja), crispy fried vegetables like brinjal or potato, saga (leafy greens), badi chura (dried lentil fritters), and pickles. There are different varieties of Pakhala — Saja Pakhala (fresh, without fermentation), Basi Pakhala (overnight fermented), and Dahi Pakhala (with curd). Rich in natural probiotics, electrolytes, and vitamins, it is considered highly beneficial for gut health and body cooling. Pakhala Bhata is so deeply embedded in Odia culture that the state celebrates Pakhala Dibasa (Pakhala Day) on March 20 every year, a grassroots movement that has grown into a statewide festival celebrating Odia culinary identity.",
+    "significance": "Cooling summer food",
+    "tags": ["rice", "fermented", "odisha"],
+    "additional_images": [
+      "/Discoverimg/d11-bowl.jpg",
+      "/Discoverimg/d11-sides.jpg"
+    ],
+    "youtube_link": "https://www.youtube.com/results?search_query=Pakhala+Bhata+Odisha+traditional+food",
+    "magazine_link": "https://en.wikipedia.org/wiki/Pakhala"
+  },
+  {
+    "id": 12,
+    "title": "Chausath Yogini Temple",
+    "image_url": "/Discoverimg/d12.jpg",
+    "description": "Circular temple dedicated to the 64 Yoginis, located in Odisha.",
+    "detailed_description": "The Chausath Yogini Temple, located at Hirapur near Bhubaneswar in Odisha, is one of India's rarest and most mysterious architectural marvels. Built in the 9th century CE by the Bhaumakara queen Hiradevi, this small circular open-air temple is dedicated to the 64 Yoginis — powerful female deities associated with Tantric worship and cosmic energy. The temple is built from chlorite stone without a roof, open to the sky, symbolizing the Yoginis' dominion over the cosmos. Its circular hypaethral (roofless) design is unique in Indian temple architecture, with 64 niches along the inner wall, each housing a distinct Yogini figure carved in exquisite detail. A central shrine holds the idol of Kali with smaller deities surrounding it. The Yoginis depicted here are fierce, dancing, multi-armed forms — each representing a different aspect of divine feminine energy. This temple is one of only four Chausath Yogini temples in India and is considered a significant center of Shakta Tantrism. Archaeologists and historians regard it as an extraordinary window into early medieval Tantric traditions of Odisha.",
+    "significance": "Rare circular shrine",
+    "tags": ["temple", "yogini", "spirituality"],
+    "historical_period": "9th Century",
+    "additional_images": [
+      "/Discoverimg/d12-niches.jpg",
+      "/Discoverimg/d12-aerial.jpg"
+    ],
+    "youtube_link": "https://www.youtube.com/results?search_query=Chausath+Yogini+Temple+Hirapur+Odisha",
+    "magazine_link": "https://asi.nic.in/chausath-yogini-temple-hirapur-odisha/"
+  },
+  {
+    "id": 13,
+    "title": "Handloom Ikat Weaving",
+    "image_url": "/Discoverimg/d13.jpg",
+    "description": "Intricate tie-dye weaving style practiced in Telangana and Odisha.",
+    "detailed_description": "Ikat is one of the most technically demanding and visually spectacular textile traditions in India, practiced predominantly in Telangana (Pochampally and Nalgonda) and Odisha (Sambalpur and Sonepur). The word 'Ikat' is derived from the Malay-Indonesian term 'mengikat,' meaning to tie or bind. The defining characteristic of Ikat weaving is its resist-dyeing technique applied to the yarn before weaving, rather than to the finished fabric. The weaver carefully binds sections of yarn with thread to resist dye penetration, then dyes the yarn, unties the bindings, and re-ties for additional colors — a process repeated multiple times. When the dyed yarn is finally woven on the loom, the pre-planned pattern emerges, often with a characteristic soft blurriness at the edges that is considered the hallmark of authentic Ikat. Pochampally Ikat from Telangana is internationally recognized for its bold geometric patterns, while Odisha's Sambalpuri Ikat is known for its traditional motifs of fish, flowers, and conch shells. Both have received the GI (Geographical Indication) tag, and Pochampally was recognized by the United Nations as one of the world's top ten craft clusters.",
+    "significance": "Traditional textile craft",
+    "tags": ["textile", "ikat", "weaving"],
+    "additional_images": [
+      "/Discoverimg/d13-loom.jpg",
+      "/Discoverimg/d13-pattern.jpg"
+    ],
+    "youtube_link": "https://www.youtube.com/results?search_query=Ikat+Weaving+Pochampally+Sambalpuri+handloom",
+    "magazine_link": "https://en.wikipedia.org/wiki/Ikat"
+  },
+  {
+    "id": 14,
+    "title": "Yakshagana",
+    "image_url": "/Discoverimg/d14.jpg",
+    "description": "Dance-drama from Karnataka featuring music, costume, and storytelling.",
+    "detailed_description": "Yakshagana is a vibrant and theatrical folk art form originating from the coastal districts of Karnataka, particularly Dakshina Kannada, Udupi, Uttara Kannada, and Shimoga. Blending dance, music, dialogue, costume, and elaborate makeup into a single dramatic narrative, Yakshagana is typically performed through the night, beginning after dusk and concluding at dawn. Performances are staged on open grounds or in temple courtyards, drawing themes from Hindu epics like the Ramayana, Mahabharata, Bhagavata Purana, and stories of local deities. The performers wear towering, colorful headgear (kireethas), intricately embroidered costumes, and dramatic face makeup that distinguishes characters by their nature — heroic, demonic, or divine. The music is driven by the chande (a percussion drum), harmonium, and tala (cymbals), while the bhagavatha (lead singer/narrator) guides the story through song. Yakshagana's dialogues are often spontaneous, allowing performers great creative freedom within the traditional structure. The art form has two main traditional styles — Tenkutittu (southern style) and Badagutittu (northern style). Recognized as a major component of Karnataka's intangible cultural heritage, Yakshagana continues to thrive through dedicated organizations called melas that tour villages annually.",
+    "significance": "Theatrical storytelling tradition",
+    "tags": ["dance-drama", "folk", "costume"],
+    "additional_images": [
+      "/Discoverimg/d14-costume.jpg",
+      "/Discoverimg/d14-stage.jpg"
+    ],
+    "youtube_link": "https://www.youtube.com/results?search_query=Yakshagana+Karnataka+folk+dance+drama",
+    "magazine_link": "https://en.wikipedia.org/wiki/Yakshagana"
+  },
+  {
+    "id": 15,
+    "title": "Phagwah Festival",
+    "image_url": "/Discoverimg/d15.jpg",
+    "description": "Spring festival of colors celebrated in Bihar and Eastern UP.",
+    "detailed_description": "Phagwah, also known as Holi in its broader Indian context, is a vibrant spring festival celebrated with great fervor in Bihar, Jharkhand, and eastern Uttar Pradesh, typically falling on the full moon day of the Hindu month of Phalguna (February–March). The festival marks the triumph of good over evil, commemorating the story of Prahlada and Holika, and celebrates the arrival of spring and the blossoming of new life. Phagwah celebrations in Bihar are distinctive for their folk character — the festivities begin a week before the main day with Holika Dahan (the ceremonial bonfire) and the singing of traditional folk songs called Faag, Jogi, and Birha, often performed by groups moving from door to door. On the day of Phagwah, people drench each other in brightly colored powders (gulal) and water, exchange sweets like gujiya and thandai, and gather for communal celebrations. The rural celebrations of Phagwah are particularly lively, with bullock cart processions, folk music, and dancing. The festival dissolves social barriers and brings communities together in joyful celebration, embodying the spirit of unity and renewal that defines Bihar's folk culture.",
+    "significance": "Regional celebration of Holi",
+    "tags": ["colors", "spring", "folk"],
+    "additional_images": [
+      "/Discoverimg/d15-colors.jpg",
+      "/Discoverimg/d15-bonfire.jpg"
+    ],
+    "youtube_link": "https://www.youtube.com/results?search_query=Phagwah+Holi+Festival+Bihar+folk",
+    "magazine_link": "https://en.wikipedia.org/wiki/Holi"
+  },
+  {
+    "id": 16,
+    "title": "Dhokra Craft",
+    "image_url": "/Discoverimg/d16.jpg",
+    "description": "Non-ferrous metal casting using the lost-wax technique.",
+    "detailed_description": "Dhokra is one of the oldest known methods of non-ferrous metal casting, dating back approximately 4,000 years and believed to be one of the world's earliest known methods of metal casting. Practiced primarily by the Dhokra Damar tribes of Chhattisgarh, West Bengal, Odisha, and Jharkhand, this craft uses the ancient lost-wax (cire perdue) technique to create strikingly beautiful metal sculptures and figurines. The process begins with a clay core shaped into the desired form, which is then coated with beeswax and intricately sculpted. Channels for metal flow are added using wax rods, and the entire piece is encased in a thick outer layer of clay. When fired in a furnace, the wax melts and drains out (hence 'lost-wax'), and molten brass or bell metal is poured into the cavity. Once cooled, the clay mold is broken to reveal the finished metal object. Dhokra figures are characterized by their rustic, primitive charm — popular motifs include tribal women, horses, elephants, owls, and mythological figures. Each piece is entirely unique since the mold is destroyed during casting. Dhokra craft has received national and international acclaim and is displayed in galleries and museums worldwide as a testament to India's ancient metallurgical heritage.",
+    "significance": "Ancient metal casting craft",
+    "tags": ["metal", "craft", "tribal"],
+    "additional_images": [
+      "/Discoverimg/d16-process.jpg",
+      "/Discoverimg/d16-figurine.jpg"
+    ],
+    "youtube_link": "https://www.youtube.com/results?search_query=Dhokra+Craft+lost+wax+metal+casting+tribal",
+    "magazine_link": "https://en.wikipedia.org/wiki/Dhokra"
+  },
+  {
+    "id": 17,
+    "title": "Karaga Festival",
+    "image_url": "/Discoverimg/d17.jpg",
+    "description": "Ritualistic festival dedicated to Draupadi in Bangalore.",
+    "detailed_description": "The Karaga festival is one of the oldest and most spectacular ritualistic festivals of Bangalore, Karnataka, celebrated by the Thigala community in honor of Draupadi, the divine consort of the five Pandavas from the Mahabharata. Rooted in a tradition believed to be over 1,000 years old, the festival is centered around the Dharmaraja Temple in the Tigalarpet area of old Bangalore and takes place during the Chaitra month (March–April). The central ritual involves the Karaga priest — a male devotee who embodies the goddess Shakti — carrying an enormous flower-decorated pot (the Karaga) on his head without using his hands, while walking barefoot in a state of divine possession through the city's streets. Hundreds of sword-bearing warriors called Veerakumaras escort the priest in a nocturnal procession that winds through the old city lanes, symbolizing the goddess's victory over evil forces. The festival lasts nine days, with rituals of fasting, devotional singing, and worship culminating in this dramatic night procession. The Karaga is not just a religious event but a social institution — it dissolves caste barriers, brings the entire community together, and is recognized as a symbol of Bangalore's composite cultural heritage.",
+    "significance": "Ancient ritualistic tradition",
+    "tags": ["ritual", "karnataka", "devotion"],
+    "additional_images": [
+      "/Discoverimg/d17-procession.jpg",
+      "/Discoverimg/d17-priest.jpg"
+    ],
+    "youtube_link": "https://www.youtube.com/results?search_query=Karaga+Festival+Bangalore+Karnataka+ritual",
+    "magazine_link": "https://en.wikipedia.org/wiki/Karaga"
+  },
+  {
+    "id": 18,
+    "title": "Terracotta Temples of Bishnupur",
+    "image_url": "/Discoverimg/d18.jpg",
+    "description": "Cluster of temples in West Bengal famous for their terracotta carvings.",
+    "detailed_description": "The Terracotta Temples of Bishnupur, located in Bankura district of West Bengal, represent one of India's most unique and exquisite temple architectural traditions, built by the Malla kings between the 17th and 18th centuries. Constructed entirely from locally made terracotta bricks — due to the absence of stone in the region — these temples showcase a brilliant fusion of Bengali folk art and classical temple architecture. The temples are renowned for their elaborate terracotta panels that cover every surface, depicting scenes from the Ramayana, Mahabharata, Krishnalila (stories of Lord Krishna), and daily rural life, creating a visual encyclopedia of Malla-era Bengal. Notable temples include the Rasmancha (the oldest brick temple in Bengal, built in 1600 CE), Jor Bangla, Shyamrai Temple, and Madan Mohan Temple, each featuring distinct architectural styles including the Atchala, Jorbangla, Ratha, and Deul styles. The intricate detailing of these terracotta carvings — horses, elephants, battle scenes, courtly figures, and floral motifs — reflects the exceptional craftsmanship of local artisans known as kumors. Bishnupur is also famous for its Baluchari silk sarees, which depict similar mythological narratives in woven form, making the town a dual heritage destination of remarkable depth.",
+    "significance": "Unique terracotta temple architecture",
+    "tags": ["terracotta", "temple", "heritage"],
+    "historical_period": "Malla Dynasty",
+    "additional_images": [
+      "/Discoverimg/d18-carvings.jpg",
+      "/Discoverimg/d18-rasmancha.jpg"
+    ],
+    "youtube_link": "https://www.youtube.com/results?search_query=Bishnupur+Terracotta+Temples+West+Bengal+heritage",
+    "magazine_link": "https://en.wikipedia.org/wiki/Bishnupur_temples"
+  },
+  {
+    "id": 19,
+    "title": "Manipuri Raslila",
+    "image_url": "/Discoverimg/d19.jpg",
+    "description": "Classical dance from Manipur depicting Krishna's life.",
+    "detailed_description": "Manipuri Raslila is one of the eight classical dance forms of India, originating from the northeastern state of Manipur and steeped in the devotional traditions of Vaishnavism. The dance is centered around the Raas Leela — the divine circular dance of Lord Krishna with the Gopis (cowherd maidens), particularly his beloved Radha — and serves as a form of spiritual devotion rather than mere performance. Manipuri dance is characterized by its graceful, fluid, and lyrical movements, with circular footwork that barely touches the ground, reflecting a gentle and meditative quality distinct from other classical Indian dance styles. Dancers wear elaborate cylindrical skirts called potloi, adorned with mirror work and gold embroidery, along with intricate headgear, making the visual spectacle extraordinary. The dance is accompanied by the pung (Manipuri drum), pena (a stringed instrument), cymbals, and devotional songs from the Vaishnavite literary tradition. There are five types of Raas Leela dances — Maharaas, Vasantaraas, Kunjaraas, Nityaraas, and Divaraas — each performed on specific occasions according to the Vaishnava calendar. Manipuri Raslila was elevated to classical status largely through the efforts of Rabindranath Tagore, who introduced it to the broader Indian cultural scene after witnessing a performance in Sylhet in 1919.",
+    "significance": "Sacred dance tradition",
+    "tags": ["dance", "manipur", "classical"],
+    "additional_images": [
+      "/Discoverimg/d19-costume.jpg",
+      "/Discoverimg/d19-performance.jpg"
+    ],
+    "youtube_link": "https://www.youtube.com/results?search_query=Manipuri+Raslila+classical+dance+Manipur",
+    "magazine_link": "https://en.wikipedia.org/wiki/Manipuri_dance"
+  },
+  {
+    "id": 20,
+    "title": "Chapchar Kut",
+    "image_url": "/Discoverimg/d20.jpg",
+    "description": "Harvest festival of Mizoram with dance and music.",
+    "detailed_description": "Chapchar Kut is the most joyous and widely celebrated traditional festival of Mizoram, held every year in March to mark the arrival of spring and celebrate the completion of the most arduous part of the Jhum (slash-and-burn) cultivation cycle — the clearing of dense jungle in preparation for sowing. The festival has its roots deep in the agrarian traditions of the Mizo people, historically occurring after the community had completed the exhausting task of cutting down and burning the forest, before seeds were planted. Today, Chapchar Kut is a vibrant public celebration organized by the Government of Mizoram in Aizawl and across the state. The festival is marked by spectacular traditional dances performed by thousands of participants in colorful traditional Mizo attire — the most iconic being the Cheraw (bamboo dance), where dancers nimbly step between rapidly clapping bamboo poles. Other traditional dances include Khuallam, Chheihlam, and Sarlamkai. Dressed in their finest Mizo handwoven textiles, participants sing traditional songs, share local food and rice beer (zu), and celebrate communal unity. Chapchar Kut is also a platform to showcase Mizo handicrafts, indigenous games, and folk music, making it an important cultural preservation effort for one of India's most distinctive northeastern communities.",
+    "significance": "Celebration of spring",
+    "tags": ["festival", "mizoram", "dance"],
+    "additional_images": [
+      "/Discoverimg/d20-cheraw.jpg",
+      "/Discoverimg/d20-attire.jpg"
+    ],
+    "youtube_link": "https://www.youtube.com/results?search_query=Chapchar+Kut+Festival+Mizoram+Cheraw+dance",
+    "magazine_link": "https://en.wikipedia.org/wiki/Chapchar_Kut"
+  },
+  {
+    "id": 21,
+    "title": "Mysore Silk Saree",
+    "image_url": "/Discoverimg/d21.jpg",
+    "description": "Luxurious silk saree from Mysore, Karnataka, known for its gold zari work.",
+    "detailed_description": "The Mysore Silk Saree is one of India's most prestigious and beloved traditional textiles, produced in Mysore, Karnataka, under the patronage of the Mysore royal family since the early 20th century. Renowned for their extraordinary softness, rich lustrous sheen, and lightweight feel, Mysore silk sarees are woven from pure two-ply silk threads procured from the silk cocoons of Karnataka — the largest silk-producing state in India. The defining characteristic of Mysore silk is its use of pure gold zari (a thread made from real gold or silver wrapped around a silk core) for intricate border designs and pallu (the decorative end piece), which gleams brilliantly against the silk. The Karnataka Silk Industries Corporation (KSIC), established in 1912 by Krishnaraja Wadiyar IV, continues to be the primary producer of authentic Mysore silk, maintaining traditional weaving techniques on power and handlooms. Motifs typically include elephants (symbolic of Mysore's royal heritage), peacocks, lotus flowers, checks, and temple borders. Mysore silk sarees have received the GI (Geographical Indication) tag, ensuring that only sarees produced in Mysore using the traditional methods and real silk can bear this name. These sarees are considered heirloom pieces, often passed down through generations and worn at weddings, religious ceremonies, and royal functions.",
+    "significance": "Famous traditional textile craft",
+    "tags": ["textile", "silk", "heritage"],
+    "additional_images": [
+      "/Discoverimg/d21-zari.jpg",
+      "/Discoverimg/d21-weaving.jpg"
+    ],
+    "youtube_link": "https://www.youtube.com/results?search_query=Mysore+Silk+Saree+Karnataka+traditional+weaving",
+    "magazine_link": "https://en.wikipedia.org/wiki/Mysore_silk_saree"
   }
 ]
