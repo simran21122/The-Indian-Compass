@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Topbar from "../components/header";
 import ProfileHeader from "../components/Profile/ProfileHeader";
 import BadgeCarousel from "../components/Profile/BadgeCarousel";
@@ -7,7 +7,7 @@ import StoriesGrid from "../components/Profile/StoriesGrid";
 import SavedDiscoveries from "../components/Profile/SavedDiscoveries";
 import { auth } from "../firebaseConfig"; // 🔑 import auth
 import { onAuthStateChanged } from "firebase/auth";
-import { User as UserIcon, Award, Image, Bookmark } from "lucide-react";
+import { User as UserIcon, Award, Image, Bookmark, X, Upload } from "lucide-react";
 
 // ---- Tabs Implementation ----
 const Tabs = ({ value, onValueChange, children }) => {
@@ -83,6 +83,13 @@ function Profile() {
   const [activeTab, setActiveTab] = useState("overview");
   const [activePage, setActivePage] = useState("profile");
 
+  const [isAddingStory, setIsAddingStory] = useState(false);
+  const [newStoryFile, setNewStoryFile] = useState(null);
+  const [newStoryCaption, setNewStoryCaption] = useState("");
+  const [newStoryPreviewUrl, setNewStoryPreviewUrl] = useState(null);
+  const [isUploading, setIsUploading] = useState(false);
+  const [uploadError, setUploadError] = useState("");
+
   useEffect(() => {
     // 🔑 Listen for Firebase user
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
@@ -112,7 +119,46 @@ function Profile() {
     return () => unsubscribe();
   }, []);
 
-  const handleAddStory = () => alert("Add story clicked");
+  const handleAddStory = () => setIsAddingStory(true);
+
+  const handleStorySubmit = async (e) => {
+    e.preventDefault();
+    if (!newStoryFile || isUploading) return;
+
+    setIsUploading(true);
+    setUploadError("");
+
+    try {
+      // simulate upload delay
+      await new Promise(r => setTimeout(r, 800));
+
+      const fileUrl = newStoryPreviewUrl || URL.createObjectURL(newStoryFile);
+      const storyType = newStoryFile.type.startsWith('video') ? 'video' : 'image';
+
+      const story = {
+        id: Date.now(),
+        title: newStoryCaption ? newStoryCaption.split(' ').slice(0, 3).join(' ') + "..." : "My New Story",
+        description: newStoryCaption,
+        media_url: fileUrl,
+        media_type: storyType,
+        created_date: new Date().toISOString(),
+        likes_count: 0,
+        comments_count: 0,
+        views_count: 0
+      };
+
+      setUserStories([story, ...userStories]);
+      setIsAddingStory(false);
+      setNewStoryFile(null);
+      setNewStoryCaption("");
+      setNewStoryPreviewUrl(null);
+    } catch (err) {
+      setUploadError("Failed to upload story.");
+    } finally {
+      setIsUploading(false);
+    }
+  };
+
   const handleEditStory = (story) => alert("Edit story: " + story.title);
   const handleDeleteStory = (id) =>
     setUserStories((prev) => prev.filter((s) => s.id !== id));
@@ -156,7 +202,7 @@ function Profile() {
           className="mt-8 bg-white rounded-2xl shadow-md p-4 sm:p-6"
         >
           <Tabs value={activeTab} onValueChange={setActiveTab}>
-            <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 bg-gray-50 rounded-xl overflow-hidden shadow-sm">
+            <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 bg-gray-50 rounded-xl overflow-hidden shadow-sm">
               <TabsTrigger value="overview">
                 <UserIcon className="w-4 h-4" />
                 <span className="hidden sm:inline">Overview</span>
@@ -164,10 +210,6 @@ function Profile() {
               <TabsTrigger value="stories">
                 <Image className="w-4 h-4" />
                 <span className="hidden sm:inline">My Stories</span>
-              </TabsTrigger>
-              <TabsTrigger value="badges">
-                <Award className="w-4 h-4" />
-                <span className="hidden sm:inline">Badges</span>
               </TabsTrigger>
               <TabsTrigger value="discoveries">
                 <Bookmark className="w-4 h-4" />
@@ -201,11 +243,6 @@ function Profile() {
               />
             </TabsContent>
 
-            {/* Badges */}
-            <TabsContent value="badges">
-              <BadgeCarousel badges={userBadges} />
-            </TabsContent>
-
             {/* Discoveries */}
             <TabsContent value="discoveries">
               <SavedDiscoveries discoveries={savedDiscoveries} />
@@ -213,6 +250,123 @@ function Profile() {
           </Tabs>
         </motion.div>
       </div>
+
+      {/* Add Story Modal Overlay */}
+      <AnimatePresence>
+        {isAddingStory && (
+          <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              className="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 max-w-md w-full relative"
+            >
+              <button
+                onClick={() => { 
+                  if (isUploading) return;
+                  setIsAddingStory(false); 
+                  setNewStoryFile(null); 
+                  setNewStoryCaption(""); 
+                  setNewStoryPreviewUrl(null);
+                  setUploadError("");
+                }}
+                className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors disabled:opacity-50"
+                disabled={isUploading}
+              >
+                <X className="w-5 h-5" />
+              </button>
+
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Create New Story</h3>
+
+              <form onSubmit={handleStorySubmit} className="space-y-6">
+                {/* File Upload Area */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Media</label>
+                  <div className={`mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-dashed rounded-xl transition-colors cursor-pointer relative ${uploadError ? 'border-red-400 bg-red-50' : 'border-gray-300 hover:bg-gray-50'}`}>
+                    <input
+                      type="file"
+                      accept="image/jpeg, image/png, image/webp, video/mp4, video/webm"
+                      onChange={(e) => {
+                        const file = e.target.files[0];
+                        if (file) {
+                          if (file.size > 50 * 1024 * 1024) {
+                            setUploadError("File exceeds 50MB size limit.");
+                            e.target.value = null;
+                            return;
+                          }
+                          setUploadError("");
+                          setNewStoryFile(file);
+                          setNewStoryPreviewUrl(URL.createObjectURL(file));
+                        }
+                      }}
+                      className="absolute inset-0 w-full h-full opacity-0 cursor-pointer disabled:cursor-not-allowed z-20"
+                      disabled={isUploading}
+                      required
+                    />
+                    <div className="space-y-1 text-center w-full z-10">
+                      {newStoryFile && newStoryPreviewUrl ? (
+                        <div className="flex flex-col items-center justify-center pointer-events-none p-2">
+                          {newStoryFile.type.startsWith('video') ? (
+                            <video src={newStoryPreviewUrl} className="max-h-36 object-contain rounded-lg mb-2 shadow-md w-full" autoPlay muted loop playsInline />
+                          ) : (
+                            <img src={newStoryPreviewUrl} alt="Preview" className="max-h-36 object-contain rounded-lg mb-2 shadow-md" />
+                          )}
+                          <span className="text-xs text-gray-600 bg-white/90 px-3 py-1 rounded-full shadow-sm pointer-events-auto mt-1 cursor-pointer hover:bg-white inline-block">
+                            Click or drag to replace
+                          </span>
+                        </div>
+                      ) : (
+                        <>
+                          <Upload className={`mx-auto h-12 w-12 ${uploadError ? 'text-red-400' : 'text-gray-400'}`} />
+                          <div className="flex text-sm text-gray-600 justify-center mt-2">
+                            <span className="relative cursor-pointer rounded-md bg-transparent font-medium text-orange-600 hover:text-orange-500 focus-within:outline-none">
+                              Upload a file
+                            </span>
+                            <p className="pl-1">or drag and drop</p>
+                          </div>
+                          <p className="text-xs text-gray-500 mt-1">PNG, JPG, MP4 up to 50MB</p>
+                        </>
+                      )}
+                    </div>
+                  </div>
+                  {uploadError && <p className="mt-2 text-sm text-red-600 max-w-sm text-center mx-auto">{uploadError}</p>}
+                </div>
+
+                {/* Caption Area */}
+                <div>
+                  <label htmlFor="caption" className="block text-sm font-medium text-gray-700 mb-2">
+                    Caption
+                  </label>
+                  <textarea
+                    id="caption"
+                    rows={4}
+                    value={newStoryCaption}
+                    onChange={(e) => setNewStoryCaption(e.target.value)}
+                    className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-xl p-3 bg-gray-50 text-gray-900 border"
+                    placeholder="Write a caption for your story..."
+                    required
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={!newStoryFile || !newStoryCaption.trim() || isUploading}
+                  className="w-full flex justify-center items-center py-3 px-4 outline-none border border-transparent rounded-xl shadow-sm text-sm font-medium text-white bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 focus:outline-none disabled:opacity-75 disabled:cursor-not-allowed transition-all"
+                >
+                  {isUploading ? (
+                    <>
+                      <div className="w-5 h-5 border-2 border-white/40 border-t-white rounded-full animate-spin mr-2" />
+                      Uploading Story...
+                    </>
+                  ) : (
+                    "Post Story"
+                  )}
+                </button>
+              </form>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

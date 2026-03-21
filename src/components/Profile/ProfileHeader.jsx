@@ -7,7 +7,6 @@ import { useNavigate } from "react-router-dom";
 
 const ProfileHeader = ({ user, userProgress, onEdit }) => {
   const navigate = useNavigate();
-  const levelProgress = ((userProgress?.experience_points || 0) / 1000) * 100;
 
   const handleLogout = async () => {
     try {
@@ -48,30 +47,6 @@ const ProfileHeader = ({ user, userProgress, onEdit }) => {
         <div className="flex-1">
           <h2 className="text-3xl font-extrabold text-gray-900">{user?.name}</h2>
           <p className="text-gray-600 text-base">{user?.email}</p>
-          {userProgress && (
-            <div className="mt-3">
-              <p className="text-sm text-gray-500">
-                <span className="font-medium text-orange-600">
-                  Level {userProgress.level}
-                </span>{" "}
-                • {userProgress.total_points} pts
-              </p>
-
-              {/* Progress Bar */}
-              <div className="w-full max-w-md mt-3 bg-gray-200 rounded-full h-3 overflow-hidden">
-                <motion.div
-                  initial={{ width: 0 }}
-                  animate={{ width: `${levelProgress}%` }}
-                  transition={{ duration: 1 }}
-                  className="h-full bg-gradient-to-r from-orange-500 to-red-500 rounded-full relative"
-                >
-                  {levelProgress > 20 && (
-                    <Zap className="w-4 h-4 text-white absolute right-1 top-1/2 -translate-y-1/2 animate-pulse" />
-                  )}
-                </motion.div>
-              </div>
-            </div>
-          )}
         </div>
       </div>
 

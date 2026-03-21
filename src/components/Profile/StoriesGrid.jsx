@@ -9,9 +9,9 @@ const mediaIcons = {
   text: FileText
 };
 
-function StoryGrid({ onAddStory, onEditStory, onDeleteStory }) {
+function StoryGrid({ stories, onAddStory, onEditStory, onDeleteStory }) {
   const [selectedStory, setSelectedStory] = useState(null);
-  const displayStories = storiesData;
+  const displayStories = stories || storiesData;
 
   const StoryCard = ({ story, index }) => {
     const MediaIcon = mediaIcons[story.media_type || "text"];
