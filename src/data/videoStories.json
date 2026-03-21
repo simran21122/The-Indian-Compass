@@ -82,5 +82,181 @@
     "comments_count": 105,
     "views_count": 3800,
     "created_date": "2025-10-18T19:30:00Z"
+  },
+  {
+    "id": 5,
+    "title": "Moatsu Festival Celebration",
+    "description": "A vibrant tribal festival of the Ao Naga tribe celebrating the completion of sowing with dances, songs, and bonfires.",
+    "media_type": "video",
+    "media_url": "/storypagevid/v5.mp4",
+    "location": {
+      "state": "Nagaland",
+      "city": "Mokokchung"
+    },
+    "category": "festival",
+    "tags": [
+      "moatsu",
+      "nagaland",
+      "tribal",
+      "festival"
+    ],
+    "likes_count": 410,
+    "comments_count": 85,
+    "views_count": 2900,
+    "created_date": "2025-11-05T18:00:00Z"
+  },
+  {
+    "id": 6,
+    "title": "Garia Puja Tribal Rituals",
+    "description": "Traditional bamboo rituals and dance performances during Garia Puja, a harvest festival of Tripura.",
+    "media_type": "video",
+    "media_url": "/storypagevid/v6.mp4",
+    "location": {
+      "state": "Tripura",
+      "city": "Agartala"
+    },
+    "category": "festival",
+    "tags": [
+      "garia",
+      "tripura",
+      "harvest",
+      "culture"
+    ],
+    "likes_count": 360,
+    "comments_count": 70,
+    "views_count": 2500,
+    "created_date": "2025-04-15T10:00:00Z"
+  },
+  {
+    "id": 7,
+    "title": "Pakhala Dibasa Food Tradition",
+    "description": "Celebrating Odisha’s traditional fermented rice dish Pakhala, a symbol of simplicity and summer culture.",
+    "media_type": "video",
+    "media_url": "/storypagevid/v7.mp4",
+    "location": {
+      "state": "Odisha",
+      "city": "Bhubaneswar"
+    },
+    "category": "food",
+    "tags": [
+      "pakhala",
+      "odisha",
+      "traditional",
+      "summer"
+    ],
+    "likes_count": 520,
+    "comments_count": 110,
+    "views_count": 4000,
+    "created_date": "2025-03-20T12:00:00Z"
+  },
+  {
+    "id": 8,
+    "title": "Shakta Rash Festival Procession",
+    "description": "Colorful clay idols and grand processions during the unique Shakta Rash festival in West Bengal.",
+    "media_type": "video",
+    "media_url": "/storypagevid/v8.mp4",
+    "location": {
+      "state": "West Bengal",
+      "city": "Nabadwip"
+    },
+    "category": "festival",
+    "tags": [
+      "rash",
+      "westbengal",
+      "spiritual",
+      "tradition"
+    ],
+    "likes_count": 300,
+    "comments_count": 60,
+    "views_count": 2100,
+    "created_date": "2025-11-15T19:00:00Z"
+  },
+  {
+    "id": 9,
+    "title": "Dhuska Chaat Street Food",
+    "description": "A lesser-known Jharkhand delicacy made of fried rice-lentil bread served with spicy chaat toppings.",
+    "media_type": "video",
+    "media_url": "/storypagevid/v9.mp4",
+    "location": {
+      "state": "Jharkhand",
+      "city": "Ranchi"
+    },
+    "category": "food",
+    "tags": [
+      "dhuska",
+      "streetfood",
+      "jharkhand",
+      "snacks"
+    ],
+    "likes_count": 275,
+    "comments_count": 55,
+    "views_count": 1800,
+    "created_date": "2025-08-10T17:30:00Z"
+  },
+  {
+    "id": 10,
+    "title": "Nuakhai Harvest Festival",
+    "description": "Western Odisha’s unique harvest festival celebrating new crops with community meals and rituals.",
+    "media_type": "video",
+    "media_url": "/storypagevid/v10.mp4",
+    "location": {
+      "state": "Odisha",
+      "city": "Sundargarh"
+    },
+    "category": "festival",
+    "tags": [
+      "nuakhai",
+      "harvest",
+      "odisha",
+      "tradition"
+    ],
+    "likes_count": 600,
+    "comments_count": 140,
+    "views_count": 4500,
+    "created_date": "2025-09-01T11:00:00Z"
+  },
+  {
+    "id": 11,
+    "title": "Pathar Ka Gosht Cooking",
+    "description": "A rare Hyderabadi dish where marinated meat is cooked on a heated stone slab for a smoky flavor.",
+    "media_type": "video",
+    "media_url": "/storypagevid/v11.mp4",
+    "location": {
+      "state": "Telangana",
+      "city": "Hyderabad"
+    },
+    "category": "food",
+    "tags": [
+      "hyderabad",
+      "patharkagosht",
+      "traditional",
+      "nonveg"
+    ],
+    "likes_count": 480,
+    "comments_count": 95,
+    "views_count": 3300,
+    "created_date": "2025-07-22T20:00:00Z"
+  },
+  {
+    "id": 12,
+    "title": "Sama Chakeva Festival",
+    "description": "A beautiful Mithila festival celebrating the bond between brothers and sisters with clay idols and songs.",
+    "media_type": "video",
+    "media_url": "/storypagevid/v12.mp4",
+    "location": {
+      "state": "Bihar",
+      "city": "Madhubani"
+    },
+    "category": "festival",
+    "tags": [
+      "samachakeva",
+      "bihar",
+      "culture",
+      "tradition"
+    ],
+    "likes_count": 350,
+    "comments_count": 75,
+    "views_count": 2600,
+    "created_date": "2025-11-10T18:30:00Z"
   }
 ]
