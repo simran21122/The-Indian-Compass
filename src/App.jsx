@@ -27,12 +27,13 @@ import ContentDetails from "./components/ContentDetails.jsx";
 import MyOrders from "./pages/MyOrders.jsx";
 import Cart from "./pages/Cart.jsx";
 import Wishlist from "./pages/Wishlist.jsx";
+import PaymentPage from "./pages/paymentPage.jsx";
 
 function App() {
   return (
     <StoreProvider>
       <Router>
-        <main className="font-body text-white relative overflow-hidden">
+        <main className="font-body text-black relative overflow-hidden">
 
           <Routes>
 
@@ -58,7 +59,7 @@ function App() {
             <Route path="/myorders" element={<MyOrders />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/wishlist" element={<Wishlist />} />
-
+            <Route path="/payment" element={<PaymentPage />} />
             {/* CONTENT */}
             <Route path="/content/:id" element={<ContentDetails />} />
 

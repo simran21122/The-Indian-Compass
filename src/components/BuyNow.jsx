@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useLocation, useNavigate } from "react-router-dom";
+import qrImage from "../assets/image/QrCode.jpeg";
 
 import phonepeLogo from "../assets/image/phonepe.png";
 import gpayLogo from "../assets/image/gpay.svg";
@@ -24,13 +25,20 @@ function BuyNow() {
   const navigate = useNavigate();
   const product = location.state?.product;
 
-  const [step, setStep] = useState(1);
+  const initialStep = location.state?.step || 1;
+
+  const [step, setStep] = useState(initialStep);
   const [orderSuccess, setOrderSuccess] = useState(false);
   const [showOrderDetails, setShowOrderDetails] = useState(false);
-  const [showScanner, setShowScanner] = useState(false);
+  
 
   const [qty, setQty] = useState(1);
   const [paymentMethod, setPaymentMethod] = useState("");
+
+  const [utr, setUtr] = useState(location.state?.utr || "");
+const [screenshot, setScreenshot] = useState(location.state?.screenshot || null);
+
+
 
   const [customer, setCustomer] = useState({
     name: "",
@@ -97,7 +105,9 @@ function BuyNow() {
       outForDeliveryDate: outForDeliveryDate.toISOString(),
       deliveryDate: deliveryDate.toISOString(),
       paymentMethod,
-      customer
+      customer,
+      utr,
+      screenshot: screenshot ? URL.createObjectURL(screenshot) : null,
     };
 
     const existingOrders =
@@ -258,41 +268,7 @@ function BuyNow() {
   }
 
   /* CHECKOUT PAGE */
-  if (showScanner) {
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-[#e8d5b5]">
-
-      <div className="bg-white p-8 rounded-2xl shadow-xl text-center">
-
-        <h2 className="text-2xl font-bold mb-4">
-          Scan & Pay ({paymentMethod})
-        </h2>
-
-        <img
-          src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=mahesh@upi&pn=Mahesh&am=${total}`}
-          alt="QR Code"
-          className="mx-auto mb-4"
-        />
-
-        <p className="text-gray-600 mb-4">
-          Scan this QR using {paymentMethod}
-        </p>
-
-        <button
-          onClick={() => {
-            setShowScanner(false);
-            setStep(3);
-          }}
-          className="bg-green-600 text-white px-6 py-3 rounded-lg"
-        >
-          I Have Paid
-        </button>
-
-      </div>
-
-    </div>
-  );
-}
+ 
 
   return (
 
@@ -422,11 +398,19 @@ function BuyNow() {
 
                 <button
                   onClick={() => {
-  if (paymentMethod === "Cash on Delivery") {
-    setStep(3);
-  } else {
-    setShowScanner(true);
-  }
+ if (paymentMethod === "Cash on Delivery") {
+  setStep(3);
+} else {
+  navigate("/payment", {
+    state: {
+      product,
+      total,
+      paymentMethod,
+      customer,
+      qty,
+    },
+  });
+}
 }}
                   className="w-1/2 bg-orange-700 text-white py-3 rounded"
                 >
