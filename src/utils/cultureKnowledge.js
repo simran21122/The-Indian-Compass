@@ -995,6 +995,810 @@ Highlights:
 • Intricate designs
 • Cultural significance
 `
+} ,
+
+/* ---------- MORE art craft festival cultural pplaces cultural marketstemples monuments cultural music dance cusine ---------- */
+
+{
+keywords: ["bharatanatyam","tamil nadu dance","classical dance south india"],
+content: `
+**Bharatanatyam**
+
+Bharatanatyam is one of the oldest classical dance forms from Tamil Nadu.
+
+Key features:
+• Strong footwork and expressions (Abhinaya)
+• Fixed upper body with intricate hand gestures
+• Devotional storytelling
+
+It originated in temples and is deeply spiritual in nature.
+`
+},
+
+{
+keywords: ["ghoomar","rajasthan folk dance","traditional dance rajasthan"],
+content: `
+**Ghoomar**
+
+Ghoomar is a traditional folk dance from Rajasthan.
+
+Highlights:
+• Performed by women
+• Graceful spinning movements
+• Colorful traditional attire
+
+It is often performed during festivals and weddings.
+`
+},
+
+{
+keywords: ["warli painting","maharashtra tribal art"],
+content: `
+**Warli Painting**
+
+Warli is a tribal art form from Maharashtra.
+
+Features:
+• Simple geometric shapes
+• Depicts daily life and nature
+• White patterns on mud background
+
+It reflects the lifestyle of tribal communities.
+`
+},
+
+{
+keywords: ["madhubani painting","bihar art","mithila painting"],
+content: `
+**Madhubani Painting**
+
+Madhubani art originates from Bihar.
+
+Key aspects:
+• Bright colors and intricate patterns
+• Themes of nature and mythology
+• Traditionally done by women
+
+It is one of the most famous folk arts in India.
+`
+},
+
+{
+keywords: ["brihadeeswarar temple","tanjore temple","chola architecture"],
+content: `
+**Brihadeeswarar Temple**
+
+Located in Tamil Nadu, this temple is a UNESCO World Heritage Site.
+
+Highlights:
+• Built by Chola dynasty
+• Massive Shiva temple
+• Architectural precision
+
+It is a masterpiece of Dravidian architecture.
+`
+},
+
+{
+keywords: ["golden temple","amritsar temple","sikh pilgrimage"],
+content: `
+**Golden Temple**
+
+The Golden Temple in Amritsar is the holiest shrine of Sikhism.
+
+Features:
+• Covered in gold
+• Surrounded by holy water tank
+• Community kitchen (Langar)
+
+It symbolizes equality and service.
+`
+},
+
+{
+keywords: ["diwali","festival of lights","indian festival"],
+content: `
+**Diwali**
+
+Diwali is the festival of lights celebrated across India.
+
+Celebrations include:
+• Lighting diyas
+• Fireworks
+• Worship of Goddess Lakshmi
+
+It symbolizes victory of light over darkness.
+`
+},
+
+{
+keywords: ["raksha bandhan","brother sister festival"],
+content: `
+**Raksha Bandhan**
+
+Raksha Bandhan celebrates the bond between siblings.
+
+Highlights:
+• Sister ties rakhi on brother’s wrist
+• Exchange of gifts
+• Symbol of protection and love
+`
+},
+
+{
+keywords: ["varanasi","holy city india","ghats ganges"],
+content: `
+**Varanasi**
+
+Varanasi is one of the oldest living cities in the world.
+
+Highlights:
+• Ghats of River Ganga
+• Spiritual rituals
+• Kashi Vishwanath Temple
+
+It is a major center of Hindu culture.
+`
+},
+
+{
+keywords: ["jaipur city","pink city india","rajasthan tourism"],
+content: `
+**Jaipur**
+
+Jaipur is the capital of Rajasthan known as the Pink City.
+
+Features:
+• Historic forts and palaces
+• Rich culture and markets
+• Traditional crafts
+
+It is part of the Golden Triangle tourist circuit.
+`
+},
+
+{
+keywords: ["dilli haat","craft market delhi","handicraft market india"],
+content: `
+**Dilli Haat**
+
+Dilli Haat is a popular open-air craft market in Delhi.
+
+Highlights:
+• Handicrafts from all states
+• Regional food stalls
+• Direct interaction with artisans
+
+It promotes local artists and culture.
+`
+},
+
+{
+keywords: ["johari bazaar","jaipur market","rajasthan shopping"],
+content: `
+**Johari Bazaar**
+
+Johari Bazaar in Jaipur is famous for jewelry and handicrafts.
+
+Features:
+• Traditional Rajasthani jewelry
+• Textiles and fabrics
+• Vibrant local culture
+
+It is a major attraction for tourists.
+`
+},
+
+{
+keywords: ["hindustani music","north indian classical music"],
+content: `
+**Hindustani Classical Music**
+
+Hindustani music is the classical music of North India.
+
+Features:
+• Raga and Tala system
+• Improvisation
+• Instruments like sitar and tabla
+
+It has deep emotional and spiritual expression.
+`
+},
+
+{
+keywords: ["carnatic music","south indian classical music"],
+content: `
+**Carnatic Music**
+
+Carnatic music is the classical music of South India.
+
+Highlights:
+• Structured compositions
+• Devotional themes
+• Instruments like veena and mridangam
+
+It is highly technical and rich in tradition.
+`
+},
+
+{
+keywords: ["biryani","indian rice dish","hyderabadi biryani"],
+content: `
+**Biryani**
+
+Biryani is a famous Indian rice dish.
+
+Features:
+• Aromatic spices
+• Meat or vegetarian options
+• Regional variations like Hyderabadi biryani
+
+It is one of the most loved dishes in India.
+`
+},
+
+{
+keywords: ["dosa","south indian food","breakfast india"],
+content: `
+**Dosa**
+
+Dosa is a popular South Indian dish.
+
+Highlights:
+• Made from fermented rice batter
+• Crispy and thin
+• Served with chutney and sambar
+
+It is a staple breakfast food.
+`
+},
+
+/* ---------- MORE CULTURAL DATA BULK ---------- */
+
+{
+keywords: ["lavani","maharashtra dance","folk dance india"],
+content: `
+**Lavani**
+
+Lavani is a traditional dance from Maharashtra.
+
+Features:
+• Performed to rhythmic beats
+• Expressive storytelling
+• Fast-paced movements
+
+It is often performed during festivals and social gatherings.
+`
+},
+
+{
+keywords: ["bhangra","punjab dance","harvest dance india"],
+content: `
+**Bhangra**
+
+Bhangra is a vibrant folk dance from Punjab.
+
+Highlights:
+• Energetic movements
+• Dhol music
+• Harvest celebration
+
+It represents joy and enthusiasm.
+`
+},
+
+{
+keywords: ["bandhani","tie dye india","rajasthan textile"],
+content: `
+**Bandhani**
+
+Bandhani is a traditional tie-dye textile art.
+
+Features:
+• Colorful dotted patterns
+• Hand-tied technique
+• Popular in Gujarat and Rajasthan
+
+Used in sarees and turbans.
+`
+},
+
+{
+keywords: ["chikankari","lucknow embroidery","hand embroidery india"],
+content: `
+**Chikankari**
+
+Chikankari is delicate embroidery from Lucknow.
+
+Highlights:
+• White thread work
+• Floral patterns
+• Elegant designs
+
+It is widely used in traditional wear.
+`
+},
+
+{
+keywords: ["sun temple modhera","gujarat temple","ancient sun temple"],
+content: `
+**Modhera Sun Temple**
+
+A historic temple in Gujarat dedicated to the Sun God.
+
+Features:
+• Intricate carvings
+• Stepwell architecture
+• Solar alignment design
+
+It reflects ancient engineering brilliance.
+`
+},
+
+{
+keywords: ["kedarnath","uttarakhand temple","char dham"],
+content: `
+**Kedarnath Temple**
+
+Kedarnath is a sacred Hindu temple in the Himalayas.
+
+Highlights:
+• Dedicated to Lord Shiva
+• Part of Char Dham Yatra
+• Scenic mountain setting
+
+It is one of the holiest pilgrimage sites.
+`
+},
+
+{
+keywords: ["pushkar fair","rajasthan festival","camel fair india"],
+content: `
+**Pushkar Fair**
+
+Pushkar Fair is a famous cultural festival in Rajasthan.
+
+Features:
+• Camel trading
+• Folk performances
+• Cultural competitions
+
+It attracts tourists worldwide.
+`
+},
+
+{
+keywords: ["hornbill festival","nagaland festival","tribal festival india"],
+content: `
+**Hornbill Festival**
+
+Hornbill Festival is celebrated in Nagaland.
+
+Highlights:
+• Tribal culture showcase
+• Traditional dances
+• Handicrafts and food
+
+It is called the "Festival of Festivals".
+`
+},
+
+{
+keywords: ["mysore palace","karnataka palace","royal heritage india"],
+content: `
+**Mysore Palace**
+
+Mysore Palace is a royal residence in Karnataka.
+
+Features:
+• Indo-Saracenic architecture
+• Grand interiors
+• Dussehra celebrations
+
+It is one of the most visited monuments in India.
+`
+},
+
+{
+keywords: ["charminar","hyderabad monument","historic landmark india"],
+content: `
+**Charminar**
+
+Charminar is a historic monument in Hyderabad.
+
+Highlights:
+• Four grand arches
+• Islamic architecture
+• Surrounded by markets
+
+It is a symbol of Hyderabad.
+`
+},
+
+{
+keywords: ["sarojini market","delhi shopping","street market india"],
+content: `
+**Sarojini Market**
+
+Sarojini Market is a popular street market in Delhi.
+
+Features:
+• Affordable fashion
+• Trendy clothes
+• Bargaining culture
+
+It is a favorite among youth.
+`
+},
+
+{
+keywords: ["crawford market","mumbai market","historic market india"],
+content: `
+**Crawford Market**
+
+Crawford Market is a historic market in Mumbai.
+
+Highlights:
+• Fresh produce
+• Colonial architecture
+• Local shopping hub
+
+It is one of Mumbai’s busiest markets.
+`
+},
+
+{
+keywords: ["tabla","indian instrument","classical music india"],
+content: `
+**Tabla**
+
+Tabla is a popular percussion instrument.
+
+Features:
+• Pair of drums
+• Used in classical music
+• Complex rhythms
+
+It is essential in Hindustani music.
+`
+},
+
+{
+keywords: ["sitar","string instrument india","classical music"],
+content: `
+**Sitar**
+
+Sitar is a classical string instrument.
+
+Highlights:
+• Long neck
+• Rich sound
+• Used in ragas
+
+It gained global popularity through Indian music.
+`
+},
+
+{
+keywords: ["dal makhani","punjab food","indian curry"],
+content: `
+**Dal Makhani**
+
+Dal Makhani is a popular North Indian dish.
+
+Features:
+• Made with black lentils
+• Creamy texture
+• Rich flavor
+
+It is commonly served with naan or rice.
+`
+},
+
+{
+keywords: ["idli","south indian food","healthy breakfast"],
+content: `
+**Idli**
+
+Idli is a soft steamed rice cake.
+
+Highlights:
+• Light and healthy
+• Fermented batter
+• Served with chutney
+
+It is a staple in South India.
+`
+},
+
+{
+keywords: ["ajrak","block printing","kutch textile"],
+content: `
+**Ajrak**
+
+Ajrak is a block-print textile art.
+
+Features:
+• Natural dyes
+• Symmetrical patterns
+• Cultural identity of Kutch
+
+It is worn as shawls and garments.
+`
+},
+
+{
+keywords: ["kanchipuram saree","silk saree india"],
+content: `
+**Kanchipuram Saree**
+
+A famous silk saree from Tamil Nadu.
+
+Highlights:
+• Rich silk fabric
+• Gold zari work
+• Bridal wear
+
+It represents luxury and tradition.
+`
+},
+
+{
+keywords: ["hemis festival","ladakh festival","buddhist celebration"],
+content: `
+**Hemis Festival**
+
+Hemis Festival is celebrated in Ladakh.
+
+Features:
+• Monastic dances
+• Buddhist rituals
+• Colorful masks
+
+It honors Guru Padmasambhava.
+`
+},
+
+{
+keywords: ["goa carnival","goa festival","portuguese culture india"],
+content: `
+**Goa Carnival**
+
+A vibrant festival in Goa.
+
+Highlights:
+• Street parades
+• Music and dance
+• Portuguese influence
+
+It is a lively cultural event.
+`
+} , 
+
+/* ---------- ODISHA CULTURE ADDITIONS ---------- */
+
+{
+keywords: ["sambalpuri saree","odisha textile","ikat odisha"],
+content: `
+**Sambalpuri Saree**
+
+Sambalpuri saree is a traditional handwoven textile from Odisha.
+
+Features:
+• Ikat tie-dye technique
+• Geometric and symbolic patterns
+• Made in regions like Sambalpur and Bargarh
+
+It is known for its unique craftsmanship and cultural identity.
+`
+},
+
+{
+keywords: ["pipili applique","odisha craft","applique work"],
+content: `
+**Pipili Appliqué Work**
+
+Pipili is famous for its colorful appliqué handicrafts.
+
+Highlights:
+• Stitching of cloth pieces to form designs
+• Used in umbrellas, wall hangings, and canopies
+• Associated with Jagannath Temple rituals
+
+It reflects vibrant folk creativity of Odisha.
+`
+},
+
+{
+keywords: ["silver filigree","cuttack craft","tarakasi"],
+content: `
+**Silver Filigree (Tarakasi)**
+
+Tarakasi is a delicate silver craft from Cuttack.
+
+Features:
+• Fine silver wire work
+• Intricate jewelry and decorative items
+• Requires high precision
+
+It is one of the finest metal crafts in India.
+`
+},
+
+{
+keywords: ["raghurajpur village","heritage crafts village odisha"],
+content: `
+**Raghurajpur Heritage Village**
+
+Raghurajpur is a famous artisan village in Odisha.
+
+Highlights:
+• Home to Pattachitra artists
+• Traditional crafts and performances
+• Cultural tourism hub
+
+It preserves Odisha’s artistic heritage.
+`
+},
+
+{
+keywords: ["lingaraj temple","bhubaneswar temple","odisha temple"],
+content: `
+**Lingaraj Temple**
+
+Lingaraj Temple is one of the oldest temples in Bhubaneswar.
+
+Features:
+• Dedicated to Lord Shiva
+• Kalinga-style architecture
+• Spiritual and historical significance
+
+It is a major pilgrimage site in Odisha.
+`
+},
+
+{
+keywords: ["jagannath temple puri","puri temple","char dham jagannath"],
+content: `
+**Jagannath Temple**
+
+Jagannath Temple in Puri is one of the Char Dham pilgrimage sites.
+
+Highlights:
+• Dedicated to Lord Jagannath
+• Famous Rath Yatra festival
+• Unique rituals and traditions
+
+It is central to Odisha’s spiritual identity.
+`
+},
+
+{
+keywords: ["rath yatra","puri festival","chariot festival odisha"],
+content: `
+**Rath Yatra**
+
+Rath Yatra is one of the grandest festivals of Odisha.
+
+Celebrations include:
+• Massive chariot procession
+• Devotees pulling chariots
+• Participation of millions
+
+It symbolizes unity and devotion.
+`
+},
+
+{
+keywords: ["raja festival","odisha festival women","rajo"],
+content: `
+**Raja Festival**
+
+Raja is a unique festival celebrating womanhood and nature.
+
+Highlights:
+• Swing rituals (Doli)
+• Traditional food and games
+• Celebration of earth’s fertility
+
+It is widely celebrated across Odisha.
+`
+},
+
+{
+keywords: ["chhena poda","odisha dessert","puri sweet"],
+content: `
+**Chhena Poda**
+
+Chhena Poda is a famous dessert from Odisha.
+
+Features:
+• Made from baked cottage cheese
+• Caramelized flavor
+• Originated in Nayagarh
+
+It is often called the “cheesecake of Odisha”.
+`
+},
+
+{
+keywords: ["dalma","odisha food","traditional odia cuisine"],
+content: `
+**Dalma**
+
+Dalma is a traditional Odia dish.
+
+Highlights:
+• Made with lentils and vegetables
+• Lightly spiced and healthy
+• Often offered in temples
+
+It represents simple and nutritious Odia cuisine.
+`
+},
+
+{
+keywords: ["odissi music","odisha classical music"],
+content: `
+**Odissi Music**
+
+Odissi music is a classical music tradition of Odisha.
+
+Features:
+• Based on ragas and talas
+• Devotional compositions
+• Close connection with Odissi dance
+
+It reflects the spiritual essence of Odisha.
+`
+},
+
+{
+keywords: ["gotipua dance","odisha traditional dance","predecessor odissi"],
+content: `
+**Gotipua Dance**
+
+Gotipua is a traditional dance form of Odisha.
+
+Highlights:
+• Performed by young boys dressed as females
+• Acrobatic poses
+• Precursor to Odissi dance
+
+It is an important part of Odisha’s cultural history.
+`
+},
+
+{
+keywords: ["ekamra haat","bhubaneswar market","odisha handicraft market"],
+content: `
+**Ekamra Haat**
+
+Ekamra Haat is a popular handicraft market in Bhubaneswar.
+
+Features:
+• Handicrafts from across Odisha
+• Local food stalls
+• Cultural performances
+
+It promotes traditional artisans and culture.
+`
+},
+
+{
+keywords: ["puri beach market","odisha beach market","local shopping puri"],
+content: `
+**Puri Beach Market**
+
+The market near Puri Beach is famous for local shopping.
+
+Highlights:
+• Seashell crafts
+• Handicrafts and souvenirs
+• Street food
+
+It offers a lively coastal shopping experience.
+`
 }
 
 ];

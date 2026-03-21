@@ -24,7 +24,6 @@ function isCulturalQuery(text) {
 }
 
 /* ---------- SMART RAG RETRIEVAL ---------- */
-
 function retrieveKnowledge(query) {
   const q = query.toLowerCase();
 
