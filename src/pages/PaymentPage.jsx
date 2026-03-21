@@ -10,7 +10,9 @@ import {
   Info, 
   ShieldCheck, 
   ArrowRight,
-  Loader2
+  Loader2,
+  Package,
+  Truck
 } from "lucide-react";
 import qrImage from "../assets/image/QrCode.jpeg";
 
@@ -18,10 +20,7 @@ function PaymentPage() {
   const { state } = useLocation();
   const navigate = useNavigate();
 
-  // Dynamic Product Data from Location State
   const { product, total, paymentMethod, qty } = state || {};
-  
-  // ROBUST IMAGE MAPPING (image_url vs image)
   const imageUrl = product?.image_url || product?.image;
 
   const [utr, setUtr] = useState("");
@@ -32,16 +31,16 @@ function PaymentPage() {
   // Fallback for missing state
   if (!state) {
     return (
-      <div className="min-h-screen bg-[#F5E6C8] flex flex-col items-center justify-center p-6 text-center font-sans tracking-tight">
-        <div className="bg-white p-12 rounded-[3rem] shadow-2xl max-w-md border-b-8 border-orange-600">
-          <Info className="w-16 h-16 text-orange-600 mx-auto mb-6" />
-          <h2 className="text-4xl font-serif font-black text-gray-900 mb-4">No Active Order</h2>
-          <p className="text-gray-500 mb-10 font-medium italic text-lg leading-relaxed">The path to your Indian discovery was interrupted.</p>
+      <div className="min-h-screen bg-[#F5E6C8] flex flex-col items-center justify-center p-4 text-center font-sans">
+        <div className="bg-white p-8 rounded-2xl shadow-xl max-w-sm border-b-4 border-orange-600">
+          <Info className="w-12 h-12 text-orange-600 mx-auto mb-4" />
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">No Active Order</h2>
+          <p className="text-gray-500 mb-6 text-sm">Your order session has expired or is invalid.</p>
           <button 
             onClick={() => navigate("/")}
-            className="w-full py-5 bg-orange-600 text-white rounded-2xl shadow-lg hover:bg-orange-700 transition-all font-sans font-bold uppercase text-xs tracking-[0.3em]"
+            className="w-full py-3 bg-orange-600 text-white rounded-xl hover:bg-orange-700 transition-all font-sans font-bold uppercase text-xs tracking-widest"
           >
-            Explore Marketplace
+            Back to Marketplace
           </button>
         </div>
       </div>
@@ -71,185 +70,203 @@ function PaymentPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F5E6C8] text-gray-900 pb-24 font-sans antialiased selection:bg-orange-100">
-      {/* Premium Heritage Navbar */}
+    <div className="min-h-screen bg-[#F5E6C8] text-gray-900">
+      {/* Compact Navbar */}
       <nav className="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-orange-100 shadow-sm">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
           <button 
             onClick={() => navigate(-1)}
-            className="flex items-center gap-2 text-gray-500 hover:text-orange-600 transition-colors font-sans font-black group"
+            className="flex items-center gap-1.5 text-gray-500 hover:text-orange-600 transition-colors group"
           >
-            <ChevronLeft className="w-6 h-6 group-hover:-translate-x-1" />
-            <span className="text-[10px] uppercase tracking-[0.2em] font-black">Return / Modify</span>
+            <ChevronLeft className="w-5 h-5 group-hover:-translate-x-0.5 transition-transform" />
+            <span className="text-[10px] uppercase tracking-widest font-bold">Back</span>
           </button>
-          <div className="flex items-center gap-3 bg-orange-50 px-5 py-2 rounded-full border border-orange-100">
-            <Lock className="w-4 h-4 text-orange-600" />
-            <span className="text-[10px] font-black uppercase tracking-[0.2em] text-orange-700 px-1">Protected Gateway</span>
+          <div className="flex items-center gap-2 bg-orange-50 px-3 py-1.5 rounded-full border border-orange-100">
+            <Lock className="w-3.5 h-3.5 text-orange-600" />
+            <span className="text-[10px] font-bold uppercase tracking-widest text-orange-700">Secure Payment</span>
           </div>
         </div>
       </nav>
 
-      <div className="max-w-7xl mx-auto px-6 pt-12">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+      <div className="max-w-6xl mx-auto px-4 py-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
           
           {/* LEFT: PAYMENT FLOW (Spans 7) */}
-          <div className="lg:col-span-7 space-y-10">
+          <div className="lg:col-span-7 space-y-5">
             <motion.div 
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              className="bg-white rounded-[3rem] shadow-[0_10px_50px_rgb(0,0,0,0.05)] p-10 sm:p-14 border border-white"
+              className="bg-white rounded-2xl shadow-lg p-6 sm:p-8"
             >
-              <div className="flex items-center gap-6 mb-14">
-                <div className="w-16 h-16 bg-orange-50 rounded-2xl flex items-center justify-center shadow-inner">
-                  <CreditCard className="w-8 h-8 text-orange-600" />
+              {/* Header */}
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-11 h-11 bg-orange-50 rounded-xl flex items-center justify-center">
+                  <CreditCard className="w-5 h-5 text-orange-600" />
                 </div>
                 <div>
-                  <h2 className="text-4xl font-serif font-black tracking-tight text-gray-900">Final Step: Pay</h2>
-                  <p className="text-[11px] text-gray-400 font-black uppercase tracking-[0.3em] font-sans">Heritage Payments via {paymentMethod}</p>
+                  <h2 className="text-xl font-bold text-gray-900">Complete Payment</h2>
+                  <p className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">via {paymentMethod}</p>
                 </div>
               </div>
 
-              {/* QR Section - Spacious */}
-              <div className="bg-gray-50/50 border-2 border-dashed border-orange-100 rounded-[3rem] p-10 flex flex-col items-center gap-10">
-                <div className="bg-white p-6 rounded-[2.5rem] shadow-2xl relative ring-8 ring-orange-100/20">
-                  <img src={qrImage} alt="QR Code" className="w-48 h-48 sm:w-56 sm:h-56 object-contain rounded-2xl" />
+              {/* QR + Amount : Side by side on larger, stacked on smaller */}
+              <div className="bg-gray-50 border border-orange-100 rounded-xl p-5 flex flex-col sm:flex-row items-center gap-5">
+                <div className="bg-white p-3 rounded-xl shadow-md ring-4 ring-orange-50 shrink-0">
+                  <img src={qrImage} alt="QR Code" className="w-40 h-40 object-contain rounded-lg" />
                 </div>
-                <div className="text-center group">
-                  <p className="text-[10px] font-black text-gray-400 uppercase tracking-[0.5em] mb-3 italic">Total Amount to Settle</p>
-                  <h4 className="text-7xl font-serif font-black text-gray-900 tracking-tighter">
-                    <span className="text-orange-600 text-3xl mr-1 font-sans">₹</span>{total}
+                <div className="text-center sm:text-left flex-1">
+                  <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Scan & Pay</p>
+                  <h4 className="text-4xl font-black text-gray-900 tracking-tight">
+                    <span className="text-orange-600 text-xl mr-0.5">₹</span>{total}
                   </h4>
+                  <p className="text-[10px] text-gray-400 mt-1.5">Scan with any UPI app to pay</p>
                 </div>
               </div>
 
-              {/* Secure Inputs - Generous */}
-              <div className="mt-14 space-y-8 font-sans">
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between px-2">
-                    <label className="text-[11px] font-black text-gray-500 uppercase tracking-[0.2em]">Transaction / UTR ID</label>
+              {/* Form Inputs */}
+              <div className="mt-6 space-y-4 font-sans">
+                {/* UTR Input */}
+                <div>
+                  <div className="flex items-center justify-between mb-1.5 px-1">
+                    <label className="text-[11px] font-bold text-gray-500 uppercase tracking-wider">Transaction / UTR ID</label>
                     <span className="text-[9px] text-orange-500 font-bold bg-orange-50 px-2 py-0.5 rounded uppercase">Required</span>
                   </div>
                   <input
                     type="text"
-                    placeholder="Enter 12-digit code"
+                    placeholder="Enter 12-digit UTR code"
                     value={utr}
                     onChange={(e) => setUtr(e.target.value)}
-                    className="w-full bg-white border-2 border-gray-50 focus:border-orange-600 focus:ring-4 focus:ring-orange-100 rounded-2xl p-6 text-base font-bold shadow-sm transition-all placeholder:text-gray-200"
+                    className="w-full bg-white border border-gray-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-100 rounded-xl px-4 py-3 text-sm font-medium transition-all placeholder:text-gray-300"
                   />
                 </div>
                 
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between px-2">
-                    <label className="text-[11px] font-black text-gray-500 uppercase tracking-[0.2em]">Success Screenshot</label>
-                    <span className="text-[9px] text-orange-500 font-bold bg-orange-50 px-2 py-0.5 rounded uppercase">JPG or PNG</span>
+                {/* Screenshot Upload */}
+                <div>
+                  <div className="flex items-center justify-between mb-1.5 px-1">
+                    <label className="text-[11px] font-bold text-gray-500 uppercase tracking-wider">Payment Screenshot</label>
+                    <span className="text-[9px] text-orange-500 font-bold bg-orange-50 px-2 py-0.5 rounded uppercase">JPG / PNG</span>
                   </div>
-                  <label className="relative h-[80px] group block cursor-pointer">
+                  <label className="relative block cursor-pointer">
                     <input type="file" accept="image/*" onChange={handleScreenshotChange} className="absolute inset-0 w-full h-full opacity-0 z-20 cursor-pointer" />
-                    <div className={`w-full h-full border-2 border-dashed ${screenshot ? 'border-green-500 bg-green-50' : 'border-gray-200 bg-white'} rounded-2xl flex items-center justify-between px-8 shadow-sm transition-all group-hover:border-orange-600`}>
-                      <div className="flex items-center gap-4">
-                        <Upload className={`w-6 h-6 ${screenshot ? 'text-green-600' : 'text-gray-300'}`} />
-                        <span className="text-xs font-black text-gray-500 truncate max-w-[220px]">
-                          {screenshot ? screenshot.name : "Select from your device"}
+                    <div className={`w-full border ${screenshot ? 'border-green-400 bg-green-50' : 'border-dashed border-gray-200 bg-white'} rounded-xl flex items-center justify-between px-4 py-3 transition-all hover:border-orange-400`}>
+                      <div className="flex items-center gap-3">
+                        <Upload className={`w-4 h-4 ${screenshot ? 'text-green-600' : 'text-gray-300'}`} />
+                        <span className="text-xs font-bold text-gray-500 truncate max-w-[200px]">
+                          {screenshot ? screenshot.name : "Choose file from device"}
                         </span>
                       </div>
-                      <span className="text-[10px] font-black text-orange-600 bg-orange-50 px-4 py-2 rounded-full uppercase tracking-widest border border-orange-100">Upload</span>
+                      <span className="text-[9px] font-bold text-orange-600 bg-orange-50 px-3 py-1.5 rounded-full uppercase tracking-wider border border-orange-100 shrink-0">Upload</span>
                     </div>
                   </label>
                 </div>
               </div>
 
-              {/* Action - Massive Pill */}
+              {/* Screenshot Preview (inline, compact) */}
+              <AnimatePresence>
+                {screenshotPreview && (
+                  <motion.div 
+                    initial={{ opacity: 0, height: 0 }} 
+                    animate={{ opacity: 1, height: "auto" }} 
+                    exit={{ opacity: 0, height: 0 }}
+                    className="mt-4 overflow-hidden"
+                  >
+                    <div className="flex items-center gap-2 mb-2">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Uploaded Proof</span>
+                    </div>
+                    <img src={screenshotPreview} className="w-full max-h-48 object-contain rounded-xl border border-gray-100 bg-gray-50" alt="Receipt Preview" />
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+              {/* Submit Button */}
               <button
                 disabled={!utr || !screenshot || isSubmitting}
                 onClick={handleConfirmPayment}
-                className={`w-full py-7 rounded-3xl font-black text-lg transition-all shadow-2xl flex items-center justify-center gap-4 group mt-12 font-sans
+                className={`w-full py-4 rounded-xl font-bold text-sm transition-all flex items-center justify-center gap-3 group mt-6 font-sans
                   ${(!utr || !screenshot || isSubmitting) 
-                    ? "bg-gray-100 text-gray-300 cursor-not-allowed shadow-none" 
-                    : "bg-orange-600 text-white hover:bg-orange-700 hover:-translate-y-2 active:scale-95 shadow-orange-300/50"}`}
+                    ? "bg-gray-100 text-gray-300 cursor-not-allowed" 
+                    : "bg-orange-600 text-white hover:bg-orange-700 active:scale-[0.98] shadow-lg shadow-orange-200/50"}`}
               >
                 {isSubmitting ? (
-                  <Loader2 className="w-8 h-8 animate-spin" />
+                  <Loader2 className="w-5 h-5 animate-spin" />
                 ) : (
                   <>
-                    <span className="uppercase tracking-[0.3em] text-sm">Seal & Settle Bounty</span>
-                    <ArrowRight className="w-6 h-6 group-hover:translate-x-4 transition-transform" />
+                    <span className="uppercase tracking-widest">Confirm Payment</span>
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </>
                 )}
               </button>
             </motion.div>
-
-            {/* Proof Preview Card */}
-            <AnimatePresence>
-              {screenshotPreview && (
-                <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }}
-                  className="bg-white p-10 rounded-[3rem] shadow-xl border border-white"
-                >
-                  <div className="flex items-center gap-3 mb-8 pb-4 border-b border-gray-50">
-                    <CheckCircle className="w-6 h-6 text-green-500" />
-                    <h5 className="text-[11px] font-black text-gray-400 uppercase tracking-[0.4em]">Proof Verification Loaded</h5>
-                  </div>
-                  <img src={screenshotPreview} className="w-full h-auto rounded-[2rem] border-4 border-gray-50 shadow-inner bg-gray-50" alt="Receipt Preview" />
-                </motion.div>
-              )}
-            </AnimatePresence>
           </div>
 
-          {/* RIGHT: SPOTLIGHT - Spacious & Premium (Spans 5) */}
+          {/* RIGHT: ORDER SUMMARY (Spans 5) */}
           <motion.div 
-            initial={{ opacity: 0, x: 20 }}
+            initial={{ opacity: 0, x: 15 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.1 }}
-            className="lg:col-span-5 space-y-10 lg:sticky lg:top-32"
+            className="lg:col-span-5 lg:sticky lg:top-20 space-y-5"
           >
-            <div className="bg-white rounded-[3.5rem] shadow-2xl border border-white overflow-hidden p-10">
-              <h3 className="text-xl font-serif font-black text-gray-900 uppercase tracking-tight mb-10 border-b-4 border-orange-50 pb-5">Order Spotlight</h3>
-              
-              {/* LARGE Hero Image - Reintegrated Fix */}
-              <div className="w-full aspect-square rounded-[3rem] overflow-hidden mb-10 shadow-inner ring-12 ring-gray-50/50">
-                <img src={imageUrl} alt={product?.name} className="w-full h-full object-cover transform scale-100 hover:scale-110 transition-transform duration-1000" />
-              </div>
-
-              <div className="space-y-3 mb-10 font-sans">
-                <h4 className="text-3xl font-serif font-black text-gray-900 leading-[1.1]">{product?.name}</h4>
-                <div className="flex items-center gap-3">
-                  <span className="bg-orange-600 text-white text-[10px] font-black px-4 py-1 rounded-full uppercase tracking-widest shadow-lg shadow-orange-200">Heritage Item</span>
-                  <span className="text-[11px] text-gray-400 font-extrabold uppercase tracking-widest">Qty: {qty}</span>
+            {/* Order Card */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+              {/* Product Image - compact header */}
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={imageUrl} 
+                  alt={product?.name} 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                <div className="absolute bottom-3 left-4 right-4">
+                  <span className="bg-orange-600 text-white text-[9px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Heritage Item</span>
                 </div>
               </div>
 
-              <div className="space-y-5 pt-10 border-t-2 border-dashed border-gray-100 font-sans">
-                <div className="flex justify-between items-center text-sm font-bold text-gray-500">
-                  <span className="uppercase tracking-widest">Price Point</span>
-                  <span className="text-gray-900 font-black">₹ {product?.price * qty}</span>
-                </div>
-                <div className="flex justify-between items-center text-sm font-bold text-gray-500">
-                  <span className="uppercase tracking-widest">Global Partners</span>
-                  <span className="text-green-600 font-black uppercase text-[10px] bg-green-50 px-3 py-1 rounded-full">Free Harvest Track</span>
-                </div>
-                <div className="pt-8 border-t-8 border-orange-50">
-                  <div className="flex justify-between items-end">
-                    <span className="text-gray-700 font-black uppercase text-xs tracking-widest leading-none pb-2">Full Bounty</span>
-                    <span className="text-6xl font-serif font-black text-orange-600 tracking-tighter leading-none">₹ {total}</span>
+              <div className="p-5">
+                {/* Product Info */}
+                <h4 className="text-lg font-bold text-gray-900 mb-1 leading-tight">{product?.name}</h4>
+                <p className="text-[11px] text-gray-400 font-bold uppercase tracking-wider mb-4">Qty: {qty} · via {paymentMethod}</p>
+
+                {/* Price Breakdown */}
+                <div className="space-y-2.5 text-sm border-t border-gray-100 pt-4">
+                  <div className="flex justify-between items-center text-gray-500">
+                    <span className="flex items-center gap-2">
+                      <Package className="w-3.5 h-3.5" />
+                      <span>Price ({qty} item{qty > 1 ? 's' : ''})</span>
+                    </span>
+                    <span className="font-bold text-gray-800">₹{product?.price * qty}</span>
                   </div>
-                  <p className="text-[10px] text-gray-300 italic mt-5 text-right font-medium">Verification follows instantly upon settlement.</p>
+                  <div className="flex justify-between items-center text-gray-500">
+                    <span className="flex items-center gap-2">
+                      <Truck className="w-3.5 h-3.5" />
+                      <span>Delivery</span>
+                    </span>
+                    <span className="font-bold text-green-600 text-xs bg-green-50 px-2 py-0.5 rounded-full">FREE</span>
+                  </div>
+                </div>
+
+                {/* Total */}
+                <div className="flex justify-between items-center mt-4 pt-4 border-t-2 border-orange-100">
+                  <span className="text-sm font-bold text-gray-700 uppercase tracking-wider">Total</span>
+                  <span className="text-2xl font-black text-orange-600">₹{total}</span>
                 </div>
               </div>
+            </div>
 
-              {/* Trust Integrated - Premium Cards */}
-              <div className="mt-12 space-y-5 font-sans">
-                <div className="p-5 bg-orange-50/30 rounded-3xl flex items-start gap-4 border border-orange-100/50 transition-colors hover:bg-orange-50/50">
-                  <ShieldCheck className="w-7 h-7 text-orange-600 shrink-0" />
-                  <div>
-                    <p className="text-[10px] font-black text-gray-900 uppercase tracking-widest mb-1">Authentic Source Pledge</p>
-                    <p className="text-[10px] font-bold text-gray-500 leading-relaxed italic">Direct cluster-to-buyer certified heritage.</p>
-                  </div>
+            {/* Trust Badges - Compact */}
+            <div className="bg-white rounded-2xl shadow-md p-4 space-y-3">
+              <div className="flex items-center gap-3 p-2.5 bg-orange-50/50 rounded-xl border border-orange-100/50 hover:bg-orange-50 transition-colors">
+                <ShieldCheck className="w-5 h-5 text-orange-600 shrink-0" />
+                <div>
+                  <p className="text-[10px] font-bold text-gray-800 uppercase tracking-wider">Authentic Source</p>
+                  <p className="text-[10px] text-gray-400 leading-snug">Direct cluster-to-buyer certified heritage</p>
                 </div>
-                <div className="p-5 bg-orange-50/30 rounded-3xl flex items-start gap-4 border border-orange-100/50 transition-colors hover:bg-orange-50/50">
-                  <Lock className="w-7 h-7 text-orange-600 shrink-0" />
-                  <div>
-                    <p className="text-[10px] font-black text-gray-900 uppercase tracking-widest mb-1">Vault-Level Shielding</p>
-                    <p className="text-[10px] font-bold text-gray-500 leading-relaxed italic">Your transaction path is 256-bit encrypted.</p>
-                  </div>
+              </div>
+              <div className="flex items-center gap-3 p-2.5 bg-orange-50/50 rounded-xl border border-orange-100/50 hover:bg-orange-50 transition-colors">
+                <Lock className="w-5 h-5 text-orange-600 shrink-0" />
+                <div>
+                  <p className="text-[10px] font-bold text-gray-800 uppercase tracking-wider">Encrypted Payment</p>
+                  <p className="text-[10px] text-gray-400 leading-snug">256-bit SSL secured transaction</p>
                 </div>
               </div>
             </div>
