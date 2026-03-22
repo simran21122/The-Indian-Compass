@@ -217,25 +217,26 @@
   },
   {
     "id": 11,
-    "title": "Pathar Ka Gosht Cooking",
-    "description": "A rare Hyderabadi dish where marinated meat is cooked on a heated stone slab for a smoky flavor.",
+    "title": "Raghurajpur Art Village",
+    "description": "A heritage crafts village near Puri where every home is an artist’s studio. Famous for Pattachitra paintings, palm leaf engravings, and vibrant murals that showcase Odisha’s rich cultural heritage.",
     "media_type": "video",
     "media_url": "/storypagevid/v11.mp4",
     "location": {
-      "state": "Telangana",
-      "city": "Hyderabad"
+      "state": "Odisha",
+      "city": "Puri"
     },
-    "category": "food",
+    "category": "art",
     "tags": [
-      "hyderabad",
-      "patharkagosht",
-      "traditional",
-      "nonveg"
+      "raghurajpur",
+      "pattachitra",
+      "artvillage",
+      "odishaculture",
+      "handicrafts"
     ],
-    "likes_count": 480,
-    "comments_count": 95,
-    "views_count": 3300,
-    "created_date": "2025-07-22T20:00:00Z"
+    "likes_count": 620,
+    "comments_count": 110,
+    "views_count": 4100,
+    "created_date": "2025-07-25T18:30:00Z"
   },
   {
     "id": 12,
